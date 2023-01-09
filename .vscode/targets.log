@@ -1,0 +1,331 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i686-pc-mingw32
+ 
+
+# Make data base, printed on Sun Nov 13 18:36:48 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+QTMSBUILD = C:\Users\XieSongRun\AppData\Local\QtMsBuild
+# makefile
+MAKEFLAGS = Rrqp
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+HOMEDRIVE = C:
+# automatic
+@F = $(notdir $@)
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile
+CURDIR := f:/unix6/UNIX V6++V1/oos
+# default
+SHELL := sh.exe
+# environment
+WINDIR = C:\WINDOWS
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"b16d881a9e4fee82f16d59f67823019e.zh-cn","_translationsConfigFile":"C:\\Users\\XieSongRun\\AppData\\Roaming\\Code\\clp\\b16d881a9e4fee82f16d59f67823019e.zh-cn\\tcf.json","_cacheRoot":"C:\\Users\\XieSongRun\\AppData\\Roaming\\Code\\clp\\b16d881a9e4fee82f16d59f67823019e.zh-cn","_resolvedLanguagePackCoreLocation":"C:\\Users\\XieSongRun\\AppData\\Roaming\\Code\\clp\\b16d881a9e4fee82f16d59f67823019e.zh-cn\\6261075646f055b99068d3688932416f2346dd3b","_corruptedFile":"C:\\Users\\XieSongRun\\AppData\\Roaming\\Code\\clp\\b16d881a9e4fee82f16d59f67823019e.zh-cn\\corrupted.info","_languagePackSupport":true}
+# environment
+PYCHARM COMMUNITY EDITION = C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.3\bin;
+# environment
+NVM_HOME = D:\Program Files\nvm
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# makefile
+MAKEFILE_LIST := 
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# environment
+TMP = C:\Users\XIESON~1\AppData\Local\Temp
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+NVM_SYMLINK = C:\Program Files\nodejs
+# environment
+QT_PLUGIN_PATH = D:\�γ�\�˹����ܿ���\HW1\venv\Lib\site-packages\PyQt5\Qt5\plugins
+# environment
+PROGRAMDATA = C:\ProgramData
+# environment
+VSCODE_CWD = C:\Users\XieSongRun\AppData\Local\Programs\Microsoft VS Code
+# environment
+GOPROXY = heeps:///goproxy.io/
+# environment
+PATH = F:\unix6\UNIX V6++V1\MinGW\bin;F:\unix6\UNIX V6++V1\NASM;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\go\bin;C:\ProgramData\chocolatey\bin;D:\Program Files\nvm;C:\Program Files\nodejs;D:\Program Files\go;D:\Program Files\go\bin;D:\Program Files\go\bin;%GOPATH%\bin;D:\Program Files\mingw\mingw64\bin;C:\Program Files\Google\Chrome\Application;D:\Program Files (x86)\Mysql\bin;F:\matlab\bin;D:\mathir\����ҵ\PuTTY;C:\Program Files\Graphviz\bin;C:\Program Files\CMake\bin;D:\strawberry\c\bin;D:\strawberry\perl\site\bin;D:\strawberry\perl\bin;C:\Users\XieSongRun\AppData\Local\Programs\Python\Python39;D:\Program Files (x86)\ninja-win;D:\Program Files\Git\cmd;F:\unix6\UNIX V6++V1\MinGW\bin;F:\unix6\UNIX V6++V1\NASM;C:\Users\XieSongRun\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\XieSongRun\go\bin;C:\Users\XieSongRun\AppData\Roaming\npm;D:\Program Files\nvm;C:\Program Files\nodejs;D:\Program Files\mingw\mingw64\bin;D:\mingw\bin;D:\mathir\modelsim\win32pe;C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.3\bin;;D:\m 
+make.exe: *** No rule to make target `all'.  Stop.
+
+athir\modisim\win32pe;C:\Program Files\MySQL\MySQL Server 8.0\bin;
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# environment
+CHOCOLATEYLASTPATHUPDATE = 132710707701815487
+# environment
+PROCESSOR_ARCHITECTURE = x86
+# environment
+ONEDRIVE = C:\Users\XieSongRun\OneDrive
+# environment
+USERPROFILE = C:\Users\XieSongRun
+# environment
+CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+GOPATH = C:\Users\XieSongRun\go
+# environment
+NUMBER_OF_PROCESSORS = 16
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives
+# environment
+PUTTY_HOME = D:\mathir\����ҵ\PuTTY
+# automatic
+%F = $(notdir $%)
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_50612_JCTWYXVUAWIRNLAT
+# environment
+COMPUTERNAME = LAPTOP-M2TEU2EG
+# environment
+PROGRAMFILES = C:\Program Files (x86)
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERNAME = XieSongRun
+# environment
+MGLS_LICENSE_FILE = 1717@202.120.188.126
+# environment
+PUBLIC = C:\Users\Public
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\XieSongRun\AppData\Roaming\Code\CachedData\6261075646f055b99068d3688932416f2346dd3b
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# environment
+LOGONSERVER = \\LAPTOP-M2TEU2EG
+# environment
+ONEDRIVECONSUMER = C:\Users\XieSongRun\OneDrive
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+USERDOMAIN = LAPTOP-M2TEU2EG
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# default
+MAKE_VERSION := 3.81
+# makefile
+.DEFAULT_GOAL := 
+# environment
+GOROOT = D:\Program Files\go
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+CURL_HOME = %CURL_HOME%;D:\Program Files;D:\Program Files;D:\Program Files
+# environment
+LOCALAPPDATA = C:\Users\XieSongRun\AppData\Local
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := make.exe
+# environment
+PROCESSOR_ARCHITEW6432 = AMD64
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+# environment
+OS = Windows_NT
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\6f1a9588f0fdc706f9cb8f5cfcbd9ec0-1.73.1-main-sock
+# environment
+HOMEPATH = \Users\XieSongRun
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+PROMPT = $P$G
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+INTEL_DEV_REDIST = C:\Program Files (x86)\Common Files\Intel\Shared Libraries\
+# environment
+SYSTEMROOT = C:\WINDOWS
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+APPDATA = C:\Users\XieSongRun\AppData\Roaming
+# environment
+TEMP = C:\Users\XIESON~1\AppData\Local\Temp
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+LC_ALL = C
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+SYSTEMDRIVE = C:
+# environment
+SESSIONNAME = Console
+# environment
+PROCESSOR_REVISION = 6001
+# environment
+VS140COMNTOOLS = C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\
+# environment
+MAKELEVEL := 0
+# environment
+LANG = C
+# environment
+PROCESSOR_LEVEL = 23
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environment
+VSCODE_PID = 50612
+# environment
+USERDOMAIN_ROAMINGPROFILE = LAPTOP-M2TEU2EG
+# variable set hash-table stats:
+# Load=99/1024=10%, Rehash=0, Collisions=10/116=9%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# : could not be stat'd.
+# F:\unix6\UNIX V6++V1\MinGW\bin (key F:/unix6/UNIX V6++V1/MinGW/bin, mtime 1662362352): 33 files, no impossibilities.
+# D:\Program Files\go\bin (key D:/Program Files/go/bin, mtime 1626596923): 4 files, no impossibilities.
+# D:\Program Files\nvm (key D:/Program Files/nvm, mtime 1626599787): 12 files, no impossibilities.
+# F:\matlab\bin (key F:/matlab/bin, mtime 1640690042): 12 files, no impossibilities.
+# C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1620381555): 31 files, no impossibilities.
+# C:\Users\XieSongRun\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/XieSongRun/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1668020958): 5 files, no impossibilities.
+# C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1653136493): 172 files, no impossibilities.
+# . (key f:/unix6/UNIX V6++V1/oos, mtime 1662465975): 12 files, no impossibilities.
+# D:\Program Files\mingw\mingw64\bin: could not be stat'd.
+# D:\Program Files (x86)\Mysql\bin: could not be stat'd.
+# D:\mathir\modelsim\win32pe: could not be stat'd.
+# C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common (key C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common, mtime 1598279499): 10 files, no impossibilities.
+# C:\Program Files\MySQL\MySQL Server 8.0\bin (key C:/Program Files/MySQL/MySQL Server 8.0/bin, mtime 1636012933): 52 files, no impossibilities.
+# C:\Users\XieSongRun\AppData\Roaming\npm (key C:/Users/XieSongRun/AppData/Roaming/npm, mtime 1650544703): 12 files, no impossibilities.
+# C:\ProgramData\chocolatey\bin (key C:/ProgramData/chocolatey/bin, mtime 1626597170): 13 files, no impossibilities.
+# D:\Program Files (x86)\ninja-win (key D:/Program Files (x86)/ninja-win, mtime 1651641962): 3 files, no impossibilities.
+# C:\Users\XieSongRun\AppData\Local\Programs\Python\Python39 (key C:/Users/XieSongRun/AppData/Local/Programs/Python/Python39, mtime 1648192370): 19 files, no impossibilities.
+# D:\mingw\bin (key D:/mingw/bin, mtime 1554003849): 56 files, no impossibilities.
+# C:\Program Files\nodejs (key C:/Program Files/nodejs, mtime 1626599787): 11 files, no impossibilities.
+# C:\Program Files\Google\Chrome\Application (key C:/Program Files/Google/Chrome/Application, mtime 1663312492): 11 files, no impossibilities.
+# D:\mathir\����ҵ\PuTTY: could not be stat'd.
+# C:\Windows\System32\OpenSSH\: could not be stat'd.
+# D:\strawberry\c\bin (key D:/strawberry/c/bin, mtime 1651640621): 115 files, no impossibilities.
+# C:\Program Files (x86)\Common Files\Oracle\Java\javapath (key C:/Program Files (x86)/Common Files/Oracle/Java/javapath, mtime 1631099220): 5 files, no impossibilities.
+# C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler (key C:/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler, mtime 1654525741): 18 files, no impossibilities.
+# C:\Program Files\Microsoft SQL Server\130\Tools\Binn\ (key C:/Program Files/Microsoft SQL Server/130/Tools/Binn/, mtime 1612349145): 4 files, no impossibilities.
+# C:\Windows (key C:/Windows, mtime 1661336623): 136 files, no impossibilities.
+# D:\mathir\modisim\win32pe (key D:/mathir/modisim/win32pe, mtime 1655009796): 123 files, no impossibilities.
+# D:\strawberry\perl\bin (key D:/strawberry/perl/bin, mtime 1651640679): 184 files, no impossibilities.
+# D:\Program Files\go (key D:/Program Files/go, mtime 1626596932): 20 files, no impossibilities.
+# C:\Users\XieSongRun\go\bin: could not be stat'd.
+# D:\strawberry\perl\site\bin (key D:/strawberry/perl/site/bin, mtime 1651640609): 2 files, no impossibilities.
+# %GOPATH%\bin: could not be stat'd.
+# D:\Program Files\Git\cmd (key D:/Program Files/Git/cmd, mtime 1667920037): 9 files, no impossibilities.
+# C:\Windows\system32 (key C:/Windows/system32, mtime 1668088303): 3152 files, no impossibilities.
+# C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.3\bin (key C:/Program Files/JetBrains/PyCharm Community Edition 2021.3.3/bin, mtime 1648191790): 29 files, no impossibilities.
+# C:\Program Files\CMake\bin (key C:/Program Files/CMake/bin, mtime 1651640376): 7 files, no impossibilities.
+# C:\Program Files\Graphviz\bin (key C:/Program Files/Graphviz/bin, mtime 1650278636): 61 files, no impossibilities.
+# F:\unix6\UNIX V6++V1\NASM (key F:/unix6/UNIX V6++V1/NASM, mtime 1662362372): 17 files, no impossibilities.
+# C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (key C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, mtime 1598279622): 5 files, no impossibilities.
+
+# 4355 files, no impossibilities in 41 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+all:
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+makefile:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+GNUmakefile:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# files hash-table stats:
+# Load=5/1024=0%, Rehash=0, Collisions=0/16=0%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 0
+# # of strcache buffers: 0
+# strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
+# strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
+
+# Finished Make data base on Sun Nov 13 18:36:48 2022
+
+ 
