@@ -220,8 +220,13 @@ private:
 	/*	48 = sig	count = 2	*/
 	static int Sys_Ssig();
 	
-	/*	49 ~ 63 = nosys	count = 0	*/	
+	/*	50 = getpid2	count = 0	*/
+	static int Sys_No50();
 
+	/*	51 = gettable	count = 0	*/
+	static int Sys_GetTable();
+
+	/*	49 ~ 63 = nosys	count = 0	*/	
 private:
 	/*系统调用入口表的声明*/
 	static SystemCallTableEntry m_SystemEntranceTable[SYSTEM_CALL_NUM];

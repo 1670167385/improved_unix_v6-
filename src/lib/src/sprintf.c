@@ -106,19 +106,20 @@ int sprintf_interger(char* buffer, struct print_info* info, va pva, unsigned int
 		{
 			uc_num = getva(char, pva, *pva_offset);
 			*pva_offset += CHAR_SIZE;
-			bp = itoa( (int)uc_num, num, radix);
+			bp = uitoa( (int)uc_num, num, radix);
 		}
 		else if ( info->is_short )
 		{
 			us_num = getva(short, pva, *pva_offset);
 			*pva_offset += SHORT_SIZE;
-			bp = itoa( (int)us_num, num, radix);
+			bp = uitoa( (unsigned short)us_num, num, radix);
 		}
 		else
 		{
 			ui_num = getva(int, pva, *pva_offset);
 			*pva_offset += INT_SIZE;
-			bp = itoa( ui_num, num, radix);
+			bp = uitoa( (unsigned int)ui_num, num, radix);
+
 		}
 	}
 	if ( !bp ) return 0;

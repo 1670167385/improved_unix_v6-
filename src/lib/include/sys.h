@@ -80,6 +80,9 @@ int getswtch();
 /* 启用屏幕底部的lines行输出调试信息 */
 int trace(int lines);
 
+/*系统调用*/
+int getpid_sysN50();
 
-
+/* 获取虚实映射表 */
+int GetTable();
 #endif

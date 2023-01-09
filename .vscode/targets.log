@@ -8,7 +8,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # This program built for i686-pc-mingw32
  
 
-# Make data base, printed on Sun Nov 13 18:36:48 2022
+# Make data base, printed on Wed Dec 07 12:50:17 2022
 
 # Variables
 
@@ -63,10 +63,7 @@ VSCODE_CWD = C:\Users\XieSongRun\AppData\Local\Programs\Microsoft VS Code
 # environment
 GOPROXY = heeps:///goproxy.io/
 # environment
-PATH = F:\unix6\UNIX V6++V1\MinGW\bin;F:\unix6\UNIX V6++V1\NASM;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\go\bin;C:\ProgramData\chocolatey\bin;D:\Program Files\nvm;C:\Program Files\nodejs;D:\Program Files\go;D:\Program Files\go\bin;D:\Program Files\go\bin;%GOPATH%\bin;D:\Program Files\mingw\mingw64\bin;C:\Program Files\Google\Chrome\Application;D:\Program Files (x86)\Mysql\bin;F:\matlab\bin;D:\mathir\����ҵ\PuTTY;C:\Program Files\Graphviz\bin;C:\Program Files\CMake\bin;D:\strawberry\c\bin;D:\strawberry\perl\site\bin;D:\strawberry\perl\bin;C:\Users\XieSongRun\AppData\Local\Programs\Python\Python39;D:\Program Files (x86)\ninja-win;D:\Program Files\Git\cmd;F:\unix6\UNIX V6++V1\MinGW\bin;F:\unix6\UNIX V6++V1\NASM;C:\Users\XieSongRun\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\XieSongRun\go\bin;C:\Users\XieSongRun\AppData\Roaming\npm;D:\Program Files\nvm;C:\Program Files\nodejs;D:\Program Files\mingw\mingw64\bin;D:\mingw\bin;D:\mathir\modelsim\win32pe;C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.3\bin;;D:\m 
-make.exe: *** No rule to make target `all'.  Stop.
-
-athir\modisim\win32pe;C:\Program Files\MySQL\MySQL Server 8.0\bin;
+PATH = F:\unix6\UNIX V6++V1\MinGW\bin;F:\unix6\UNIX V6++V1\NASM;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\go\bin;C:\ProgramData\chocolatey\bin;D:\Program Files\nvm;C:\Program Files\nodejs;D:\Program Files\go;D:\Program Files\go\bin;D:\Program Files\go\bin;%GOPATH%\bin;D:\Program Files\mingw\mingw64\bin;C:\Program Files\Google\Chrome\Application;D:\Program Files (x86)\Mysql\bin;F:\matlab\bin;D:\mathir\����ҵ\PuTTY;C:\Program Files\Graphviz\bin;C:\Program Files\CMake\bin;D:\strawberry\c\bin;D:\strawberry\perl\site\bin;D:\strawberry\perl\bin;C:\Users\XieSongRun\AppData\Local\Programs\Python\Python39;D:\Program Files (x86)\ninja-win;D:\Program Files\Git\cmd;F:\unix6\UNIX V6++V1\MinGW\bin;F:\unix6\UNIX V6++V1\NASM;C:\Users\XieSongRun\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\XieSongRun\go\bin;C:\Users\XieSongRun\AppData\Roaming\npm;D:\Program Files\nvm;C:\Program Files\nodejs;D:\Program Files\mingw\mingw64\bin;D:\mingw\bin;D:\mathir\modelsim\win32pe;C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.3\bin;;D:\mathir\modisim\win32pe;C:\Program Files\MySQL\MySQL Server 8.0\bin;
 # environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # environment
@@ -94,7 +91,7 @@ PUTTY_HOME = D:\mathir\����ҵ\PuTTY
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_50612_JCTWYXVUAWIRNLAT
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_25188_PAKDHIKMRVSPWJSB
 # environment
 COMPUTERNAME = LAPTOP-M2TEU2EG
 # environment
@@ -210,7 +207,7 @@ PROCESSOR_LEVEL = 23
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 50612
+VSCODE_PID = 25188
 # environment
 USERDOMAIN_ROAMINGPROFILE = LAPTOP-M2TEU2EG
 # variable set hash-table stats:
@@ -230,7 +227,7 @@ USERDOMAIN_ROAMINGPROFILE = LAPTOP-M2TEU2EG
 # C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1620381555): 31 files, no impossibilities.
 # C:\Users\XieSongRun\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/XieSongRun/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1668020958): 5 files, no impossibilities.
 # C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1653136493): 172 files, no impossibilities.
-# . (key f:/unix6/UNIX V6++V1/oos, mtime 1662465975): 12 files, no impossibilities.
+# . (key f:/unix6/UNIX V6++V1/oos, mtime 1668335849): 13 files, no impossibilities.
 # D:\Program Files\mingw\mingw64\bin: could not be stat'd.
 # D:\Program Files (x86)\Mysql\bin: could not be stat'd.
 # D:\mathir\modelsim\win32pe: could not be stat'd.
@@ -249,7 +246,7 @@ USERDOMAIN_ROAMINGPROFILE = LAPTOP-M2TEU2EG
 # C:\Program Files (x86)\Common Files\Oracle\Java\javapath (key C:/Program Files (x86)/Common Files/Oracle/Java/javapath, mtime 1631099220): 5 files, no impossibilities.
 # C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler (key C:/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler, mtime 1654525741): 18 files, no impossibilities.
 # C:\Program Files\Microsoft SQL Server\130\Tools\Binn\ (key C:/Program Files/Microsoft SQL Server/130/Tools/Binn/, mtime 1612349145): 4 files, no impossibilities.
-# C:\Windows (key C:/Windows, mtime 1661336623): 136 files, no impossibilities.
+# C:\Windows (key C:/Windows, mtime 1669562469): 136 files, no impossibilities.
 # D:\mathir\modisim\win32pe (key D:/mathir/modisim/win32pe, mtime 1655009796): 123 files, no impossibilities.
 # D:\strawberry\perl\bin (key D:/strawberry/perl/bin, mtime 1651640679): 184 files, no impossibilities.
 # D:\Program Files\go (key D:/Program Files/go, mtime 1626596932): 20 files, no impossibilities.
@@ -257,14 +254,14 @@ USERDOMAIN_ROAMINGPROFILE = LAPTOP-M2TEU2EG
 # D:\strawberry\perl\site\bin (key D:/strawberry/perl/site/bin, mtime 1651640609): 2 files, no impossibilities.
 # %GOPATH%\bin: could not be stat'd.
 # D:\Program Files\Git\cmd (key D:/Program Files/Git/cmd, mtime 1667920037): 9 files, no impossibilities.
-# C:\Windows\system32 (key C:/Windows/system32, mtime 1668088303): 3152 files, no impossibilities.
+# C:\Windows\system32 (key C:/Windows/system32, mtime 1670245384): 3152 files, no impossibilities.
 # C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.3\bin (key C:/Program Files/JetBrains/PyCharm Community Edition 2021.3.3/bin, mtime 1648191790): 29 files, no impossibilities.
 # C:\Program Files\CMake\bin (key C:/Program Files/CMake/bin, mtime 1651640376): 7 files, no impossibilities.
 # C:\Program Files\Graphviz\bin (key C:/Program Files/Graphviz/bin, mtime 1650278636): 61 files, no impossibilities.
 # F:\unix6\UNIX V6++V1\NASM (key F:/unix6/UNIX V6++V1/NASM, mtime 1662362372): 17 files, no impossibilities.
 # C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (key C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, mtime 1598279622): 5 files, no impossibilities.
 
-# 4355 files, no impossibilities in 41 directories.
+# 4356 files, no impossibilities in 41 directories.
 
 # Implicit Rules
 
@@ -326,6 +323,8 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Sun Nov 13 18:36:48 2022
+# Finished Make data base on Wed Dec 07 12:50:17 2022
 
  
+make.exe: *** No rule to make target `all'.  Stop.
+

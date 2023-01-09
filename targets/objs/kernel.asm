@@ -219,7 +219,7 @@ c0100254:	55                   	push   %ebp
 c0100255:	89 e5                	mov    %esp,%ebp
 c0100257:	83 ec 18             	sub    $0x18,%esp
 c010025a:	c7 04 24 00 00 00 00 	movl   $0x0,(%esp)
-c0100261:	e8 aa 10 01 00       	call   c0111310 <__ZN7Utility8GetMajorEs>
+c0100261:	e8 06 11 01 00       	call   c011136c <__ZN7Utility8GetMajorEs>
 c0100266:	66 89 45 f6          	mov    %ax,-0xa(%ebp)
 c010026a:	e8 f9 6e 00 00       	call   c0107168 <__ZN6Kernel8InstanceEv>
 c010026f:	89 04 24             	mov    %eax,(%esp)
@@ -306,16 +306,16 @@ c0100369:	83 ec 28             	sub    $0x28,%esp
 c010036c:	83 7d 08 00          	cmpl   $0x0,0x8(%ebp)
 c0100370:	75 0c                	jne    c010037e <__ZN9ATADriver8DevStartEP3Buf+0x18>
 c0100372:	c7 04 24 30 41 11 c0 	movl   $0xc0114130,(%esp)
-c0100379:	e8 44 10 01 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c0100379:	e8 a0 10 01 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c010037e:	e8 9d 01 00 00       	call   c0100520 <__ZN9ATADriver17IsControllerReadyEv>
 c0100383:	85 c0                	test   %eax,%eax
 c0100385:	75 0c                	jne    c0100393 <__ZN9ATADriver8DevStartEP3Buf+0x2d>
 c0100387:	c7 04 24 4b 41 11 c0 	movl   $0xc011414b,(%esp)
-c010038e:	e8 2f 10 01 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c010038e:	e8 8b 10 01 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c0100393:	8b 45 08             	mov    0x8(%ebp),%eax
 c0100396:	0f bf 40 18          	movswl 0x18(%eax),%eax
 c010039a:	89 04 24             	mov    %eax,(%esp)
-c010039d:	e8 8c 0f 01 00       	call   c011132e <__ZN7Utility8GetMinorEs>
+c010039d:	e8 e8 0f 01 00       	call   c011138a <__ZN7Utility8GetMinorEs>
 c01003a2:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
 c01003a6:	8b 45 08             	mov    0x8(%ebp),%eax
 c01003a9:	8b 40 20             	mov    0x20(%eax),%eax
@@ -628,7 +628,7 @@ c010073f:	83 ec 08             	sub    $0x8,%esp
 c0100742:	8b 45 0c             	mov    0xc(%ebp),%eax
 c0100745:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
 c0100749:	c7 04 24 7c 40 11 c0 	movl   $0xc011407c,(%esp)
-c0100750:	e8 6d 0c 01 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c0100750:	e8 c9 0c 01 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c0100755:	b8 00 00 00 00       	mov    $0x0,%eax
 c010075a:	c9                   	leave  
 c010075b:	c3                   	ret    
@@ -640,7 +640,7 @@ c010075f:	83 ec 08             	sub    $0x8,%esp
 c0100762:	8b 45 0c             	mov    0xc(%ebp),%eax
 c0100765:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
 c0100769:	c7 04 24 a4 40 11 c0 	movl   $0xc01140a4,(%esp)
-c0100770:	e8 4d 0c 01 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c0100770:	e8 a9 0c 01 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c0100775:	b8 00 00 00 00       	mov    $0x0,%eax
 c010077a:	c9                   	leave  
 c010077b:	c3                   	ret    
@@ -650,7 +650,7 @@ c010077c:	55                   	push   %ebp
 c010077d:	89 e5                	mov    %esp,%ebp
 c010077f:	83 ec 08             	sub    $0x8,%esp
 c0100782:	c7 04 24 d0 40 11 c0 	movl   $0xc01140d0,(%esp)
-c0100789:	e8 34 0c 01 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c0100789:	e8 90 0c 01 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c010078e:	b8 00 00 00 00       	mov    $0x0,%eax
 c0100793:	c9                   	leave  
 c0100794:	c3                   	ret    
@@ -661,7 +661,7 @@ c0100796:	55                   	push   %ebp
 c0100797:	89 e5                	mov    %esp,%ebp
 c0100799:	83 ec 08             	sub    $0x8,%esp
 c010079c:	c7 04 24 fc 40 11 c0 	movl   $0xc01140fc,(%esp)
-c01007a3:	e8 1a 0c 01 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c01007a3:	e8 76 0c 01 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c01007a8:	c9                   	leave  
 c01007a9:	c3                   	ret    
 
@@ -1025,7 +1025,7 @@ c0100b5a:	e8 a5 68 00 00       	call   c0107404 <__ZN6Kernel7GetUserEv>
 c0100b5f:	89 45 ec             	mov    %eax,-0x14(%ebp)
 c0100b62:	0f bf 45 fa          	movswl -0x6(%ebp),%eax
 c0100b66:	89 04 24             	mov    %eax,(%esp)
-c0100b69:	e8 a2 07 01 00       	call   c0111310 <__ZN7Utility8GetMajorEs>
+c0100b69:	e8 fe 07 01 00       	call   c011136c <__ZN7Utility8GetMajorEs>
 c0100b6e:	0f bf d8             	movswl %ax,%ebx
 c0100b71:	8b 45 08             	mov    0x8(%ebp),%eax
 c0100b74:	8b 80 30 21 00 00    	mov    0x2130(%eax),%eax
@@ -1034,7 +1034,7 @@ c0100b7d:	e8 0e 15 00 00       	call   c0102090 <__ZN13DeviceManager10GetNBlkDev
 c0100b82:	39 c3                	cmp    %eax,%ebx
 c0100b84:	7c 0c                	jl     c0100b92 <__ZN13BufferManager6GetBlkEsi+0x4e>
 c0100b86:	c7 04 24 3c 40 11 c0 	movl   $0xc011403c,(%esp)
-c0100b8d:	e8 30 08 01 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c0100b8d:	e8 8c 08 01 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c0100b92:	66 83 7d fa 00       	cmpw   $0x0,-0x6(%ebp)
 c0100b97:	79 0b                	jns    c0100ba4 <__ZN13BufferManager6GetBlkEsi+0x60>
 c0100b99:	8b 45 08             	mov    0x8(%ebp),%eax
@@ -1042,7 +1042,7 @@ c0100b9c:	89 45 f0             	mov    %eax,-0x10(%ebp)
 c0100b9f:	e9 e8 00 00 00       	jmp    c0100c8c <__ZN13BufferManager6GetBlkEsi+0x148>
 c0100ba4:	0f bf 45 fa          	movswl -0x6(%ebp),%eax
 c0100ba8:	89 04 24             	mov    %eax,(%esp)
-c0100bab:	e8 60 07 01 00       	call   c0111310 <__ZN7Utility8GetMajorEs>
+c0100bab:	e8 bc 07 01 00       	call   c011136c <__ZN7Utility8GetMajorEs>
 c0100bb0:	66 89 45 ea          	mov    %ax,-0x16(%ebp)
 c0100bb4:	0f bf 45 ea          	movswl -0x16(%ebp),%eax
 c0100bb8:	89 44 24 04          	mov    %eax,0x4(%esp)
@@ -1055,7 +1055,7 @@ c0100bd0:	89 45 f0             	mov    %eax,-0x10(%ebp)
 c0100bd3:	83 7d f0 00          	cmpl   $0x0,-0x10(%ebp)
 c0100bd7:	75 0c                	jne    c0100be5 <__ZN13BufferManager6GetBlkEsi+0xa1>
 c0100bd9:	c7 04 24 64 40 11 c0 	movl   $0xc0114064,(%esp)
-c0100be0:	e8 dd 07 01 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c0100be0:	e8 39 08 01 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c0100be5:	8b 45 f0             	mov    -0x10(%ebp),%eax
 c0100be8:	8b 40 08             	mov    0x8(%eax),%eax
 c0100beb:	89 45 f4             	mov    %eax,-0xc(%ebp)
@@ -1239,7 +1239,7 @@ c0100e13:	ff
 c0100e14:	8b 45 0c             	mov    0xc(%ebp),%eax
 c0100e17:	0f bf 40 18          	movswl 0x18(%eax),%eax
 c0100e1b:	89 04 24             	mov    %eax,(%esp)
-c0100e1e:	e8 63 05 01 00       	call   c0111386 <__ZN7Utility8SetMinorEss>
+c0100e1e:	e8 bf 05 01 00       	call   c01113e2 <__ZN7Utility8SetMinorEss>
 c0100e23:	e8 d8 11 01 00       	call   c0112000 <__ZN11X86Assembly3CLIEv>
 c0100e28:	8b 55 0c             	mov    0xc(%ebp),%edx
 c0100e2b:	8b 45 0c             	mov    0xc(%ebp),%eax
@@ -1369,7 +1369,7 @@ c0100f7e:	8b 45 f8             	mov    -0x8(%ebp),%eax
 c0100f81:	c7 40 1c 00 02 00 00 	movl   $0x200,0x1c(%eax)
 c0100f88:	0f bf 45 fe          	movswl -0x2(%ebp),%eax
 c0100f8c:	89 04 24             	mov    %eax,(%esp)
-c0100f8f:	e8 7c 03 01 00       	call   c0111310 <__ZN7Utility8GetMajorEs>
+c0100f8f:	e8 d8 03 01 00       	call   c011136c <__ZN7Utility8GetMajorEs>
 c0100f94:	98                   	cwtl   
 c0100f95:	89 44 24 04          	mov    %eax,0x4(%esp)
 c0100f99:	8b 45 08             	mov    0x8(%ebp),%eax
@@ -1404,7 +1404,7 @@ c0100fe5:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
 c0100fe9:	c7 45 f8 00 00 00 00 	movl   $0x0,-0x8(%ebp)
 c0100ff0:	0f bf 45 fe          	movswl -0x2(%ebp),%eax
 c0100ff4:	89 04 24             	mov    %eax,(%esp)
-c0100ff7:	e8 14 03 01 00       	call   c0111310 <__ZN7Utility8GetMajorEs>
+c0100ff7:	e8 70 03 01 00       	call   c011136c <__ZN7Utility8GetMajorEs>
 c0100ffc:	66 89 45 f2          	mov    %ax,-0xe(%ebp)
 c0101000:	8b 45 10             	mov    0x10(%ebp),%eax
 c0101003:	89 44 24 08          	mov    %eax,0x8(%esp)
@@ -1544,7 +1544,7 @@ c01011ae:	c7 40 1c 00 02 00 00 	movl   $0x200,0x1c(%eax)
 c01011b5:	8b 45 0c             	mov    0xc(%ebp),%eax
 c01011b8:	0f bf 40 18          	movswl 0x18(%eax),%eax
 c01011bc:	89 04 24             	mov    %eax,(%esp)
-c01011bf:	e8 4c 01 01 00       	call   c0111310 <__ZN7Utility8GetMajorEs>
+c01011bf:	e8 a8 01 01 00       	call   c011136c <__ZN7Utility8GetMajorEs>
 c01011c4:	98                   	cwtl   
 c01011c5:	89 44 24 04          	mov    %eax,0x4(%esp)
 c01011c9:	8b 45 08             	mov    0x8(%ebp),%eax
@@ -1748,7 +1748,7 @@ c01013ef:	89 42 50             	mov    %eax,0x50(%edx)
 c01013f2:	8b 45 08             	mov    0x8(%ebp),%eax
 c01013f5:	0f bf 40 48          	movswl 0x48(%eax),%eax
 c01013f9:	89 04 24             	mov    %eax,(%esp)
-c01013fc:	e8 0f ff 00 00       	call   c0111310 <__ZN7Utility8GetMajorEs>
+c01013fc:	e8 6b ff 00 00       	call   c011136c <__ZN7Utility8GetMajorEs>
 c0101401:	98                   	cwtl   
 c0101402:	89 44 24 04          	mov    %eax,0x4(%esp)
 c0101406:	8b 45 08             	mov    0x8(%ebp),%eax
@@ -1870,7 +1870,7 @@ c010154c:	8b 45 0c             	mov    0xc(%ebp),%eax
 c010154f:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
 c0101553:	0f bf 45 fe          	movswl -0x2(%ebp),%eax
 c0101557:	89 04 24             	mov    %eax,(%esp)
-c010155a:	e8 b1 fd 00 00       	call   c0111310 <__ZN7Utility8GetMajorEs>
+c010155a:	e8 0d fe 00 00       	call   c011136c <__ZN7Utility8GetMajorEs>
 c010155f:	66 89 45 f2          	mov    %ax,-0xe(%ebp)
 c0101563:	0f bf 45 f2          	movswl -0xe(%ebp),%eax
 c0101567:	89 44 24 04          	mov    %eax,0x4(%esp)
@@ -1998,7 +1998,7 @@ c010168b:	83 ec 08             	sub    $0x8,%esp
 c010168e:	8b 45 0c             	mov    0xc(%ebp),%eax
 c0101691:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
 c0101695:	c7 04 24 6c 3f 11 c0 	movl   $0xc0113f6c,(%esp)
-c010169c:	e8 21 fd 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c010169c:	e8 7d fd 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c01016a1:	c9                   	leave  
 c01016a2:	c3                   	ret    
 c01016a3:	90                   	nop    
@@ -2010,7 +2010,7 @@ c01016a7:	83 ec 08             	sub    $0x8,%esp
 c01016aa:	8b 45 0c             	mov    0xc(%ebp),%eax
 c01016ad:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
 c01016b1:	c7 04 24 94 3f 11 c0 	movl   $0xc0113f94,(%esp)
-c01016b8:	e8 05 fd 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c01016b8:	e8 61 fd 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c01016bd:	c9                   	leave  
 c01016be:	c3                   	ret    
 c01016bf:	90                   	nop    
@@ -2022,7 +2022,7 @@ c01016c3:	83 ec 08             	sub    $0x8,%esp
 c01016c6:	8b 45 0c             	mov    0xc(%ebp),%eax
 c01016c9:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
 c01016cd:	c7 04 24 bc 3f 11 c0 	movl   $0xc0113fbc,(%esp)
-c01016d4:	e8 e9 fc 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c01016d4:	e8 45 fd 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c01016d9:	c9                   	leave  
 c01016da:	c3                   	ret    
 c01016db:	90                   	nop    
@@ -2034,7 +2034,7 @@ c01016df:	83 ec 08             	sub    $0x8,%esp
 c01016e2:	8b 45 0c             	mov    0xc(%ebp),%eax
 c01016e5:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
 c01016e9:	c7 04 24 e4 3f 11 c0 	movl   $0xc0113fe4,(%esp)
-c01016f0:	e8 cd fc 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c01016f0:	e8 29 fd 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c01016f5:	c9                   	leave  
 c01016f6:	c3                   	ret    
 c01016f7:	90                   	nop    
@@ -2046,7 +2046,7 @@ c01016fb:	83 ec 08             	sub    $0x8,%esp
 c01016fe:	8b 45 0c             	mov    0xc(%ebp),%eax
 c0101701:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
 c0101705:	c7 04 24 0c 40 11 c0 	movl   $0xc011400c,(%esp)
-c010170c:	e8 b1 fc 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c010170c:	e8 0d fd 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c0101711:	c9                   	leave  
 c0101712:	c3                   	ret    
 c0101713:	90                   	nop    
@@ -2143,7 +2143,7 @@ c01017ee:	8b 45 0c             	mov    0xc(%ebp),%eax
 c01017f1:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
 c01017f5:	0f bf 45 fe          	movswl -0x2(%ebp),%eax
 c01017f9:	89 04 24             	mov    %eax,(%esp)
-c01017fc:	e8 2d fb 00 00       	call   c011132e <__ZN7Utility8GetMinorEs>
+c01017fc:	e8 89 fb 00 00       	call   c011138a <__ZN7Utility8GetMinorEs>
 c0101801:	66 89 45 fc          	mov    %ax,-0x4(%ebp)
 c0101805:	e8 5e 59 00 00       	call   c0107168 <__ZN6Kernel8InstanceEv>
 c010180a:	89 04 24             	mov    %eax,(%esp)
@@ -2208,14 +2208,14 @@ c01018b4:	8b 45 0c             	mov    0xc(%ebp),%eax
 c01018b7:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
 c01018bb:	0f bf 45 fe          	movswl -0x2(%ebp),%eax
 c01018bf:	89 04 24             	mov    %eax,(%esp)
-c01018c2:	e8 67 fa 00 00       	call   c011132e <__ZN7Utility8GetMinorEs>
+c01018c2:	e8 c3 fa 00 00       	call   c011138a <__ZN7Utility8GetMinorEs>
 c01018c7:	66 89 45 fc          	mov    %ax,-0x4(%ebp)
 c01018cb:	66 83 7d fc 00       	cmpw   $0x0,-0x4(%ebp)
 c01018d0:	75 0e                	jne    c01018e0 <__ZN13ConsoleDevice4ReadEs+0x32>
 c01018d2:	8b 45 08             	mov    0x8(%ebp),%eax
 c01018d5:	8b 40 04             	mov    0x4(%eax),%eax
 c01018d8:	89 04 24             	mov    %eax,(%esp)
-c01018db:	e8 cc ef 00 00       	call   c01108ac <__ZN3TTy6TTReadEv>
+c01018db:	e8 28 f0 00 00       	call   c0110908 <__ZN3TTy6TTReadEv>
 c01018e0:	c9                   	leave  
 c01018e1:	c3                   	ret    
 
@@ -2227,14 +2227,14 @@ c01018e8:	8b 45 0c             	mov    0xc(%ebp),%eax
 c01018eb:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
 c01018ef:	0f bf 45 fe          	movswl -0x2(%ebp),%eax
 c01018f3:	89 04 24             	mov    %eax,(%esp)
-c01018f6:	e8 33 fa 00 00       	call   c011132e <__ZN7Utility8GetMinorEs>
+c01018f6:	e8 8f fa 00 00       	call   c011138a <__ZN7Utility8GetMinorEs>
 c01018fb:	66 89 45 fc          	mov    %ax,-0x4(%ebp)
 c01018ff:	66 83 7d fc 00       	cmpw   $0x0,-0x4(%ebp)
 c0101904:	75 0e                	jne    c0101914 <__ZN13ConsoleDevice5WriteEs+0x32>
 c0101906:	8b 45 08             	mov    0x8(%ebp),%eax
 c0101909:	8b 40 04             	mov    0x4(%eax),%eax
 c010190c:	89 04 24             	mov    %eax,(%esp)
-c010190f:	e8 18 f0 00 00       	call   c011092c <__ZN3TTy7TTWriteEv>
+c010190f:	e8 74 f0 00 00       	call   c0110988 <__ZN3TTy7TTWriteEv>
 c0101914:	c9                   	leave  
 c0101915:	c3                   	ret    
 
@@ -2499,43 +2499,43 @@ c0101c8e:	8b 5d 08             	mov    0x8(%ebp),%ebx
 c0101c91:	8b 45 08             	mov    0x8(%ebp),%eax
 c0101c94:	8b 00                	mov    (%eax),%eax
 c0101c96:	89 04 24             	mov    %eax,(%esp)
-c0101c99:	e8 b6 f7 00 00       	call   c0111454 <__ZN7Utility11BCDToBinaryEi>
+c0101c99:	e8 12 f8 00 00       	call   c01114b0 <__ZN7Utility11BCDToBinaryEi>
 c0101c9e:	89 03                	mov    %eax,(%ebx)
 c0101ca0:	8b 5d 08             	mov    0x8(%ebp),%ebx
 c0101ca3:	8b 45 08             	mov    0x8(%ebp),%eax
 c0101ca6:	8b 40 04             	mov    0x4(%eax),%eax
 c0101ca9:	89 04 24             	mov    %eax,(%esp)
-c0101cac:	e8 a3 f7 00 00       	call   c0111454 <__ZN7Utility11BCDToBinaryEi>
+c0101cac:	e8 ff f7 00 00       	call   c01114b0 <__ZN7Utility11BCDToBinaryEi>
 c0101cb1:	89 43 04             	mov    %eax,0x4(%ebx)
 c0101cb4:	8b 5d 08             	mov    0x8(%ebp),%ebx
 c0101cb7:	8b 45 08             	mov    0x8(%ebp),%eax
 c0101cba:	8b 40 08             	mov    0x8(%eax),%eax
 c0101cbd:	89 04 24             	mov    %eax,(%esp)
-c0101cc0:	e8 8f f7 00 00       	call   c0111454 <__ZN7Utility11BCDToBinaryEi>
+c0101cc0:	e8 eb f7 00 00       	call   c01114b0 <__ZN7Utility11BCDToBinaryEi>
 c0101cc5:	89 43 08             	mov    %eax,0x8(%ebx)
 c0101cc8:	8b 5d 08             	mov    0x8(%ebp),%ebx
 c0101ccb:	8b 45 08             	mov    0x8(%ebp),%eax
 c0101cce:	8b 40 0c             	mov    0xc(%eax),%eax
 c0101cd1:	89 04 24             	mov    %eax,(%esp)
-c0101cd4:	e8 7b f7 00 00       	call   c0111454 <__ZN7Utility11BCDToBinaryEi>
+c0101cd4:	e8 d7 f7 00 00       	call   c01114b0 <__ZN7Utility11BCDToBinaryEi>
 c0101cd9:	89 43 0c             	mov    %eax,0xc(%ebx)
 c0101cdc:	8b 5d 08             	mov    0x8(%ebp),%ebx
 c0101cdf:	8b 45 08             	mov    0x8(%ebp),%eax
 c0101ce2:	8b 40 10             	mov    0x10(%eax),%eax
 c0101ce5:	89 04 24             	mov    %eax,(%esp)
-c0101ce8:	e8 67 f7 00 00       	call   c0111454 <__ZN7Utility11BCDToBinaryEi>
+c0101ce8:	e8 c3 f7 00 00       	call   c01114b0 <__ZN7Utility11BCDToBinaryEi>
 c0101ced:	89 43 10             	mov    %eax,0x10(%ebx)
 c0101cf0:	8b 5d 08             	mov    0x8(%ebp),%ebx
 c0101cf3:	8b 45 08             	mov    0x8(%ebp),%eax
 c0101cf6:	8b 40 14             	mov    0x14(%eax),%eax
 c0101cf9:	89 04 24             	mov    %eax,(%esp)
-c0101cfc:	e8 53 f7 00 00       	call   c0111454 <__ZN7Utility11BCDToBinaryEi>
+c0101cfc:	e8 af f7 00 00       	call   c01114b0 <__ZN7Utility11BCDToBinaryEi>
 c0101d01:	89 43 14             	mov    %eax,0x14(%ebx)
 c0101d04:	8b 5d 08             	mov    0x8(%ebp),%ebx
 c0101d07:	8b 45 08             	mov    0x8(%ebp),%eax
 c0101d0a:	8b 40 18             	mov    0x18(%eax),%eax
 c0101d0d:	89 04 24             	mov    %eax,(%esp)
-c0101d10:	e8 3f f7 00 00       	call   c0111454 <__ZN7Utility11BCDToBinaryEi>
+c0101d10:	e8 9b f7 00 00       	call   c01114b0 <__ZN7Utility11BCDToBinaryEi>
 c0101d15:	89 43 18             	mov    %eax,0x18(%ebx)
 c0101d18:	83 c4 14             	add    $0x14,%esp
 c0101d1b:	5b                   	pop    %ebx
@@ -2572,7 +2572,7 @@ c0101d6d:	75 15                	jne    c0101d84 <__ZN3CRT8CRTStartEP3TTy+0x24>
 c0101d6f:	8b 45 08             	mov    0x8(%ebp),%eax
 c0101d72:	05 10 04 00 00       	add    $0x410,%eax
 c0101d77:	89 04 24             	mov    %eax,(%esp)
-c0101d7a:	e8 4b ea 00 00       	call   c01107ca <__ZN9TTy_Queue11CurrentCharEv>
+c0101d7a:	e8 a7 ea 00 00       	call   c0110826 <__ZN9TTy_Queue11CurrentCharEv>
 c0101d7f:	a3 8c 50 11 c0       	mov    %eax,0xc011508c
 c0101d84:	83 3d 88 50 11 c0 00 	cmpl   $0x0,0xc0115088
 c0101d8b:	75 0a                	jne    c0101d97 <__ZN3CRT8CRTStartEP3TTy+0x37>
@@ -2581,7 +2581,7 @@ c0101d92:	a3 88 50 11 c0       	mov    %eax,0xc0115088
 c0101d97:	8b 45 08             	mov    0x8(%ebp),%eax
 c0101d9a:	05 10 04 00 00       	add    $0x410,%eax
 c0101d9f:	89 04 24             	mov    %eax,(%esp)
-c0101da2:	e8 85 e9 00 00       	call   c011072c <__ZN9TTy_Queue7GetCharEv>
+c0101da2:	e8 e1 e9 00 00       	call   c0110788 <__ZN9TTy_Queue7GetCharEv>
 c0101da7:	88 45 ff             	mov    %al,-0x1(%ebp)
 c0101daa:	80 7d ff ff          	cmpb   $0xff,-0x1(%ebp)
 c0101dae:	0f 84 93 00 00 00    	je     c0101e47 <__ZN3CRT8CRTStartEP3TTy+0xe7>
@@ -2603,7 +2603,7 @@ c0101ddd:	e8 f6 00 00 00       	call   c0101ed8 <__ZN3CRT8NextLineEv>
 c0101de2:	8b 45 08             	mov    0x8(%ebp),%eax
 c0101de5:	05 10 04 00 00       	add    $0x410,%eax
 c0101dea:	89 04 24             	mov    %eax,(%esp)
-c0101ded:	e8 d8 e9 00 00       	call   c01107ca <__ZN9TTy_Queue11CurrentCharEv>
+c0101ded:	e8 34 ea 00 00       	call   c0110826 <__ZN9TTy_Queue11CurrentCharEv>
 c0101df2:	a3 8c 50 11 c0       	mov    %eax,0xc011508c
 c0101df7:	a1 8c 50 11 c0       	mov    0xc011508c,%eax
 c0101dfc:	a3 88 50 11 c0       	mov    %eax,0xc0115088
@@ -2849,7 +2849,7 @@ c01020b2:	66 83 7d fe 00       	cmpw   $0x0,-0x2(%ebp)
 c01020b7:	78 02                	js     c01020bb <__ZN13DeviceManager14GetBlockDeviceEs+0x21>
 c01020b9:	eb 0c                	jmp    c01020c7 <__ZN13DeviceManager14GetBlockDeviceEs+0x2d>
 c01020bb:	c7 04 24 34 3f 11 c0 	movl   $0xc0113f34,(%esp)
-c01020c2:	e8 fb f2 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c01020c2:	e8 57 f3 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c01020c7:	8b 55 08             	mov    0x8(%ebp),%edx
 c01020ca:	0f bf 45 fe          	movswl -0x2(%ebp),%eax
 c01020ce:	8b 44 82 04          	mov    0x4(%edx,%eax,4),%eax
@@ -2879,7 +2879,7 @@ c01020f9:	66 83 7d fe 00       	cmpw   $0x0,-0x2(%ebp)
 c01020fe:	78 02                	js     c0102102 <__ZN13DeviceManager13GetCharDeviceEs+0x22>
 c0102100:	eb 0c                	jmp    c010210e <__ZN13DeviceManager13GetCharDeviceEs+0x2e>
 c0102102:	c7 04 24 50 3f 11 c0 	movl   $0xc0113f50,(%esp)
-c0102109:	e8 b4 f2 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c0102109:	e8 10 f3 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c010210e:	8b 55 08             	mov    0x8(%ebp),%edx
 c0102111:	0f bf 45 fe          	movswl -0x2(%ebp),%eax
 c0102115:	8b 44 82 30          	mov    0x30(%edx,%eax,4),%eax
@@ -3146,7 +3146,7 @@ c010242b:	83 c0 04             	add    $0x4,%eax
 c010242e:	66 a3 94 50 11 c0    	mov    %ax,0xc0115094
 c0102434:	eb 2c                	jmp    c0102462 <__ZN3DMA4InitEv+0x1a2>
 c0102436:	c7 04 24 04 3f 11 c0 	movl   $0xc0113f04,(%esp)
-c010243d:	e8 80 ef 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c010243d:	e8 dc ef 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c0102442:	eb 1e                	jmp    c0102462 <__ZN3DMA4InitEv+0x1a2>
 c0102444:	8d 45 dc             	lea    -0x24(%ebp),%eax
 c0102447:	ff 00                	incl   (%eax)
@@ -3322,7 +3322,7 @@ c01025bf:	89 04 24             	mov    %eax,(%esp)
 c01025c2:	e8 d1 90 00 00       	call   c010b698 <__ZN7Process4PSigEP10pt_context>
 c01025c7:	eb 0c                	jmp    c01025d5 <__ZN9Exception11DivideErrorEP7pt_regsP10pt_context+0x6f>
 c01025c9:	c7 04 24 5c 3d 11 c0 	movl   $0xc0113d5c,(%esp)
-c01025d0:	e8 ed ed 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c01025d0:	e8 49 ee 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c01025d5:	c9                   	leave  
 c01025d6:	c3                   	ret    
 c01025d7:	90                   	nop    
@@ -3402,7 +3402,7 @@ c010266f:	89 04 24             	mov    %eax,(%esp)
 c0102672:	e8 21 90 00 00       	call   c010b698 <__ZN7Process4PSigEP10pt_context>
 c0102677:	eb 0c                	jmp    c0102685 <__ZN9Exception5DebugEP7pt_regsP10pt_context+0x6f>
 c0102679:	c7 04 24 6e 3d 11 c0 	movl   $0xc0113d6e,(%esp)
-c0102680:	e8 3d ed 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c0102680:	e8 99 ed 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c0102685:	c9                   	leave  
 c0102686:	c3                   	ret    
 c0102687:	90                   	nop    
@@ -3482,7 +3482,7 @@ c010271f:	89 04 24             	mov    %eax,(%esp)
 c0102722:	e8 71 8f 00 00       	call   c010b698 <__ZN7Process4PSigEP10pt_context>
 c0102727:	eb 0c                	jmp    c0102735 <__ZN9Exception3NMIEP7pt_regsP10pt_context+0x6f>
 c0102729:	c7 04 24 7f 3d 11 c0 	movl   $0xc0113d7f,(%esp)
-c0102730:	e8 8d ec 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c0102730:	e8 e9 ec 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c0102735:	c9                   	leave  
 c0102736:	c3                   	ret    
 c0102737:	90                   	nop    
@@ -3562,7 +3562,7 @@ c01027cf:	89 04 24             	mov    %eax,(%esp)
 c01027d2:	e8 c1 8e 00 00       	call   c010b698 <__ZN7Process4PSigEP10pt_context>
 c01027d7:	eb 0c                	jmp    c01027e5 <__ZN9Exception10BreakpointEP7pt_regsP10pt_context+0x6f>
 c01027d9:	c7 04 24 97 3d 11 c0 	movl   $0xc0113d97,(%esp)
-c01027e0:	e8 dd eb 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c01027e0:	e8 39 ec 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c01027e5:	c9                   	leave  
 c01027e6:	c3                   	ret    
 c01027e7:	90                   	nop    
@@ -3642,7 +3642,7 @@ c010287f:	89 04 24             	mov    %eax,(%esp)
 c0102882:	e8 11 8e 00 00       	call   c010b698 <__ZN7Process4PSigEP10pt_context>
 c0102887:	eb 0c                	jmp    c0102895 <__ZN9Exception8OverflowEP7pt_regsP10pt_context+0x6f>
 c0102889:	c7 04 24 ad 3d 11 c0 	movl   $0xc0113dad,(%esp)
-c0102890:	e8 2d eb 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c0102890:	e8 89 eb 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c0102895:	c9                   	leave  
 c0102896:	c3                   	ret    
 c0102897:	90                   	nop    
@@ -3722,7 +3722,7 @@ c010292f:	89 04 24             	mov    %eax,(%esp)
 c0102932:	e8 61 8d 00 00       	call   c010b698 <__ZN7Process4PSigEP10pt_context>
 c0102937:	eb 0c                	jmp    c0102945 <__ZN9Exception5BoundEP7pt_regsP10pt_context+0x6f>
 c0102939:	c7 04 24 c1 3d 11 c0 	movl   $0xc0113dc1,(%esp)
-c0102940:	e8 7d ea 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c0102940:	e8 d9 ea 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c0102945:	c9                   	leave  
 c0102946:	c3                   	ret    
 c0102947:	90                   	nop    
@@ -3802,7 +3802,7 @@ c01029df:	89 04 24             	mov    %eax,(%esp)
 c01029e2:	e8 b1 8c 00 00       	call   c010b698 <__ZN7Process4PSigEP10pt_context>
 c01029e7:	eb 0c                	jmp    c01029f5 <__ZN9Exception13InvalidOpcodeEP7pt_regsP10pt_context+0x6f>
 c01029e9:	c7 04 24 d7 3d 11 c0 	movl   $0xc0113dd7,(%esp)
-c01029f0:	e8 cd e9 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c01029f0:	e8 29 ea 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c01029f5:	c9                   	leave  
 c01029f6:	c3                   	ret    
 c01029f7:	90                   	nop    
@@ -3882,7 +3882,7 @@ c0102a8f:	89 04 24             	mov    %eax,(%esp)
 c0102a92:	e8 01 8c 00 00       	call   c010b698 <__ZN7Process4PSigEP10pt_context>
 c0102a97:	eb 0c                	jmp    c0102aa5 <__ZN9Exception18DeviceNotAvailableEP7pt_regsP10pt_context+0x6f>
 c0102a99:	c7 04 24 e7 3d 11 c0 	movl   $0xc0113de7,(%esp)
-c0102aa0:	e8 1d e9 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c0102aa0:	e8 79 e9 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c0102aa5:	c9                   	leave  
 c0102aa6:	c3                   	ret    
 c0102aa7:	90                   	nop    
@@ -3963,7 +3963,7 @@ c0102b44:	89 04 24             	mov    %eax,(%esp)
 c0102b47:	e8 4c 8b 00 00       	call   c010b698 <__ZN7Process4PSigEP10pt_context>
 c0102b4c:	eb 0c                	jmp    c0102b5a <__ZN9Exception11DoubleFaultEP7pt_regsP11pte_context+0x72>
 c0102b4e:	c7 04 24 fd 3d 11 c0 	movl   $0xc0113dfd,(%esp)
-c0102b55:	e8 68 e8 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c0102b55:	e8 c4 e8 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c0102b5a:	c9                   	leave  
 c0102b5b:	c3                   	ret    
 
@@ -4042,7 +4042,7 @@ c0102bf3:	89 04 24             	mov    %eax,(%esp)
 c0102bf6:	e8 9d 8a 00 00       	call   c010b698 <__ZN7Process4PSigEP10pt_context>
 c0102bfb:	eb 0c                	jmp    c0102c09 <__ZN9Exception25CoprocessorSegmentOverrunEP7pt_regsP10pt_context+0x6f>
 c0102bfd:	c7 04 24 15 3e 11 c0 	movl   $0xc0113e15,(%esp)
-c0102c04:	e8 b9 e7 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c0102c04:	e8 15 e8 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c0102c09:	c9                   	leave  
 c0102c0a:	c3                   	ret    
 c0102c0b:	90                   	nop    
@@ -4123,7 +4123,7 @@ c0102ca8:	89 04 24             	mov    %eax,(%esp)
 c0102cab:	e8 e8 89 00 00       	call   c010b698 <__ZN7Process4PSigEP10pt_context>
 c0102cb0:	eb 0c                	jmp    c0102cbe <__ZN9Exception10InvalidTSSEP7pt_regsP11pte_context+0x72>
 c0102cb2:	c7 04 24 32 3e 11 c0 	movl   $0xc0113e32,(%esp)
-c0102cb9:	e8 04 e7 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c0102cb9:	e8 60 e7 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c0102cbe:	c9                   	leave  
 c0102cbf:	c3                   	ret    
 
@@ -4203,7 +4203,7 @@ c0102d5c:	89 04 24             	mov    %eax,(%esp)
 c0102d5f:	e8 34 89 00 00       	call   c010b698 <__ZN7Process4PSigEP10pt_context>
 c0102d64:	eb 0c                	jmp    c0102d72 <__ZN9Exception17SegmentNotPresentEP7pt_regsP11pte_context+0x72>
 c0102d66:	c7 04 24 3f 3e 11 c0 	movl   $0xc0113e3f,(%esp)
-c0102d6d:	e8 50 e6 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c0102d6d:	e8 ac e6 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c0102d72:	c9                   	leave  
 c0102d73:	c3                   	ret    
 
@@ -4283,7 +4283,7 @@ c0102e10:	89 04 24             	mov    %eax,(%esp)
 c0102e13:	e8 80 88 00 00       	call   c010b698 <__ZN7Process4PSigEP10pt_context>
 c0102e18:	eb 0c                	jmp    c0102e26 <__ZN9Exception17StackSegmentErrorEP7pt_regsP11pte_context+0x72>
 c0102e1a:	c7 04 24 54 3e 11 c0 	movl   $0xc0113e54,(%esp)
-c0102e21:	e8 9c e5 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c0102e21:	e8 f8 e5 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c0102e26:	c9                   	leave  
 c0102e27:	c3                   	ret    
 
@@ -4363,7 +4363,7 @@ c0102ec4:	89 04 24             	mov    %eax,(%esp)
 c0102ec7:	e8 cc 87 00 00       	call   c010b698 <__ZN7Process4PSigEP10pt_context>
 c0102ecc:	eb 0c                	jmp    c0102eda <__ZN9Exception17GeneralProtectionEP7pt_regsP11pte_context+0x72>
 c0102ece:	c7 04 24 69 3e 11 c0 	movl   $0xc0113e69,(%esp)
-c0102ed5:	e8 e8 e4 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c0102ed5:	e8 44 e5 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c0102eda:	c9                   	leave  
 c0102edb:	c3                   	ret    
 
@@ -4456,7 +4456,7 @@ c0102fa0:	89 04 24             	mov    %eax,(%esp)
 c0102fa3:	e8 b4 83 00 00       	call   c010b35c <__ZN7Process6SStackEv>
 c0102fa8:	eb 51                	jmp    c0102ffb <__ZN9Exception9PageFaultEP7pt_regsP11pte_context+0xdf>
 c0102faa:	c7 04 24 7d 3e 11 c0 	movl   $0xc0113e7d,(%esp)
-c0102fb1:	e8 92 e6 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c0102fb1:	e8 ee e6 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c0102fb6:	c7 44 24 04 0b 00 00 	movl   $0xb,0x4(%esp)
 c0102fbd:	00 
 c0102fbe:	8b 45 f8             	mov    -0x8(%ebp),%eax
@@ -4475,7 +4475,7 @@ c0102fe5:	89 04 24             	mov    %eax,(%esp)
 c0102fe8:	e8 ab 86 00 00       	call   c010b698 <__ZN7Process4PSigEP10pt_context>
 c0102fed:	eb 0c                	jmp    c0102ffb <__ZN9Exception9PageFaultEP7pt_regsP11pte_context+0xdf>
 c0102fef:	c7 04 24 8f 3e 11 c0 	movl   $0xc0113e8f,(%esp)
-c0102ff6:	e8 c7 e3 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c0102ff6:	e8 23 e4 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c0102ffb:	c9                   	leave  
 c0102ffc:	c3                   	ret    
 c0102ffd:	90                   	nop    
@@ -4555,7 +4555,7 @@ c0103095:	89 04 24             	mov    %eax,(%esp)
 c0103098:	e8 fb 85 00 00       	call   c010b698 <__ZN7Process4PSigEP10pt_context>
 c010309d:	eb 0c                	jmp    c01030ab <__ZN9Exception16CoprocessorErrorEP7pt_regsP10pt_context+0x6f>
 c010309f:	c7 04 24 aa 3e 11 c0 	movl   $0xc0113eaa,(%esp)
-c01030a6:	e8 17 e3 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c01030a6:	e8 73 e3 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c01030ab:	c9                   	leave  
 c01030ac:	c3                   	ret    
 c01030ad:	90                   	nop    
@@ -4636,7 +4636,7 @@ c010314a:	89 04 24             	mov    %eax,(%esp)
 c010314d:	e8 46 85 00 00       	call   c010b698 <__ZN7Process4PSigEP10pt_context>
 c0103152:	eb 0c                	jmp    c0103160 <__ZN9Exception14AlignmentCheckEP7pt_regsP11pte_context+0x72>
 c0103154:	c7 04 24 bd 3e 11 c0 	movl   $0xc0113ebd,(%esp)
-c010315b:	e8 62 e2 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c010315b:	e8 be e2 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c0103160:	c9                   	leave  
 c0103161:	c3                   	ret    
 
@@ -4715,7 +4715,7 @@ c01031f9:	89 04 24             	mov    %eax,(%esp)
 c01031fc:	e8 97 84 00 00       	call   c010b698 <__ZN7Process4PSigEP10pt_context>
 c0103201:	eb 0c                	jmp    c010320f <__ZN9Exception12MachineCheckEP7pt_regsP10pt_context+0x6f>
 c0103203:	c7 04 24 ce 3e 11 c0 	movl   $0xc0113ece,(%esp)
-c010320a:	e8 b3 e1 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c010320a:	e8 0f e2 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c010320f:	c9                   	leave  
 c0103210:	c3                   	ret    
 c0103211:	90                   	nop    
@@ -4795,7 +4795,7 @@ c01032a9:	89 04 24             	mov    %eax,(%esp)
 c01032ac:	e8 e7 83 00 00       	call   c010b698 <__ZN7Process4PSigEP10pt_context>
 c01032b1:	eb 0c                	jmp    c01032bf <__ZN9Exception13SIMDExceptionEP7pt_regsP10pt_context+0x6f>
 c01032b3:	c7 04 24 dd 3e 11 c0 	movl   $0xc0113edd,(%esp)
-c01032ba:	e8 03 e1 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c01032ba:	e8 5f e1 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c01032bf:	c9                   	leave  
 c01032c0:	c3                   	ret    
 c01032c1:	90                   	nop    
@@ -5548,7 +5548,7 @@ c0103ae6:	8b 45 10             	mov    0x10(%ebp),%eax
 c0103ae9:	89 44 24 04          	mov    %eax,0x4(%esp)
 c0103aed:	8b 45 f4             	mov    -0xc(%ebp),%eax
 c0103af0:	89 04 24             	mov    %eax,(%esp)
-c0103af3:	e8 f0 d8 00 00       	call   c01113e8 <__ZN7Utility9DWordCopyEPiS0_i>
+c0103af3:	e8 4c d9 00 00       	call   c0111444 <__ZN7Utility9DWordCopyEPiS0_i>
 c0103af8:	8b 45 fc             	mov    -0x4(%ebp),%eax
 c0103afb:	89 44 24 04          	mov    %eax,0x4(%esp)
 c0103aff:	8b 45 f8             	mov    -0x8(%ebp),%eax
@@ -5947,7 +5947,7 @@ c0103ff1:	2b 82 f8 01 00 00    	sub    0x1f8(%edx),%eax
 c0103ff7:	89 44 24 04          	mov    %eax,0x4(%esp)
 c0103ffb:	8b 45 f0             	mov    -0x10(%ebp),%eax
 c0103ffe:	89 04 24             	mov    %eax,(%esp)
-c0104001:	e8 0a d4 00 00       	call   c0111410 <__ZN7Utility3MinEii>
+c0104001:	e8 66 d4 00 00       	call   c011146c <__ZN7Utility3MinEii>
 c0104006:	89 83 fc 01 00 00    	mov    %eax,0x1fc(%ebx)
 c010400c:	8b 45 f4             	mov    -0xc(%ebp),%eax
 c010400f:	8b 90 fc 01 00 00    	mov    0x1fc(%eax),%edx
@@ -6231,7 +6231,7 @@ c01043cf:	05 ec 00 00 00       	add    $0xec,%eax
 c01043d4:	89 44 24 04          	mov    %eax,0x4(%esp)
 c01043d8:	8b 45 e0             	mov    -0x20(%ebp),%eax
 c01043db:	89 04 24             	mov    %eax,(%esp)
-c01043de:	e8 05 d0 00 00       	call   c01113e8 <__ZN7Utility9DWordCopyEPiS0_i>
+c01043de:	e8 61 d0 00 00       	call   c0111444 <__ZN7Utility9DWordCopyEPiS0_i>
 c01043e3:	8b 55 e8             	mov    -0x18(%ebp),%edx
 c01043e6:	8b 45 e8             	mov    -0x18(%ebp),%eax
 c01043e9:	8b 80 f8 01 00 00    	mov    0x1f8(%eax),%eax
@@ -6461,7 +6461,7 @@ c01046dc:	74 54                	je     c0104732 <__ZN11FileManager9SetCurDirEPc+
 c01046de:	8b 45 fc             	mov    -0x4(%ebp),%eax
 c01046e1:	05 28 01 00 00       	add    $0x128,%eax
 c01046e6:	89 04 24             	mov    %eax,(%esp)
-c01046e9:	e8 e8 c9 00 00       	call   c01110d6 <__ZN7Utility12StringLengthEPc>
+c01046e9:	e8 44 ca 00 00       	call   c0111132 <__ZN7Utility12StringLengthEPc>
 c01046ee:	89 45 f8             	mov    %eax,-0x8(%ebp)
 c01046f1:	8b 45 fc             	mov    -0x4(%ebp),%eax
 c01046f4:	03 45 f8             	add    -0x8(%ebp),%eax
@@ -6480,14 +6480,14 @@ c010471c:	05 28 01 00 00       	add    $0x128,%eax
 c0104721:	89 44 24 04          	mov    %eax,0x4(%esp)
 c0104725:	8b 45 0c             	mov    0xc(%ebp),%eax
 c0104728:	89 04 24             	mov    %eax,(%esp)
-c010472b:	e8 86 c9 00 00       	call   c01110b6 <__ZN7Utility10StringCopyEPcS0_>
+c010472b:	e8 e2 c9 00 00       	call   c0111112 <__ZN7Utility10StringCopyEPcS0_>
 c0104730:	eb 17                	jmp    c0104749 <__ZN11FileManager9SetCurDirEPc+0x89>
 c0104732:	8b 45 fc             	mov    -0x4(%ebp),%eax
 c0104735:	05 28 01 00 00       	add    $0x128,%eax
 c010473a:	89 44 24 04          	mov    %eax,0x4(%esp)
 c010473e:	8b 45 0c             	mov    0xc(%ebp),%eax
 c0104741:	89 04 24             	mov    %eax,(%esp)
-c0104744:	e8 6d c9 00 00       	call   c01110b6 <__ZN7Utility10StringCopyEPcS0_>
+c0104744:	e8 c9 c9 00 00       	call   c0111112 <__ZN7Utility10StringCopyEPcS0_>
 c0104749:	c9                   	leave  
 c010474a:	c3                   	ret    
 c010474b:	90                   	nop    
@@ -6594,7 +6594,7 @@ c01048a0:	39 c2                	cmp    %eax,%edx
 c01048a2:	74 11                	je     c01048b5 <__ZN11FileManager5OwnerEv+0x69>
 c01048a4:	8b 45 f8             	mov    -0x8(%ebp),%eax
 c01048a7:	89 04 24             	mov    %eax,(%esp)
-c01048aa:	e8 45 c7 00 00       	call   c0110ff4 <__ZN4User5SUserEv>
+c01048aa:	e8 a1 c7 00 00       	call   c0111050 <__ZN4User5SUserEv>
 c01048af:	84 c0                	test   %al,%al
 c01048b1:	75 02                	jne    c01048b5 <__ZN11FileManager5OwnerEv+0x69>
 c01048b3:	eb 08                	jmp    c01048bd <__ZN11FileManager5OwnerEv+0x71>
@@ -6671,7 +6671,7 @@ c010497f:	8b 40 38             	mov    0x38(%eax),%eax
 c0104982:	66 89 45 f4          	mov    %ax,-0xc(%ebp)
 c0104986:	8b 45 f8             	mov    -0x8(%ebp),%eax
 c0104989:	89 04 24             	mov    %eax,(%esp)
-c010498c:	e8 63 c6 00 00       	call   c0110ff4 <__ZN4User5SUserEv>
+c010498c:	e8 bf c6 00 00       	call   c0111050 <__ZN4User5SUserEv>
 c0104991:	84 c0                	test   %al,%al
 c0104993:	74 4d                	je     c01049e2 <__ZN11FileManager5ChOwnEv+0x86>
 c0104995:	8b 45 08             	mov    0x8(%ebp),%eax
@@ -6813,7 +6813,7 @@ c0104b55:	3d 00 40 00 00       	cmp    $0x4000,%eax
 c0104b5a:	75 29                	jne    c0104b85 <__ZN11FileManager4LinkEv+0xad>
 c0104b5c:	8b 45 f4             	mov    -0xc(%ebp),%eax
 c0104b5f:	89 04 24             	mov    %eax,(%esp)
-c0104b62:	e8 8d c4 00 00       	call   c0110ff4 <__ZN4User5SUserEv>
+c0104b62:	e8 e9 c4 00 00       	call   c0111050 <__ZN4User5SUserEv>
 c0104b67:	84 c0                	test   %al,%al
 c0104b69:	75 1a                	jne    c0104b85 <__ZN11FileManager4LinkEv+0xad>
 c0104b6b:	8b 45 fc             	mov    -0x4(%ebp),%eax
@@ -6943,7 +6943,7 @@ c0104d0e:	89 45 fc             	mov    %eax,-0x4(%ebp)
 c0104d11:	83 7d fc 00          	cmpl   $0x0,-0x4(%ebp)
 c0104d15:	75 0c                	jne    c0104d23 <__ZN11FileManager6UnLinkEv+0x85>
 c0104d17:	c7 04 24 3c 3d 11 c0 	movl   $0xc0113d3c,(%esp)
-c0104d1e:	e8 9f c6 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c0104d1e:	e8 fb c6 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c0104d23:	8b 45 fc             	mov    -0x4(%ebp),%eax
 c0104d26:	8b 40 04             	mov    0x4(%eax),%eax
 c0104d29:	25 00 60 00 00       	and    $0x6000,%eax
@@ -6951,7 +6951,7 @@ c0104d2e:	3d 00 40 00 00       	cmp    $0x4000,%eax
 c0104d33:	75 3e                	jne    c0104d73 <__ZN11FileManager6UnLinkEv+0xd5>
 c0104d35:	8b 45 f4             	mov    -0xc(%ebp),%eax
 c0104d38:	89 04 24             	mov    %eax,(%esp)
-c0104d3b:	e8 b4 c2 00 00       	call   c0110ff4 <__ZN4User5SUserEv>
+c0104d3b:	e8 10 c3 00 00       	call   c0111050 <__ZN4User5SUserEv>
 c0104d40:	84 c0                	test   %al,%al
 c0104d42:	75 2f                	jne    c0104d73 <__ZN11FileManager6UnLinkEv+0xd5>
 c0104d44:	8b 45 f8             	mov    -0x8(%ebp),%eax
@@ -7018,7 +7018,7 @@ c0104e0c:	e8 f3 25 00 00       	call   c0107404 <__ZN6Kernel7GetUserEv>
 c0104e11:	89 45 f8             	mov    %eax,-0x8(%ebp)
 c0104e14:	8b 45 f8             	mov    -0x8(%ebp),%eax
 c0104e17:	89 04 24             	mov    %eax,(%esp)
-c0104e1a:	e8 d5 c1 00 00       	call   c0110ff4 <__ZN4User5SUserEv>
+c0104e1a:	e8 31 c2 00 00       	call   c0111050 <__ZN4User5SUserEv>
 c0104e1f:	84 c0                	test   %al,%al
 c0104e21:	74 48                	je     c0104e6b <__ZN11FileManager5MkNodEv+0x6d>
 c0104e23:	c7 44 24 08 01 00 00 	movl   $0x1,0x8(%esp)
@@ -7353,7 +7353,7 @@ c010516c:	89 44 24 04          	mov    %eax,0x4(%esp)
 c0105170:	8b 45 f4             	mov    -0xc(%ebp),%eax
 c0105173:	8b 40 20             	mov    0x20(%eax),%eax
 c0105176:	89 04 24             	mov    %eax,(%esp)
-c0105179:	e8 6a c2 00 00       	call   c01113e8 <__ZN7Utility9DWordCopyEPiS0_i>
+c0105179:	e8 c6 c2 00 00       	call   c0111444 <__ZN7Utility9DWordCopyEPiS0_i>
 c010517e:	8b 45 f4             	mov    -0xc(%ebp),%eax
 c0105181:	89 44 24 04          	mov    %eax,0x4(%esp)
 c0105185:	8b 45 f8             	mov    -0x8(%ebp),%eax
@@ -7366,7 +7366,7 @@ c0105197:	8b 45 fc             	mov    -0x4(%ebp),%eax
 c010519a:	83 b8 a8 01 00 00 00 	cmpl   $0x0,0x1a8(%eax)
 c01051a1:	74 0c                	je     c01051af <__ZN10FileSystem14LoadSuperBlockEv+0xb1>
 c01051a3:	c7 04 24 f4 3c 11 c0 	movl   $0xc0113cf4,(%esp)
-c01051aa:	e8 13 c2 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c01051aa:	e8 6f c2 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c01051af:	8b 45 08             	mov    0x8(%ebp),%eax
 c01051b2:	66 c7 00 00 00       	movw   $0x0,(%eax)
 c01051b7:	8b 45 08             	mov    0x8(%ebp),%eax
@@ -7441,7 +7441,7 @@ c010528d:	8d 45 f4             	lea    -0xc(%ebp),%eax
 c0105290:	ff 00                	incl   (%eax)
 c0105292:	e9 69 ff ff ff       	jmp    c0105200 <__ZN10FileSystem5GetFSEs+0x14>
 c0105297:	c7 04 24 10 3d 11 c0 	movl   $0xc0113d10,(%esp)
-c010529e:	e8 1f c1 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c010529e:	e8 7b c1 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c01052a3:	c7 45 f0 00 00 00 00 	movl   $0x0,-0x10(%ebp)
 c01052aa:	8b 45 f0             	mov    -0x10(%ebp),%eax
 c01052ad:	c9                   	leave  
@@ -7529,7 +7529,7 @@ c01053c4:	8b 40 20             	mov    0x20(%eax),%eax
 c01053c7:	89 44 24 04          	mov    %eax,0x4(%esp)
 c01053cb:	8b 45 ec             	mov    -0x14(%ebp),%eax
 c01053ce:	89 04 24             	mov    %eax,(%esp)
-c01053d1:	e8 12 c0 00 00       	call   c01113e8 <__ZN7Utility9DWordCopyEPiS0_i>
+c01053d1:	e8 6e c0 00 00       	call   c0111444 <__ZN7Utility9DWordCopyEPiS0_i>
 c01053d6:	8b 45 f4             	mov    -0xc(%ebp),%eax
 c01053d9:	89 44 24 04          	mov    %eax,0x4(%esp)
 c01053dd:	8b 45 08             	mov    0x8(%ebp),%eax
@@ -7677,7 +7677,7 @@ c01055de:	7f 2d                	jg     c010560d <__ZN10FileSystem6IAllocEs+0x1e3
 c01055e0:	0f bf 45 fa          	movswl -0x6(%ebp),%eax
 c01055e4:	89 44 24 04          	mov    %eax,0x4(%esp)
 c01055e8:	c7 04 24 20 3d 11 c0 	movl   $0xc0113d20,(%esp)
-c01055ef:	e8 54 c0 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c01055ef:	e8 b0 c0 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c01055f4:	8b 45 e8             	mov    -0x18(%ebp),%eax
 c01055f7:	c7 80 a8 01 00 00 1c 	movl   $0x1c,0x1a8(%eax)
 c01055fe:	00 00 00 
@@ -7802,7 +7802,7 @@ c0105791:	c7 40 08 00 00 00 00 	movl   $0x0,0x8(%eax)
 c0105798:	0f bf 45 fe          	movswl -0x2(%ebp),%eax
 c010579c:	89 44 24 04          	mov    %eax,0x4(%esp)
 c01057a0:	c7 04 24 20 3d 11 c0 	movl   $0xc0113d20,(%esp)
-c01057a7:	e8 9c be 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c01057a7:	e8 f8 be 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c01057ac:	8b 45 ec             	mov    -0x14(%ebp),%eax
 c01057af:	c7 80 a8 01 00 00 1c 	movl   $0x1c,0x1a8(%eax)
 c01057b6:	00 00 00 
@@ -7852,7 +7852,7 @@ c0105853:	83 c0 0c             	add    $0xc,%eax
 c0105856:	89 44 24 04          	mov    %eax,0x4(%esp)
 c010585a:	8b 45 e8             	mov    -0x18(%ebp),%eax
 c010585d:	89 04 24             	mov    %eax,(%esp)
-c0105860:	e8 83 bb 00 00       	call   c01113e8 <__ZN7Utility9DWordCopyEPiS0_i>
+c0105860:	e8 df bb 00 00       	call   c0111444 <__ZN7Utility9DWordCopyEPiS0_i>
 c0105865:	8b 45 f0             	mov    -0x10(%ebp),%eax
 c0105868:	89 44 24 04          	mov    %eax,0x4(%esp)
 c010586c:	8b 45 08             	mov    0x8(%ebp),%eax
@@ -7979,7 +7979,7 @@ c0105a0d:	89 44 24 04          	mov    %eax,0x4(%esp)
 c0105a11:	8b 45 f4             	mov    -0xc(%ebp),%eax
 c0105a14:	83 c0 0c             	add    $0xc,%eax
 c0105a17:	89 04 24             	mov    %eax,(%esp)
-c0105a1a:	e8 c9 b9 00 00       	call   c01113e8 <__ZN7Utility9DWordCopyEPiS0_i>
+c0105a1a:	e8 25 ba 00 00       	call   c0111444 <__ZN7Utility9DWordCopyEPiS0_i>
 c0105a1f:	8b 45 f4             	mov    -0xc(%ebp),%eax
 c0105a22:	c7 40 08 00 00 00 00 	movl   $0x0,0x8(%eax)
 c0105a29:	8b 45 f0             	mov    -0x10(%ebp),%eax
@@ -8274,7 +8274,7 @@ c0105d42:	55                   	push   %ebp
 c0105d43:	89 e5                	mov    %esp,%ebp
 c0105d45:	83 ec 08             	sub    $0x8,%esp
 c0105d48:	c7 04 24 bc 3c 11 c0 	movl   $0xc0113cbc,(%esp)
-c0105d4f:	e8 6e b6 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c0105d4f:	e8 ca b6 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c0105d54:	c9                   	leave  
 c0105d55:	c3                   	ret    
 
@@ -8283,7 +8283,7 @@ c0105d56:	55                   	push   %ebp
 c0105d57:	89 e5                	mov    %esp,%ebp
 c0105d59:	83 ec 08             	sub    $0x8,%esp
 c0105d5c:	c7 04 24 d7 3c 11 c0 	movl   $0xc0113cd7,(%esp)
-c0105d63:	e8 5a b6 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c0105d63:	e8 b6 b6 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c0105d68:	c9                   	leave  
 c0105d69:	c3                   	ret    
 
@@ -8420,7 +8420,7 @@ c0105f06:	8b 45 08             	mov    0x8(%ebp),%eax
 c0105f09:	8b 40 20             	mov    0x20(%eax),%eax
 c0105f0c:	98                   	cwtl   
 c0105f0d:	89 04 24             	mov    %eax,(%esp)
-c0105f10:	e8 fb b3 00 00       	call   c0111310 <__ZN7Utility8GetMajorEs>
+c0105f10:	e8 57 b4 00 00       	call   c011136c <__ZN7Utility8GetMajorEs>
 c0105f15:	66 89 45 da          	mov    %ax,-0x26(%ebp)
 c0105f19:	0f bf 45 da          	movswl -0x26(%ebp),%eax
 c0105f1d:	89 44 24 04          	mov    %eax,0x4(%esp)
@@ -8475,7 +8475,7 @@ c0105fca:	89 44 24 04          	mov    %eax,0x4(%esp)
 c0105fce:	b8 00 02 00 00       	mov    $0x200,%eax
 c0105fd3:	2b 45 f4             	sub    -0xc(%ebp),%eax
 c0105fd6:	89 04 24             	mov    %eax,(%esp)
-c0105fd9:	e8 32 b4 00 00       	call   c0111410 <__ZN7Utility3MinEii>
+c0105fd9:	e8 8e b4 00 00       	call   c011146c <__ZN7Utility3MinEii>
 c0105fde:	89 45 f0             	mov    %eax,-0x10(%ebp)
 c0105fe1:	8b 45 08             	mov    0x8(%ebp),%eax
 c0105fe4:	8b 40 04             	mov    0x4(%eax),%eax
@@ -8495,7 +8495,7 @@ c0106012:	8b 45 d4             	mov    -0x2c(%ebp),%eax
 c0106015:	89 44 24 04          	mov    %eax,0x4(%esp)
 c0106019:	8b 45 f0             	mov    -0x10(%ebp),%eax
 c010601c:	89 04 24             	mov    %eax,(%esp)
-c010601f:	e8 ec b3 00 00       	call   c0111410 <__ZN7Utility3MinEii>
+c010601f:	e8 48 b4 00 00       	call   c011146c <__ZN7Utility3MinEii>
 c0106024:	89 45 f0             	mov    %eax,-0x10(%ebp)
 c0106027:	8b 45 fc             	mov    -0x4(%ebp),%eax
 c010602a:	89 44 24 04          	mov    %eax,0x4(%esp)
@@ -8554,7 +8554,7 @@ c01060d7:	8b 80 f4 01 00 00    	mov    0x1f4(%eax),%eax
 c01060dd:	89 44 24 04          	mov    %eax,0x4(%esp)
 c01060e1:	8b 45 d4             	mov    -0x2c(%ebp),%eax
 c01060e4:	89 04 24             	mov    %eax,(%esp)
-c01060e7:	e8 94 b3 00 00       	call   c0111480 <__ZN7Utility6IOMoveEPhS0_i>
+c01060e7:	e8 f0 b3 00 00       	call   c01114dc <__ZN7Utility6IOMoveEPhS0_i>
 c01060ec:	8b 4d e4             	mov    -0x1c(%ebp),%ecx
 c01060ef:	8b 55 e4             	mov    -0x1c(%ebp),%edx
 c01060f2:	8b 45 f0             	mov    -0x10(%ebp),%eax
@@ -8610,7 +8610,7 @@ c010619b:	8b 45 08             	mov    0x8(%ebp),%eax
 c010619e:	8b 40 20             	mov    0x20(%eax),%eax
 c01061a1:	98                   	cwtl   
 c01061a2:	89 04 24             	mov    %eax,(%esp)
-c01061a5:	e8 66 b1 00 00       	call   c0111310 <__ZN7Utility8GetMajorEs>
+c01061a5:	e8 c2 b1 00 00       	call   c011136c <__ZN7Utility8GetMajorEs>
 c01061aa:	66 89 45 da          	mov    %ax,-0x26(%ebp)
 c01061ae:	0f bf 45 da          	movswl -0x26(%ebp),%eax
 c01061b2:	89 44 24 04          	mov    %eax,0x4(%esp)
@@ -8668,7 +8668,7 @@ c010626d:	89 44 24 04          	mov    %eax,0x4(%esp)
 c0106271:	b8 00 02 00 00       	mov    $0x200,%eax
 c0106276:	2b 45 f4             	sub    -0xc(%ebp),%eax
 c0106279:	89 04 24             	mov    %eax,(%esp)
-c010627c:	e8 8f b1 00 00       	call   c0111410 <__ZN7Utility3MinEii>
+c010627c:	e8 eb b1 00 00       	call   c011146c <__ZN7Utility3MinEii>
 c0106281:	89 45 f0             	mov    %eax,-0x10(%ebp)
 c0106284:	8b 45 08             	mov    0x8(%ebp),%eax
 c0106287:	8b 40 04             	mov    0x4(%eax),%eax
@@ -8721,7 +8721,7 @@ c0106328:	89 44 24 04          	mov    %eax,0x4(%esp)
 c010632c:	8b 45 e4             	mov    -0x1c(%ebp),%eax
 c010632f:	8b 80 f4 01 00 00    	mov    0x1f4(%eax),%eax
 c0106335:	89 04 24             	mov    %eax,(%esp)
-c0106338:	e8 43 b1 00 00       	call   c0111480 <__ZN7Utility6IOMoveEPhS0_i>
+c0106338:	e8 9f b1 00 00       	call   c01114dc <__ZN7Utility6IOMoveEPhS0_i>
 c010633d:	8b 4d e4             	mov    -0x1c(%ebp),%ecx
 c0106340:	8b 55 e4             	mov    -0x1c(%ebp),%edx
 c0106343:	8b 45 f0             	mov    -0x10(%ebp),%eax
@@ -9113,7 +9113,7 @@ c010684e:	8b 40 20             	mov    0x20(%eax),%eax
 c0106851:	66 89 45 fa          	mov    %ax,-0x6(%ebp)
 c0106855:	0f bf 45 fa          	movswl -0x6(%ebp),%eax
 c0106859:	89 04 24             	mov    %eax,(%esp)
-c010685c:	e8 af aa 00 00       	call   c0111310 <__ZN7Utility8GetMajorEs>
+c010685c:	e8 0b ab 00 00       	call   c011136c <__ZN7Utility8GetMajorEs>
 c0106861:	66 89 45 ee          	mov    %ax,-0x12(%ebp)
 c0106865:	8b 45 08             	mov    0x8(%ebp),%eax
 c0106868:	8b 40 04             	mov    0x4(%eax),%eax
@@ -9195,7 +9195,7 @@ c0106959:	8b 40 20             	mov    0x20(%eax),%eax
 c010695c:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
 c0106960:	0f bf 45 fe          	movswl -0x2(%ebp),%eax
 c0106964:	89 04 24             	mov    %eax,(%esp)
-c0106967:	e8 a4 a9 00 00       	call   c0111310 <__ZN7Utility8GetMajorEs>
+c0106967:	e8 00 aa 00 00       	call   c011136c <__ZN7Utility8GetMajorEs>
 c010696c:	66 89 45 f6          	mov    %ax,-0xa(%ebp)
 c0106970:	8b 45 08             	mov    0x8(%ebp),%eax
 c0106973:	83 78 08 01          	cmpl   $0x1,0x8(%eax)
@@ -9364,7 +9364,7 @@ c0106b80:	8b 45 9c             	mov    -0x64(%ebp),%eax
 c0106b83:	89 44 24 04          	mov    %eax,0x4(%esp)
 c0106b87:	8b 45 98             	mov    -0x68(%ebp),%eax
 c0106b8a:	89 04 24             	mov    %eax,(%esp)
-c0106b8d:	e8 56 a8 00 00       	call   c01113e8 <__ZN7Utility9DWordCopyEPiS0_i>
+c0106b8d:	e8 b2 a8 00 00       	call   c0111444 <__ZN7Utility9DWordCopyEPiS0_i>
 c0106b92:	8b 45 f4             	mov    -0xc(%ebp),%eax
 c0106b95:	89 44 24 04          	mov    %eax,0x4(%esp)
 c0106b99:	8b 45 a0             	mov    -0x60(%ebp),%eax
@@ -9727,7 +9727,7 @@ c0106ff1:	8b 45 b4             	mov    -0x4c(%ebp),%eax
 c0106ff4:	89 44 24 04          	mov    %eax,0x4(%esp)
 c0106ff8:	8b 45 b0             	mov    -0x50(%ebp),%eax
 c0106ffb:	89 04 24             	mov    %eax,(%esp)
-c0106ffe:	e8 e5 a3 00 00       	call   c01113e8 <__ZN7Utility9DWordCopyEPiS0_i>
+c0106ffe:	e8 41 a4 00 00       	call   c0111444 <__ZN7Utility9DWordCopyEPiS0_i>
 c0107003:	8b 55 08             	mov    0x8(%ebp),%edx
 c0107006:	8b 45 b8             	mov    -0x48(%ebp),%eax
 c0107009:	89 42 04             	mov    %eax,0x4(%edx)
@@ -9885,7 +9885,7 @@ c010717b:	c7 00 20 65 11 c0    	movl   $0xc0116520,(%eax)
 c0107181:	8b 45 08             	mov    0x8(%ebp),%eax
 c0107184:	c7 40 04 00 55 11 c0 	movl   $0xc0115500,0x4(%eax)
 c010718b:	c7 04 24 dc 3b 11 c0 	movl   $0xc0113bdc,(%esp)
-c0107192:	e8 b1 a4 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c0107192:	e8 0d a5 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c0107197:	8b 45 08             	mov    0x8(%ebp),%eax
 c010719a:	89 04 24             	mov    %eax,(%esp)
 c010719d:	e8 f8 01 00 00       	call   c010739a <__ZN6Kernel20GetKernelPageManagerEv>
@@ -9897,18 +9897,18 @@ c01071b0:	e8 ef 01 00 00       	call   c01073a4 <__ZN6Kernel18GetUserPageManager
 c01071b5:	89 04 24             	mov    %eax,(%esp)
 c01071b8:	e8 01 34 00 00       	call   c010a5be <__ZN15UserPageManager10InitializeEv>
 c01071bd:	c7 04 24 f0 3b 11 c0 	movl   $0xc0113bf0,(%esp)
-c01071c4:	e8 7f a4 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c01071c4:	e8 db a4 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c01071c9:	8b 45 08             	mov    0x8(%ebp),%eax
 c01071cc:	c7 40 0c 40 75 11 c0 	movl   $0xc0117540,0xc(%eax)
 c01071d3:	c7 04 24 f5 3b 11 c0 	movl   $0xc0113bf5,(%esp)
-c01071da:	e8 69 a4 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c01071da:	e8 c5 a4 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c01071df:	8b 45 08             	mov    0x8(%ebp),%eax
 c01071e2:	89 04 24             	mov    %eax,(%esp)
 c01071e5:	e8 d2 01 00 00       	call   c01073bc <__ZN6Kernel18GetKernelAllocatorEv>
 c01071ea:	89 04 24             	mov    %eax,(%esp)
 c01071ed:	e8 c2 04 00 00       	call   c01076b4 <__ZN15KernelAllocator10InitializeEv>
 c01071f2:	c7 04 24 f0 3b 11 c0 	movl   $0xc0113bf0,(%esp)
-c01071f9:	e8 4a a4 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c01071f9:	e8 a6 a4 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c01071fe:	8b 45 08             	mov    0x8(%ebp),%eax
 c0107201:	8b 40 0c             	mov    0xc(%eax),%eax
 c0107204:	89 04 24             	mov    %eax,(%esp)
@@ -9916,14 +9916,14 @@ c0107207:	e8 78 28 00 00       	call   c0109a84 <__Z20set_kernel_allocatorP15Ker
 c010720c:	8b 45 08             	mov    0x8(%ebp),%eax
 c010720f:	c7 40 10 60 85 11 c0 	movl   $0xc0118560,0x10(%eax)
 c0107216:	c7 04 24 12 3c 11 c0 	movl   $0xc0113c12,(%esp)
-c010721d:	e8 26 a4 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c010721d:	e8 82 a4 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c0107222:	8b 45 08             	mov    0x8(%ebp),%eax
 c0107225:	89 04 24             	mov    %eax,(%esp)
 c0107228:	e8 9b 01 00 00       	call   c01073c8 <__ZN6Kernel17GetSwapperManagerEv>
 c010722d:	89 04 24             	mov    %eax,(%esp)
 c0107230:	e8 a7 5f 00 00       	call   c010d1dc <__ZN14SwapperManager10InitializeEv>
 c0107235:	c7 04 24 f0 3b 11 c0 	movl   $0xc0113bf0,(%esp)
-c010723c:	e8 07 a4 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c010723c:	e8 63 a4 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c0107241:	c9                   	leave  
 c0107242:	c3                   	ret    
 c0107243:	90                   	nop    
@@ -9935,14 +9935,14 @@ c0107247:	83 ec 08             	sub    $0x8,%esp
 c010724a:	8b 45 08             	mov    0x8(%ebp),%eax
 c010724d:	c7 40 08 80 95 11 c0 	movl   $0xc0119580,0x8(%eax)
 c0107254:	c7 04 24 28 3c 11 c0 	movl   $0xc0113c28,(%esp)
-c010725b:	e8 e8 a3 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c010725b:	e8 44 a4 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c0107260:	8b 45 08             	mov    0x8(%ebp),%eax
 c0107263:	89 04 24             	mov    %eax,(%esp)
 c0107266:	e8 45 01 00 00       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
 c010726b:	89 04 24             	mov    %eax,(%esp)
 c010726e:	e8 b9 47 00 00       	call   c010ba2c <__ZN14ProcessManager10InitializeEv>
 c0107273:	c7 04 24 f0 3b 11 c0 	movl   $0xc0113bf0,(%esp)
-c010727a:	e8 c9 a3 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c010727a:	e8 25 a4 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c010727f:	c9                   	leave  
 c0107280:	c3                   	ret    
 c0107281:	90                   	nop    
@@ -9956,23 +9956,23 @@ c010728b:	c7 40 14 80 b2 11 c0 	movl   $0xc011b280,0x14(%eax)
 c0107292:	8b 45 08             	mov    0x8(%ebp),%eax
 c0107295:	c7 40 18 c0 d3 11 c0 	movl   $0xc011d3c0,0x18(%eax)
 c010729c:	c7 04 24 3d 3c 11 c0 	movl   $0xc0113c3d,(%esp)
-c01072a3:	e8 a0 a3 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c01072a3:	e8 fc a3 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c01072a8:	8b 45 08             	mov    0x8(%ebp),%eax
 c01072ab:	89 04 24             	mov    %eax,(%esp)
 c01072ae:	e8 21 01 00 00       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
 c01072b3:	89 04 24             	mov    %eax,(%esp)
 c01072b6:	e8 b5 97 ff ff       	call   c0100a70 <__ZN13BufferManager10InitializeEv>
 c01072bb:	c7 04 24 52 3c 11 c0 	movl   $0xc0113c52,(%esp)
-c01072c2:	e8 81 a3 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c01072c2:	e8 dd a3 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c01072c7:	c7 04 24 57 3c 11 c0 	movl   $0xc0113c57,(%esp)
-c01072ce:	e8 75 a3 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c01072ce:	e8 d1 a3 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c01072d3:	8b 45 08             	mov    0x8(%ebp),%eax
 c01072d6:	89 04 24             	mov    %eax,(%esp)
 c01072d9:	e8 02 01 00 00       	call   c01073e0 <__ZN6Kernel16GetDeviceManagerEv>
 c01072de:	89 04 24             	mov    %eax,(%esp)
 c01072e1:	e8 7e ad ff ff       	call   c0102064 <__ZN13DeviceManager10InitializeEv>
 c01072e6:	c7 04 24 52 3c 11 c0 	movl   $0xc0113c52,(%esp)
-c01072ed:	e8 56 a3 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c01072ed:	e8 b2 a3 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c01072f2:	c9                   	leave  
 c01072f3:	c3                   	ret    
 
@@ -9985,23 +9985,23 @@ c01072fd:	c7 40 1c 20 d4 11 c0 	movl   $0xc011d420,0x1c(%eax)
 c0107304:	8b 45 08             	mov    0x8(%ebp),%eax
 c0107307:	c7 40 20 64 d4 11 c0 	movl   $0xc011d464,0x20(%eax)
 c010730e:	c7 04 24 74 3c 11 c0 	movl   $0xc0113c74,(%esp)
-c0107315:	e8 2e a3 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c0107315:	e8 8a a3 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c010731a:	8b 45 08             	mov    0x8(%ebp),%eax
 c010731d:	89 04 24             	mov    %eax,(%esp)
 c0107320:	e8 c7 00 00 00       	call   c01073ec <__ZN6Kernel13GetFileSystemEv>
 c0107325:	89 04 24             	mov    %eax,(%esp)
 c0107328:	e8 a7 dd ff ff       	call   c01050d4 <__ZN10FileSystem10InitializeEv>
 c010732d:	c7 04 24 52 3c 11 c0 	movl   $0xc0113c52,(%esp)
-c0107334:	e8 0f a3 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c0107334:	e8 6b a3 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c0107339:	c7 04 24 8e 3c 11 c0 	movl   $0xc0113c8e,(%esp)
-c0107340:	e8 03 a3 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c0107340:	e8 5f a3 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c0107345:	8b 45 08             	mov    0x8(%ebp),%eax
 c0107348:	89 04 24             	mov    %eax,(%esp)
 c010734b:	e8 a8 00 00 00       	call   c01073f8 <__ZN6Kernel14GetFileManagerEv>
 c0107350:	89 04 24             	mov    %eax,(%esp)
 c0107353:	e8 4c c1 ff ff       	call   c01034a4 <__ZN11FileManager10InitializeEv>
 c0107358:	c7 04 24 52 3c 11 c0 	movl   $0xc0113c52,(%esp)
-c010735f:	e8 e4 a2 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c010735f:	e8 40 a3 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c0107364:	c9                   	leave  
 c0107365:	c3                   	ret    
 
@@ -10606,7 +10606,7 @@ c0107b74:	0f be 45 f7          	movsbl -0x9(%ebp),%eax
 c0107b78:	89 44 24 04          	mov    %eax,0x4(%esp)
 c0107b7c:	8b 45 f0             	mov    -0x10(%ebp),%eax
 c0107b7f:	89 04 24             	mov    %eax,(%esp)
-c0107b82:	e8 47 8e 00 00       	call   c01109ce <__ZN3TTy8TTyInputEc>
+c0107b82:	e8 a3 8e 00 00       	call   c0110a2a <__ZN3TTy8TTyInputEc>
 c0107b87:	c9                   	leave  
 c0107b88:	c3                   	ret    
 c0107b89:	90                   	nop    
@@ -10700,7 +10700,7 @@ c0107cb6:	83 7d f8 00          	cmpl   $0x0,-0x8(%ebp)
 c0107cba:	74 0b                	je     c0107cc7 <__ZN8Keyboard17ScanCodeTranslateEhi+0x13d>
 c0107cbc:	8b 45 f8             	mov    -0x8(%ebp),%eax
 c0107cbf:	89 04 24             	mov    %eax,(%esp)
-c0107cc2:	e8 93 8e 00 00       	call   c0110b5a <__ZN3TTy8FlushTTyEv>
+c0107cc2:	e8 ef 8e 00 00       	call   c0110bb6 <__ZN3TTy8FlushTTyEv>
 c0107cc7:	e8 9c f4 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
 c0107ccc:	89 04 24             	mov    %eax,(%esp)
 c0107ccf:	e8 dc f6 ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
@@ -11808,7 +11808,7 @@ c01088a0:	e8 13 d4 ff ff       	call   c0105cb8 <__ZN3IDT11SetTrapGateEij>
 c01088a5:	8b 45 08             	mov    0x8(%ebp),%eax
 c01088a8:	89 04 24             	mov    %eax,(%esp)
 c01088ab:	e8 38 06 00 00       	call   c0108ee8 <__ZN7Machine6GetIDTEv>
-c01088b0:	c7 44 24 08 6c 04 11 	movl   $0xc011046c,0x8(%esp)
+c01088b0:	c7 44 24 08 c8 04 11 	movl   $0xc01104c8,0x8(%esp)
 c01088b7:	c0 
 c01088b8:	c7 44 24 04 20 00 00 	movl   $0x20,0x4(%esp)
 c01088bf:	00 
@@ -12228,12 +12228,12 @@ c0108e5e:	c7 44 24 04 67 00 00 	movl   $0x67,0x4(%esp)
 c0108e65:	00 
 c0108e66:	8b 45 f8             	mov    -0x8(%ebp),%eax
 c0108e69:	89 04 24             	mov    %eax,(%esp)
-c0108e6c:	e8 cb 4f 00 00       	call   c010de3c <__ZN26TaskStateSegmentDescriptor15SetSegmengLimitEj>
+c0108e6c:	e8 27 50 00 00       	call   c010de98 <__ZN26TaskStateSegmentDescriptor15SetSegmengLimitEj>
 c0108e71:	c7 44 24 04 c0 e4 11 	movl   $0xc011e4c0,0x4(%esp)
 c0108e78:	c0 
 c0108e79:	8b 45 f8             	mov    -0x8(%ebp),%eax
 c0108e7c:	89 04 24             	mov    %eax,(%esp)
-c0108e7f:	e8 90 4f 00 00       	call   c010de14 <__ZN26TaskStateSegmentDescriptor14SetBaseAddressEm>
+c0108e7f:	e8 ec 4f 00 00       	call   c010de70 <__ZN26TaskStateSegmentDescriptor14SetBaseAddressEm>
 c0108e84:	8b 45 f8             	mov    -0x8(%ebp),%eax
 c0108e87:	80 48 06 80          	orb    $0x80,0x6(%eax)
 c0108e8b:	8b 55 f8             	mov    -0x8(%ebp),%edx
@@ -12348,7 +12348,7 @@ c0108f47:	52                   	push   %edx
 c0108f48:	8d 54 24 04          	lea    0x4(%esp),%edx
 c0108f4c:	52                   	push   %edx
 c0108f4d:	c7 04 24 44 3b 11 c0 	movl   $0xc0113b44,(%esp)
-c0108f54:	e8 ef 86 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c0108f54:	e8 4b 87 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c0108f59:	c7 44 24 04 20 00 00 	movl   $0x20,0x4(%esp)
 c0108f60:	00 
 c0108f61:	c7 04 24 20 00 00 00 	movl   $0x20,(%esp)
@@ -12488,7 +12488,7 @@ c01090e3:	89 04 24             	mov    %eax,(%esp)
 c01090e6:	e8 01 8b ff ff       	call   c0101bec <__ZN8CMOSTime12ReadCMOSTimeEP10SystemTime>
 c01090eb:	8d 45 d8             	lea    -0x28(%ebp),%eax
 c01090ee:	89 04 24             	mov    %eax,(%esp)
-c01090f1:	e8 b2 83 00 00       	call   c01114a8 <__ZN7Utility14MakeKernelTimeEP10SystemTime>
+c01090f1:	e8 0e 84 00 00       	call   c0111504 <__ZN7Utility14MakeKernelTimeEP10SystemTime>
 c01090f6:	a3 94 0d 12 c0       	mov    %eax,0xc0120d94
 c01090fb:	66 c7 45 d6 00 00    	movw   $0x0,-0x2a(%ebp)
 c0109101:	c7 04 24 30 00 00 00 	movl   $0x30,(%esp)
@@ -12526,9 +12526,9 @@ c010918a:	e8 5d e2 ff ff       	call   c01073ec <__ZN6Kernel13GetFileSystemEv>
 c010918f:	89 04 24             	mov    %eax,(%esp)
 c0109192:	e8 67 bf ff ff       	call   c01050fe <__ZN10FileSystem14LoadSuperBlockEv>
 c0109197:	c7 04 24 68 3b 11 c0 	movl   $0xc0113b68,(%esp)
-c010919e:	e8 a5 84 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c010919e:	e8 01 85 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c01091a3:	c7 04 24 8d 3b 11 c0 	movl   $0xc0113b8d,(%esp)
-c01091aa:	e8 99 84 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c01091aa:	e8 f5 84 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c01091af:	e8 b4 df ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
 c01091b4:	89 04 24             	mov    %eax,(%esp)
 c01091b7:	e8 3c e2 ff ff       	call   c01073f8 <__ZN6Kernel14GetFileManagerEv>
@@ -12571,7 +12571,7 @@ c010923f:	8b 45 cc             	mov    -0x34(%ebp),%eax
 c0109242:	05 28 01 00 00       	add    $0x128,%eax
 c0109247:	89 44 24 04          	mov    %eax,0x4(%esp)
 c010924b:	c7 04 24 94 3b 11 c0 	movl   $0xc0113b94,(%esp)
-c0109252:	e8 5f 7e 00 00       	call   c01110b6 <__ZN7Utility10StringCopyEPcS0_>
+c0109252:	e8 bb 7e 00 00       	call   c0111112 <__ZN7Utility10StringCopyEPcS0_>
 c0109257:	c7 44 24 04 01 00 00 	movl   $0x1,0x4(%esp)
 c010925e:	00 
 c010925f:	c7 04 24 96 3b 11 c0 	movl   $0xc0113b96,(%esp)
@@ -12580,7 +12580,7 @@ c010926b:	89 45 c8             	mov    %eax,-0x38(%ebp)
 c010926e:	83 7d c8 00          	cmpl   $0x0,-0x38(%ebp)
 c0109272:	74 0c                	je     c0109280 <_next+0x1b4>
 c0109274:	c7 04 24 a0 3b 11 c0 	movl   $0xc0113ba0,(%esp)
-c010927b:	e8 42 81 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c010927b:	e8 9e 81 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c0109280:	c7 44 24 04 02 00 00 	movl   $0x2,0x4(%esp)
 c0109287:	00 
 c0109288:	c7 04 24 96 3b 11 c0 	movl   $0xc0113b96,(%esp)
@@ -12589,8 +12589,8 @@ c0109294:	89 45 c8             	mov    %eax,-0x38(%ebp)
 c0109297:	83 7d c8 01          	cmpl   $0x1,-0x38(%ebp)
 c010929b:	74 0c                	je     c01092a9 <_next+0x1dd>
 c010929d:	c7 04 24 ad 3b 11 c0 	movl   $0xc0113bad,(%esp)
-c01092a4:	e8 19 81 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
-c01092a9:	e8 82 83 00 00       	call   c0111630 <__ZN8Diagnose7TraceOnEv>
+c01092a4:	e8 75 81 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
+c01092a9:	e8 de 83 00 00       	call   c011168c <__ZN8Diagnose7TraceOnEv>
 c01092ae:	c7 45 c4 42 90 10 c0 	movl   $0xc0109042,-0x3c(%ebp)
 c01092b5:	c7 45 c0 00 00 00 00 	movl   $0x0,-0x40(%ebp)
 c01092bc:	c7 45 bc 00 00 00 00 	movl   $0x0,-0x44(%ebp)
@@ -12893,7 +12893,7 @@ c01095ce:	8b 45 fc             	mov    -0x4(%ebp),%eax
 c01095d1:	8b 80 a8 01 00 00    	mov    0x1a8(%eax),%eax
 c01095d7:	89 44 24 04          	mov    %eax,0x4(%esp)
 c01095db:	c7 04 24 2c 3b 11 c0 	movl   $0xc0113b2c,(%esp)
-c01095e2:	e8 61 80 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c01095e2:	e8 bd 80 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c01095e7:	c7 45 f0 00 00 00 00 	movl   $0x0,-0x10(%ebp)
 c01095ee:	e9 b9 00 00 00       	jmp    c01096ac <__ZN16MemoryDescriptor22EstablishUserPageTableEmmmmm+0x11c>
 c01095f3:	8b 45 08             	mov    0x8(%ebp),%eax
@@ -13467,7 +13467,7 @@ c0109c91:	8d 45 f4             	lea    -0xc(%ebp),%eax
 c0109c94:	ff 00                	incl   (%eax)
 c0109c96:	eb 8a                	jmp    c0109c22 <__ZN13OpenFileTable6FAllocEv+0x42>
 c0109c98:	c7 04 24 e4 3a 11 c0 	movl   $0xc0113ae4,(%esp)
-c0109c9f:	e8 a4 79 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c0109c9f:	e8 00 7a 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c0109ca4:	8b 45 f8             	mov    -0x8(%ebp),%eax
 c0109ca7:	c7 80 a8 01 00 00 17 	movl   $0x17,0x1a8(%eax)
 c0109cae:	00 00 00 
@@ -13690,7 +13690,7 @@ c0109f0c:	89 45 ec             	mov    %eax,-0x14(%ebp)
 c0109f0f:	83 7d ec 00          	cmpl   $0x0,-0x14(%ebp)
 c0109f13:	75 0e                	jne    c0109f23 <__ZN10InodeTable4IGetEsi+0xd1>
 c0109f15:	c7 04 24 f9 3a 11 c0 	movl   $0xc0113af9,(%esp)
-c0109f1c:	e8 a1 74 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c0109f1c:	e8 fd 74 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c0109f21:	eb 16                	jmp    c0109f39 <__ZN10InodeTable4IGetEsi+0xe7>
 c0109f23:	8b 45 ec             	mov    -0x14(%ebp),%eax
 c0109f26:	0f b7 00             	movzwl (%eax),%eax
@@ -13714,7 +13714,7 @@ c0109f62:	89 45 f8             	mov    %eax,-0x8(%ebp)
 c0109f65:	83 7d f8 00          	cmpl   $0x0,-0x8(%ebp)
 c0109f69:	75 25                	jne    c0109f90 <__ZN10InodeTable4IGetEsi+0x13e>
 c0109f6b:	c7 04 24 09 3b 11 c0 	movl   $0xc0113b09,(%esp)
-c0109f72:	e8 d1 76 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c0109f72:	e8 2d 77 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c0109f77:	8b 45 f4             	mov    -0xc(%ebp),%eax
 c0109f7a:	c7 80 a8 01 00 00 17 	movl   $0x17,0x1a8(%eax)
 c0109f81:	00 00 00 
@@ -14536,7 +14536,7 @@ c010a8b9:	8b 45 f8             	mov    -0x8(%ebp),%eax
 c010a8bc:	89 44 24 04          	mov    %eax,0x4(%esp)
 c010a8c0:	8b 45 fc             	mov    -0x4(%ebp),%eax
 c010a8c3:	89 04 24             	mov    %eax,(%esp)
-c010a8c6:	e8 61 67 00 00       	call   c011102c <__ZN7Utility7MemCopyEmmj>
+c010a8c6:	e8 bd 67 00 00       	call   c0111088 <__ZN7Utility7MemCopyEmmj>
 c010a8cb:	8b 45 ec             	mov    -0x14(%ebp),%eax
 c010a8ce:	8b 50 08             	mov    0x8(%eax),%edx
 c010a8d1:	8d 45 f4             	lea    -0xc(%ebp),%eax
@@ -14974,7 +14974,7 @@ c010ae31:	89 44 24 04          	mov    %eax,0x4(%esp)
 c010ae35:	8b 45 e0             	mov    -0x20(%ebp),%eax
 c010ae38:	03 45 e8             	add    -0x18(%ebp),%eax
 c010ae3b:	89 04 24             	mov    %eax,(%esp)
-c010ae3e:	e8 b7 63 00 00       	call   c01111fa <__ZN7Utility7CopySegEmm>
+c010ae3e:	e8 13 64 00 00       	call   c0111256 <__ZN7Utility7CopySegEmm>
 c010ae43:	8d 45 e0             	lea    -0x20(%ebp),%eax
 c010ae46:	ff 00                	incl   (%eax)
 c010ae48:	eb d9                	jmp    c010ae23 <__ZN7Process6ExpandEj+0x105>
@@ -15048,7 +15048,7 @@ c010af3b:	8b 40 10             	mov    0x10(%eax),%eax
 c010af3e:	8b 40 04             	mov    0x4(%eax),%eax
 c010af41:	89 44 24 04          	mov    %eax,0x4(%esp)
 c010af45:	c7 04 24 80 3a 11 c0 	movl   $0xc0113a80,(%esp)
-c010af4c:	e8 f7 66 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c010af4c:	e8 53 67 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c010af51:	8b 45 f8             	mov    -0x8(%ebp),%eax
 c010af54:	8b 50 10             	mov    0x10(%eax),%edx
 c010af57:	8b 45 f8             	mov    -0x8(%ebp),%eax
@@ -15112,7 +15112,7 @@ c010b025:	8b 45 f8             	mov    -0x8(%ebp),%eax
 c010b028:	8b 40 10             	mov    0x10(%eax),%eax
 c010b02b:	8b 40 14             	mov    0x14(%eax),%eax
 c010b02e:	89 04 24             	mov    %eax,(%esp)
-c010b031:	e8 b6 53 00 00       	call   c01103ec <__ZN4Text5XFreeEv>
+c010b031:	e8 12 54 00 00       	call   c0110448 <__ZN4Text5XFreeEv>
 c010b036:	8b 45 f8             	mov    -0x8(%ebp),%eax
 c010b039:	8b 40 10             	mov    0x10(%eax),%eax
 c010b03c:	c7 40 14 00 00 00 00 	movl   $0x0,0x14(%eax)
@@ -15133,7 +15133,7 @@ c010b076:	89 45 e0             	mov    %eax,-0x20(%ebp)
 c010b079:	83 7d e0 00          	cmpl   $0x0,-0x20(%ebp)
 c010b07d:	75 0c                	jne    c010b08b <__ZN7Process4ExitEv+0x19f>
 c010b07f:	c7 04 24 97 3a 11 c0 	movl   $0xc0113a97,(%esp)
-c010b086:	e8 37 63 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c010b086:	e8 93 63 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c010b08b:	8b 45 e0             	mov    -0x20(%ebp),%eax
 c010b08e:	89 44 24 08          	mov    %eax,0x8(%esp)
 c010b092:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
@@ -15149,7 +15149,7 @@ c010b0b3:	8b 40 20             	mov    0x20(%eax),%eax
 c010b0b6:	89 44 24 04          	mov    %eax,0x4(%esp)
 c010b0ba:	8b 45 f8             	mov    -0x8(%ebp),%eax
 c010b0bd:	89 04 24             	mov    %eax,(%esp)
-c010b0c0:	e8 23 63 00 00       	call   c01113e8 <__ZN7Utility9DWordCopyEPiS0_i>
+c010b0c0:	e8 7f 63 00 00       	call   c0111444 <__ZN7Utility9DWordCopyEPiS0_i>
 c010b0c5:	8b 45 dc             	mov    -0x24(%ebp),%eax
 c010b0c8:	89 44 24 04          	mov    %eax,0x4(%esp)
 c010b0cc:	8b 45 e4             	mov    -0x1c(%ebp),%eax
@@ -15236,7 +15236,7 @@ c010b1d8:	8b 45 d8             	mov    -0x28(%ebp),%eax
 c010b1db:	8b 40 04             	mov    0x4(%eax),%eax
 c010b1de:	89 44 24 04          	mov    %eax,0x4(%esp)
 c010b1e2:	c7 04 24 ac 3a 11 c0 	movl   $0xc0113aac,(%esp)
-c010b1e9:	e8 5a 64 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c010b1e9:	e8 b6 64 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c010b1ee:	8b 55 f4             	mov    -0xc(%ebp),%edx
 c010b1f1:	8b 45 fc             	mov    -0x4(%ebp),%eax
 c010b1f4:	c1 e0 06             	shl    $0x6,%eax
@@ -15429,7 +15429,7 @@ c010b43e:	8b 55 f4             	mov    -0xc(%ebp),%edx
 c010b441:	8b 45 ec             	mov    -0x14(%ebp),%eax
 c010b444:	29 d0                	sub    %edx,%eax
 c010b446:	89 04 24             	mov    %eax,(%esp)
-c010b449:	e8 ac 5d 00 00       	call   c01111fa <__ZN7Utility7CopySegEmm>
+c010b449:	e8 08 5e 00 00       	call   c0111256 <__ZN7Utility7CopySegEmm>
 c010b44e:	eb d7                	jmp    c010b427 <__ZN7Process6SStackEv+0xcb>
 c010b450:	8b 45 fc             	mov    -0x4(%ebp),%eax
 c010b453:	83 c0 14             	add    $0x14,%eax
@@ -15525,7 +15525,7 @@ c010b55d:	8b 55 ec             	mov    -0x14(%ebp),%edx
 c010b560:	8b 45 e8             	mov    -0x18(%ebp),%eax
 c010b563:	29 d0                	sub    %edx,%eax
 c010b565:	89 04 24             	mov    %eax,(%esp)
-c010b568:	e8 8d 5c 00 00       	call   c01111fa <__ZN7Utility7CopySegEmm>
+c010b568:	e8 e9 5c 00 00       	call   c0111256 <__ZN7Utility7CopySegEmm>
 c010b56d:	8d 45 e8             	lea    -0x18(%ebp),%eax
 c010b570:	ff 00                	incl   (%eax)
 c010b572:	eb d7                	jmp    c010b54b <__ZN7Process6SBreakEv+0xeb>
@@ -15562,7 +15562,7 @@ c010b5cf:	8b 55 ec             	mov    -0x14(%ebp),%edx
 c010b5d2:	8b 45 e4             	mov    -0x1c(%ebp),%eax
 c010b5d5:	29 d0                	sub    %edx,%eax
 c010b5d7:	89 04 24             	mov    %eax,(%esp)
-c010b5da:	e8 1b 5c 00 00       	call   c01111fa <__ZN7Utility7CopySegEmm>
+c010b5da:	e8 77 5c 00 00       	call   c0111256 <__ZN7Utility7CopySegEmm>
 c010b5df:	eb d7                	jmp    c010b5b8 <__ZN7Process6SBreakEv+0x158>
 c010b5e1:	8b 45 fc             	mov    -0x4(%ebp),%eax
 c010b5e4:	8b 48 2c             	mov    0x2c(%eax),%ecx
@@ -15702,7 +15702,7 @@ c010b75e:	83 7d f8 00          	cmpl   $0x0,-0x8(%ebp)
 c010b762:	79 16                	jns    c010b77a <__ZN7Process4NiceEv+0x48>
 c010b764:	8b 45 fc             	mov    -0x4(%ebp),%eax
 c010b767:	89 04 24             	mov    %eax,(%esp)
-c010b76a:	e8 85 58 00 00       	call   c0110ff4 <__ZN4User5SUserEv>
+c010b76a:	e8 e1 58 00 00       	call   c0111050 <__ZN4User5SUserEv>
 c010b76f:	84 c0                	test   %al,%al
 c010b771:	75 07                	jne    c010b77a <__ZN7Process4NiceEv+0x48>
 c010b773:	c7 45 f8 00 00 00 00 	movl   $0x0,-0x8(%ebp)
@@ -15785,7 +15785,7 @@ c010b84f:	83 7d f0 ff          	cmpl   $0xffffffff,-0x10(%ebp)
 c010b853:	74 14                	je     c010b869 <__ZN14ProcessManagerC2Ev+0x59>
 c010b855:	8b 45 f4             	mov    -0xc(%ebp),%eax
 c010b858:	89 04 24             	mov    %eax,(%esp)
-c010b85b:	e8 26 4b 00 00       	call   c0110386 <__ZN4TextC1Ev>
+c010b85b:	e8 82 4b 00 00       	call   c01103e2 <__ZN4TextC1Ev>
 c010b860:	83 45 f4 14          	addl   $0x14,-0xc(%ebp)
 c010b864:	ff 4d f0             	decl   -0x10(%ebp)
 c010b867:	eb e6                	jmp    c010b84f <__ZN14ProcessManagerC2Ev+0x3f>
@@ -15834,7 +15834,7 @@ c010b8f9:	83 7d f0 ff          	cmpl   $0xffffffff,-0x10(%ebp)
 c010b8fd:	74 14                	je     c010b913 <__ZN14ProcessManagerC1Ev+0x59>
 c010b8ff:	8b 45 f4             	mov    -0xc(%ebp),%eax
 c010b902:	89 04 24             	mov    %eax,(%esp)
-c010b905:	e8 7c 4a 00 00       	call   c0110386 <__ZN4TextC1Ev>
+c010b905:	e8 d8 4a 00 00       	call   c01103e2 <__ZN4TextC1Ev>
 c010b90a:	83 45 f4 14          	addl   $0x14,-0xc(%ebp)
 c010b90e:	ff 4d f0             	decl   -0x10(%ebp)
 c010b911:	eb e6                	jmp    c010b8f9 <__ZN14ProcessManagerC1Ev+0x3f>
@@ -15876,7 +15876,7 @@ c010b989:	74 11                	je     c010b99c <__ZN14ProcessManagerD2Ev+0x38>
 c010b98b:	83 6d fc 14          	subl   $0x14,-0x4(%ebp)
 c010b98f:	8b 45 fc             	mov    -0x4(%ebp),%eax
 c010b992:	89 04 24             	mov    %eax,(%esp)
-c010b995:	e8 f8 49 00 00       	call   c0110392 <__ZN4TextD1Ev>
+c010b995:	e8 54 4a 00 00       	call   c01103ee <__ZN4TextD1Ev>
 c010b99a:	eb e2                	jmp    c010b97e <__ZN14ProcessManagerD2Ev+0x1a>
 c010b99c:	83 7d 08 00          	cmpl   $0x0,0x8(%ebp)
 c010b9a0:	74 24                	je     c010b9c6 <__ZN14ProcessManagerD2Ev+0x62>
@@ -15910,7 +15910,7 @@ c010b9ed:	74 11                	je     c010ba00 <__ZN14ProcessManagerD1Ev+0x38>
 c010b9ef:	83 6d fc 14          	subl   $0x14,-0x4(%ebp)
 c010b9f3:	8b 45 fc             	mov    -0x4(%ebp),%eax
 c010b9f6:	89 04 24             	mov    %eax,(%esp)
-c010b9f9:	e8 94 49 00 00       	call   c0110392 <__ZN4TextD1Ev>
+c010b9f9:	e8 f0 49 00 00       	call   c01103ee <__ZN4TextD1Ev>
 c010b9fe:	eb e2                	jmp    c010b9e2 <__ZN14ProcessManagerD1Ev+0x1a>
 c010ba00:	83 7d 08 00          	cmpl   $0x0,0x8(%ebp)
 c010ba04:	74 24                	je     c010ba2a <__ZN14ProcessManagerD1Ev+0x62>
@@ -16018,7 +16018,7 @@ c010bb3c:	eb d2                	jmp    c010bb10 <__ZN14ProcessManager7NewProcEv+
 c010bb3e:	83 7d fc 00          	cmpl   $0x0,-0x4(%ebp)
 c010bb42:	75 0c                	jne    c010bb50 <__ZN14ProcessManager7NewProcEv+0x54>
 c010bb44:	c7 04 24 ac 39 11 c0 	movl   $0xc01139ac,(%esp)
-c010bb4b:	e8 72 58 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c010bb4b:	e8 ce 58 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c010bb50:	e8 13 b6 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
 c010bb55:	89 04 24             	mov    %eax,(%esp)
 c010bb58:	e8 a7 b8 ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
@@ -16055,7 +16055,7 @@ c010bbbc:	8b 40 14             	mov    0x14(%eax),%eax
 c010bbbf:	89 44 24 04          	mov    %eax,0x4(%esp)
 c010bbc3:	8b 45 f0             	mov    -0x10(%ebp),%eax
 c010bbc6:	89 04 24             	mov    %eax,(%esp)
-c010bbc9:	e8 5e 54 00 00       	call   c011102c <__ZN7Utility7MemCopyEmmj>
+c010bbc9:	e8 ba 54 00 00       	call   c0111088 <__ZN7Utility7MemCopyEmmj>
 c010bbce:	8b 55 f8             	mov    -0x8(%ebp),%edx
 c010bbd1:	8b 45 fc             	mov    -0x4(%ebp),%eax
 c010bbd4:	89 42 10             	mov    %eax,0x10(%edx)
@@ -16120,7 +16120,7 @@ c010bc96:	8b 45 e8             	mov    -0x18(%ebp),%eax
 c010bc99:	89 04 24             	mov    %eax,(%esp)
 c010bc9c:	8d 45 e8             	lea    -0x18(%ebp),%eax
 c010bc9f:	ff 00                	incl   (%eax)
-c010bca1:	e8 54 55 00 00       	call   c01111fa <__ZN7Utility7CopySegEmm>
+c010bca1:	e8 b0 55 00 00       	call   c0111256 <__ZN7Utility7CopySegEmm>
 c010bca6:	eb d7                	jmp    c010bc7f <__ZN14ProcessManager7NewProcEv+0x183>
 c010bca8:	8b 55 f8             	mov    -0x8(%ebp),%edx
 c010bcab:	8b 45 f4             	mov    -0xc(%ebp),%eax
@@ -16458,7 +16458,7 @@ c010c111:	8b 45 fc             	mov    -0x4(%ebp),%eax
 c010c114:	c7 40 2c 00 00 00 00 	movl   $0x0,0x2c(%eax)
 c010c11b:	e9 65 fd ff ff       	jmp    c010be85 <__ZN14ProcessManager5SchedEv+0x43>
 c010c120:	c7 04 24 bb 39 11 c0 	movl   $0xc01139bb,(%esp)
-c010c127:	e8 96 52 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c010c127:	e8 f2 52 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c010c12c:	c9                   	leave  
 c010c12d:	c3                   	ret    
 
@@ -16485,7 +16485,7 @@ c010c16c:	8b 40 10             	mov    0x10(%eax),%eax
 c010c16f:	8b 40 04             	mov    0x4(%eax),%eax
 c010c172:	89 44 24 04          	mov    %eax,0x4(%esp)
 c010c176:	c7 04 24 c8 39 11 c0 	movl   $0xc01139c8,(%esp)
-c010c17d:	e8 c6 54 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c010c17d:	e8 22 55 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c010c182:	c7 45 f8 00 00 00 00 	movl   $0x0,-0x8(%ebp)
 c010c189:	83 7d f8 63          	cmpl   $0x63,-0x8(%ebp)
 c010c18d:	0f 8f b2 01 00 00    	jg     c010c345 <__ZN14ProcessManager4WaitEv+0x217>
@@ -16514,7 +16514,7 @@ c010c1d1:	83 c0 04             	add    $0x4,%eax
 c010c1d4:	8b 00                	mov    (%eax),%eax
 c010c1d6:	89 44 24 04          	mov    %eax,0x4(%esp)
 c010c1da:	c7 04 24 ef 39 11 c0 	movl   $0xc01139ef,(%esp)
-c010c1e1:	e8 62 54 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c010c1e1:	e8 be 54 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c010c1e6:	c6 45 f7 01          	movb   $0x1,-0x9(%ebp)
 c010c1ea:	8b 55 08             	mov    0x8(%ebp),%edx
 c010c1ed:	8b 45 f8             	mov    -0x8(%ebp),%eax
@@ -16619,7 +16619,7 @@ c010c322:	8b 45 e8             	mov    -0x18(%ebp),%eax
 c010c325:	89 04 24             	mov    %eax,(%esp)
 c010c328:	e8 6b 4a ff ff       	call   c0100d98 <__ZN13BufferManager6BrelseEP3Buf>
 c010c32d:	c7 04 24 08 3a 11 c0 	movl   $0xc0113a08,(%esp)
-c010c334:	e8 0f 53 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c010c334:	e8 6b 53 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c010c339:	eb 5d                	jmp    c010c398 <__ZN14ProcessManager4WaitEv+0x26a>
 c010c33b:	8d 45 f8             	lea    -0x8(%ebp),%eax
 c010c33e:	ff 00                	incl   (%eax)
@@ -16628,7 +16628,7 @@ c010c345:	0f b6 45 f7          	movzbl -0x9(%ebp),%eax
 c010c349:	83 f8 01             	cmp    $0x1,%eax
 c010c34c:	75 3d                	jne    c010c38b <__ZN14ProcessManager4WaitEv+0x25d>
 c010c34e:	c7 04 24 14 3a 11 c0 	movl   $0xc0113a14,(%esp)
-c010c355:	e8 ee 52 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c010c355:	e8 4a 53 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c010c35a:	c7 44 24 08 28 00 00 	movl   $0x28,0x8(%esp)
 c010c361:	00 
 c010c362:	8b 45 f0             	mov    -0x10(%ebp),%eax
@@ -16639,7 +16639,7 @@ c010c36f:	8b 40 10             	mov    0x10(%eax),%eax
 c010c372:	89 04 24             	mov    %eax,(%esp)
 c010c375:	e8 82 e8 ff ff       	call   c010abfc <__ZN7Process5SleepEmi>
 c010c37a:	c7 04 24 34 3a 11 c0 	movl   $0xc0113a34,(%esp)
-c010c381:	e8 c2 52 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c010c381:	e8 1e 53 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c010c386:	e9 f7 fd ff ff       	jmp    c010c182 <__ZN14ProcessManager4WaitEv+0x54>
 c010c38b:	8b 45 f0             	mov    -0x10(%ebp),%eax
 c010c38e:	c7 80 a8 01 00 00 0a 	movl   $0xa,0x1a8(%eax)
@@ -16737,7 +16737,7 @@ c010c4b7:	8b 40 10             	mov    0x10(%eax),%eax
 c010c4ba:	8b 40 04             	mov    0x4(%eax),%eax
 c010c4bd:	89 44 24 04          	mov    %eax,0x4(%esp)
 c010c4c1:	c7 04 24 3f 3a 11 c0 	movl   $0xc0113a3f,(%esp)
-c010c4c8:	e8 7b 51 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c010c4c8:	e8 d7 51 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c010c4cd:	c7 44 24 08 00 00 00 	movl   $0x0,0x8(%esp)
 c010c4d4:	00 
 c010c4d5:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
@@ -16902,7 +16902,7 @@ c010c75b:	8d 14 85 00 00 00 00 	lea    0x0(,%eax,4),%edx
 c010c762:	8b 85 a8 fe ff ff    	mov    -0x158(%ebp),%eax
 c010c768:	8b 04 02             	mov    (%edx,%eax,1),%eax
 c010c76b:	89 04 24             	mov    %eax,(%esp)
-c010c76e:	e8 b9 48 00 00       	call   c011102c <__ZN7Utility7MemCopyEmmj>
+c010c76e:	e8 15 49 00 00       	call   c0111088 <__ZN7Utility7MemCopyEmmj>
 c010c773:	8b 95 9c fe ff ff    	mov    -0x164(%ebp),%edx
 c010c779:	8b 85 a4 fe ff ff    	mov    -0x15c(%ebp),%eax
 c010c77f:	29 d0                	sub    %edx,%eax
@@ -16932,7 +16932,7 @@ c010c7e7:	8b 85 a0 fe ff ff    	mov    -0x160(%ebp),%eax
 c010c7ed:	89 44 24 04          	mov    %eax,0x4(%esp)
 c010c7f1:	8d 85 98 fe ff ff    	lea    -0x168(%ebp),%eax
 c010c7f7:	89 04 24             	mov    %eax,(%esp)
-c010c7fa:	e8 2d 48 00 00       	call   c011102c <__ZN7Utility7MemCopyEmmj>
+c010c7fa:	e8 89 48 00 00       	call   c0111088 <__ZN7Utility7MemCopyEmmj>
 c010c7ff:	8b 85 ac fe ff ff    	mov    -0x154(%ebp),%eax
 c010c805:	8d 14 85 00 00 00 00 	lea    0x0(,%eax,4),%edx
 c010c80c:	8d 85 a0 fe ff ff    	lea    -0x160(%ebp),%eax
@@ -16948,7 +16948,7 @@ c010c836:	8b 85 a0 fe ff ff    	mov    -0x160(%ebp),%eax
 c010c83c:	89 44 24 04          	mov    %eax,0x4(%esp)
 c010c840:	8b 85 a8 fe ff ff    	mov    -0x158(%ebp),%eax
 c010c846:	89 04 24             	mov    %eax,(%esp)
-c010c849:	e8 de 47 00 00       	call   c011102c <__ZN7Utility7MemCopyEmmj>
+c010c849:	e8 3a 48 00 00       	call   c0111088 <__ZN7Utility7MemCopyEmmj>
 c010c84e:	8b 85 a4 fe ff ff    	mov    -0x15c(%ebp),%eax
 c010c854:	89 85 98 fe ff ff    	mov    %eax,-0x168(%ebp)
 c010c85a:	8d 85 a0 fe ff ff    	lea    -0x160(%ebp),%eax
@@ -16961,7 +16961,7 @@ c010c874:	8b 85 a0 fe ff ff    	mov    -0x160(%ebp),%eax
 c010c87a:	89 44 24 04          	mov    %eax,0x4(%esp)
 c010c87e:	8d 85 98 fe ff ff    	lea    -0x168(%ebp),%eax
 c010c884:	89 04 24             	mov    %eax,(%esp)
-c010c887:	e8 a0 47 00 00       	call   c011102c <__ZN7Utility7MemCopyEmmj>
+c010c887:	e8 fc 47 00 00       	call   c0111088 <__ZN7Utility7MemCopyEmmj>
 c010c88c:	8d 85 a0 fe ff ff    	lea    -0x160(%ebp),%eax
 c010c892:	83 28 04             	subl   $0x4,(%eax)
 c010c895:	8d 85 a4 fe ff ff    	lea    -0x15c(%ebp),%eax
@@ -16972,7 +16972,7 @@ c010c8a6:	8b 85 a0 fe ff ff    	mov    -0x160(%ebp),%eax
 c010c8ac:	89 44 24 04          	mov    %eax,0x4(%esp)
 c010c8b0:	8d 85 ac fe ff ff    	lea    -0x154(%ebp),%eax
 c010c8b6:	89 04 24             	mov    %eax,(%esp)
-c010c8b9:	e8 6e 47 00 00       	call   c011102c <__ZN7Utility7MemCopyEmmj>
+c010c8b9:	e8 ca 47 00 00       	call   c0111088 <__ZN7Utility7MemCopyEmmj>
 c010c8be:	8b 45 ec             	mov    -0x14(%ebp),%eax
 c010c8c1:	8b 40 10             	mov    0x10(%eax),%eax
 c010c8c4:	83 78 14 00          	cmpl   $0x0,0x14(%eax)
@@ -16981,7 +16981,7 @@ c010c8ca:	8b 45 ec             	mov    -0x14(%ebp),%eax
 c010c8cd:	8b 40 10             	mov    0x10(%eax),%eax
 c010c8d0:	8b 40 14             	mov    0x14(%eax),%eax
 c010c8d3:	89 04 24             	mov    %eax,(%esp)
-c010c8d6:	e8 11 3b 00 00       	call   c01103ec <__ZN4Text5XFreeEv>
+c010c8d6:	e8 6d 3b 00 00       	call   c0110448 <__ZN4Text5XFreeEv>
 c010c8db:	8b 45 ec             	mov    -0x14(%ebp),%eax
 c010c8de:	8b 40 10             	mov    0x10(%eax),%eax
 c010c8e1:	c7 40 14 00 00 00 00 	movl   $0x0,0x14(%eax)
@@ -17201,7 +17201,7 @@ c010cbed:	03 85 b0 fe ff ff    	add    -0x150(%ebp),%eax
 c010cbf3:	2b 85 cc fe ff ff    	sub    -0x134(%ebp),%eax
 c010cbf9:	0d 00 00 00 c0       	or     $0xc0000000,%eax
 c010cbfe:	89 04 24             	mov    %eax,(%esp)
-c010cc01:	e8 26 44 00 00       	call   c011102c <__ZN7Utility7MemCopyEmmj>
+c010cc01:	e8 82 44 00 00       	call   c0111088 <__ZN7Utility7MemCopyEmmj>
 c010cc06:	8b 85 b0 fe ff ff    	mov    -0x150(%ebp),%eax
 c010cc0c:	89 44 24 08          	mov    %eax,0x8(%esp)
 c010cc10:	8b 85 b4 fe ff ff    	mov    -0x14c(%ebp),%eax
@@ -17500,14 +17500,14 @@ c010cfd6:	89 45 f8             	mov    %eax,-0x8(%ebp)
 c010cfd9:	83 7d f8 00          	cmpl   $0x0,-0x8(%ebp)
 c010cfdd:	75 0c                	jne    c010cfeb <__ZN14ProcessManager5XSwapEP7Processbi+0x51>
 c010cfdf:	c7 04 24 53 3a 11 c0 	movl   $0xc0113a53,(%esp)
-c010cfe6:	e8 d7 43 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c010cfe6:	e8 33 44 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c010cfeb:	8b 45 0c             	mov    0xc(%ebp),%eax
 c010cfee:	83 78 14 00          	cmpl   $0x0,0x14(%eax)
 c010cff2:	74 0e                	je     c010d002 <__ZN14ProcessManager5XSwapEP7Processbi+0x68>
 c010cff4:	8b 45 0c             	mov    0xc(%ebp),%eax
 c010cff7:	8b 40 14             	mov    0x14(%eax),%eax
 c010cffa:	89 04 24             	mov    %eax,(%esp)
-c010cffd:	e8 96 33 00 00       	call   c0110398 <__ZN4Text6XccDecEv>
+c010cffd:	e8 f2 33 00 00       	call   c01103f4 <__ZN4Text6XccDecEv>
 c010d002:	8b 55 0c             	mov    0xc(%ebp),%edx
 c010d005:	8b 45 0c             	mov    0xc(%ebp),%eax
 c010d008:	8b 40 1c             	mov    0x1c(%eax),%eax
@@ -17531,7 +17531,7 @@ c010d043:	e8 1e 43 ff ff       	call   c0101366 <__ZN13BufferManager4SwapEimiN3B
 c010d048:	84 c0                	test   %al,%al
 c010d04a:	75 0c                	jne    c010d058 <__ZN14ProcessManager5XSwapEP7Processbi+0xbe>
 c010d04c:	c7 04 24 68 3a 11 c0 	movl   $0xc0113a68,(%esp)
-c010d053:	e8 6a 43 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
+c010d053:	e8 c6 43 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
 c010d058:	80 7d ff 00          	cmpb   $0x0,-0x1(%ebp)
 c010d05c:	74 28                	je     c010d086 <__ZN14ProcessManager5XSwapEP7Processbi+0xec>
 c010d05e:	e8 05 a1 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
@@ -17953,7 +17953,7 @@ c010d478:	8b 45 08             	mov    0x8(%ebp),%eax
 c010d47b:	8b 40 28             	mov    0x28(%eax),%eax
 c010d47e:	89 44 24 04          	mov    %eax,0x4(%esp)
 c010d482:	c7 04 24 80 39 11 c0 	movl   $0xc0113980,(%esp)
-c010d489:	e8 ba 41 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
+c010d489:	e8 16 42 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
 c010d48e:	8b 45 f8             	mov    -0x8(%ebp),%eax
 c010d491:	8b 40 10             	mov    0x10(%eax),%eax
 c010d494:	89 04 24             	mov    %eax,(%esp)
@@ -18352,7 +18352,7 @@ c010d894:	e8 6b 9b ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
 c010d899:	89 45 fc             	mov    %eax,-0x4(%ebp)
 c010d89c:	8b 45 fc             	mov    -0x4(%ebp),%eax
 c010d89f:	89 04 24             	mov    %eax,(%esp)
-c010d8a2:	e8 f1 35 00 00       	call   c0110e98 <__ZN4User6SetuidEv>
+c010d8a2:	e8 4d 36 00 00       	call   c0110ef4 <__ZN4User6SetuidEv>
 c010d8a7:	b8 00 00 00 00       	mov    $0x0,%eax
 c010d8ac:	c9                   	leave  
 c010d8ad:	c3                   	ret    
@@ -18367,7 +18367,7 @@ c010d8bc:	e8 43 9b ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
 c010d8c1:	89 45 fc             	mov    %eax,-0x4(%ebp)
 c010d8c4:	8b 45 fc             	mov    -0x4(%ebp),%eax
 c010d8c7:	89 04 24             	mov    %eax,(%esp)
-c010d8ca:	e8 37 36 00 00       	call   c0110f06 <__ZN4User6GetuidEv>
+c010d8ca:	e8 93 36 00 00       	call   c0110f62 <__ZN4User6GetuidEv>
 c010d8cf:	b8 00 00 00 00       	mov    $0x0,%eax
 c010d8d4:	c9                   	leave  
 c010d8d5:	c3                   	ret    
@@ -18382,7 +18382,7 @@ c010d8e4:	e8 1b 9b ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
 c010d8e9:	89 45 fc             	mov    %eax,-0x4(%ebp)
 c010d8ec:	8b 45 fc             	mov    -0x4(%ebp),%eax
 c010d8ef:	89 04 24             	mov    %eax,(%esp)
-c010d8f2:	e8 fd 36 00 00       	call   c0110ff4 <__ZN4User5SUserEv>
+c010d8f2:	e8 59 37 00 00       	call   c0111050 <__ZN4User5SUserEv>
 c010d8f7:	84 c0                	test   %al,%al
 c010d8f9:	74 0d                	je     c010d908 <__ZN10SystemCall9Sys_StimeEv+0x32>
 c010d8fb:	8b 45 fc             	mov    -0x4(%ebp),%eax
@@ -18438,7 +18438,7 @@ c010d986:	b8 19 00 00 00       	mov    $0x19,%eax
 c010d98b:	2b 05 c8 45 11 c0    	sub    0xc01145c8,%eax
 c010d991:	a3 c8 42 11 c0       	mov    %eax,0xc01142c8
 c010d996:	eb 33                	jmp    c010d9cb <__ZN10SystemCall9Sys_TraceEv+0x89>
-c010d998:	e8 99 3e 00 00       	call   c0111836 <__ZN8Diagnose11ClearScreenEv>
+c010d998:	e8 f5 3e 00 00       	call   c0111892 <__ZN8Diagnose11ClearScreenEv>
 c010d99d:	c7 05 c8 45 11 c0 00 	movl   $0x0,0xc01145c8
 c010d9a4:	00 00 00 
 c010d9a7:	b8 19 00 00 00       	mov    $0x19,%eax
@@ -18701,7 +18701,7 @@ c010dccc:	e8 33 97 ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
 c010dcd1:	89 45 fc             	mov    %eax,-0x4(%ebp)
 c010dcd4:	8b 45 fc             	mov    -0x4(%ebp),%eax
 c010dcd7:	89 04 24             	mov    %eax,(%esp)
-c010dcda:	e8 f3 32 00 00       	call   c0110fd2 <__ZN4User3PwdEv>
+c010dcda:	e8 4f 33 00 00       	call   c011102e <__ZN4User3PwdEv>
 c010dcdf:	b8 00 00 00 00       	mov    $0x0,%eax
 c010dce4:	c9                   	leave  
 c010dce5:	c3                   	ret    
@@ -18785,7 +18785,7 @@ c010dda4:	e8 5b 96 ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
 c010dda9:	89 45 fc             	mov    %eax,-0x4(%ebp)
 c010ddac:	8b 45 fc             	mov    -0x4(%ebp),%eax
 c010ddaf:	89 04 24             	mov    %eax,(%esp)
-c010ddb2:	e8 85 31 00 00       	call   c0110f3c <__ZN4User6SetgidEv>
+c010ddb2:	e8 e1 31 00 00       	call   c0110f98 <__ZN4User6SetgidEv>
 c010ddb7:	b8 00 00 00 00       	mov    $0x0,%eax
 c010ddbc:	c9                   	leave  
 c010ddbd:	c3                   	ret    
@@ -18800,7 +18800,7 @@ c010ddcc:	e8 33 96 ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
 c010ddd1:	89 45 fc             	mov    %eax,-0x4(%ebp)
 c010ddd4:	8b 45 fc             	mov    -0x4(%ebp),%eax
 c010ddd7:	89 04 24             	mov    %eax,(%esp)
-c010ddda:	e8 bd 31 00 00       	call   c0110f9c <__ZN4User6GetgidEv>
+c010ddda:	e8 19 32 00 00       	call   c0110ff8 <__ZN4User6GetgidEv>
 c010dddf:	b8 00 00 00 00       	mov    $0x0,%eax
 c010dde4:	c9                   	leave  
 c010dde5:	c3                   	ret    
@@ -18821,4533 +18821,4569 @@ c010de0a:	b8 00 00 00 00       	mov    $0x0,%eax
 c010de0f:	c9                   	leave  
 c010de10:	c3                   	ret    
 c010de11:	90                   	nop    
-c010de12:	90                   	nop    
-c010de13:	90                   	nop    
 
-c010de14 <__ZN26TaskStateSegmentDescriptor14SetBaseAddressEm>:
-c010de14:	55                   	push   %ebp
-c010de15:	89 e5                	mov    %esp,%ebp
-c010de17:	8b 55 08             	mov    0x8(%ebp),%edx
-c010de1a:	8b 45 0c             	mov    0xc(%ebp),%eax
-c010de1d:	66 89 42 02          	mov    %ax,0x2(%edx)
-c010de21:	8b 55 08             	mov    0x8(%ebp),%edx
-c010de24:	8b 45 0c             	mov    0xc(%ebp),%eax
-c010de27:	c1 e8 10             	shr    $0x10,%eax
-c010de2a:	88 42 04             	mov    %al,0x4(%edx)
-c010de2d:	8b 55 08             	mov    0x8(%ebp),%edx
-c010de30:	8b 45 0c             	mov    0xc(%ebp),%eax
-c010de33:	c1 e8 18             	shr    $0x18,%eax
-c010de36:	88 42 07             	mov    %al,0x7(%edx)
-c010de39:	5d                   	pop    %ebp
-c010de3a:	c3                   	ret    
-c010de3b:	90                   	nop    
+c010de12 <__ZN10SystemCall8Sys_No50Ev>:
+c010de12:	55                   	push   %ebp
+c010de13:	89 e5                	mov    %esp,%ebp
+c010de15:	83 ec 08             	sub    $0x8,%esp
+c010de18:	e8 4b 93 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010de1d:	89 04 24             	mov    %eax,(%esp)
+c010de20:	e8 df 95 ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
+c010de25:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c010de28:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010de2b:	8b 50 2c             	mov    0x2c(%eax),%edx
+c010de2e:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010de31:	8b 40 10             	mov    0x10(%eax),%eax
+c010de34:	8b 40 04             	mov    0x4(%eax),%eax
+c010de37:	89 02                	mov    %eax,(%edx)
+c010de39:	b8 00 00 00 00       	mov    $0x0,%eax
+c010de3e:	c9                   	leave  
+c010de3f:	c3                   	ret    
 
-c010de3c <__ZN26TaskStateSegmentDescriptor15SetSegmengLimitEj>:
-c010de3c:	55                   	push   %ebp
-c010de3d:	89 e5                	mov    %esp,%ebp
-c010de3f:	8b 55 08             	mov    0x8(%ebp),%edx
-c010de42:	8b 45 0c             	mov    0xc(%ebp),%eax
-c010de45:	66 89 02             	mov    %ax,(%edx)
-c010de48:	8b 4d 08             	mov    0x8(%ebp),%ecx
-c010de4b:	8b 45 0c             	mov    0xc(%ebp),%eax
-c010de4e:	c1 e8 10             	shr    $0x10,%eax
-c010de51:	88 c2                	mov    %al,%dl
-c010de53:	80 e2 0f             	and    $0xf,%dl
-c010de56:	0f b6 41 06          	movzbl 0x6(%ecx),%eax
-c010de5a:	80 e2 0f             	and    $0xf,%dl
-c010de5d:	24 f0                	and    $0xf0,%al
-c010de5f:	08 d0                	or     %dl,%al
-c010de61:	88 41 06             	mov    %al,0x6(%ecx)
-c010de64:	5d                   	pop    %ebp
-c010de65:	c3                   	ret    
-c010de66:	90                   	nop    
-c010de67:	90                   	nop    
+c010de40 <__ZN10SystemCall12Sys_GetTableEv>:
+c010de40:	55                   	push   %ebp
+c010de41:	89 e5                	mov    %esp,%ebp
+c010de43:	83 ec 08             	sub    $0x8,%esp
+c010de46:	e8 1d 93 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010de4b:	89 04 24             	mov    %eax,(%esp)
+c010de4e:	e8 b1 95 ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
+c010de53:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c010de56:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010de59:	8b 50 2c             	mov    0x2c(%eax),%edx
+c010de5c:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010de5f:	8b 40 14             	mov    0x14(%eax),%eax
+c010de62:	c1 e8 0c             	shr    $0xc,%eax
+c010de65:	89 02                	mov    %eax,(%edx)
+c010de67:	b8 00 00 00 00       	mov    $0x0,%eax
+c010de6c:	c9                   	leave  
+c010de6d:	c3                   	ret    
+c010de6e:	90                   	nop    
+c010de6f:	90                   	nop    
 
-c010de68 <__Z11PrintBufferP3Buf>:
-c010de68:	55                   	push   %ebp
-c010de69:	89 e5                	mov    %esp,%ebp
-c010de6b:	83 ec 18             	sub    $0x18,%esp
-c010de6e:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%ebp)
-c010de75:	81 7d fc ff 01 00 00 	cmpl   $0x1ff,-0x4(%ebp)
-c010de7c:	7f 57                	jg     c010ded5 <__Z11PrintBufferP3Buf+0x6d>
-c010de7e:	8b 45 08             	mov    0x8(%ebp),%eax
-c010de81:	8b 40 20             	mov    0x20(%eax),%eax
-c010de84:	03 45 fc             	add    -0x4(%ebp),%eax
-c010de87:	0f b6 00             	movzbl (%eax),%eax
-c010de8a:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010de8e:	c7 04 24 94 38 11 c0 	movl   $0xc0113894,(%esp)
-c010de95:	e8 ae 37 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010de9a:	8b 4d fc             	mov    -0x4(%ebp),%ecx
-c010de9d:	b8 1f 85 eb 51       	mov    $0x51eb851f,%eax
-c010dea2:	f7 e9                	imul   %ecx
-c010dea4:	c1 fa 05             	sar    $0x5,%edx
-c010dea7:	89 c8                	mov    %ecx,%eax
-c010dea9:	c1 f8 1f             	sar    $0x1f,%eax
-c010deac:	29 c2                	sub    %eax,%edx
-c010deae:	89 d0                	mov    %edx,%eax
-c010deb0:	c1 e0 02             	shl    $0x2,%eax
-c010deb3:	01 d0                	add    %edx,%eax
-c010deb5:	8d 14 85 00 00 00 00 	lea    0x0(,%eax,4),%edx
-c010debc:	01 d0                	add    %edx,%eax
-c010debe:	c1 e0 02             	shl    $0x2,%eax
-c010dec1:	29 c1                	sub    %eax,%ecx
-c010dec3:	89 c8                	mov    %ecx,%eax
-c010dec5:	85 c0                	test   %eax,%eax
-c010dec7:	75 05                	jne    c010dece <__Z11PrintBufferP3Buf+0x66>
-c010dec9:	e8 bc b1 ff ff       	call   c010908a <_Delay>
-c010dece:	8d 45 fc             	lea    -0x4(%ebp),%eax
-c010ded1:	ff 00                	incl   (%eax)
-c010ded3:	eb a0                	jmp    c010de75 <__Z11PrintBufferP3Buf+0xd>
-c010ded5:	c9                   	leave  
-c010ded6:	c3                   	ret    
-c010ded7:	90                   	nop    
+c010de70 <__ZN26TaskStateSegmentDescriptor14SetBaseAddressEm>:
+c010de70:	55                   	push   %ebp
+c010de71:	89 e5                	mov    %esp,%ebp
+c010de73:	8b 55 08             	mov    0x8(%ebp),%edx
+c010de76:	8b 45 0c             	mov    0xc(%ebp),%eax
+c010de79:	66 89 42 02          	mov    %ax,0x2(%edx)
+c010de7d:	8b 55 08             	mov    0x8(%ebp),%edx
+c010de80:	8b 45 0c             	mov    0xc(%ebp),%eax
+c010de83:	c1 e8 10             	shr    $0x10,%eax
+c010de86:	88 42 04             	mov    %al,0x4(%edx)
+c010de89:	8b 55 08             	mov    0x8(%ebp),%edx
+c010de8c:	8b 45 0c             	mov    0xc(%ebp),%eax
+c010de8f:	c1 e8 18             	shr    $0x18,%eax
+c010de92:	88 42 07             	mov    %al,0x7(%edx)
+c010de95:	5d                   	pop    %ebp
+c010de96:	c3                   	ret    
+c010de97:	90                   	nop    
 
-c010ded8 <__Z12ModifyBufferP3Bufi>:
-c010ded8:	55                   	push   %ebp
-c010ded9:	89 e5                	mov    %esp,%ebp
-c010dedb:	53                   	push   %ebx
-c010dedc:	83 ec 04             	sub    $0x4,%esp
-c010dedf:	c7 45 f8 00 00 00 00 	movl   $0x0,-0x8(%ebp)
-c010dee6:	81 7d f8 ff 01 00 00 	cmpl   $0x1ff,-0x8(%ebp)
-c010deed:	7f 40                	jg     c010df2f <__Z12ModifyBufferP3Bufi+0x57>
-c010deef:	8b 45 08             	mov    0x8(%ebp),%eax
-c010def2:	8b 40 20             	mov    0x20(%eax),%eax
-c010def5:	8b 5d f8             	mov    -0x8(%ebp),%ebx
-c010def8:	01 c3                	add    %eax,%ebx
-c010defa:	8b 4d f8             	mov    -0x8(%ebp),%ecx
-c010defd:	b8 4f ec c4 4e       	mov    $0x4ec4ec4f,%eax
-c010df02:	f7 e9                	imul   %ecx
-c010df04:	c1 fa 03             	sar    $0x3,%edx
-c010df07:	89 c8                	mov    %ecx,%eax
-c010df09:	c1 f8 1f             	sar    $0x1f,%eax
-c010df0c:	29 c2                	sub    %eax,%edx
-c010df0e:	89 d0                	mov    %edx,%eax
-c010df10:	01 c0                	add    %eax,%eax
-c010df12:	01 d0                	add    %edx,%eax
-c010df14:	c1 e0 02             	shl    $0x2,%eax
-c010df17:	01 d0                	add    %edx,%eax
-c010df19:	01 c0                	add    %eax,%eax
-c010df1b:	89 ca                	mov    %ecx,%edx
-c010df1d:	29 c2                	sub    %eax,%edx
-c010df1f:	8b 45 0c             	mov    0xc(%ebp),%eax
-c010df22:	00 d0                	add    %dl,%al
-c010df24:	04 61                	add    $0x61,%al
-c010df26:	88 03                	mov    %al,(%ebx)
-c010df28:	8d 45 f8             	lea    -0x8(%ebp),%eax
-c010df2b:	ff 00                	incl   (%eax)
-c010df2d:	eb b7                	jmp    c010dee6 <__Z12ModifyBufferP3Bufi+0xe>
-c010df2f:	83 c4 04             	add    $0x4,%esp
-c010df32:	5b                   	pop    %ebx
-c010df33:	5d                   	pop    %ebp
-c010df34:	c3                   	ret    
-c010df35:	90                   	nop    
+c010de98 <__ZN26TaskStateSegmentDescriptor15SetSegmengLimitEj>:
+c010de98:	55                   	push   %ebp
+c010de99:	89 e5                	mov    %esp,%ebp
+c010de9b:	8b 55 08             	mov    0x8(%ebp),%edx
+c010de9e:	8b 45 0c             	mov    0xc(%ebp),%eax
+c010dea1:	66 89 02             	mov    %ax,(%edx)
+c010dea4:	8b 4d 08             	mov    0x8(%ebp),%ecx
+c010dea7:	8b 45 0c             	mov    0xc(%ebp),%eax
+c010deaa:	c1 e8 10             	shr    $0x10,%eax
+c010dead:	88 c2                	mov    %al,%dl
+c010deaf:	80 e2 0f             	and    $0xf,%dl
+c010deb2:	0f b6 41 06          	movzbl 0x6(%ecx),%eax
+c010deb6:	80 e2 0f             	and    $0xf,%dl
+c010deb9:	24 f0                	and    $0xf0,%al
+c010debb:	08 d0                	or     %dl,%al
+c010debd:	88 41 06             	mov    %al,0x6(%ecx)
+c010dec0:	5d                   	pop    %ebp
+c010dec1:	c3                   	ret    
+c010dec2:	90                   	nop    
+c010dec3:	90                   	nop    
 
-c010df36 <__Z14CheckSumBufferP3Buf>:
-c010df36:	55                   	push   %ebp
-c010df37:	89 e5                	mov    %esp,%ebp
-c010df39:	83 ec 18             	sub    $0x18,%esp
-c010df3c:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%ebp)
-c010df43:	c7 45 f8 00 00 00 00 	movl   $0x0,-0x8(%ebp)
-c010df4a:	81 7d f8 ff 01 00 00 	cmpl   $0x1ff,-0x8(%ebp)
-c010df51:	7f 18                	jg     c010df6b <__Z14CheckSumBufferP3Buf+0x35>
-c010df53:	8b 45 08             	mov    0x8(%ebp),%eax
-c010df56:	8b 40 20             	mov    0x20(%eax),%eax
-c010df59:	03 45 f8             	add    -0x8(%ebp),%eax
-c010df5c:	0f b6 10             	movzbl (%eax),%edx
-c010df5f:	8d 45 fc             	lea    -0x4(%ebp),%eax
-c010df62:	01 10                	add    %edx,(%eax)
-c010df64:	8d 45 f8             	lea    -0x8(%ebp),%eax
-c010df67:	ff 00                	incl   (%eax)
-c010df69:	eb df                	jmp    c010df4a <__Z14CheckSumBufferP3Buf+0x14>
-c010df6b:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010df6e:	89 44 24 08          	mov    %eax,0x8(%esp)
-c010df72:	8b 45 08             	mov    0x8(%ebp),%eax
-c010df75:	8b 40 20             	mov    0x20(%eax),%eax
-c010df78:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010df7c:	c7 04 24 98 38 11 c0 	movl   $0xc0113898,(%esp)
-c010df83:	e8 c0 36 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010df88:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010df8b:	c9                   	leave  
-c010df8c:	c3                   	ret    
-c010df8d:	90                   	nop    
+c010dec4 <__Z11PrintBufferP3Buf>:
+c010dec4:	55                   	push   %ebp
+c010dec5:	89 e5                	mov    %esp,%ebp
+c010dec7:	83 ec 18             	sub    $0x18,%esp
+c010deca:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%ebp)
+c010ded1:	81 7d fc ff 01 00 00 	cmpl   $0x1ff,-0x4(%ebp)
+c010ded8:	7f 57                	jg     c010df31 <__Z11PrintBufferP3Buf+0x6d>
+c010deda:	8b 45 08             	mov    0x8(%ebp),%eax
+c010dedd:	8b 40 20             	mov    0x20(%eax),%eax
+c010dee0:	03 45 fc             	add    -0x4(%ebp),%eax
+c010dee3:	0f b6 00             	movzbl (%eax),%eax
+c010dee6:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010deea:	c7 04 24 94 38 11 c0 	movl   $0xc0113894,(%esp)
+c010def1:	e8 ae 37 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010def6:	8b 4d fc             	mov    -0x4(%ebp),%ecx
+c010def9:	b8 1f 85 eb 51       	mov    $0x51eb851f,%eax
+c010defe:	f7 e9                	imul   %ecx
+c010df00:	c1 fa 05             	sar    $0x5,%edx
+c010df03:	89 c8                	mov    %ecx,%eax
+c010df05:	c1 f8 1f             	sar    $0x1f,%eax
+c010df08:	29 c2                	sub    %eax,%edx
+c010df0a:	89 d0                	mov    %edx,%eax
+c010df0c:	c1 e0 02             	shl    $0x2,%eax
+c010df0f:	01 d0                	add    %edx,%eax
+c010df11:	8d 14 85 00 00 00 00 	lea    0x0(,%eax,4),%edx
+c010df18:	01 d0                	add    %edx,%eax
+c010df1a:	c1 e0 02             	shl    $0x2,%eax
+c010df1d:	29 c1                	sub    %eax,%ecx
+c010df1f:	89 c8                	mov    %ecx,%eax
+c010df21:	85 c0                	test   %eax,%eax
+c010df23:	75 05                	jne    c010df2a <__Z11PrintBufferP3Buf+0x66>
+c010df25:	e8 60 b1 ff ff       	call   c010908a <_Delay>
+c010df2a:	8d 45 fc             	lea    -0x4(%ebp),%eax
+c010df2d:	ff 00                	incl   (%eax)
+c010df2f:	eb a0                	jmp    c010ded1 <__Z11PrintBufferP3Buf+0xd>
+c010df31:	c9                   	leave  
+c010df32:	c3                   	ret    
+c010df33:	90                   	nop    
 
-c010df8e <__Z9BreadTestv>:
-c010df8e:	55                   	push   %ebp
-c010df8f:	89 e5                	mov    %esp,%ebp
-c010df91:	83 ec 18             	sub    $0x18,%esp
-c010df94:	c7 04 24 b6 38 11 c0 	movl   $0xc01138b6,(%esp)
-c010df9b:	e8 a8 36 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010dfa0:	e8 c3 91 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010dfa5:	89 04 24             	mov    %eax,(%esp)
-c010dfa8:	e8 27 94 ff ff       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
-c010dfad:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c010dfb0:	c7 44 24 08 00 00 00 	movl   $0x0,0x8(%esp)
-c010dfb7:	00 
-c010dfb8:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
-c010dfbf:	00 
-c010dfc0:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010dfc3:	89 04 24             	mov    %eax,(%esp)
-c010dfc6:	e8 65 2f ff ff       	call   c0100f30 <__ZN13BufferManager5BreadEsi>
-c010dfcb:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c010dfce:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010dfd1:	89 04 24             	mov    %eax,(%esp)
-c010dfd4:	e8 5d ff ff ff       	call   c010df36 <__Z14CheckSumBufferP3Buf>
-c010dfd9:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010dfdc:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010dfe0:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010dfe3:	89 04 24             	mov    %eax,(%esp)
-c010dfe6:	e8 ad 2d ff ff       	call   c0100d98 <__ZN13BufferManager6BrelseEP3Buf>
-c010dfeb:	c7 44 24 08 00 00 00 	movl   $0x0,0x8(%esp)
-c010dff2:	00 
-c010dff3:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
-c010dffa:	00 
-c010dffb:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010dffe:	89 04 24             	mov    %eax,(%esp)
-c010e001:	e8 2a 2f ff ff       	call   c0100f30 <__ZN13BufferManager5BreadEsi>
-c010e006:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c010e009:	c7 04 24 cb 38 11 c0 	movl   $0xc01138cb,(%esp)
-c010e010:	e8 33 36 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010e015:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e018:	89 04 24             	mov    %eax,(%esp)
-c010e01b:	e8 16 ff ff ff       	call   c010df36 <__Z14CheckSumBufferP3Buf>
-c010e020:	b8 01 00 00 00       	mov    $0x1,%eax
-c010e025:	c9                   	leave  
-c010e026:	c3                   	ret    
-c010e027:	90                   	nop    
+c010df34 <__Z12ModifyBufferP3Bufi>:
+c010df34:	55                   	push   %ebp
+c010df35:	89 e5                	mov    %esp,%ebp
+c010df37:	53                   	push   %ebx
+c010df38:	83 ec 04             	sub    $0x4,%esp
+c010df3b:	c7 45 f8 00 00 00 00 	movl   $0x0,-0x8(%ebp)
+c010df42:	81 7d f8 ff 01 00 00 	cmpl   $0x1ff,-0x8(%ebp)
+c010df49:	7f 40                	jg     c010df8b <__Z12ModifyBufferP3Bufi+0x57>
+c010df4b:	8b 45 08             	mov    0x8(%ebp),%eax
+c010df4e:	8b 40 20             	mov    0x20(%eax),%eax
+c010df51:	8b 5d f8             	mov    -0x8(%ebp),%ebx
+c010df54:	01 c3                	add    %eax,%ebx
+c010df56:	8b 4d f8             	mov    -0x8(%ebp),%ecx
+c010df59:	b8 4f ec c4 4e       	mov    $0x4ec4ec4f,%eax
+c010df5e:	f7 e9                	imul   %ecx
+c010df60:	c1 fa 03             	sar    $0x3,%edx
+c010df63:	89 c8                	mov    %ecx,%eax
+c010df65:	c1 f8 1f             	sar    $0x1f,%eax
+c010df68:	29 c2                	sub    %eax,%edx
+c010df6a:	89 d0                	mov    %edx,%eax
+c010df6c:	01 c0                	add    %eax,%eax
+c010df6e:	01 d0                	add    %edx,%eax
+c010df70:	c1 e0 02             	shl    $0x2,%eax
+c010df73:	01 d0                	add    %edx,%eax
+c010df75:	01 c0                	add    %eax,%eax
+c010df77:	89 ca                	mov    %ecx,%edx
+c010df79:	29 c2                	sub    %eax,%edx
+c010df7b:	8b 45 0c             	mov    0xc(%ebp),%eax
+c010df7e:	00 d0                	add    %dl,%al
+c010df80:	04 61                	add    $0x61,%al
+c010df82:	88 03                	mov    %al,(%ebx)
+c010df84:	8d 45 f8             	lea    -0x8(%ebp),%eax
+c010df87:	ff 00                	incl   (%eax)
+c010df89:	eb b7                	jmp    c010df42 <__Z12ModifyBufferP3Bufi+0xe>
+c010df8b:	83 c4 04             	add    $0x4,%esp
+c010df8e:	5b                   	pop    %ebx
+c010df8f:	5d                   	pop    %ebp
+c010df90:	c3                   	ret    
+c010df91:	90                   	nop    
 
-c010e028 <__Z14RepeatReadTestv>:
-c010e028:	55                   	push   %ebp
-c010e029:	89 e5                	mov    %esp,%ebp
-c010e02b:	83 ec 28             	sub    $0x28,%esp
-c010e02e:	c7 04 24 e9 38 11 c0 	movl   $0xc01138e9,(%esp)
-c010e035:	e8 0e 36 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010e03a:	c7 45 f4 b8 0b 00 00 	movl   $0xbb8,-0xc(%ebp)
-c010e041:	e8 22 91 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010e046:	89 04 24             	mov    %eax,(%esp)
-c010e049:	e8 86 93 ff ff       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
-c010e04e:	89 45 f0             	mov    %eax,-0x10(%ebp)
-c010e051:	c7 44 24 08 00 00 00 	movl   $0x0,0x8(%esp)
-c010e058:	00 
-c010e059:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
-c010e060:	00 
-c010e061:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c010e064:	89 04 24             	mov    %eax,(%esp)
-c010e067:	e8 c4 2e ff ff       	call   c0100f30 <__ZN13BufferManager5BreadEsi>
-c010e06c:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c010e06f:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e072:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010e076:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c010e079:	89 04 24             	mov    %eax,(%esp)
-c010e07c:	e8 17 2d ff ff       	call   c0100d98 <__ZN13BufferManager6BrelseEP3Buf>
-c010e081:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e084:	8b 40 20             	mov    0x20(%eax),%eax
-c010e087:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c010e08a:	c7 45 ec 00 00 00 00 	movl   $0x0,-0x14(%ebp)
-c010e091:	c7 45 e8 00 00 00 00 	movl   $0x0,-0x18(%ebp)
-c010e098:	8b 45 e8             	mov    -0x18(%ebp),%eax
-c010e09b:	3b 45 f4             	cmp    -0xc(%ebp),%eax
-c010e09e:	7d 5a                	jge    c010e0fa <__Z14RepeatReadTestv+0xd2>
-c010e0a0:	8b 45 e8             	mov    -0x18(%ebp),%eax
-c010e0a3:	89 44 24 08          	mov    %eax,0x8(%esp)
-c010e0a7:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
-c010e0ae:	00 
-c010e0af:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c010e0b2:	89 04 24             	mov    %eax,(%esp)
-c010e0b5:	e8 76 2e ff ff       	call   c0100f30 <__ZN13BufferManager5BreadEsi>
-c010e0ba:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c010e0bd:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e0c0:	8b 55 f8             	mov    -0x8(%ebp),%edx
-c010e0c3:	8b 40 20             	mov    0x20(%eax),%eax
-c010e0c6:	29 d0                	sub    %edx,%eax
-c010e0c8:	c1 e8 09             	shr    $0x9,%eax
-c010e0cb:	89 45 ec             	mov    %eax,-0x14(%ebp)
-c010e0ce:	8b 45 ec             	mov    -0x14(%ebp),%eax
-c010e0d1:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010e0d5:	c7 04 24 06 39 11 c0 	movl   $0xc0113906,(%esp)
-c010e0dc:	e8 67 35 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010e0e1:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e0e4:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010e0e8:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c010e0eb:	89 04 24             	mov    %eax,(%esp)
-c010e0ee:	e8 a5 2c ff ff       	call   c0100d98 <__ZN13BufferManager6BrelseEP3Buf>
-c010e0f3:	8d 45 e8             	lea    -0x18(%ebp),%eax
-c010e0f6:	ff 00                	incl   (%eax)
-c010e0f8:	eb 9e                	jmp    c010e098 <__Z14RepeatReadTestv+0x70>
-c010e0fa:	8b 4d f4             	mov    -0xc(%ebp),%ecx
-c010e0fd:	49                   	dec    %ecx
-c010e0fe:	b8 89 88 88 88       	mov    $0x88888889,%eax
-c010e103:	f7 e9                	imul   %ecx
-c010e105:	8d 04 11             	lea    (%ecx,%edx,1),%eax
-c010e108:	89 c2                	mov    %eax,%edx
-c010e10a:	c1 fa 03             	sar    $0x3,%edx
-c010e10d:	89 c8                	mov    %ecx,%eax
-c010e10f:	c1 f8 1f             	sar    $0x1f,%eax
-c010e112:	29 c2                	sub    %eax,%edx
-c010e114:	89 d0                	mov    %edx,%eax
-c010e116:	c1 e0 04             	shl    $0x4,%eax
-c010e119:	29 d0                	sub    %edx,%eax
-c010e11b:	29 c1                	sub    %eax,%ecx
-c010e11d:	89 c8                	mov    %ecx,%eax
-c010e11f:	3b 45 ec             	cmp    -0x14(%ebp),%eax
-c010e122:	75 09                	jne    c010e12d <__Z14RepeatReadTestv+0x105>
-c010e124:	c7 45 e4 01 00 00 00 	movl   $0x1,-0x1c(%ebp)
-c010e12b:	eb 0e                	jmp    c010e13b <__Z14RepeatReadTestv+0x113>
-c010e12d:	c7 04 24 1b 39 11 c0 	movl   $0xc011391b,(%esp)
-c010e134:	e8 0f 35 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010e139:	eb fe                	jmp    c010e139 <__Z14RepeatReadTestv+0x111>
-c010e13b:	8b 45 e4             	mov    -0x1c(%ebp),%eax
-c010e13e:	c9                   	leave  
-c010e13f:	c3                   	ret    
+c010df92 <__Z14CheckSumBufferP3Buf>:
+c010df92:	55                   	push   %ebp
+c010df93:	89 e5                	mov    %esp,%ebp
+c010df95:	83 ec 18             	sub    $0x18,%esp
+c010df98:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%ebp)
+c010df9f:	c7 45 f8 00 00 00 00 	movl   $0x0,-0x8(%ebp)
+c010dfa6:	81 7d f8 ff 01 00 00 	cmpl   $0x1ff,-0x8(%ebp)
+c010dfad:	7f 18                	jg     c010dfc7 <__Z14CheckSumBufferP3Buf+0x35>
+c010dfaf:	8b 45 08             	mov    0x8(%ebp),%eax
+c010dfb2:	8b 40 20             	mov    0x20(%eax),%eax
+c010dfb5:	03 45 f8             	add    -0x8(%ebp),%eax
+c010dfb8:	0f b6 10             	movzbl (%eax),%edx
+c010dfbb:	8d 45 fc             	lea    -0x4(%ebp),%eax
+c010dfbe:	01 10                	add    %edx,(%eax)
+c010dfc0:	8d 45 f8             	lea    -0x8(%ebp),%eax
+c010dfc3:	ff 00                	incl   (%eax)
+c010dfc5:	eb df                	jmp    c010dfa6 <__Z14CheckSumBufferP3Buf+0x14>
+c010dfc7:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010dfca:	89 44 24 08          	mov    %eax,0x8(%esp)
+c010dfce:	8b 45 08             	mov    0x8(%ebp),%eax
+c010dfd1:	8b 40 20             	mov    0x20(%eax),%eax
+c010dfd4:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010dfd8:	c7 04 24 98 38 11 c0 	movl   $0xc0113898,(%esp)
+c010dfdf:	e8 c0 36 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010dfe4:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010dfe7:	c9                   	leave  
+c010dfe8:	c3                   	ret    
+c010dfe9:	90                   	nop    
 
-c010e140 <__Z9WriteTestv>:
-c010e140:	55                   	push   %ebp
-c010e141:	89 e5                	mov    %esp,%ebp
-c010e143:	83 ec 18             	sub    $0x18,%esp
-c010e146:	c7 04 24 e9 38 11 c0 	movl   $0xc01138e9,(%esp)
-c010e14d:	e8 f6 34 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010e152:	e8 11 90 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010e157:	89 04 24             	mov    %eax,(%esp)
-c010e15a:	e8 75 92 ff ff       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
-c010e15f:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c010e162:	c7 44 24 08 00 00 00 	movl   $0x0,0x8(%esp)
-c010e169:	00 
-c010e16a:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
-c010e171:	00 
-c010e172:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010e175:	89 04 24             	mov    %eax,(%esp)
-c010e178:	e8 b3 2d ff ff       	call   c0100f30 <__ZN13BufferManager5BreadEsi>
-c010e17d:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c010e180:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
-c010e187:	00 
-c010e188:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e18b:	89 04 24             	mov    %eax,(%esp)
-c010e18e:	e8 45 fd ff ff       	call   c010ded8 <__Z12ModifyBufferP3Bufi>
-c010e193:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e196:	89 04 24             	mov    %eax,(%esp)
-c010e199:	e8 98 fd ff ff       	call   c010df36 <__Z14CheckSumBufferP3Buf>
-c010e19e:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010e1a1:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e1a4:	8b 40 20             	mov    0x20(%eax),%eax
-c010e1a7:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010e1ab:	c7 04 24 29 39 11 c0 	movl   $0xc0113929,(%esp)
-c010e1b2:	e8 91 34 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010e1b7:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e1ba:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010e1be:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010e1c1:	89 04 24             	mov    %eax,(%esp)
-c010e1c4:	e8 c5 2f ff ff       	call   c010118e <__ZN13BufferManager6BwriteEP3Buf>
-c010e1c9:	c7 04 24 2d 39 11 c0 	movl   $0xc011392d,(%esp)
-c010e1d0:	e8 73 34 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010e1d5:	b8 01 00 00 00       	mov    $0x1,%eax
-c010e1da:	c9                   	leave  
-c010e1db:	c3                   	ret    
+c010dfea <__Z9BreadTestv>:
+c010dfea:	55                   	push   %ebp
+c010dfeb:	89 e5                	mov    %esp,%ebp
+c010dfed:	83 ec 18             	sub    $0x18,%esp
+c010dff0:	c7 04 24 b6 38 11 c0 	movl   $0xc01138b6,(%esp)
+c010dff7:	e8 a8 36 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010dffc:	e8 67 91 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010e001:	89 04 24             	mov    %eax,(%esp)
+c010e004:	e8 cb 93 ff ff       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
+c010e009:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c010e00c:	c7 44 24 08 00 00 00 	movl   $0x0,0x8(%esp)
+c010e013:	00 
+c010e014:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
+c010e01b:	00 
+c010e01c:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010e01f:	89 04 24             	mov    %eax,(%esp)
+c010e022:	e8 09 2f ff ff       	call   c0100f30 <__ZN13BufferManager5BreadEsi>
+c010e027:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c010e02a:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e02d:	89 04 24             	mov    %eax,(%esp)
+c010e030:	e8 5d ff ff ff       	call   c010df92 <__Z14CheckSumBufferP3Buf>
+c010e035:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e038:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010e03c:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010e03f:	89 04 24             	mov    %eax,(%esp)
+c010e042:	e8 51 2d ff ff       	call   c0100d98 <__ZN13BufferManager6BrelseEP3Buf>
+c010e047:	c7 44 24 08 00 00 00 	movl   $0x0,0x8(%esp)
+c010e04e:	00 
+c010e04f:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
+c010e056:	00 
+c010e057:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010e05a:	89 04 24             	mov    %eax,(%esp)
+c010e05d:	e8 ce 2e ff ff       	call   c0100f30 <__ZN13BufferManager5BreadEsi>
+c010e062:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c010e065:	c7 04 24 cb 38 11 c0 	movl   $0xc01138cb,(%esp)
+c010e06c:	e8 33 36 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010e071:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e074:	89 04 24             	mov    %eax,(%esp)
+c010e077:	e8 16 ff ff ff       	call   c010df92 <__Z14CheckSumBufferP3Buf>
+c010e07c:	b8 01 00 00 00       	mov    $0x1,%eax
+c010e081:	c9                   	leave  
+c010e082:	c3                   	ret    
+c010e083:	90                   	nop    
 
-c010e1dc <__Z17TestBufferManagerv>:
-c010e1dc:	55                   	push   %ebp
-c010e1dd:	89 e5                	mov    %esp,%ebp
-c010e1df:	83 ec 28             	sub    $0x28,%esp
-c010e1e2:	c7 04 24 3a 39 11 c0 	movl   $0xc011393a,(%esp)
-c010e1e9:	e8 5a 34 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010e1ee:	e8 75 8f ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010e1f3:	89 04 24             	mov    %eax,(%esp)
-c010e1f6:	e8 d9 91 ff ff       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
-c010e1fb:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c010e1fe:	c7 44 24 08 01 00 00 	movl   $0x1,0x8(%esp)
-c010e205:	00 
-c010e206:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
-c010e20d:	00 
-c010e20e:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010e211:	89 04 24             	mov    %eax,(%esp)
-c010e214:	e8 17 2d ff ff       	call   c0100f30 <__ZN13BufferManager5BreadEsi>
-c010e219:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c010e21c:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e21f:	c7 40 24 02 00 00 00 	movl   $0x2,0x24(%eax)
-c010e226:	c7 44 24 04 01 00 00 	movl   $0x1,0x4(%esp)
-c010e22d:	00 
-c010e22e:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e231:	89 04 24             	mov    %eax,(%esp)
-c010e234:	e8 9f fc ff ff       	call   c010ded8 <__Z12ModifyBufferP3Bufi>
-c010e239:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e23c:	89 04 24             	mov    %eax,(%esp)
-c010e23f:	e8 f2 fc ff ff       	call   c010df36 <__Z14CheckSumBufferP3Buf>
-c010e244:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010e247:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e24a:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010e24e:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010e251:	89 04 24             	mov    %eax,(%esp)
-c010e254:	e8 1b 30 ff ff       	call   c0101274 <__ZN13BufferManager7BawriteEP3Buf>
-c010e259:	c7 04 24 58 39 11 c0 	movl   $0xc0113958,(%esp)
-c010e260:	e8 e3 33 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010e265:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e268:	66 c7 40 18 ff ff    	movw   $0xffff,0x18(%eax)
-c010e26e:	c7 44 24 08 02 00 00 	movl   $0x2,0x8(%esp)
-c010e275:	00 
-c010e276:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
-c010e27d:	00 
-c010e27e:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010e281:	89 04 24             	mov    %eax,(%esp)
-c010e284:	e8 a7 2c ff ff       	call   c0100f30 <__ZN13BufferManager5BreadEsi>
-c010e289:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c010e28c:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e28f:	89 04 24             	mov    %eax,(%esp)
-c010e292:	e8 9f fc ff ff       	call   c010df36 <__Z14CheckSumBufferP3Buf>
-c010e297:	3b 45 f4             	cmp    -0xc(%ebp),%eax
-c010e29a:	75 0e                	jne    c010e2aa <__Z17TestBufferManagerv+0xce>
-c010e29c:	e8 e9 ad ff ff       	call   c010908a <_Delay>
-c010e2a1:	c7 45 f0 01 00 00 00 	movl   $0x1,-0x10(%ebp)
-c010e2a8:	eb 0e                	jmp    c010e2b8 <__Z17TestBufferManagerv+0xdc>
-c010e2aa:	c7 04 24 66 39 11 c0 	movl   $0xc0113966,(%esp)
-c010e2b1:	e8 92 33 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010e2b6:	eb fe                	jmp    c010e2b6 <__Z17TestBufferManagerv+0xda>
-c010e2b8:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c010e2bb:	c9                   	leave  
-c010e2bc:	c3                   	ret    
-c010e2bd:	90                   	nop    
+c010e084 <__Z14RepeatReadTestv>:
+c010e084:	55                   	push   %ebp
+c010e085:	89 e5                	mov    %esp,%ebp
+c010e087:	83 ec 28             	sub    $0x28,%esp
+c010e08a:	c7 04 24 e9 38 11 c0 	movl   $0xc01138e9,(%esp)
+c010e091:	e8 0e 36 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010e096:	c7 45 f4 b8 0b 00 00 	movl   $0xbb8,-0xc(%ebp)
+c010e09d:	e8 c6 90 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010e0a2:	89 04 24             	mov    %eax,(%esp)
+c010e0a5:	e8 2a 93 ff ff       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
+c010e0aa:	89 45 f0             	mov    %eax,-0x10(%ebp)
+c010e0ad:	c7 44 24 08 00 00 00 	movl   $0x0,0x8(%esp)
+c010e0b4:	00 
+c010e0b5:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
+c010e0bc:	00 
+c010e0bd:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c010e0c0:	89 04 24             	mov    %eax,(%esp)
+c010e0c3:	e8 68 2e ff ff       	call   c0100f30 <__ZN13BufferManager5BreadEsi>
+c010e0c8:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c010e0cb:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e0ce:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010e0d2:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c010e0d5:	89 04 24             	mov    %eax,(%esp)
+c010e0d8:	e8 bb 2c ff ff       	call   c0100d98 <__ZN13BufferManager6BrelseEP3Buf>
+c010e0dd:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e0e0:	8b 40 20             	mov    0x20(%eax),%eax
+c010e0e3:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c010e0e6:	c7 45 ec 00 00 00 00 	movl   $0x0,-0x14(%ebp)
+c010e0ed:	c7 45 e8 00 00 00 00 	movl   $0x0,-0x18(%ebp)
+c010e0f4:	8b 45 e8             	mov    -0x18(%ebp),%eax
+c010e0f7:	3b 45 f4             	cmp    -0xc(%ebp),%eax
+c010e0fa:	7d 5a                	jge    c010e156 <__Z14RepeatReadTestv+0xd2>
+c010e0fc:	8b 45 e8             	mov    -0x18(%ebp),%eax
+c010e0ff:	89 44 24 08          	mov    %eax,0x8(%esp)
+c010e103:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
+c010e10a:	00 
+c010e10b:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c010e10e:	89 04 24             	mov    %eax,(%esp)
+c010e111:	e8 1a 2e ff ff       	call   c0100f30 <__ZN13BufferManager5BreadEsi>
+c010e116:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c010e119:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e11c:	8b 55 f8             	mov    -0x8(%ebp),%edx
+c010e11f:	8b 40 20             	mov    0x20(%eax),%eax
+c010e122:	29 d0                	sub    %edx,%eax
+c010e124:	c1 e8 09             	shr    $0x9,%eax
+c010e127:	89 45 ec             	mov    %eax,-0x14(%ebp)
+c010e12a:	8b 45 ec             	mov    -0x14(%ebp),%eax
+c010e12d:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010e131:	c7 04 24 06 39 11 c0 	movl   $0xc0113906,(%esp)
+c010e138:	e8 67 35 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010e13d:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e140:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010e144:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c010e147:	89 04 24             	mov    %eax,(%esp)
+c010e14a:	e8 49 2c ff ff       	call   c0100d98 <__ZN13BufferManager6BrelseEP3Buf>
+c010e14f:	8d 45 e8             	lea    -0x18(%ebp),%eax
+c010e152:	ff 00                	incl   (%eax)
+c010e154:	eb 9e                	jmp    c010e0f4 <__Z14RepeatReadTestv+0x70>
+c010e156:	8b 4d f4             	mov    -0xc(%ebp),%ecx
+c010e159:	49                   	dec    %ecx
+c010e15a:	b8 89 88 88 88       	mov    $0x88888889,%eax
+c010e15f:	f7 e9                	imul   %ecx
+c010e161:	8d 04 11             	lea    (%ecx,%edx,1),%eax
+c010e164:	89 c2                	mov    %eax,%edx
+c010e166:	c1 fa 03             	sar    $0x3,%edx
+c010e169:	89 c8                	mov    %ecx,%eax
+c010e16b:	c1 f8 1f             	sar    $0x1f,%eax
+c010e16e:	29 c2                	sub    %eax,%edx
+c010e170:	89 d0                	mov    %edx,%eax
+c010e172:	c1 e0 04             	shl    $0x4,%eax
+c010e175:	29 d0                	sub    %edx,%eax
+c010e177:	29 c1                	sub    %eax,%ecx
+c010e179:	89 c8                	mov    %ecx,%eax
+c010e17b:	3b 45 ec             	cmp    -0x14(%ebp),%eax
+c010e17e:	75 09                	jne    c010e189 <__Z14RepeatReadTestv+0x105>
+c010e180:	c7 45 e4 01 00 00 00 	movl   $0x1,-0x1c(%ebp)
+c010e187:	eb 0e                	jmp    c010e197 <__Z14RepeatReadTestv+0x113>
+c010e189:	c7 04 24 1b 39 11 c0 	movl   $0xc011391b,(%esp)
+c010e190:	e8 0f 35 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010e195:	eb fe                	jmp    c010e195 <__Z14RepeatReadTestv+0x111>
+c010e197:	8b 45 e4             	mov    -0x1c(%ebp),%eax
+c010e19a:	c9                   	leave  
+c010e19b:	c3                   	ret    
 
-c010e2be <__Z8TestSwapv>:
-c010e2be:	55                   	push   %ebp
-c010e2bf:	89 e5                	mov    %esp,%ebp
-c010e2c1:	81 ec 48 04 00 00    	sub    $0x448,%esp
-c010e2c7:	e8 9c 8e ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010e2cc:	89 04 24             	mov    %eax,(%esp)
-c010e2cf:	e8 00 91 ff ff       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
-c010e2d4:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010e2d7:	c7 45 f0 00 04 00 00 	movl   $0x400,-0x10(%ebp)
-c010e2de:	c7 44 24 10 02 00 00 	movl   $0x2,0x10(%esp)
-c010e2e5:	00 
-c010e2e6:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c010e2e9:	89 44 24 0c          	mov    %eax,0xc(%esp)
-c010e2ed:	8d 85 e8 fb ff ff    	lea    -0x418(%ebp),%eax
-c010e2f3:	89 44 24 08          	mov    %eax,0x8(%esp)
-c010e2f7:	c7 44 24 04 01 00 00 	movl   $0x1,0x4(%esp)
-c010e2fe:	00 
-c010e2ff:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010e302:	89 04 24             	mov    %eax,(%esp)
-c010e305:	e8 5c 30 ff ff       	call   c0101366 <__ZN13BufferManager4SwapEimiN3Buf7BufFlagE>
-c010e30a:	84 c0                	test   %al,%al
-c010e30c:	75 02                	jne    c010e310 <__Z8TestSwapv+0x52>
-c010e30e:	eb fe                	jmp    c010e30e <__Z8TestSwapv+0x50>
-c010e310:	e8 53 8e ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010e315:	89 04 24             	mov    %eax,(%esp)
-c010e318:	e8 ab 90 ff ff       	call   c01073c8 <__ZN6Kernel17GetSwapperManagerEv>
-c010e31d:	89 c2                	mov    %eax,%edx
-c010e31f:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c010e322:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010e326:	89 14 24             	mov    %edx,(%esp)
-c010e329:	e8 02 ef ff ff       	call   c010d230 <__ZN14SwapperManager9AllocSwapEm>
-c010e32e:	89 85 e4 fb ff ff    	mov    %eax,-0x41c(%ebp)
-c010e334:	c7 44 24 10 01 00 00 	movl   $0x1,0x10(%esp)
-c010e33b:	00 
-c010e33c:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c010e33f:	89 44 24 0c          	mov    %eax,0xc(%esp)
-c010e343:	8d 85 e8 fb ff ff    	lea    -0x418(%ebp),%eax
-c010e349:	89 44 24 08          	mov    %eax,0x8(%esp)
-c010e34d:	8b 85 e4 fb ff ff    	mov    -0x41c(%ebp),%eax
-c010e353:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010e357:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010e35a:	89 04 24             	mov    %eax,(%esp)
-c010e35d:	e8 04 30 ff ff       	call   c0101366 <__ZN13BufferManager4SwapEimiN3Buf7BufFlagE>
-c010e362:	84 c0                	test   %al,%al
-c010e364:	75 02                	jne    c010e368 <__Z8TestSwapv+0xaa>
-c010e366:	eb fe                	jmp    c010e366 <__Z8TestSwapv+0xa8>
-c010e368:	b8 01 00 00 00       	mov    $0x1,%eax
-c010e36d:	c9                   	leave  
-c010e36e:	c3                   	ret    
-c010e36f:	90                   	nop    
+c010e19c <__Z9WriteTestv>:
+c010e19c:	55                   	push   %ebp
+c010e19d:	89 e5                	mov    %esp,%ebp
+c010e19f:	83 ec 18             	sub    $0x18,%esp
+c010e1a2:	c7 04 24 e9 38 11 c0 	movl   $0xc01138e9,(%esp)
+c010e1a9:	e8 f6 34 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010e1ae:	e8 b5 8f ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010e1b3:	89 04 24             	mov    %eax,(%esp)
+c010e1b6:	e8 19 92 ff ff       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
+c010e1bb:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c010e1be:	c7 44 24 08 00 00 00 	movl   $0x0,0x8(%esp)
+c010e1c5:	00 
+c010e1c6:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
+c010e1cd:	00 
+c010e1ce:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010e1d1:	89 04 24             	mov    %eax,(%esp)
+c010e1d4:	e8 57 2d ff ff       	call   c0100f30 <__ZN13BufferManager5BreadEsi>
+c010e1d9:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c010e1dc:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
+c010e1e3:	00 
+c010e1e4:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e1e7:	89 04 24             	mov    %eax,(%esp)
+c010e1ea:	e8 45 fd ff ff       	call   c010df34 <__Z12ModifyBufferP3Bufi>
+c010e1ef:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e1f2:	89 04 24             	mov    %eax,(%esp)
+c010e1f5:	e8 98 fd ff ff       	call   c010df92 <__Z14CheckSumBufferP3Buf>
+c010e1fa:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010e1fd:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e200:	8b 40 20             	mov    0x20(%eax),%eax
+c010e203:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010e207:	c7 04 24 29 39 11 c0 	movl   $0xc0113929,(%esp)
+c010e20e:	e8 91 34 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010e213:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e216:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010e21a:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010e21d:	89 04 24             	mov    %eax,(%esp)
+c010e220:	e8 69 2f ff ff       	call   c010118e <__ZN13BufferManager6BwriteEP3Buf>
+c010e225:	c7 04 24 2d 39 11 c0 	movl   $0xc011392d,(%esp)
+c010e22c:	e8 73 34 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010e231:	b8 01 00 00 00       	mov    $0x1,%eax
+c010e236:	c9                   	leave  
+c010e237:	c3                   	ret    
 
-c010e370 <__Z10PrintInodePcP5Inode>:
-c010e370:	55                   	push   %ebp
-c010e371:	89 e5                	mov    %esp,%ebp
-c010e373:	83 ec 28             	sub    $0x28,%esp
-c010e376:	83 7d 0c 00          	cmpl   $0x0,0xc(%ebp)
-c010e37a:	75 05                	jne    c010e381 <__Z10PrintInodePcP5Inode+0x11>
-c010e37c:	e9 c7 00 00 00       	jmp    c010e448 <__Z10PrintInodePcP5Inode+0xd8>
-c010e381:	8b 45 08             	mov    0x8(%ebp),%eax
-c010e384:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010e388:	c7 04 24 44 34 11 c0 	movl   $0xc0113444,(%esp)
-c010e38f:	e8 b4 32 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010e394:	8b 45 0c             	mov    0xc(%ebp),%eax
-c010e397:	8b 40 1c             	mov    0x1c(%eax),%eax
-c010e39a:	89 44 24 14          	mov    %eax,0x14(%esp)
-c010e39e:	8b 45 0c             	mov    0xc(%ebp),%eax
-c010e3a1:	8b 00                	mov    (%eax),%eax
-c010e3a3:	89 44 24 10          	mov    %eax,0x10(%esp)
-c010e3a7:	8b 45 0c             	mov    0xc(%ebp),%eax
-c010e3aa:	8b 40 14             	mov    0x14(%eax),%eax
-c010e3ad:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c010e3b0:	83 7d fc 00          	cmpl   $0x0,-0x4(%ebp)
-c010e3b4:	79 04                	jns    c010e3ba <__Z10PrintInodePcP5Inode+0x4a>
-c010e3b6:	83 45 fc 07          	addl   $0x7,-0x4(%ebp)
-c010e3ba:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e3bd:	c1 f8 03             	sar    $0x3,%eax
-c010e3c0:	05 ca 00 00 00       	add    $0xca,%eax
-c010e3c5:	89 44 24 0c          	mov    %eax,0xc(%esp)
-c010e3c9:	8b 45 0c             	mov    0xc(%ebp),%eax
-c010e3cc:	8b 40 14             	mov    0x14(%eax),%eax
-c010e3cf:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c010e3d2:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010e3d5:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010e3d8:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
-c010e3dc:	79 04                	jns    c010e3e2 <__Z10PrintInodePcP5Inode+0x72>
-c010e3de:	83 45 f4 07          	addl   $0x7,-0xc(%ebp)
-c010e3e2:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010e3e5:	c1 f8 03             	sar    $0x3,%eax
-c010e3e8:	c1 e0 03             	shl    $0x3,%eax
-c010e3eb:	8b 55 f8             	mov    -0x8(%ebp),%edx
-c010e3ee:	29 c2                	sub    %eax,%edx
-c010e3f0:	89 d0                	mov    %edx,%eax
-c010e3f2:	89 44 24 08          	mov    %eax,0x8(%esp)
-c010e3f6:	8b 45 0c             	mov    0xc(%ebp),%eax
-c010e3f9:	0f bf 40 10          	movswl 0x10(%eax),%eax
-c010e3fd:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010e401:	c7 04 24 58 34 11 c0 	movl   $0xc0113458,(%esp)
-c010e408:	e8 3b 32 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010e40d:	8b 45 0c             	mov    0xc(%ebp),%eax
-c010e410:	8b 40 04             	mov    0x4(%eax),%eax
-c010e413:	89 44 24 14          	mov    %eax,0x14(%esp)
-c010e417:	8b 45 0c             	mov    0xc(%ebp),%eax
-c010e41a:	8b 40 0c             	mov    0xc(%eax),%eax
-c010e41d:	89 44 24 10          	mov    %eax,0x10(%esp)
-c010e421:	8b 45 0c             	mov    0xc(%ebp),%eax
-c010e424:	8b 40 08             	mov    0x8(%eax),%eax
-c010e427:	89 44 24 0c          	mov    %eax,0xc(%esp)
-c010e42b:	8b 45 0c             	mov    0xc(%ebp),%eax
-c010e42e:	8b 40 14             	mov    0x14(%eax),%eax
-c010e431:	89 44 24 08          	mov    %eax,0x8(%esp)
-c010e435:	8b 45 0c             	mov    0xc(%ebp),%eax
-c010e438:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010e43c:	c7 04 24 a0 34 11 c0 	movl   $0xc01134a0,(%esp)
-c010e443:	e8 00 32 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010e448:	c9                   	leave  
-c010e449:	c3                   	ret    
+c010e238 <__Z17TestBufferManagerv>:
+c010e238:	55                   	push   %ebp
+c010e239:	89 e5                	mov    %esp,%ebp
+c010e23b:	83 ec 28             	sub    $0x28,%esp
+c010e23e:	c7 04 24 3a 39 11 c0 	movl   $0xc011393a,(%esp)
+c010e245:	e8 5a 34 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010e24a:	e8 19 8f ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010e24f:	89 04 24             	mov    %eax,(%esp)
+c010e252:	e8 7d 91 ff ff       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
+c010e257:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c010e25a:	c7 44 24 08 01 00 00 	movl   $0x1,0x8(%esp)
+c010e261:	00 
+c010e262:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
+c010e269:	00 
+c010e26a:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010e26d:	89 04 24             	mov    %eax,(%esp)
+c010e270:	e8 bb 2c ff ff       	call   c0100f30 <__ZN13BufferManager5BreadEsi>
+c010e275:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c010e278:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e27b:	c7 40 24 02 00 00 00 	movl   $0x2,0x24(%eax)
+c010e282:	c7 44 24 04 01 00 00 	movl   $0x1,0x4(%esp)
+c010e289:	00 
+c010e28a:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e28d:	89 04 24             	mov    %eax,(%esp)
+c010e290:	e8 9f fc ff ff       	call   c010df34 <__Z12ModifyBufferP3Bufi>
+c010e295:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e298:	89 04 24             	mov    %eax,(%esp)
+c010e29b:	e8 f2 fc ff ff       	call   c010df92 <__Z14CheckSumBufferP3Buf>
+c010e2a0:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010e2a3:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e2a6:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010e2aa:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010e2ad:	89 04 24             	mov    %eax,(%esp)
+c010e2b0:	e8 bf 2f ff ff       	call   c0101274 <__ZN13BufferManager7BawriteEP3Buf>
+c010e2b5:	c7 04 24 58 39 11 c0 	movl   $0xc0113958,(%esp)
+c010e2bc:	e8 e3 33 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010e2c1:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e2c4:	66 c7 40 18 ff ff    	movw   $0xffff,0x18(%eax)
+c010e2ca:	c7 44 24 08 02 00 00 	movl   $0x2,0x8(%esp)
+c010e2d1:	00 
+c010e2d2:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
+c010e2d9:	00 
+c010e2da:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010e2dd:	89 04 24             	mov    %eax,(%esp)
+c010e2e0:	e8 4b 2c ff ff       	call   c0100f30 <__ZN13BufferManager5BreadEsi>
+c010e2e5:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c010e2e8:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e2eb:	89 04 24             	mov    %eax,(%esp)
+c010e2ee:	e8 9f fc ff ff       	call   c010df92 <__Z14CheckSumBufferP3Buf>
+c010e2f3:	3b 45 f4             	cmp    -0xc(%ebp),%eax
+c010e2f6:	75 0e                	jne    c010e306 <__Z17TestBufferManagerv+0xce>
+c010e2f8:	e8 8d ad ff ff       	call   c010908a <_Delay>
+c010e2fd:	c7 45 f0 01 00 00 00 	movl   $0x1,-0x10(%ebp)
+c010e304:	eb 0e                	jmp    c010e314 <__Z17TestBufferManagerv+0xdc>
+c010e306:	c7 04 24 66 39 11 c0 	movl   $0xc0113966,(%esp)
+c010e30d:	e8 92 33 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010e312:	eb fe                	jmp    c010e312 <__Z17TestBufferManagerv+0xda>
+c010e314:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c010e317:	c9                   	leave  
+c010e318:	c3                   	ret    
+c010e319:	90                   	nop    
 
-c010e44a <__Z14LoadSuperBlockv>:
-c010e44a:	55                   	push   %ebp
-c010e44b:	89 e5                	mov    %esp,%ebp
-c010e44d:	83 ec 28             	sub    $0x28,%esp
-c010e450:	e8 13 8d ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010e455:	89 04 24             	mov    %eax,(%esp)
-c010e458:	e8 a7 8f ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
-c010e45d:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c010e460:	e8 03 8d ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010e465:	89 04 24             	mov    %eax,(%esp)
-c010e468:	e8 67 8f ff ff       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
-c010e46d:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c010e470:	e8 f3 8c ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010e475:	89 04 24             	mov    %eax,(%esp)
-c010e478:	e8 6f 8f ff ff       	call   c01073ec <__ZN6Kernel13GetFileSystemEv>
-c010e47d:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010e480:	c7 45 ec 00 00 00 00 	movl   $0x0,-0x14(%ebp)
-c010e487:	83 7d ec 01          	cmpl   $0x1,-0x14(%ebp)
-c010e48b:	7f 66                	jg     c010e4f3 <__Z14LoadSuperBlockv+0xa9>
-c010e48d:	8b 45 ec             	mov    -0x14(%ebp),%eax
-c010e490:	c1 e0 09             	shl    $0x9,%eax
-c010e493:	05 80 09 12 c0       	add    $0xc0120980,%eax
-c010e498:	89 45 e8             	mov    %eax,-0x18(%ebp)
-c010e49b:	8b 45 ec             	mov    -0x14(%ebp),%eax
-c010e49e:	05 c8 00 00 00       	add    $0xc8,%eax
-c010e4a3:	89 44 24 08          	mov    %eax,0x8(%esp)
-c010e4a7:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
-c010e4ae:	00 
-c010e4af:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010e4b2:	89 04 24             	mov    %eax,(%esp)
-c010e4b5:	e8 76 2a ff ff       	call   c0100f30 <__ZN13BufferManager5BreadEsi>
-c010e4ba:	89 45 f0             	mov    %eax,-0x10(%ebp)
-c010e4bd:	c7 44 24 08 80 00 00 	movl   $0x80,0x8(%esp)
-c010e4c4:	00 
-c010e4c5:	8b 45 e8             	mov    -0x18(%ebp),%eax
-c010e4c8:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010e4cc:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c010e4cf:	8b 40 20             	mov    0x20(%eax),%eax
-c010e4d2:	89 04 24             	mov    %eax,(%esp)
-c010e4d5:	e8 0e 2f 00 00       	call   c01113e8 <__ZN7Utility9DWordCopyEPiS0_i>
-c010e4da:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c010e4dd:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010e4e1:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010e4e4:	89 04 24             	mov    %eax,(%esp)
-c010e4e7:	e8 ac 28 ff ff       	call   c0100d98 <__ZN13BufferManager6BrelseEP3Buf>
-c010e4ec:	8d 45 ec             	lea    -0x14(%ebp),%eax
-c010e4ef:	ff 00                	incl   (%eax)
-c010e4f1:	eb 94                	jmp    c010e487 <__Z14LoadSuperBlockv+0x3d>
-c010e4f3:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e4f6:	83 b8 a8 01 00 00 00 	cmpl   $0x0,0x1a8(%eax)
-c010e4fd:	74 0c                	je     c010e50b <__Z14LoadSuperBlockv+0xc1>
-c010e4ff:	c7 04 24 db 34 11 c0 	movl   $0xc01134db,(%esp)
-c010e506:	e8 b7 2e 00 00       	call   c01113c2 <__ZN7Utility5PanicEPc>
-c010e50b:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010e50e:	66 c7 00 00 00       	movw   $0x0,(%eax)
-c010e513:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010e516:	c7 40 04 80 09 12 c0 	movl   $0xc0120980,0x4(%eax)
-c010e51d:	c7 05 b0 0c 12 c0 00 	movl   $0x0,0xc0120cb0
-c010e524:	00 00 00 
-c010e527:	c7 05 b4 0c 12 c0 00 	movl   $0x0,0xc0120cb4
-c010e52e:	00 00 00 
-c010e531:	a1 94 0d 12 c0       	mov    0xc0120d94,%eax
-c010e536:	a3 c0 0c 12 c0       	mov    %eax,0xc0120cc0
-c010e53b:	c9                   	leave  
-c010e53c:	c3                   	ret    
-c010e53d:	90                   	nop    
+c010e31a <__Z8TestSwapv>:
+c010e31a:	55                   	push   %ebp
+c010e31b:	89 e5                	mov    %esp,%ebp
+c010e31d:	81 ec 48 04 00 00    	sub    $0x448,%esp
+c010e323:	e8 40 8e ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010e328:	89 04 24             	mov    %eax,(%esp)
+c010e32b:	e8 a4 90 ff ff       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
+c010e330:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010e333:	c7 45 f0 00 04 00 00 	movl   $0x400,-0x10(%ebp)
+c010e33a:	c7 44 24 10 02 00 00 	movl   $0x2,0x10(%esp)
+c010e341:	00 
+c010e342:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c010e345:	89 44 24 0c          	mov    %eax,0xc(%esp)
+c010e349:	8d 85 e8 fb ff ff    	lea    -0x418(%ebp),%eax
+c010e34f:	89 44 24 08          	mov    %eax,0x8(%esp)
+c010e353:	c7 44 24 04 01 00 00 	movl   $0x1,0x4(%esp)
+c010e35a:	00 
+c010e35b:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010e35e:	89 04 24             	mov    %eax,(%esp)
+c010e361:	e8 00 30 ff ff       	call   c0101366 <__ZN13BufferManager4SwapEimiN3Buf7BufFlagE>
+c010e366:	84 c0                	test   %al,%al
+c010e368:	75 02                	jne    c010e36c <__Z8TestSwapv+0x52>
+c010e36a:	eb fe                	jmp    c010e36a <__Z8TestSwapv+0x50>
+c010e36c:	e8 f7 8d ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010e371:	89 04 24             	mov    %eax,(%esp)
+c010e374:	e8 4f 90 ff ff       	call   c01073c8 <__ZN6Kernel17GetSwapperManagerEv>
+c010e379:	89 c2                	mov    %eax,%edx
+c010e37b:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c010e37e:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010e382:	89 14 24             	mov    %edx,(%esp)
+c010e385:	e8 a6 ee ff ff       	call   c010d230 <__ZN14SwapperManager9AllocSwapEm>
+c010e38a:	89 85 e4 fb ff ff    	mov    %eax,-0x41c(%ebp)
+c010e390:	c7 44 24 10 01 00 00 	movl   $0x1,0x10(%esp)
+c010e397:	00 
+c010e398:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c010e39b:	89 44 24 0c          	mov    %eax,0xc(%esp)
+c010e39f:	8d 85 e8 fb ff ff    	lea    -0x418(%ebp),%eax
+c010e3a5:	89 44 24 08          	mov    %eax,0x8(%esp)
+c010e3a9:	8b 85 e4 fb ff ff    	mov    -0x41c(%ebp),%eax
+c010e3af:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010e3b3:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010e3b6:	89 04 24             	mov    %eax,(%esp)
+c010e3b9:	e8 a8 2f ff ff       	call   c0101366 <__ZN13BufferManager4SwapEimiN3Buf7BufFlagE>
+c010e3be:	84 c0                	test   %al,%al
+c010e3c0:	75 02                	jne    c010e3c4 <__Z8TestSwapv+0xaa>
+c010e3c2:	eb fe                	jmp    c010e3c2 <__Z8TestSwapv+0xa8>
+c010e3c4:	b8 01 00 00 00       	mov    $0x1,%eax
+c010e3c9:	c9                   	leave  
+c010e3ca:	c3                   	ret    
+c010e3cb:	90                   	nop    
 
-c010e53e <__Z6MakeFSv>:
-c010e53e:	55                   	push   %ebp
-c010e53f:	89 e5                	mov    %esp,%ebp
-c010e541:	83 ec 28             	sub    $0x28,%esp
-c010e544:	e8 1f 8c ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010e549:	89 04 24             	mov    %eax,(%esp)
-c010e54c:	e8 9b 8e ff ff       	call   c01073ec <__ZN6Kernel13GetFileSystemEv>
-c010e551:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c010e554:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e557:	66 c7 00 00 00       	movw   $0x0,(%eax)
-c010e55c:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e55f:	c7 40 04 80 09 12 c0 	movl   $0xc0120980,0x4(%eax)
-c010e566:	c7 05 b0 0c 12 c0 00 	movl   $0x0,0xc0120cb0
-c010e56d:	00 00 00 
-c010e570:	c7 05 b4 0c 12 c0 00 	movl   $0x0,0xc0120cb4
-c010e577:	00 00 00 
-c010e57a:	c7 05 bc 0c 12 c0 00 	movl   $0x0,0xc0120cbc
-c010e581:	00 00 00 
-c010e584:	c7 05 80 09 12 c0 36 	movl   $0x336,0xc0120980
-c010e58b:	03 00 00 
-c010e58e:	c7 05 84 09 12 c0 c0 	movl   $0x4ec0,0xc0120984
-c010e595:	4e 00 00 
-c010e598:	b8 dd cc bb aa       	mov    $0xaabbccdd,%eax
-c010e59d:	a3 c0 0c 12 c0       	mov    %eax,0xc0120cc0
-c010e5a2:	c7 05 7c 0d 12 c0 1a 	movl   $0x473c2b1a,0xc0120d7c
-c010e5a9:	2b 3c 47 
-c010e5ac:	c7 45 f8 4f 46 00 00 	movl   $0x464f,-0x8(%ebp)
-c010e5b3:	81 7d f8 ff 03 00 00 	cmpl   $0x3ff,-0x8(%ebp)
-c010e5ba:	7e 21                	jle    c010e5dd <__Z6MakeFSv+0x9f>
-c010e5bc:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010e5bf:	89 44 24 08          	mov    %eax,0x8(%esp)
-c010e5c3:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
-c010e5ca:	00 
-c010e5cb:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e5ce:	89 04 24             	mov    %eax,(%esp)
-c010e5d1:	e8 22 73 ff ff       	call   c01058f8 <__ZN10FileSystem4FreeEsi>
-c010e5d6:	8d 45 f8             	lea    -0x8(%ebp),%eax
-c010e5d9:	ff 08                	decl   (%eax)
-c010e5db:	eb d6                	jmp    c010e5b3 <__Z6MakeFSv+0x75>
-c010e5dd:	c7 45 f8 b0 19 00 00 	movl   $0x19b0,-0x8(%ebp)
-c010e5e4:	c7 05 1c 0b 12 c0 00 	movl   $0x0,0xc0120b1c
-c010e5eb:	00 00 00 
-c010e5ee:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010e5f1:	48                   	dec    %eax
-c010e5f2:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010e5f5:	c7 45 f0 1f 00 00 00 	movl   $0x1f,-0x10(%ebp)
-c010e5fc:	83 7d f0 00          	cmpl   $0x0,-0x10(%ebp)
-c010e600:	7e 23                	jle    c010e625 <__Z6MakeFSv+0xe7>
-c010e602:	a1 1c 0b 12 c0       	mov    0xc0120b1c,%eax
-c010e607:	89 c2                	mov    %eax,%edx
-c010e609:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010e60c:	89 04 95 20 0b 12 c0 	mov    %eax,-0x3fedf4e0(,%edx,4)
-c010e613:	ff 05 1c 0b 12 c0    	incl   0xc0120b1c
-c010e619:	8d 45 f4             	lea    -0xc(%ebp),%eax
-c010e61c:	ff 08                	decl   (%eax)
-c010e61e:	8d 45 f0             	lea    -0x10(%ebp),%eax
-c010e621:	ff 08                	decl   (%eax)
-c010e623:	eb d7                	jmp    c010e5fc <__Z6MakeFSv+0xbe>
-c010e625:	a1 1c 0b 12 c0       	mov    0xc0120b1c,%eax
-c010e62a:	c7 04 85 20 0b 12 c0 	movl   $0x0,-0x3fedf4e0(,%eax,4)
-c010e631:	00 00 00 00 
-c010e635:	ff 05 1c 0b 12 c0    	incl   0xc0120b1c
-c010e63b:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
-c010e642:	00 
-c010e643:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e646:	89 04 24             	mov    %eax,(%esp)
-c010e649:	e8 dc 6d ff ff       	call   c010542a <__ZN10FileSystem6IAllocEs>
-c010e64e:	89 45 f0             	mov    %eax,-0x10(%ebp)
-c010e651:	e8 12 8b ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010e656:	89 04 24             	mov    %eax,(%esp)
-c010e659:	e8 a6 8d ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
-c010e65e:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010e661:	8b 55 f0             	mov    -0x10(%ebp),%edx
-c010e664:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c010e667:	8b 00                	mov    (%eax),%eax
-c010e669:	83 c8 06             	or     $0x6,%eax
-c010e66c:	89 02                	mov    %eax,(%edx)
-c010e66e:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c010e671:	c7 40 04 ff c1 00 00 	movl   $0xc1ff,0x4(%eax)
-c010e678:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c010e67b:	c7 40 0c 01 00 00 00 	movl   $0x1,0xc(%eax)
-c010e682:	8b 55 f0             	mov    -0x10(%ebp),%edx
-c010e685:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010e688:	0f b7 80 b0 01 00 00 	movzwl 0x1b0(%eax),%eax
-c010e68f:	66 89 42 18          	mov    %ax,0x18(%edx)
-c010e693:	8b 55 f0             	mov    -0x10(%ebp),%edx
-c010e696:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010e699:	0f b7 80 b2 01 00 00 	movzwl 0x1b2(%eax),%eax
-c010e6a0:	66 89 42 1a          	mov    %ax,0x1a(%edx)
-c010e6a4:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c010e6a7:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010e6ab:	c7 04 24 a0 eb 11 c0 	movl   $0xc011eba0,(%esp)
-c010e6b2:	e8 bd b9 ff ff       	call   c010a074 <__ZN10InodeTable4IPutEP5Inode>
-c010e6b7:	c7 05 b8 0c 12 c0 01 	movl   $0x1,0xc0120cb8
-c010e6be:	00 00 00 
-c010e6c1:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e6c4:	89 04 24             	mov    %eax,(%esp)
-c010e6c7:	e8 e4 6b ff ff       	call   c01052b0 <__ZN10FileSystem6UpdateEv>
-c010e6cc:	c9                   	leave  
-c010e6cd:	c3                   	ret    
+c010e3cc <__Z10PrintInodePcP5Inode>:
+c010e3cc:	55                   	push   %ebp
+c010e3cd:	89 e5                	mov    %esp,%ebp
+c010e3cf:	83 ec 28             	sub    $0x28,%esp
+c010e3d2:	83 7d 0c 00          	cmpl   $0x0,0xc(%ebp)
+c010e3d6:	75 05                	jne    c010e3dd <__Z10PrintInodePcP5Inode+0x11>
+c010e3d8:	e9 c7 00 00 00       	jmp    c010e4a4 <__Z10PrintInodePcP5Inode+0xd8>
+c010e3dd:	8b 45 08             	mov    0x8(%ebp),%eax
+c010e3e0:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010e3e4:	c7 04 24 44 34 11 c0 	movl   $0xc0113444,(%esp)
+c010e3eb:	e8 b4 32 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010e3f0:	8b 45 0c             	mov    0xc(%ebp),%eax
+c010e3f3:	8b 40 1c             	mov    0x1c(%eax),%eax
+c010e3f6:	89 44 24 14          	mov    %eax,0x14(%esp)
+c010e3fa:	8b 45 0c             	mov    0xc(%ebp),%eax
+c010e3fd:	8b 00                	mov    (%eax),%eax
+c010e3ff:	89 44 24 10          	mov    %eax,0x10(%esp)
+c010e403:	8b 45 0c             	mov    0xc(%ebp),%eax
+c010e406:	8b 40 14             	mov    0x14(%eax),%eax
+c010e409:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c010e40c:	83 7d fc 00          	cmpl   $0x0,-0x4(%ebp)
+c010e410:	79 04                	jns    c010e416 <__Z10PrintInodePcP5Inode+0x4a>
+c010e412:	83 45 fc 07          	addl   $0x7,-0x4(%ebp)
+c010e416:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e419:	c1 f8 03             	sar    $0x3,%eax
+c010e41c:	05 ca 00 00 00       	add    $0xca,%eax
+c010e421:	89 44 24 0c          	mov    %eax,0xc(%esp)
+c010e425:	8b 45 0c             	mov    0xc(%ebp),%eax
+c010e428:	8b 40 14             	mov    0x14(%eax),%eax
+c010e42b:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c010e42e:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010e431:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010e434:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
+c010e438:	79 04                	jns    c010e43e <__Z10PrintInodePcP5Inode+0x72>
+c010e43a:	83 45 f4 07          	addl   $0x7,-0xc(%ebp)
+c010e43e:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010e441:	c1 f8 03             	sar    $0x3,%eax
+c010e444:	c1 e0 03             	shl    $0x3,%eax
+c010e447:	8b 55 f8             	mov    -0x8(%ebp),%edx
+c010e44a:	29 c2                	sub    %eax,%edx
+c010e44c:	89 d0                	mov    %edx,%eax
+c010e44e:	89 44 24 08          	mov    %eax,0x8(%esp)
+c010e452:	8b 45 0c             	mov    0xc(%ebp),%eax
+c010e455:	0f bf 40 10          	movswl 0x10(%eax),%eax
+c010e459:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010e45d:	c7 04 24 58 34 11 c0 	movl   $0xc0113458,(%esp)
+c010e464:	e8 3b 32 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010e469:	8b 45 0c             	mov    0xc(%ebp),%eax
+c010e46c:	8b 40 04             	mov    0x4(%eax),%eax
+c010e46f:	89 44 24 14          	mov    %eax,0x14(%esp)
+c010e473:	8b 45 0c             	mov    0xc(%ebp),%eax
+c010e476:	8b 40 0c             	mov    0xc(%eax),%eax
+c010e479:	89 44 24 10          	mov    %eax,0x10(%esp)
+c010e47d:	8b 45 0c             	mov    0xc(%ebp),%eax
+c010e480:	8b 40 08             	mov    0x8(%eax),%eax
+c010e483:	89 44 24 0c          	mov    %eax,0xc(%esp)
+c010e487:	8b 45 0c             	mov    0xc(%ebp),%eax
+c010e48a:	8b 40 14             	mov    0x14(%eax),%eax
+c010e48d:	89 44 24 08          	mov    %eax,0x8(%esp)
+c010e491:	8b 45 0c             	mov    0xc(%ebp),%eax
+c010e494:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010e498:	c7 04 24 a0 34 11 c0 	movl   $0xc01134a0,(%esp)
+c010e49f:	e8 00 32 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010e4a4:	c9                   	leave  
+c010e4a5:	c3                   	ret    
 
-c010e6ce <__Z12InitTTyInodev>:
-c010e6ce:	55                   	push   %ebp
-c010e6cf:	89 e5                	mov    %esp,%ebp
-c010e6d1:	83 ec 18             	sub    $0x18,%esp
-c010e6d4:	e8 8f 8a ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010e6d9:	89 04 24             	mov    %eax,(%esp)
-c010e6dc:	e8 23 8d ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
-c010e6e1:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c010e6e4:	e8 7f 8a ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010e6e9:	89 04 24             	mov    %eax,(%esp)
-c010e6ec:	e8 07 8d ff ff       	call   c01073f8 <__ZN6Kernel14GetFileManagerEv>
-c010e6f1:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c010e6f4:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e6f7:	c7 40 44 f7 34 11 c0 	movl   $0xc01134f7,0x44(%eax)
-c010e6fe:	c7 44 24 08 01 00 00 	movl   $0x1,0x8(%esp)
-c010e705:	00 
-c010e706:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
-c010e70d:	c0 
-c010e70e:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010e711:	89 04 24             	mov    %eax,(%esp)
-c010e714:	e8 6b 59 ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
-c010e719:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010e71c:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e71f:	83 b8 a8 01 00 00 00 	cmpl   $0x0,0x1a8(%eax)
-c010e726:	74 1b                	je     c010e743 <__Z12InitTTyInodev+0x75>
-c010e728:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e72b:	8b 80 a8 01 00 00    	mov    0x1a8(%eax),%eax
-c010e731:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010e735:	c7 04 24 fd 34 11 c0 	movl   $0xc01134fd,(%esp)
-c010e73c:	e8 07 2f 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010e741:	eb fe                	jmp    c010e741 <__Z12InitTTyInodev+0x73>
-c010e743:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
-c010e747:	0f 85 8e 00 00 00    	jne    c010e7db <__Z12InitTTyInodev+0x10d>
-c010e74d:	c7 44 24 04 ff 01 00 	movl   $0x1ff,0x4(%esp)
-c010e754:	00 
-c010e755:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010e758:	89 04 24             	mov    %eax,(%esp)
-c010e75b:	e8 04 5e ff ff       	call   c0104564 <__ZN11FileManager7MakNodeEj>
-c010e760:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010e763:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
-c010e767:	75 0e                	jne    c010e777 <__Z12InitTTyInodev+0xa9>
-c010e769:	c7 04 24 0f 35 11 c0 	movl   $0xc011350f,(%esp)
-c010e770:	e8 d3 2e 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010e775:	eb fe                	jmp    c010e775 <__Z12InitTTyInodev+0xa7>
-c010e777:	8b 55 f4             	mov    -0xc(%ebp),%edx
-c010e77a:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010e77d:	8b 00                	mov    (%eax),%eax
-c010e77f:	83 c8 06             	or     $0x6,%eax
-c010e782:	89 02                	mov    %eax,(%edx)
-c010e784:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010e787:	c7 40 04 ff a1 00 00 	movl   $0xa1ff,0x4(%eax)
-c010e78e:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010e791:	c7 40 20 00 00 00 00 	movl   $0x0,0x20(%eax)
-c010e798:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e79b:	8b 80 e8 00 00 00    	mov    0xe8(%eax),%eax
-c010e7a1:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010e7a5:	c7 04 24 25 35 11 c0 	movl   $0xc0113525,(%esp)
-c010e7ac:	e8 bf fb ff ff       	call   c010e370 <__Z10PrintInodePcP5Inode>
-c010e7b1:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010e7b4:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010e7b8:	c7 04 24 2d 35 11 c0 	movl   $0xc011352d,(%esp)
-c010e7bf:	e8 ac fb ff ff       	call   c010e370 <__Z10PrintInodePcP5Inode>
-c010e7c4:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010e7c7:	89 04 24             	mov    %eax,(%esp)
-c010e7ca:	e8 b9 86 ff ff       	call   c0106e88 <__ZN5Inode5PreleEv>
-c010e7cf:	c7 04 24 32 35 11 c0 	movl   $0xc0113532,(%esp)
-c010e7d6:	e8 6d 2e 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010e7db:	e8 88 89 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010e7e0:	89 04 24             	mov    %eax,(%esp)
-c010e7e3:	e8 04 8c ff ff       	call   c01073ec <__ZN6Kernel13GetFileSystemEv>
-c010e7e8:	89 04 24             	mov    %eax,(%esp)
-c010e7eb:	e8 c0 6a ff ff       	call   c01052b0 <__ZN10FileSystem6UpdateEv>
-c010e7f0:	c9                   	leave  
-c010e7f1:	c3                   	ret    
+c010e4a6 <__Z14LoadSuperBlockv>:
+c010e4a6:	55                   	push   %ebp
+c010e4a7:	89 e5                	mov    %esp,%ebp
+c010e4a9:	83 ec 28             	sub    $0x28,%esp
+c010e4ac:	e8 b7 8c ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010e4b1:	89 04 24             	mov    %eax,(%esp)
+c010e4b4:	e8 4b 8f ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
+c010e4b9:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c010e4bc:	e8 a7 8c ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010e4c1:	89 04 24             	mov    %eax,(%esp)
+c010e4c4:	e8 0b 8f ff ff       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
+c010e4c9:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c010e4cc:	e8 97 8c ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010e4d1:	89 04 24             	mov    %eax,(%esp)
+c010e4d4:	e8 13 8f ff ff       	call   c01073ec <__ZN6Kernel13GetFileSystemEv>
+c010e4d9:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010e4dc:	c7 45 ec 00 00 00 00 	movl   $0x0,-0x14(%ebp)
+c010e4e3:	83 7d ec 01          	cmpl   $0x1,-0x14(%ebp)
+c010e4e7:	7f 66                	jg     c010e54f <__Z14LoadSuperBlockv+0xa9>
+c010e4e9:	8b 45 ec             	mov    -0x14(%ebp),%eax
+c010e4ec:	c1 e0 09             	shl    $0x9,%eax
+c010e4ef:	05 80 09 12 c0       	add    $0xc0120980,%eax
+c010e4f4:	89 45 e8             	mov    %eax,-0x18(%ebp)
+c010e4f7:	8b 45 ec             	mov    -0x14(%ebp),%eax
+c010e4fa:	05 c8 00 00 00       	add    $0xc8,%eax
+c010e4ff:	89 44 24 08          	mov    %eax,0x8(%esp)
+c010e503:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
+c010e50a:	00 
+c010e50b:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010e50e:	89 04 24             	mov    %eax,(%esp)
+c010e511:	e8 1a 2a ff ff       	call   c0100f30 <__ZN13BufferManager5BreadEsi>
+c010e516:	89 45 f0             	mov    %eax,-0x10(%ebp)
+c010e519:	c7 44 24 08 80 00 00 	movl   $0x80,0x8(%esp)
+c010e520:	00 
+c010e521:	8b 45 e8             	mov    -0x18(%ebp),%eax
+c010e524:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010e528:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c010e52b:	8b 40 20             	mov    0x20(%eax),%eax
+c010e52e:	89 04 24             	mov    %eax,(%esp)
+c010e531:	e8 0e 2f 00 00       	call   c0111444 <__ZN7Utility9DWordCopyEPiS0_i>
+c010e536:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c010e539:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010e53d:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010e540:	89 04 24             	mov    %eax,(%esp)
+c010e543:	e8 50 28 ff ff       	call   c0100d98 <__ZN13BufferManager6BrelseEP3Buf>
+c010e548:	8d 45 ec             	lea    -0x14(%ebp),%eax
+c010e54b:	ff 00                	incl   (%eax)
+c010e54d:	eb 94                	jmp    c010e4e3 <__Z14LoadSuperBlockv+0x3d>
+c010e54f:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e552:	83 b8 a8 01 00 00 00 	cmpl   $0x0,0x1a8(%eax)
+c010e559:	74 0c                	je     c010e567 <__Z14LoadSuperBlockv+0xc1>
+c010e55b:	c7 04 24 db 34 11 c0 	movl   $0xc01134db,(%esp)
+c010e562:	e8 b7 2e 00 00       	call   c011141e <__ZN7Utility5PanicEPc>
+c010e567:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010e56a:	66 c7 00 00 00       	movw   $0x0,(%eax)
+c010e56f:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010e572:	c7 40 04 80 09 12 c0 	movl   $0xc0120980,0x4(%eax)
+c010e579:	c7 05 b0 0c 12 c0 00 	movl   $0x0,0xc0120cb0
+c010e580:	00 00 00 
+c010e583:	c7 05 b4 0c 12 c0 00 	movl   $0x0,0xc0120cb4
+c010e58a:	00 00 00 
+c010e58d:	a1 94 0d 12 c0       	mov    0xc0120d94,%eax
+c010e592:	a3 c0 0c 12 c0       	mov    %eax,0xc0120cc0
+c010e597:	c9                   	leave  
+c010e598:	c3                   	ret    
+c010e599:	90                   	nop    
 
-c010e7f2 <__Z13AllocAllBlockv>:
-c010e7f2:	55                   	push   %ebp
-c010e7f3:	89 e5                	mov    %esp,%ebp
-c010e7f5:	83 ec 18             	sub    $0x18,%esp
-c010e7f8:	e8 6b 89 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010e7fd:	89 04 24             	mov    %eax,(%esp)
-c010e800:	e8 e7 8b ff ff       	call   c01073ec <__ZN6Kernel13GetFileSystemEv>
-c010e805:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c010e808:	e8 5b 89 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010e80d:	89 04 24             	mov    %eax,(%esp)
-c010e810:	e8 bf 8b ff ff       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
-c010e815:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c010e818:	c7 45 f0 00 00 00 00 	movl   $0x0,-0x10(%ebp)
-c010e81f:	81 7d f0 4f 42 00 00 	cmpl   $0x424f,-0x10(%ebp)
-c010e826:	7f 64                	jg     c010e88c <__Z13AllocAllBlockv+0x9a>
-c010e828:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
-c010e82f:	00 
-c010e830:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e833:	89 04 24             	mov    %eax,(%esp)
-c010e836:	e8 d7 6e ff ff       	call   c0105712 <__ZN10FileSystem5AllocEs>
-c010e83b:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010e83e:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010e841:	8b 40 24             	mov    0x24(%eax),%eax
-c010e844:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010e848:	c7 04 24 4b 35 11 c0 	movl   $0xc011354b,(%esp)
-c010e84f:	e8 f4 2d 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010e854:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010e857:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010e85b:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010e85e:	89 04 24             	mov    %eax,(%esp)
-c010e861:	e8 32 25 ff ff       	call   c0100d98 <__ZN13BufferManager6BrelseEP3Buf>
-c010e866:	8b 55 f0             	mov    -0x10(%ebp),%edx
-c010e869:	81 c2 00 04 00 00    	add    $0x400,%edx
-c010e86f:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010e872:	3b 50 24             	cmp    0x24(%eax),%edx
-c010e875:	74 0e                	je     c010e885 <__Z13AllocAllBlockv+0x93>
-c010e877:	c7 04 24 64 35 11 c0 	movl   $0xc0113564,(%esp)
-c010e87e:	e8 c5 2d 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010e883:	eb fe                	jmp    c010e883 <__Z13AllocAllBlockv+0x91>
-c010e885:	8d 45 f0             	lea    -0x10(%ebp),%eax
-c010e888:	ff 00                	incl   (%eax)
-c010e88a:	eb 93                	jmp    c010e81f <__Z13AllocAllBlockv+0x2d>
-c010e88c:	b8 01 00 00 00       	mov    $0x1,%eax
-c010e891:	c9                   	leave  
-c010e892:	c3                   	ret    
-c010e893:	90                   	nop    
+c010e59a <__Z6MakeFSv>:
+c010e59a:	55                   	push   %ebp
+c010e59b:	89 e5                	mov    %esp,%ebp
+c010e59d:	83 ec 28             	sub    $0x28,%esp
+c010e5a0:	e8 c3 8b ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010e5a5:	89 04 24             	mov    %eax,(%esp)
+c010e5a8:	e8 3f 8e ff ff       	call   c01073ec <__ZN6Kernel13GetFileSystemEv>
+c010e5ad:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c010e5b0:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e5b3:	66 c7 00 00 00       	movw   $0x0,(%eax)
+c010e5b8:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e5bb:	c7 40 04 80 09 12 c0 	movl   $0xc0120980,0x4(%eax)
+c010e5c2:	c7 05 b0 0c 12 c0 00 	movl   $0x0,0xc0120cb0
+c010e5c9:	00 00 00 
+c010e5cc:	c7 05 b4 0c 12 c0 00 	movl   $0x0,0xc0120cb4
+c010e5d3:	00 00 00 
+c010e5d6:	c7 05 bc 0c 12 c0 00 	movl   $0x0,0xc0120cbc
+c010e5dd:	00 00 00 
+c010e5e0:	c7 05 80 09 12 c0 36 	movl   $0x336,0xc0120980
+c010e5e7:	03 00 00 
+c010e5ea:	c7 05 84 09 12 c0 c0 	movl   $0x4ec0,0xc0120984
+c010e5f1:	4e 00 00 
+c010e5f4:	b8 dd cc bb aa       	mov    $0xaabbccdd,%eax
+c010e5f9:	a3 c0 0c 12 c0       	mov    %eax,0xc0120cc0
+c010e5fe:	c7 05 7c 0d 12 c0 1a 	movl   $0x473c2b1a,0xc0120d7c
+c010e605:	2b 3c 47 
+c010e608:	c7 45 f8 4f 46 00 00 	movl   $0x464f,-0x8(%ebp)
+c010e60f:	81 7d f8 ff 03 00 00 	cmpl   $0x3ff,-0x8(%ebp)
+c010e616:	7e 21                	jle    c010e639 <__Z6MakeFSv+0x9f>
+c010e618:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010e61b:	89 44 24 08          	mov    %eax,0x8(%esp)
+c010e61f:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
+c010e626:	00 
+c010e627:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e62a:	89 04 24             	mov    %eax,(%esp)
+c010e62d:	e8 c6 72 ff ff       	call   c01058f8 <__ZN10FileSystem4FreeEsi>
+c010e632:	8d 45 f8             	lea    -0x8(%ebp),%eax
+c010e635:	ff 08                	decl   (%eax)
+c010e637:	eb d6                	jmp    c010e60f <__Z6MakeFSv+0x75>
+c010e639:	c7 45 f8 b0 19 00 00 	movl   $0x19b0,-0x8(%ebp)
+c010e640:	c7 05 1c 0b 12 c0 00 	movl   $0x0,0xc0120b1c
+c010e647:	00 00 00 
+c010e64a:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010e64d:	48                   	dec    %eax
+c010e64e:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010e651:	c7 45 f0 1f 00 00 00 	movl   $0x1f,-0x10(%ebp)
+c010e658:	83 7d f0 00          	cmpl   $0x0,-0x10(%ebp)
+c010e65c:	7e 23                	jle    c010e681 <__Z6MakeFSv+0xe7>
+c010e65e:	a1 1c 0b 12 c0       	mov    0xc0120b1c,%eax
+c010e663:	89 c2                	mov    %eax,%edx
+c010e665:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010e668:	89 04 95 20 0b 12 c0 	mov    %eax,-0x3fedf4e0(,%edx,4)
+c010e66f:	ff 05 1c 0b 12 c0    	incl   0xc0120b1c
+c010e675:	8d 45 f4             	lea    -0xc(%ebp),%eax
+c010e678:	ff 08                	decl   (%eax)
+c010e67a:	8d 45 f0             	lea    -0x10(%ebp),%eax
+c010e67d:	ff 08                	decl   (%eax)
+c010e67f:	eb d7                	jmp    c010e658 <__Z6MakeFSv+0xbe>
+c010e681:	a1 1c 0b 12 c0       	mov    0xc0120b1c,%eax
+c010e686:	c7 04 85 20 0b 12 c0 	movl   $0x0,-0x3fedf4e0(,%eax,4)
+c010e68d:	00 00 00 00 
+c010e691:	ff 05 1c 0b 12 c0    	incl   0xc0120b1c
+c010e697:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
+c010e69e:	00 
+c010e69f:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e6a2:	89 04 24             	mov    %eax,(%esp)
+c010e6a5:	e8 80 6d ff ff       	call   c010542a <__ZN10FileSystem6IAllocEs>
+c010e6aa:	89 45 f0             	mov    %eax,-0x10(%ebp)
+c010e6ad:	e8 b6 8a ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010e6b2:	89 04 24             	mov    %eax,(%esp)
+c010e6b5:	e8 4a 8d ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
+c010e6ba:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010e6bd:	8b 55 f0             	mov    -0x10(%ebp),%edx
+c010e6c0:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c010e6c3:	8b 00                	mov    (%eax),%eax
+c010e6c5:	83 c8 06             	or     $0x6,%eax
+c010e6c8:	89 02                	mov    %eax,(%edx)
+c010e6ca:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c010e6cd:	c7 40 04 ff c1 00 00 	movl   $0xc1ff,0x4(%eax)
+c010e6d4:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c010e6d7:	c7 40 0c 01 00 00 00 	movl   $0x1,0xc(%eax)
+c010e6de:	8b 55 f0             	mov    -0x10(%ebp),%edx
+c010e6e1:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010e6e4:	0f b7 80 b0 01 00 00 	movzwl 0x1b0(%eax),%eax
+c010e6eb:	66 89 42 18          	mov    %ax,0x18(%edx)
+c010e6ef:	8b 55 f0             	mov    -0x10(%ebp),%edx
+c010e6f2:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010e6f5:	0f b7 80 b2 01 00 00 	movzwl 0x1b2(%eax),%eax
+c010e6fc:	66 89 42 1a          	mov    %ax,0x1a(%edx)
+c010e700:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c010e703:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010e707:	c7 04 24 a0 eb 11 c0 	movl   $0xc011eba0,(%esp)
+c010e70e:	e8 61 b9 ff ff       	call   c010a074 <__ZN10InodeTable4IPutEP5Inode>
+c010e713:	c7 05 b8 0c 12 c0 01 	movl   $0x1,0xc0120cb8
+c010e71a:	00 00 00 
+c010e71d:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e720:	89 04 24             	mov    %eax,(%esp)
+c010e723:	e8 88 6b ff ff       	call   c01052b0 <__ZN10FileSystem6UpdateEv>
+c010e728:	c9                   	leave  
+c010e729:	c3                   	ret    
 
-c010e894 <__Z10IAllocTestv>:
-c010e894:	55                   	push   %ebp
-c010e895:	89 e5                	mov    %esp,%ebp
-c010e897:	83 ec 38             	sub    $0x38,%esp
-c010e89a:	e8 c9 88 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010e89f:	89 04 24             	mov    %eax,(%esp)
-c010e8a2:	e8 45 8b ff ff       	call   c01073ec <__ZN6Kernel13GetFileSystemEv>
-c010e8a7:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c010e8aa:	c7 45 f4 00 00 00 00 	movl   $0x0,-0xc(%ebp)
-c010e8b1:	83 7d f4 09          	cmpl   $0x9,-0xc(%ebp)
-c010e8b5:	0f 8f c9 00 00 00    	jg     c010e984 <__Z10IAllocTestv+0xf0>
-c010e8bb:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
-c010e8c2:	00 
-c010e8c3:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010e8c6:	89 04 24             	mov    %eax,(%esp)
-c010e8c9:	e8 5c 6b ff ff       	call   c010542a <__ZN10FileSystem6IAllocEs>
-c010e8ce:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c010e8d1:	83 7d fc 00          	cmpl   $0x0,-0x4(%ebp)
-c010e8d5:	0f 84 9a 00 00 00    	je     c010e975 <__Z10IAllocTestv+0xe1>
-c010e8db:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e8de:	8b 40 14             	mov    0x14(%eax),%eax
-c010e8e1:	89 45 f0             	mov    %eax,-0x10(%ebp)
-c010e8e4:	83 7d f0 00          	cmpl   $0x0,-0x10(%ebp)
-c010e8e8:	79 04                	jns    c010e8ee <__Z10IAllocTestv+0x5a>
-c010e8ea:	83 45 f0 07          	addl   $0x7,-0x10(%ebp)
-c010e8ee:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c010e8f1:	c1 f8 03             	sar    $0x3,%eax
-c010e8f4:	05 ca 00 00 00       	add    $0xca,%eax
-c010e8f9:	89 44 24 0c          	mov    %eax,0xc(%esp)
-c010e8fd:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e900:	8b 40 14             	mov    0x14(%eax),%eax
-c010e903:	89 45 ec             	mov    %eax,-0x14(%ebp)
-c010e906:	8b 45 ec             	mov    -0x14(%ebp),%eax
-c010e909:	89 45 e8             	mov    %eax,-0x18(%ebp)
-c010e90c:	83 7d e8 00          	cmpl   $0x0,-0x18(%ebp)
-c010e910:	79 04                	jns    c010e916 <__Z10IAllocTestv+0x82>
-c010e912:	83 45 e8 07          	addl   $0x7,-0x18(%ebp)
-c010e916:	8b 45 e8             	mov    -0x18(%ebp),%eax
-c010e919:	c1 f8 03             	sar    $0x3,%eax
-c010e91c:	c1 e0 03             	shl    $0x3,%eax
-c010e91f:	8b 55 ec             	mov    -0x14(%ebp),%edx
-c010e922:	29 c2                	sub    %eax,%edx
-c010e924:	89 d0                	mov    %edx,%eax
-c010e926:	89 44 24 08          	mov    %eax,0x8(%esp)
-c010e92a:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e92d:	8b 40 14             	mov    0x14(%eax),%eax
-c010e930:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010e934:	c7 04 24 88 35 11 c0 	movl   $0xc0113588,(%esp)
-c010e93b:	e8 08 2d 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010e940:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e943:	8b 40 14             	mov    0x14(%eax),%eax
-c010e946:	89 44 24 10          	mov    %eax,0x10(%esp)
-c010e94a:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e94d:	0f bf 40 10          	movswl 0x10(%eax),%eax
-c010e951:	89 44 24 0c          	mov    %eax,0xc(%esp)
-c010e955:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e958:	8b 40 0c             	mov    0xc(%eax),%eax
-c010e95b:	89 44 24 08          	mov    %eax,0x8(%esp)
-c010e95f:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010e962:	8b 40 08             	mov    0x8(%eax),%eax
-c010e965:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010e969:	c7 04 24 b8 35 11 c0 	movl   $0xc01135b8,(%esp)
-c010e970:	e8 d3 2c 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010e975:	e8 10 a7 ff ff       	call   c010908a <_Delay>
-c010e97a:	8d 45 f4             	lea    -0xc(%ebp),%eax
-c010e97d:	ff 00                	incl   (%eax)
-c010e97f:	e9 2d ff ff ff       	jmp    c010e8b1 <__Z10IAllocTestv+0x1d>
-c010e984:	a1 1c 0b 12 c0       	mov    0xc0120b1c,%eax
-c010e989:	8b 04 85 1c 0b 12 c0 	mov    -0x3fedf4e4(,%eax,4),%eax
-c010e990:	89 44 24 0c          	mov    %eax,0xc(%esp)
-c010e994:	a1 1c 0b 12 c0       	mov    0xc0120b1c,%eax
-c010e999:	48                   	dec    %eax
-c010e99a:	89 44 24 08          	mov    %eax,0x8(%esp)
-c010e99e:	a1 20 0b 12 c0       	mov    0xc0120b20,%eax
-c010e9a3:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010e9a7:	c7 04 24 f8 35 11 c0 	movl   $0xc01135f8,(%esp)
-c010e9ae:	e8 95 2c 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010e9b3:	e8 d2 a6 ff ff       	call   c010908a <_Delay>
-c010e9b8:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010e9bb:	89 04 24             	mov    %eax,(%esp)
-c010e9be:	e8 ed 68 ff ff       	call   c01052b0 <__ZN10FileSystem6UpdateEv>
-c010e9c3:	b8 01 00 00 00       	mov    $0x1,%eax
-c010e9c8:	c9                   	leave  
-c010e9c9:	c3                   	ret    
+c010e72a <__Z12InitTTyInodev>:
+c010e72a:	55                   	push   %ebp
+c010e72b:	89 e5                	mov    %esp,%ebp
+c010e72d:	83 ec 18             	sub    $0x18,%esp
+c010e730:	e8 33 8a ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010e735:	89 04 24             	mov    %eax,(%esp)
+c010e738:	e8 c7 8c ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
+c010e73d:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c010e740:	e8 23 8a ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010e745:	89 04 24             	mov    %eax,(%esp)
+c010e748:	e8 ab 8c ff ff       	call   c01073f8 <__ZN6Kernel14GetFileManagerEv>
+c010e74d:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c010e750:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e753:	c7 40 44 f7 34 11 c0 	movl   $0xc01134f7,0x44(%eax)
+c010e75a:	c7 44 24 08 01 00 00 	movl   $0x1,0x8(%esp)
+c010e761:	00 
+c010e762:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
+c010e769:	c0 
+c010e76a:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010e76d:	89 04 24             	mov    %eax,(%esp)
+c010e770:	e8 0f 59 ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
+c010e775:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010e778:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e77b:	83 b8 a8 01 00 00 00 	cmpl   $0x0,0x1a8(%eax)
+c010e782:	74 1b                	je     c010e79f <__Z12InitTTyInodev+0x75>
+c010e784:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e787:	8b 80 a8 01 00 00    	mov    0x1a8(%eax),%eax
+c010e78d:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010e791:	c7 04 24 fd 34 11 c0 	movl   $0xc01134fd,(%esp)
+c010e798:	e8 07 2f 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010e79d:	eb fe                	jmp    c010e79d <__Z12InitTTyInodev+0x73>
+c010e79f:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
+c010e7a3:	0f 85 8e 00 00 00    	jne    c010e837 <__Z12InitTTyInodev+0x10d>
+c010e7a9:	c7 44 24 04 ff 01 00 	movl   $0x1ff,0x4(%esp)
+c010e7b0:	00 
+c010e7b1:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010e7b4:	89 04 24             	mov    %eax,(%esp)
+c010e7b7:	e8 a8 5d ff ff       	call   c0104564 <__ZN11FileManager7MakNodeEj>
+c010e7bc:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010e7bf:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
+c010e7c3:	75 0e                	jne    c010e7d3 <__Z12InitTTyInodev+0xa9>
+c010e7c5:	c7 04 24 0f 35 11 c0 	movl   $0xc011350f,(%esp)
+c010e7cc:	e8 d3 2e 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010e7d1:	eb fe                	jmp    c010e7d1 <__Z12InitTTyInodev+0xa7>
+c010e7d3:	8b 55 f4             	mov    -0xc(%ebp),%edx
+c010e7d6:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010e7d9:	8b 00                	mov    (%eax),%eax
+c010e7db:	83 c8 06             	or     $0x6,%eax
+c010e7de:	89 02                	mov    %eax,(%edx)
+c010e7e0:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010e7e3:	c7 40 04 ff a1 00 00 	movl   $0xa1ff,0x4(%eax)
+c010e7ea:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010e7ed:	c7 40 20 00 00 00 00 	movl   $0x0,0x20(%eax)
+c010e7f4:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e7f7:	8b 80 e8 00 00 00    	mov    0xe8(%eax),%eax
+c010e7fd:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010e801:	c7 04 24 25 35 11 c0 	movl   $0xc0113525,(%esp)
+c010e808:	e8 bf fb ff ff       	call   c010e3cc <__Z10PrintInodePcP5Inode>
+c010e80d:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010e810:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010e814:	c7 04 24 2d 35 11 c0 	movl   $0xc011352d,(%esp)
+c010e81b:	e8 ac fb ff ff       	call   c010e3cc <__Z10PrintInodePcP5Inode>
+c010e820:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010e823:	89 04 24             	mov    %eax,(%esp)
+c010e826:	e8 5d 86 ff ff       	call   c0106e88 <__ZN5Inode5PreleEv>
+c010e82b:	c7 04 24 32 35 11 c0 	movl   $0xc0113532,(%esp)
+c010e832:	e8 6d 2e 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010e837:	e8 2c 89 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010e83c:	89 04 24             	mov    %eax,(%esp)
+c010e83f:	e8 a8 8b ff ff       	call   c01073ec <__ZN6Kernel13GetFileSystemEv>
+c010e844:	89 04 24             	mov    %eax,(%esp)
+c010e847:	e8 64 6a ff ff       	call   c01052b0 <__ZN10FileSystem6UpdateEv>
+c010e84c:	c9                   	leave  
+c010e84d:	c3                   	ret    
 
-c010e9ca <__Z19NameIandMakNodeTestv>:
-c010e9ca:	55                   	push   %ebp
-c010e9cb:	89 e5                	mov    %esp,%ebp
-c010e9cd:	83 ec 68             	sub    $0x68,%esp
-c010e9d0:	e8 93 87 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010e9d5:	89 04 24             	mov    %eax,(%esp)
-c010e9d8:	e8 27 8a ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
-c010e9dd:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c010e9e0:	e8 83 87 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010e9e5:	89 04 24             	mov    %eax,(%esp)
-c010e9e8:	e8 0b 8a ff ff       	call   c01073f8 <__ZN6Kernel14GetFileManagerEv>
-c010e9ed:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c010e9f0:	c7 45 f0 00 00 00 00 	movl   $0x0,-0x10(%ebp)
-c010e9f7:	c7 45 ec 25 36 11 c0 	movl   $0xc0113625,-0x14(%ebp)
-c010e9fe:	8b 55 fc             	mov    -0x4(%ebp),%edx
-c010ea01:	8b 45 ec             	mov    -0x14(%ebp),%eax
-c010ea04:	89 42 44             	mov    %eax,0x44(%edx)
-c010ea07:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010ea0a:	c7 80 a8 01 00 00 00 	movl   $0x0,0x1a8(%eax)
-c010ea11:	00 00 00 
-c010ea14:	c7 44 24 08 00 00 00 	movl   $0x0,0x8(%esp)
-c010ea1b:	00 
-c010ea1c:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
-c010ea23:	c0 
-c010ea24:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010ea27:	89 04 24             	mov    %eax,(%esp)
-c010ea2a:	e8 55 56 ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
-c010ea2f:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010ea32:	c7 45 dc 00 00 00 00 	movl   $0x0,-0x24(%ebp)
-c010ea39:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010ea3c:	83 b8 a8 01 00 00 02 	cmpl   $0x2,0x1a8(%eax)
-c010ea43:	75 0d                	jne    c010ea52 <__Z19NameIandMakNodeTestv+0x88>
-c010ea45:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
-c010ea49:	75 07                	jne    c010ea52 <__Z19NameIandMakNodeTestv+0x88>
-c010ea4b:	c7 45 dc 01 00 00 00 	movl   $0x1,-0x24(%ebp)
-c010ea52:	8b 45 dc             	mov    -0x24(%ebp),%eax
-c010ea55:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010ea59:	c7 04 24 30 36 11 c0 	movl   $0xc0113630,(%esp)
-c010ea60:	e8 d3 18 00 00       	call   c0110338 <__Z11PrintResultPcb>
-c010ea65:	8b 55 fc             	mov    -0x4(%ebp),%edx
-c010ea68:	8b 45 ec             	mov    -0x14(%ebp),%eax
-c010ea6b:	89 42 44             	mov    %eax,0x44(%edx)
-c010ea6e:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010ea71:	c7 80 a8 01 00 00 00 	movl   $0x0,0x1a8(%eax)
-c010ea78:	00 00 00 
-c010ea7b:	c7 44 24 08 01 00 00 	movl   $0x1,0x8(%esp)
-c010ea82:	00 
-c010ea83:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
-c010ea8a:	c0 
-c010ea8b:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010ea8e:	89 04 24             	mov    %eax,(%esp)
-c010ea91:	e8 ee 55 ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
-c010ea96:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010ea99:	c7 45 d8 00 00 00 00 	movl   $0x0,-0x28(%ebp)
-c010eaa0:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010eaa3:	83 b8 a8 01 00 00 00 	cmpl   $0x0,0x1a8(%eax)
-c010eaaa:	75 0d                	jne    c010eab9 <__Z19NameIandMakNodeTestv+0xef>
-c010eaac:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
-c010eab0:	75 07                	jne    c010eab9 <__Z19NameIandMakNodeTestv+0xef>
-c010eab2:	c7 45 d8 01 00 00 00 	movl   $0x1,-0x28(%ebp)
-c010eab9:	8b 45 d8             	mov    -0x28(%ebp),%eax
-c010eabc:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010eac0:	c7 04 24 3e 36 11 c0 	movl   $0xc011363e,(%esp)
-c010eac7:	e8 6c 18 00 00       	call   c0110338 <__Z11PrintResultPcb>
-c010eacc:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010eacf:	8b 80 e8 00 00 00    	mov    0xe8(%eax),%eax
-c010ead5:	8b 40 1c             	mov    0x1c(%eax),%eax
-c010ead8:	89 45 f0             	mov    %eax,-0x10(%ebp)
-c010eadb:	c7 44 24 04 ff 01 00 	movl   $0x1ff,0x4(%esp)
-c010eae2:	00 
-c010eae3:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010eae6:	89 04 24             	mov    %eax,(%esp)
-c010eae9:	e8 76 5a ff ff       	call   c0104564 <__ZN11FileManager7MakNodeEj>
-c010eaee:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010eaf1:	c7 45 d4 00 00 00 00 	movl   $0x0,-0x2c(%ebp)
-c010eaf8:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010eafb:	83 b8 a8 01 00 00 00 	cmpl   $0x0,0x1a8(%eax)
-c010eb02:	75 21                	jne    c010eb25 <__Z19NameIandMakNodeTestv+0x15b>
-c010eb04:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
-c010eb08:	74 1b                	je     c010eb25 <__Z19NameIandMakNodeTestv+0x15b>
-c010eb0a:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010eb0d:	8b 90 e8 00 00 00    	mov    0xe8(%eax),%edx
-c010eb13:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c010eb16:	83 c0 20             	add    $0x20,%eax
-c010eb19:	39 42 1c             	cmp    %eax,0x1c(%edx)
-c010eb1c:	75 07                	jne    c010eb25 <__Z19NameIandMakNodeTestv+0x15b>
-c010eb1e:	c7 45 d4 01 00 00 00 	movl   $0x1,-0x2c(%ebp)
-c010eb25:	8b 45 d4             	mov    -0x2c(%ebp),%eax
-c010eb28:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010eb2c:	c7 04 24 4c 36 11 c0 	movl   $0xc011364c,(%esp)
-c010eb33:	e8 00 18 00 00       	call   c0110338 <__Z11PrintResultPcb>
-c010eb38:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010eb3b:	89 04 24             	mov    %eax,(%esp)
-c010eb3e:	e8 45 83 ff ff       	call   c0106e88 <__ZN5Inode5PreleEv>
-c010eb43:	8b 55 fc             	mov    -0x4(%ebp),%edx
-c010eb46:	8b 45 ec             	mov    -0x14(%ebp),%eax
-c010eb49:	89 42 44             	mov    %eax,0x44(%edx)
-c010eb4c:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010eb4f:	c7 80 a8 01 00 00 00 	movl   $0x0,0x1a8(%eax)
-c010eb56:	00 00 00 
-c010eb59:	c7 44 24 08 00 00 00 	movl   $0x0,0x8(%esp)
-c010eb60:	00 
-c010eb61:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
-c010eb68:	c0 
-c010eb69:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010eb6c:	89 04 24             	mov    %eax,(%esp)
-c010eb6f:	e8 10 55 ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
-c010eb74:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010eb77:	c7 45 d0 00 00 00 00 	movl   $0x0,-0x30(%ebp)
-c010eb7e:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010eb81:	83 b8 a8 01 00 00 00 	cmpl   $0x0,0x1a8(%eax)
-c010eb88:	75 16                	jne    c010eba0 <__Z19NameIandMakNodeTestv+0x1d6>
-c010eb8a:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
-c010eb8e:	74 10                	je     c010eba0 <__Z19NameIandMakNodeTestv+0x1d6>
-c010eb90:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010eb93:	83 78 1c 00          	cmpl   $0x0,0x1c(%eax)
-c010eb97:	75 07                	jne    c010eba0 <__Z19NameIandMakNodeTestv+0x1d6>
-c010eb99:	c7 45 d0 01 00 00 00 	movl   $0x1,-0x30(%ebp)
-c010eba0:	8b 45 d0             	mov    -0x30(%ebp),%eax
-c010eba3:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010eba7:	c7 04 24 5a 36 11 c0 	movl   $0xc011365a,(%esp)
-c010ebae:	e8 85 17 00 00       	call   c0110338 <__Z11PrintResultPcb>
-c010ebb3:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010ebb6:	89 04 24             	mov    %eax,(%esp)
-c010ebb9:	e8 ca 82 ff ff       	call   c0106e88 <__ZN5Inode5PreleEv>
-c010ebbe:	8b 55 fc             	mov    -0x4(%ebp),%edx
-c010ebc1:	8b 45 ec             	mov    -0x14(%ebp),%eax
-c010ebc4:	89 42 44             	mov    %eax,0x44(%edx)
-c010ebc7:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010ebca:	c7 80 a8 01 00 00 00 	movl   $0x0,0x1a8(%eax)
-c010ebd1:	00 00 00 
-c010ebd4:	c7 44 24 08 02 00 00 	movl   $0x2,0x8(%esp)
-c010ebdb:	00 
-c010ebdc:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
-c010ebe3:	c0 
-c010ebe4:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010ebe7:	89 04 24             	mov    %eax,(%esp)
-c010ebea:	e8 95 54 ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
-c010ebef:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010ebf2:	c7 45 cc 00 00 00 00 	movl   $0x0,-0x34(%ebp)
-c010ebf9:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010ebfc:	83 b8 a8 01 00 00 00 	cmpl   $0x0,0x1a8(%eax)
-c010ec03:	75 15                	jne    c010ec1a <__Z19NameIandMakNodeTestv+0x250>
-c010ec05:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010ec08:	8b 80 e8 00 00 00    	mov    0xe8(%eax),%eax
-c010ec0e:	3b 45 f4             	cmp    -0xc(%ebp),%eax
-c010ec11:	75 07                	jne    c010ec1a <__Z19NameIandMakNodeTestv+0x250>
-c010ec13:	c7 45 cc 01 00 00 00 	movl   $0x1,-0x34(%ebp)
-c010ec1a:	8b 45 cc             	mov    -0x34(%ebp),%eax
-c010ec1d:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010ec21:	c7 04 24 68 36 11 c0 	movl   $0xc0113668,(%esp)
-c010ec28:	e8 0b 17 00 00       	call   c0110338 <__Z11PrintResultPcb>
-c010ec2d:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010ec30:	89 04 24             	mov    %eax,(%esp)
-c010ec33:	e8 50 82 ff ff       	call   c0106e88 <__ZN5Inode5PreleEv>
-c010ec38:	c7 45 e8 76 36 11 c0 	movl   $0xc0113676,-0x18(%ebp)
-c010ec3f:	8b 55 fc             	mov    -0x4(%ebp),%edx
-c010ec42:	8b 45 e8             	mov    -0x18(%ebp),%eax
-c010ec45:	89 42 44             	mov    %eax,0x44(%edx)
-c010ec48:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010ec4b:	c7 80 a8 01 00 00 00 	movl   $0x0,0x1a8(%eax)
-c010ec52:	00 00 00 
-c010ec55:	c7 44 24 08 00 00 00 	movl   $0x0,0x8(%esp)
-c010ec5c:	00 
-c010ec5d:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
-c010ec64:	c0 
-c010ec65:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010ec68:	89 04 24             	mov    %eax,(%esp)
-c010ec6b:	e8 14 54 ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
-c010ec70:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010ec73:	c7 45 c8 00 00 00 00 	movl   $0x0,-0x38(%ebp)
-c010ec7a:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010ec7d:	83 b8 a8 01 00 00 02 	cmpl   $0x2,0x1a8(%eax)
-c010ec84:	75 0d                	jne    c010ec93 <__Z19NameIandMakNodeTestv+0x2c9>
-c010ec86:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
-c010ec8a:	75 07                	jne    c010ec93 <__Z19NameIandMakNodeTestv+0x2c9>
-c010ec8c:	c7 45 c8 01 00 00 00 	movl   $0x1,-0x38(%ebp)
-c010ec93:	8b 45 c8             	mov    -0x38(%ebp),%eax
-c010ec96:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010ec9a:	c7 04 24 8a 36 11 c0 	movl   $0xc011368a,(%esp)
-c010eca1:	e8 92 16 00 00       	call   c0110338 <__Z11PrintResultPcb>
-c010eca6:	8b 55 fc             	mov    -0x4(%ebp),%edx
-c010eca9:	8b 45 e8             	mov    -0x18(%ebp),%eax
-c010ecac:	89 42 44             	mov    %eax,0x44(%edx)
-c010ecaf:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010ecb2:	c7 80 a8 01 00 00 00 	movl   $0x0,0x1a8(%eax)
-c010ecb9:	00 00 00 
-c010ecbc:	c7 44 24 08 01 00 00 	movl   $0x1,0x8(%esp)
-c010ecc3:	00 
-c010ecc4:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
-c010eccb:	c0 
-c010eccc:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010eccf:	89 04 24             	mov    %eax,(%esp)
-c010ecd2:	e8 ad 53 ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
-c010ecd7:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010ecda:	c7 45 c4 00 00 00 00 	movl   $0x0,-0x3c(%ebp)
-c010ece1:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010ece4:	83 b8 a8 01 00 00 02 	cmpl   $0x2,0x1a8(%eax)
-c010eceb:	75 0d                	jne    c010ecfa <__Z19NameIandMakNodeTestv+0x330>
-c010eced:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
-c010ecf1:	75 07                	jne    c010ecfa <__Z19NameIandMakNodeTestv+0x330>
-c010ecf3:	c7 45 c4 01 00 00 00 	movl   $0x1,-0x3c(%ebp)
-c010ecfa:	8b 45 c4             	mov    -0x3c(%ebp),%eax
-c010ecfd:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010ed01:	c7 04 24 98 36 11 c0 	movl   $0xc0113698,(%esp)
-c010ed08:	e8 2b 16 00 00       	call   c0110338 <__Z11PrintResultPcb>
-c010ed0d:	c7 45 e4 a6 36 11 c0 	movl   $0xc01136a6,-0x1c(%ebp)
-c010ed14:	8b 55 fc             	mov    -0x4(%ebp),%edx
-c010ed17:	8b 45 e4             	mov    -0x1c(%ebp),%eax
-c010ed1a:	89 42 44             	mov    %eax,0x44(%edx)
-c010ed1d:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010ed20:	c7 80 a8 01 00 00 00 	movl   $0x0,0x1a8(%eax)
-c010ed27:	00 00 00 
-c010ed2a:	c7 44 24 08 02 00 00 	movl   $0x2,0x8(%esp)
-c010ed31:	00 
-c010ed32:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
-c010ed39:	c0 
-c010ed3a:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010ed3d:	89 04 24             	mov    %eax,(%esp)
-c010ed40:	e8 3f 53 ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
-c010ed45:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010ed48:	c7 45 c0 00 00 00 00 	movl   $0x0,-0x40(%ebp)
-c010ed4f:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010ed52:	83 b8 a8 01 00 00 02 	cmpl   $0x2,0x1a8(%eax)
-c010ed59:	75 0d                	jne    c010ed68 <__Z19NameIandMakNodeTestv+0x39e>
-c010ed5b:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
-c010ed5f:	75 07                	jne    c010ed68 <__Z19NameIandMakNodeTestv+0x39e>
-c010ed61:	c7 45 c0 01 00 00 00 	movl   $0x1,-0x40(%ebp)
-c010ed68:	8b 45 c0             	mov    -0x40(%ebp),%eax
-c010ed6b:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010ed6f:	c7 04 24 b1 36 11 c0 	movl   $0xc01136b1,(%esp)
-c010ed76:	e8 bd 15 00 00       	call   c0110338 <__Z11PrintResultPcb>
-c010ed7b:	c7 45 e0 bf 36 11 c0 	movl   $0xc01136bf,-0x20(%ebp)
-c010ed82:	8b 55 fc             	mov    -0x4(%ebp),%edx
-c010ed85:	8b 45 e0             	mov    -0x20(%ebp),%eax
-c010ed88:	89 42 44             	mov    %eax,0x44(%edx)
-c010ed8b:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010ed8e:	c7 80 a8 01 00 00 00 	movl   $0x0,0x1a8(%eax)
-c010ed95:	00 00 00 
-c010ed98:	c7 44 24 08 01 00 00 	movl   $0x1,0x8(%esp)
-c010ed9f:	00 
-c010eda0:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
-c010eda7:	c0 
-c010eda8:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010edab:	89 04 24             	mov    %eax,(%esp)
-c010edae:	e8 d1 52 ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
-c010edb3:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010edb6:	c7 45 bc 00 00 00 00 	movl   $0x0,-0x44(%ebp)
-c010edbd:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010edc0:	83 b8 a8 01 00 00 02 	cmpl   $0x2,0x1a8(%eax)
-c010edc7:	75 0d                	jne    c010edd6 <__Z19NameIandMakNodeTestv+0x40c>
-c010edc9:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
-c010edcd:	75 07                	jne    c010edd6 <__Z19NameIandMakNodeTestv+0x40c>
-c010edcf:	c7 45 bc 01 00 00 00 	movl   $0x1,-0x44(%ebp)
-c010edd6:	8b 45 bc             	mov    -0x44(%ebp),%eax
-c010edd9:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010eddd:	c7 04 24 d5 36 11 c0 	movl   $0xc01136d5,(%esp)
-c010ede4:	e8 4f 15 00 00       	call   c0110338 <__Z11PrintResultPcb>
-c010ede9:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010edec:	c7 80 a8 01 00 00 00 	movl   $0x0,0x1a8(%eax)
-c010edf3:	00 00 00 
-c010edf6:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010edf9:	8b 80 e8 00 00 00    	mov    0xe8(%eax),%eax
-c010edff:	8b 40 1c             	mov    0x1c(%eax),%eax
-c010ee02:	89 45 f0             	mov    %eax,-0x10(%ebp)
-c010ee05:	c7 44 24 04 ff 41 00 	movl   $0x41ff,0x4(%esp)
-c010ee0c:	00 
-c010ee0d:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010ee10:	89 04 24             	mov    %eax,(%esp)
-c010ee13:	e8 4c 57 ff ff       	call   c0104564 <__ZN11FileManager7MakNodeEj>
-c010ee18:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010ee1b:	c7 45 b8 00 00 00 00 	movl   $0x0,-0x48(%ebp)
-c010ee22:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010ee25:	83 b8 a8 01 00 00 00 	cmpl   $0x0,0x1a8(%eax)
-c010ee2c:	75 21                	jne    c010ee4f <__Z19NameIandMakNodeTestv+0x485>
-c010ee2e:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
-c010ee32:	74 1b                	je     c010ee4f <__Z19NameIandMakNodeTestv+0x485>
-c010ee34:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010ee37:	8b 90 e8 00 00 00    	mov    0xe8(%eax),%edx
-c010ee3d:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c010ee40:	83 c0 20             	add    $0x20,%eax
-c010ee43:	39 42 1c             	cmp    %eax,0x1c(%edx)
-c010ee46:	75 07                	jne    c010ee4f <__Z19NameIandMakNodeTestv+0x485>
-c010ee48:	c7 45 b8 01 00 00 00 	movl   $0x1,-0x48(%ebp)
-c010ee4f:	8b 45 b8             	mov    -0x48(%ebp),%eax
-c010ee52:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010ee56:	c7 04 24 e3 36 11 c0 	movl   $0xc01136e3,(%esp)
-c010ee5d:	e8 d6 14 00 00       	call   c0110338 <__Z11PrintResultPcb>
-c010ee62:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010ee65:	89 04 24             	mov    %eax,(%esp)
-c010ee68:	e8 1b 80 ff ff       	call   c0106e88 <__ZN5Inode5PreleEv>
-c010ee6d:	8b 55 fc             	mov    -0x4(%ebp),%edx
-c010ee70:	8b 45 e0             	mov    -0x20(%ebp),%eax
-c010ee73:	89 42 44             	mov    %eax,0x44(%edx)
-c010ee76:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010ee79:	c7 80 a8 01 00 00 00 	movl   $0x0,0x1a8(%eax)
-c010ee80:	00 00 00 
-c010ee83:	c7 44 24 08 01 00 00 	movl   $0x1,0x8(%esp)
-c010ee8a:	00 
-c010ee8b:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
-c010ee92:	c0 
-c010ee93:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010ee96:	89 04 24             	mov    %eax,(%esp)
-c010ee99:	e8 e6 51 ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
-c010ee9e:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010eea1:	c7 45 b4 00 00 00 00 	movl   $0x0,-0x4c(%ebp)
-c010eea8:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010eeab:	83 b8 a8 01 00 00 00 	cmpl   $0x0,0x1a8(%eax)
-c010eeb2:	75 1c                	jne    c010eed0 <__Z19NameIandMakNodeTestv+0x506>
-c010eeb4:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
-c010eeb8:	75 16                	jne    c010eed0 <__Z19NameIandMakNodeTestv+0x506>
-c010eeba:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010eebd:	8b 80 e8 00 00 00    	mov    0xe8(%eax),%eax
-c010eec3:	83 78 1c 00          	cmpl   $0x0,0x1c(%eax)
-c010eec7:	75 07                	jne    c010eed0 <__Z19NameIandMakNodeTestv+0x506>
-c010eec9:	c7 45 b4 01 00 00 00 	movl   $0x1,-0x4c(%ebp)
-c010eed0:	8b 45 b4             	mov    -0x4c(%ebp),%eax
-c010eed3:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010eed7:	c7 04 24 f1 36 11 c0 	movl   $0xc01136f1,(%esp)
-c010eede:	e8 55 14 00 00       	call   c0110338 <__Z11PrintResultPcb>
-c010eee3:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010eee6:	8b 80 e8 00 00 00    	mov    0xe8(%eax),%eax
-c010eeec:	8b 40 1c             	mov    0x1c(%eax),%eax
-c010eeef:	89 45 f0             	mov    %eax,-0x10(%ebp)
-c010eef2:	c7 44 24 04 ff 01 00 	movl   $0x1ff,0x4(%esp)
-c010eef9:	00 
-c010eefa:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010eefd:	89 04 24             	mov    %eax,(%esp)
-c010ef00:	e8 5f 56 ff ff       	call   c0104564 <__ZN11FileManager7MakNodeEj>
-c010ef05:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010ef08:	c7 45 b0 00 00 00 00 	movl   $0x0,-0x50(%ebp)
-c010ef0f:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010ef12:	83 b8 a8 01 00 00 00 	cmpl   $0x0,0x1a8(%eax)
-c010ef19:	75 21                	jne    c010ef3c <__Z19NameIandMakNodeTestv+0x572>
-c010ef1b:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
-c010ef1f:	74 1b                	je     c010ef3c <__Z19NameIandMakNodeTestv+0x572>
-c010ef21:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010ef24:	8b 90 e8 00 00 00    	mov    0xe8(%eax),%edx
-c010ef2a:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c010ef2d:	83 c0 20             	add    $0x20,%eax
-c010ef30:	39 42 1c             	cmp    %eax,0x1c(%edx)
-c010ef33:	75 07                	jne    c010ef3c <__Z19NameIandMakNodeTestv+0x572>
-c010ef35:	c7 45 b0 01 00 00 00 	movl   $0x1,-0x50(%ebp)
-c010ef3c:	8b 45 b0             	mov    -0x50(%ebp),%eax
-c010ef3f:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010ef43:	c7 04 24 ff 36 11 c0 	movl   $0xc01136ff,(%esp)
-c010ef4a:	e8 e9 13 00 00       	call   c0110338 <__Z11PrintResultPcb>
-c010ef4f:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010ef52:	89 04 24             	mov    %eax,(%esp)
-c010ef55:	e8 2e 7f ff ff       	call   c0106e88 <__ZN5Inode5PreleEv>
-c010ef5a:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010ef5d:	8b 40 04             	mov    0x4(%eax),%eax
-c010ef60:	89 04 24             	mov    %eax,(%esp)
-c010ef63:	e8 48 63 ff ff       	call   c01052b0 <__ZN10FileSystem6UpdateEv>
-c010ef68:	e8 fb 81 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010ef6d:	89 04 24             	mov    %eax,(%esp)
-c010ef70:	e8 5f 84 ff ff       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
-c010ef75:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
-c010ef7c:	00 
-c010ef7d:	89 04 24             	mov    %eax,(%esp)
-c010ef80:	e8 51 23 ff ff       	call   c01012d6 <__ZN13BufferManager6BflushEs>
-c010ef85:	b8 01 00 00 00       	mov    $0x1,%eax
-c010ef8a:	c9                   	leave  
-c010ef8b:	c3                   	ret    
+c010e84e <__Z13AllocAllBlockv>:
+c010e84e:	55                   	push   %ebp
+c010e84f:	89 e5                	mov    %esp,%ebp
+c010e851:	83 ec 18             	sub    $0x18,%esp
+c010e854:	e8 0f 89 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010e859:	89 04 24             	mov    %eax,(%esp)
+c010e85c:	e8 8b 8b ff ff       	call   c01073ec <__ZN6Kernel13GetFileSystemEv>
+c010e861:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c010e864:	e8 ff 88 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010e869:	89 04 24             	mov    %eax,(%esp)
+c010e86c:	e8 63 8b ff ff       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
+c010e871:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c010e874:	c7 45 f0 00 00 00 00 	movl   $0x0,-0x10(%ebp)
+c010e87b:	81 7d f0 4f 42 00 00 	cmpl   $0x424f,-0x10(%ebp)
+c010e882:	7f 64                	jg     c010e8e8 <__Z13AllocAllBlockv+0x9a>
+c010e884:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
+c010e88b:	00 
+c010e88c:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e88f:	89 04 24             	mov    %eax,(%esp)
+c010e892:	e8 7b 6e ff ff       	call   c0105712 <__ZN10FileSystem5AllocEs>
+c010e897:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010e89a:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010e89d:	8b 40 24             	mov    0x24(%eax),%eax
+c010e8a0:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010e8a4:	c7 04 24 4b 35 11 c0 	movl   $0xc011354b,(%esp)
+c010e8ab:	e8 f4 2d 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010e8b0:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010e8b3:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010e8b7:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010e8ba:	89 04 24             	mov    %eax,(%esp)
+c010e8bd:	e8 d6 24 ff ff       	call   c0100d98 <__ZN13BufferManager6BrelseEP3Buf>
+c010e8c2:	8b 55 f0             	mov    -0x10(%ebp),%edx
+c010e8c5:	81 c2 00 04 00 00    	add    $0x400,%edx
+c010e8cb:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010e8ce:	3b 50 24             	cmp    0x24(%eax),%edx
+c010e8d1:	74 0e                	je     c010e8e1 <__Z13AllocAllBlockv+0x93>
+c010e8d3:	c7 04 24 64 35 11 c0 	movl   $0xc0113564,(%esp)
+c010e8da:	e8 c5 2d 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010e8df:	eb fe                	jmp    c010e8df <__Z13AllocAllBlockv+0x91>
+c010e8e1:	8d 45 f0             	lea    -0x10(%ebp),%eax
+c010e8e4:	ff 00                	incl   (%eax)
+c010e8e6:	eb 93                	jmp    c010e87b <__Z13AllocAllBlockv+0x2d>
+c010e8e8:	b8 01 00 00 00       	mov    $0x1,%eax
+c010e8ed:	c9                   	leave  
+c010e8ee:	c3                   	ret    
+c010e8ef:	90                   	nop    
 
-c010ef8c <__Z9NameITestv>:
-c010ef8c:	55                   	push   %ebp
-c010ef8d:	89 e5                	mov    %esp,%ebp
-c010ef8f:	83 ec 18             	sub    $0x18,%esp
-c010ef92:	e8 d1 81 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010ef97:	89 04 24             	mov    %eax,(%esp)
-c010ef9a:	e8 65 84 ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
-c010ef9f:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c010efa2:	e8 c1 81 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010efa7:	89 04 24             	mov    %eax,(%esp)
-c010efaa:	e8 49 84 ff ff       	call   c01073f8 <__ZN6Kernel14GetFileManagerEv>
-c010efaf:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c010efb2:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010efb5:	c7 40 44 0d 37 11 c0 	movl   $0xc011370d,0x44(%eax)
-c010efbc:	c7 44 24 08 01 00 00 	movl   $0x1,0x8(%esp)
-c010efc3:	00 
-c010efc4:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
-c010efcb:	c0 
-c010efcc:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010efcf:	89 04 24             	mov    %eax,(%esp)
-c010efd2:	e8 ad 50 ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
-c010efd7:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010efda:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010efdd:	83 b8 a8 01 00 00 00 	cmpl   $0x0,0x1a8(%eax)
-c010efe4:	74 1b                	je     c010f001 <__Z9NameITestv+0x75>
-c010efe6:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010efe9:	8b 80 a8 01 00 00    	mov    0x1a8(%eax),%eax
-c010efef:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010eff3:	c7 04 24 fd 34 11 c0 	movl   $0xc01134fd,(%esp)
-c010effa:	e8 49 26 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010efff:	eb fe                	jmp    c010efff <__Z9NameITestv+0x73>
-c010f001:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
-c010f005:	75 6d                	jne    c010f074 <__Z9NameITestv+0xe8>
-c010f007:	c7 44 24 04 ff 01 00 	movl   $0x1ff,0x4(%esp)
-c010f00e:	00 
-c010f00f:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010f012:	89 04 24             	mov    %eax,(%esp)
-c010f015:	e8 4a 55 ff ff       	call   c0104564 <__ZN11FileManager7MakNodeEj>
-c010f01a:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010f01d:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
-c010f021:	75 0e                	jne    c010f031 <__Z9NameITestv+0xa5>
-c010f023:	c7 04 24 14 37 11 c0 	movl   $0xc0113714,(%esp)
-c010f02a:	e8 19 26 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f02f:	eb fe                	jmp    c010f02f <__Z9NameITestv+0xa3>
-c010f031:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010f034:	8b 80 e8 00 00 00    	mov    0xe8(%eax),%eax
-c010f03a:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010f03e:	c7 04 24 25 35 11 c0 	movl   $0xc0113525,(%esp)
-c010f045:	e8 26 f3 ff ff       	call   c010e370 <__Z10PrintInodePcP5Inode>
-c010f04a:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010f04d:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010f051:	c7 04 24 2b 37 11 c0 	movl   $0xc011372b,(%esp)
-c010f058:	e8 13 f3 ff ff       	call   c010e370 <__Z10PrintInodePcP5Inode>
-c010f05d:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010f060:	89 04 24             	mov    %eax,(%esp)
-c010f063:	e8 20 7e ff ff       	call   c0106e88 <__ZN5Inode5PreleEv>
-c010f068:	c7 04 24 32 35 11 c0 	movl   $0xc0113532,(%esp)
-c010f06f:	e8 d4 25 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f074:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010f077:	c7 40 44 32 37 11 c0 	movl   $0xc0113732,0x44(%eax)
-c010f07e:	c7 44 24 08 00 00 00 	movl   $0x0,0x8(%esp)
-c010f085:	00 
-c010f086:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
-c010f08d:	c0 
-c010f08e:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010f091:	89 04 24             	mov    %eax,(%esp)
-c010f094:	e8 eb 4f ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
-c010f099:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010f09c:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
-c010f0a0:	75 0e                	jne    c010f0b0 <__Z9NameITestv+0x124>
-c010f0a2:	c7 04 24 39 37 11 c0 	movl   $0xc0113739,(%esp)
-c010f0a9:	e8 9a 25 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f0ae:	eb 0e                	jmp    c010f0be <__Z9NameITestv+0x132>
-c010f0b0:	c7 04 24 53 37 11 c0 	movl   $0xc0113753,(%esp)
-c010f0b7:	e8 8c 25 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f0bc:	eb fe                	jmp    c010f0bc <__Z9NameITestv+0x130>
-c010f0be:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010f0c1:	c7 80 a8 01 00 00 00 	movl   $0x0,0x1a8(%eax)
-c010f0c8:	00 00 00 
-c010f0cb:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010f0ce:	c7 40 44 0d 37 11 c0 	movl   $0xc011370d,0x44(%eax)
-c010f0d5:	c7 44 24 08 00 00 00 	movl   $0x0,0x8(%esp)
-c010f0dc:	00 
-c010f0dd:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
-c010f0e4:	c0 
-c010f0e5:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010f0e8:	89 04 24             	mov    %eax,(%esp)
-c010f0eb:	e8 94 4f ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
-c010f0f0:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010f0f3:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
-c010f0f7:	75 0e                	jne    c010f107 <__Z9NameITestv+0x17b>
-c010f0f9:	c7 04 24 69 37 11 c0 	movl   $0xc0113769,(%esp)
-c010f100:	e8 43 25 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f105:	eb fe                	jmp    c010f105 <__Z9NameITestv+0x179>
-c010f107:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010f10a:	89 04 24             	mov    %eax,(%esp)
-c010f10d:	e8 76 7d ff ff       	call   c0106e88 <__ZN5Inode5PreleEv>
-c010f112:	c7 04 24 83 37 11 c0 	movl   $0xc0113783,(%esp)
-c010f119:	e8 2a 25 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f11e:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010f121:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010f125:	c7 04 24 99 37 11 c0 	movl   $0xc0113799,(%esp)
-c010f12c:	e8 3f f2 ff ff       	call   c010e370 <__Z10PrintInodePcP5Inode>
-c010f131:	e8 06 25 00 00       	call   c011163c <__ZN8Diagnose8TraceOffEv>
-c010f136:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010f139:	8b 40 04             	mov    0x4(%eax),%eax
-c010f13c:	89 04 24             	mov    %eax,(%esp)
-c010f13f:	e8 6c 61 ff ff       	call   c01052b0 <__ZN10FileSystem6UpdateEv>
-c010f144:	e8 1f 80 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010f149:	89 04 24             	mov    %eax,(%esp)
-c010f14c:	e8 83 82 ff ff       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
-c010f151:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
-c010f158:	00 
-c010f159:	89 04 24             	mov    %eax,(%esp)
-c010f15c:	e8 75 21 ff ff       	call   c01012d6 <__ZN13BufferManager6BflushEs>
-c010f161:	e8 ca 24 00 00       	call   c0111630 <__ZN8Diagnose7TraceOnEv>
-c010f166:	b8 01 00 00 00       	mov    $0x1,%eax
-c010f16b:	c9                   	leave  
-c010f16c:	c3                   	ret    
-c010f16d:	90                   	nop    
+c010e8f0 <__Z10IAllocTestv>:
+c010e8f0:	55                   	push   %ebp
+c010e8f1:	89 e5                	mov    %esp,%ebp
+c010e8f3:	83 ec 38             	sub    $0x38,%esp
+c010e8f6:	e8 6d 88 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010e8fb:	89 04 24             	mov    %eax,(%esp)
+c010e8fe:	e8 e9 8a ff ff       	call   c01073ec <__ZN6Kernel13GetFileSystemEv>
+c010e903:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c010e906:	c7 45 f4 00 00 00 00 	movl   $0x0,-0xc(%ebp)
+c010e90d:	83 7d f4 09          	cmpl   $0x9,-0xc(%ebp)
+c010e911:	0f 8f c9 00 00 00    	jg     c010e9e0 <__Z10IAllocTestv+0xf0>
+c010e917:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
+c010e91e:	00 
+c010e91f:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010e922:	89 04 24             	mov    %eax,(%esp)
+c010e925:	e8 00 6b ff ff       	call   c010542a <__ZN10FileSystem6IAllocEs>
+c010e92a:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c010e92d:	83 7d fc 00          	cmpl   $0x0,-0x4(%ebp)
+c010e931:	0f 84 9a 00 00 00    	je     c010e9d1 <__Z10IAllocTestv+0xe1>
+c010e937:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e93a:	8b 40 14             	mov    0x14(%eax),%eax
+c010e93d:	89 45 f0             	mov    %eax,-0x10(%ebp)
+c010e940:	83 7d f0 00          	cmpl   $0x0,-0x10(%ebp)
+c010e944:	79 04                	jns    c010e94a <__Z10IAllocTestv+0x5a>
+c010e946:	83 45 f0 07          	addl   $0x7,-0x10(%ebp)
+c010e94a:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c010e94d:	c1 f8 03             	sar    $0x3,%eax
+c010e950:	05 ca 00 00 00       	add    $0xca,%eax
+c010e955:	89 44 24 0c          	mov    %eax,0xc(%esp)
+c010e959:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e95c:	8b 40 14             	mov    0x14(%eax),%eax
+c010e95f:	89 45 ec             	mov    %eax,-0x14(%ebp)
+c010e962:	8b 45 ec             	mov    -0x14(%ebp),%eax
+c010e965:	89 45 e8             	mov    %eax,-0x18(%ebp)
+c010e968:	83 7d e8 00          	cmpl   $0x0,-0x18(%ebp)
+c010e96c:	79 04                	jns    c010e972 <__Z10IAllocTestv+0x82>
+c010e96e:	83 45 e8 07          	addl   $0x7,-0x18(%ebp)
+c010e972:	8b 45 e8             	mov    -0x18(%ebp),%eax
+c010e975:	c1 f8 03             	sar    $0x3,%eax
+c010e978:	c1 e0 03             	shl    $0x3,%eax
+c010e97b:	8b 55 ec             	mov    -0x14(%ebp),%edx
+c010e97e:	29 c2                	sub    %eax,%edx
+c010e980:	89 d0                	mov    %edx,%eax
+c010e982:	89 44 24 08          	mov    %eax,0x8(%esp)
+c010e986:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e989:	8b 40 14             	mov    0x14(%eax),%eax
+c010e98c:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010e990:	c7 04 24 88 35 11 c0 	movl   $0xc0113588,(%esp)
+c010e997:	e8 08 2d 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010e99c:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e99f:	8b 40 14             	mov    0x14(%eax),%eax
+c010e9a2:	89 44 24 10          	mov    %eax,0x10(%esp)
+c010e9a6:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e9a9:	0f bf 40 10          	movswl 0x10(%eax),%eax
+c010e9ad:	89 44 24 0c          	mov    %eax,0xc(%esp)
+c010e9b1:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e9b4:	8b 40 0c             	mov    0xc(%eax),%eax
+c010e9b7:	89 44 24 08          	mov    %eax,0x8(%esp)
+c010e9bb:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010e9be:	8b 40 08             	mov    0x8(%eax),%eax
+c010e9c1:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010e9c5:	c7 04 24 b8 35 11 c0 	movl   $0xc01135b8,(%esp)
+c010e9cc:	e8 d3 2c 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010e9d1:	e8 b4 a6 ff ff       	call   c010908a <_Delay>
+c010e9d6:	8d 45 f4             	lea    -0xc(%ebp),%eax
+c010e9d9:	ff 00                	incl   (%eax)
+c010e9db:	e9 2d ff ff ff       	jmp    c010e90d <__Z10IAllocTestv+0x1d>
+c010e9e0:	a1 1c 0b 12 c0       	mov    0xc0120b1c,%eax
+c010e9e5:	8b 04 85 1c 0b 12 c0 	mov    -0x3fedf4e4(,%eax,4),%eax
+c010e9ec:	89 44 24 0c          	mov    %eax,0xc(%esp)
+c010e9f0:	a1 1c 0b 12 c0       	mov    0xc0120b1c,%eax
+c010e9f5:	48                   	dec    %eax
+c010e9f6:	89 44 24 08          	mov    %eax,0x8(%esp)
+c010e9fa:	a1 20 0b 12 c0       	mov    0xc0120b20,%eax
+c010e9ff:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010ea03:	c7 04 24 f8 35 11 c0 	movl   $0xc01135f8,(%esp)
+c010ea0a:	e8 95 2c 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010ea0f:	e8 76 a6 ff ff       	call   c010908a <_Delay>
+c010ea14:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010ea17:	89 04 24             	mov    %eax,(%esp)
+c010ea1a:	e8 91 68 ff ff       	call   c01052b0 <__ZN10FileSystem6UpdateEv>
+c010ea1f:	b8 01 00 00 00       	mov    $0x1,%eax
+c010ea24:	c9                   	leave  
+c010ea25:	c3                   	ret    
 
-c010f16e <__Z12SetupDirTreev>:
-c010f16e:	55                   	push   %ebp
-c010f16f:	89 e5                	mov    %esp,%ebp
-c010f171:	83 ec 18             	sub    $0x18,%esp
-c010f174:	e8 ef 7f ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010f179:	89 04 24             	mov    %eax,(%esp)
-c010f17c:	e8 83 82 ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
-c010f181:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c010f184:	e8 df 7f ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010f189:	89 04 24             	mov    %eax,(%esp)
-c010f18c:	e8 67 82 ff ff       	call   c01073f8 <__ZN6Kernel14GetFileManagerEv>
-c010f191:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c010f194:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010f197:	c7 40 44 9f 37 11 c0 	movl   $0xc011379f,0x44(%eax)
-c010f19e:	c7 44 24 08 01 00 00 	movl   $0x1,0x8(%esp)
-c010f1a5:	00 
-c010f1a6:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
-c010f1ad:	c0 
-c010f1ae:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010f1b1:	89 04 24             	mov    %eax,(%esp)
-c010f1b4:	e8 cb 4e ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
-c010f1b9:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010f1bc:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010f1bf:	83 b8 a8 01 00 00 00 	cmpl   $0x0,0x1a8(%eax)
-c010f1c6:	74 1b                	je     c010f1e3 <__Z12SetupDirTreev+0x75>
-c010f1c8:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010f1cb:	8b 80 a8 01 00 00    	mov    0x1a8(%eax),%eax
-c010f1d1:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010f1d5:	c7 04 24 fd 34 11 c0 	movl   $0xc01134fd,(%esp)
-c010f1dc:	e8 67 24 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f1e1:	eb fe                	jmp    c010f1e1 <__Z12SetupDirTreev+0x73>
-c010f1e3:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
-c010f1e7:	75 6d                	jne    c010f256 <__Z12SetupDirTreev+0xe8>
-c010f1e9:	c7 44 24 04 ff 41 00 	movl   $0x41ff,0x4(%esp)
-c010f1f0:	00 
-c010f1f1:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010f1f4:	89 04 24             	mov    %eax,(%esp)
-c010f1f7:	e8 68 53 ff ff       	call   c0104564 <__ZN11FileManager7MakNodeEj>
-c010f1fc:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010f1ff:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
-c010f203:	75 0e                	jne    c010f213 <__Z12SetupDirTreev+0xa5>
-c010f205:	c7 04 24 a7 37 11 c0 	movl   $0xc01137a7,(%esp)
-c010f20c:	e8 37 24 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f211:	eb fe                	jmp    c010f211 <__Z12SetupDirTreev+0xa3>
-c010f213:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010f216:	8b 80 e8 00 00 00    	mov    0xe8(%eax),%eax
-c010f21c:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010f220:	c7 04 24 c3 37 11 c0 	movl   $0xc01137c3,(%esp)
-c010f227:	e8 44 f1 ff ff       	call   c010e370 <__Z10PrintInodePcP5Inode>
-c010f22c:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010f22f:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010f233:	c7 04 24 d0 37 11 c0 	movl   $0xc01137d0,(%esp)
-c010f23a:	e8 31 f1 ff ff       	call   c010e370 <__Z10PrintInodePcP5Inode>
-c010f23f:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010f242:	89 04 24             	mov    %eax,(%esp)
-c010f245:	e8 3e 7c ff ff       	call   c0106e88 <__ZN5Inode5PreleEv>
-c010f24a:	c7 04 24 dc 37 11 c0 	movl   $0xc01137dc,(%esp)
-c010f251:	e8 f2 23 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f256:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010f259:	c7 40 44 fa 37 11 c0 	movl   $0xc01137fa,0x44(%eax)
-c010f260:	c7 44 24 08 01 00 00 	movl   $0x1,0x8(%esp)
-c010f267:	00 
-c010f268:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
-c010f26f:	c0 
-c010f270:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010f273:	89 04 24             	mov    %eax,(%esp)
-c010f276:	e8 09 4e ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
-c010f27b:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010f27e:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
-c010f282:	75 41                	jne    c010f2c5 <__Z12SetupDirTreev+0x157>
-c010f284:	c7 44 24 04 ff 41 00 	movl   $0x41ff,0x4(%esp)
-c010f28b:	00 
-c010f28c:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010f28f:	89 04 24             	mov    %eax,(%esp)
-c010f292:	e8 cd 52 ff ff       	call   c0104564 <__ZN11FileManager7MakNodeEj>
-c010f297:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010f29a:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
-c010f29e:	75 0e                	jne    c010f2ae <__Z12SetupDirTreev+0x140>
-c010f2a0:	c7 04 24 0c 38 11 c0 	movl   $0xc011380c,(%esp)
-c010f2a7:	e8 9c 23 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f2ac:	eb fe                	jmp    c010f2ac <__Z12SetupDirTreev+0x13e>
-c010f2ae:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010f2b1:	89 04 24             	mov    %eax,(%esp)
-c010f2b4:	e8 cf 7b ff ff       	call   c0106e88 <__ZN5Inode5PreleEv>
-c010f2b9:	c7 04 24 28 38 11 c0 	movl   $0xc0113828,(%esp)
-c010f2c0:	e8 83 23 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f2c5:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010f2c8:	c7 40 44 46 38 11 c0 	movl   $0xc0113846,0x44(%eax)
-c010f2cf:	c7 44 24 08 01 00 00 	movl   $0x1,0x8(%esp)
-c010f2d6:	00 
-c010f2d7:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
-c010f2de:	c0 
-c010f2df:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010f2e2:	89 04 24             	mov    %eax,(%esp)
-c010f2e5:	e8 9a 4d ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
-c010f2ea:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010f2ed:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010f2f0:	83 b8 a8 01 00 00 00 	cmpl   $0x0,0x1a8(%eax)
-c010f2f7:	74 1b                	je     c010f314 <__Z12SetupDirTreev+0x1a6>
-c010f2f9:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010f2fc:	8b 80 a8 01 00 00    	mov    0x1a8(%eax),%eax
-c010f302:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010f306:	c7 04 24 4b 38 11 c0 	movl   $0xc011384b,(%esp)
-c010f30d:	e8 36 23 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f312:	eb fe                	jmp    c010f312 <__Z12SetupDirTreev+0x1a4>
-c010f314:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
-c010f318:	0f 85 89 00 00 00    	jne    c010f3a7 <__Z12SetupDirTreev+0x239>
-c010f31e:	c7 44 24 04 ff 01 00 	movl   $0x1ff,0x4(%esp)
-c010f325:	00 
-c010f326:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010f329:	89 04 24             	mov    %eax,(%esp)
-c010f32c:	e8 33 52 ff ff       	call   c0104564 <__ZN11FileManager7MakNodeEj>
-c010f331:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010f334:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
-c010f338:	75 0e                	jne    c010f348 <__Z12SetupDirTreev+0x1da>
-c010f33a:	c7 04 24 5d 38 11 c0 	movl   $0xc011385d,(%esp)
-c010f341:	e8 02 23 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f346:	eb fe                	jmp    c010f346 <__Z12SetupDirTreev+0x1d8>
-c010f348:	8b 55 f4             	mov    -0xc(%ebp),%edx
-c010f34b:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010f34e:	8b 00                	mov    (%eax),%eax
-c010f350:	83 c8 06             	or     $0x6,%eax
-c010f353:	89 02                	mov    %eax,(%edx)
-c010f355:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010f358:	c7 40 04 ff c1 00 00 	movl   $0xc1ff,0x4(%eax)
-c010f35f:	e8 cc 22 00 00       	call   c0111630 <__ZN8Diagnose7TraceOnEv>
-c010f364:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010f367:	8b 80 e8 00 00 00    	mov    0xe8(%eax),%eax
-c010f36d:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010f371:	c7 04 24 72 38 11 c0 	movl   $0xc0113872,(%esp)
-c010f378:	e8 f3 ef ff ff       	call   c010e370 <__Z10PrintInodePcP5Inode>
-c010f37d:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010f380:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010f384:	c7 04 24 46 38 11 c0 	movl   $0xc0113846,(%esp)
-c010f38b:	e8 e0 ef ff ff       	call   c010e370 <__Z10PrintInodePcP5Inode>
-c010f390:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010f393:	89 04 24             	mov    %eax,(%esp)
-c010f396:	e8 ed 7a ff ff       	call   c0106e88 <__ZN5Inode5PreleEv>
-c010f39b:	c7 04 24 74 38 11 c0 	movl   $0xc0113874,(%esp)
-c010f3a2:	e8 a1 22 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f3a7:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010f3aa:	8b 40 04             	mov    0x4(%eax),%eax
-c010f3ad:	89 04 24             	mov    %eax,(%esp)
-c010f3b0:	e8 fb 5e ff ff       	call   c01052b0 <__ZN10FileSystem6UpdateEv>
-c010f3b5:	e8 ae 7d ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010f3ba:	89 04 24             	mov    %eax,(%esp)
-c010f3bd:	e8 12 80 ff ff       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
-c010f3c2:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
-c010f3c9:	00 
-c010f3ca:	89 04 24             	mov    %eax,(%esp)
-c010f3cd:	e8 04 1f ff ff       	call   c01012d6 <__ZN13BufferManager6BflushEs>
-c010f3d2:	b8 01 00 00 00       	mov    $0x1,%eax
-c010f3d7:	c9                   	leave  
-c010f3d8:	c3                   	ret    
-c010f3d9:	90                   	nop    
+c010ea26 <__Z19NameIandMakNodeTestv>:
+c010ea26:	55                   	push   %ebp
+c010ea27:	89 e5                	mov    %esp,%ebp
+c010ea29:	83 ec 68             	sub    $0x68,%esp
+c010ea2c:	e8 37 87 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010ea31:	89 04 24             	mov    %eax,(%esp)
+c010ea34:	e8 cb 89 ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
+c010ea39:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c010ea3c:	e8 27 87 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010ea41:	89 04 24             	mov    %eax,(%esp)
+c010ea44:	e8 af 89 ff ff       	call   c01073f8 <__ZN6Kernel14GetFileManagerEv>
+c010ea49:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c010ea4c:	c7 45 f0 00 00 00 00 	movl   $0x0,-0x10(%ebp)
+c010ea53:	c7 45 ec 25 36 11 c0 	movl   $0xc0113625,-0x14(%ebp)
+c010ea5a:	8b 55 fc             	mov    -0x4(%ebp),%edx
+c010ea5d:	8b 45 ec             	mov    -0x14(%ebp),%eax
+c010ea60:	89 42 44             	mov    %eax,0x44(%edx)
+c010ea63:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010ea66:	c7 80 a8 01 00 00 00 	movl   $0x0,0x1a8(%eax)
+c010ea6d:	00 00 00 
+c010ea70:	c7 44 24 08 00 00 00 	movl   $0x0,0x8(%esp)
+c010ea77:	00 
+c010ea78:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
+c010ea7f:	c0 
+c010ea80:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010ea83:	89 04 24             	mov    %eax,(%esp)
+c010ea86:	e8 f9 55 ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
+c010ea8b:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010ea8e:	c7 45 dc 00 00 00 00 	movl   $0x0,-0x24(%ebp)
+c010ea95:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010ea98:	83 b8 a8 01 00 00 02 	cmpl   $0x2,0x1a8(%eax)
+c010ea9f:	75 0d                	jne    c010eaae <__Z19NameIandMakNodeTestv+0x88>
+c010eaa1:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
+c010eaa5:	75 07                	jne    c010eaae <__Z19NameIandMakNodeTestv+0x88>
+c010eaa7:	c7 45 dc 01 00 00 00 	movl   $0x1,-0x24(%ebp)
+c010eaae:	8b 45 dc             	mov    -0x24(%ebp),%eax
+c010eab1:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010eab5:	c7 04 24 30 36 11 c0 	movl   $0xc0113630,(%esp)
+c010eabc:	e8 d3 18 00 00       	call   c0110394 <__Z11PrintResultPcb>
+c010eac1:	8b 55 fc             	mov    -0x4(%ebp),%edx
+c010eac4:	8b 45 ec             	mov    -0x14(%ebp),%eax
+c010eac7:	89 42 44             	mov    %eax,0x44(%edx)
+c010eaca:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010eacd:	c7 80 a8 01 00 00 00 	movl   $0x0,0x1a8(%eax)
+c010ead4:	00 00 00 
+c010ead7:	c7 44 24 08 01 00 00 	movl   $0x1,0x8(%esp)
+c010eade:	00 
+c010eadf:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
+c010eae6:	c0 
+c010eae7:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010eaea:	89 04 24             	mov    %eax,(%esp)
+c010eaed:	e8 92 55 ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
+c010eaf2:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010eaf5:	c7 45 d8 00 00 00 00 	movl   $0x0,-0x28(%ebp)
+c010eafc:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010eaff:	83 b8 a8 01 00 00 00 	cmpl   $0x0,0x1a8(%eax)
+c010eb06:	75 0d                	jne    c010eb15 <__Z19NameIandMakNodeTestv+0xef>
+c010eb08:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
+c010eb0c:	75 07                	jne    c010eb15 <__Z19NameIandMakNodeTestv+0xef>
+c010eb0e:	c7 45 d8 01 00 00 00 	movl   $0x1,-0x28(%ebp)
+c010eb15:	8b 45 d8             	mov    -0x28(%ebp),%eax
+c010eb18:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010eb1c:	c7 04 24 3e 36 11 c0 	movl   $0xc011363e,(%esp)
+c010eb23:	e8 6c 18 00 00       	call   c0110394 <__Z11PrintResultPcb>
+c010eb28:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010eb2b:	8b 80 e8 00 00 00    	mov    0xe8(%eax),%eax
+c010eb31:	8b 40 1c             	mov    0x1c(%eax),%eax
+c010eb34:	89 45 f0             	mov    %eax,-0x10(%ebp)
+c010eb37:	c7 44 24 04 ff 01 00 	movl   $0x1ff,0x4(%esp)
+c010eb3e:	00 
+c010eb3f:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010eb42:	89 04 24             	mov    %eax,(%esp)
+c010eb45:	e8 1a 5a ff ff       	call   c0104564 <__ZN11FileManager7MakNodeEj>
+c010eb4a:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010eb4d:	c7 45 d4 00 00 00 00 	movl   $0x0,-0x2c(%ebp)
+c010eb54:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010eb57:	83 b8 a8 01 00 00 00 	cmpl   $0x0,0x1a8(%eax)
+c010eb5e:	75 21                	jne    c010eb81 <__Z19NameIandMakNodeTestv+0x15b>
+c010eb60:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
+c010eb64:	74 1b                	je     c010eb81 <__Z19NameIandMakNodeTestv+0x15b>
+c010eb66:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010eb69:	8b 90 e8 00 00 00    	mov    0xe8(%eax),%edx
+c010eb6f:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c010eb72:	83 c0 20             	add    $0x20,%eax
+c010eb75:	39 42 1c             	cmp    %eax,0x1c(%edx)
+c010eb78:	75 07                	jne    c010eb81 <__Z19NameIandMakNodeTestv+0x15b>
+c010eb7a:	c7 45 d4 01 00 00 00 	movl   $0x1,-0x2c(%ebp)
+c010eb81:	8b 45 d4             	mov    -0x2c(%ebp),%eax
+c010eb84:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010eb88:	c7 04 24 4c 36 11 c0 	movl   $0xc011364c,(%esp)
+c010eb8f:	e8 00 18 00 00       	call   c0110394 <__Z11PrintResultPcb>
+c010eb94:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010eb97:	89 04 24             	mov    %eax,(%esp)
+c010eb9a:	e8 e9 82 ff ff       	call   c0106e88 <__ZN5Inode5PreleEv>
+c010eb9f:	8b 55 fc             	mov    -0x4(%ebp),%edx
+c010eba2:	8b 45 ec             	mov    -0x14(%ebp),%eax
+c010eba5:	89 42 44             	mov    %eax,0x44(%edx)
+c010eba8:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010ebab:	c7 80 a8 01 00 00 00 	movl   $0x0,0x1a8(%eax)
+c010ebb2:	00 00 00 
+c010ebb5:	c7 44 24 08 00 00 00 	movl   $0x0,0x8(%esp)
+c010ebbc:	00 
+c010ebbd:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
+c010ebc4:	c0 
+c010ebc5:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010ebc8:	89 04 24             	mov    %eax,(%esp)
+c010ebcb:	e8 b4 54 ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
+c010ebd0:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010ebd3:	c7 45 d0 00 00 00 00 	movl   $0x0,-0x30(%ebp)
+c010ebda:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010ebdd:	83 b8 a8 01 00 00 00 	cmpl   $0x0,0x1a8(%eax)
+c010ebe4:	75 16                	jne    c010ebfc <__Z19NameIandMakNodeTestv+0x1d6>
+c010ebe6:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
+c010ebea:	74 10                	je     c010ebfc <__Z19NameIandMakNodeTestv+0x1d6>
+c010ebec:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010ebef:	83 78 1c 00          	cmpl   $0x0,0x1c(%eax)
+c010ebf3:	75 07                	jne    c010ebfc <__Z19NameIandMakNodeTestv+0x1d6>
+c010ebf5:	c7 45 d0 01 00 00 00 	movl   $0x1,-0x30(%ebp)
+c010ebfc:	8b 45 d0             	mov    -0x30(%ebp),%eax
+c010ebff:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010ec03:	c7 04 24 5a 36 11 c0 	movl   $0xc011365a,(%esp)
+c010ec0a:	e8 85 17 00 00       	call   c0110394 <__Z11PrintResultPcb>
+c010ec0f:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010ec12:	89 04 24             	mov    %eax,(%esp)
+c010ec15:	e8 6e 82 ff ff       	call   c0106e88 <__ZN5Inode5PreleEv>
+c010ec1a:	8b 55 fc             	mov    -0x4(%ebp),%edx
+c010ec1d:	8b 45 ec             	mov    -0x14(%ebp),%eax
+c010ec20:	89 42 44             	mov    %eax,0x44(%edx)
+c010ec23:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010ec26:	c7 80 a8 01 00 00 00 	movl   $0x0,0x1a8(%eax)
+c010ec2d:	00 00 00 
+c010ec30:	c7 44 24 08 02 00 00 	movl   $0x2,0x8(%esp)
+c010ec37:	00 
+c010ec38:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
+c010ec3f:	c0 
+c010ec40:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010ec43:	89 04 24             	mov    %eax,(%esp)
+c010ec46:	e8 39 54 ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
+c010ec4b:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010ec4e:	c7 45 cc 00 00 00 00 	movl   $0x0,-0x34(%ebp)
+c010ec55:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010ec58:	83 b8 a8 01 00 00 00 	cmpl   $0x0,0x1a8(%eax)
+c010ec5f:	75 15                	jne    c010ec76 <__Z19NameIandMakNodeTestv+0x250>
+c010ec61:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010ec64:	8b 80 e8 00 00 00    	mov    0xe8(%eax),%eax
+c010ec6a:	3b 45 f4             	cmp    -0xc(%ebp),%eax
+c010ec6d:	75 07                	jne    c010ec76 <__Z19NameIandMakNodeTestv+0x250>
+c010ec6f:	c7 45 cc 01 00 00 00 	movl   $0x1,-0x34(%ebp)
+c010ec76:	8b 45 cc             	mov    -0x34(%ebp),%eax
+c010ec79:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010ec7d:	c7 04 24 68 36 11 c0 	movl   $0xc0113668,(%esp)
+c010ec84:	e8 0b 17 00 00       	call   c0110394 <__Z11PrintResultPcb>
+c010ec89:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010ec8c:	89 04 24             	mov    %eax,(%esp)
+c010ec8f:	e8 f4 81 ff ff       	call   c0106e88 <__ZN5Inode5PreleEv>
+c010ec94:	c7 45 e8 76 36 11 c0 	movl   $0xc0113676,-0x18(%ebp)
+c010ec9b:	8b 55 fc             	mov    -0x4(%ebp),%edx
+c010ec9e:	8b 45 e8             	mov    -0x18(%ebp),%eax
+c010eca1:	89 42 44             	mov    %eax,0x44(%edx)
+c010eca4:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010eca7:	c7 80 a8 01 00 00 00 	movl   $0x0,0x1a8(%eax)
+c010ecae:	00 00 00 
+c010ecb1:	c7 44 24 08 00 00 00 	movl   $0x0,0x8(%esp)
+c010ecb8:	00 
+c010ecb9:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
+c010ecc0:	c0 
+c010ecc1:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010ecc4:	89 04 24             	mov    %eax,(%esp)
+c010ecc7:	e8 b8 53 ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
+c010eccc:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010eccf:	c7 45 c8 00 00 00 00 	movl   $0x0,-0x38(%ebp)
+c010ecd6:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010ecd9:	83 b8 a8 01 00 00 02 	cmpl   $0x2,0x1a8(%eax)
+c010ece0:	75 0d                	jne    c010ecef <__Z19NameIandMakNodeTestv+0x2c9>
+c010ece2:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
+c010ece6:	75 07                	jne    c010ecef <__Z19NameIandMakNodeTestv+0x2c9>
+c010ece8:	c7 45 c8 01 00 00 00 	movl   $0x1,-0x38(%ebp)
+c010ecef:	8b 45 c8             	mov    -0x38(%ebp),%eax
+c010ecf2:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010ecf6:	c7 04 24 8a 36 11 c0 	movl   $0xc011368a,(%esp)
+c010ecfd:	e8 92 16 00 00       	call   c0110394 <__Z11PrintResultPcb>
+c010ed02:	8b 55 fc             	mov    -0x4(%ebp),%edx
+c010ed05:	8b 45 e8             	mov    -0x18(%ebp),%eax
+c010ed08:	89 42 44             	mov    %eax,0x44(%edx)
+c010ed0b:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010ed0e:	c7 80 a8 01 00 00 00 	movl   $0x0,0x1a8(%eax)
+c010ed15:	00 00 00 
+c010ed18:	c7 44 24 08 01 00 00 	movl   $0x1,0x8(%esp)
+c010ed1f:	00 
+c010ed20:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
+c010ed27:	c0 
+c010ed28:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010ed2b:	89 04 24             	mov    %eax,(%esp)
+c010ed2e:	e8 51 53 ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
+c010ed33:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010ed36:	c7 45 c4 00 00 00 00 	movl   $0x0,-0x3c(%ebp)
+c010ed3d:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010ed40:	83 b8 a8 01 00 00 02 	cmpl   $0x2,0x1a8(%eax)
+c010ed47:	75 0d                	jne    c010ed56 <__Z19NameIandMakNodeTestv+0x330>
+c010ed49:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
+c010ed4d:	75 07                	jne    c010ed56 <__Z19NameIandMakNodeTestv+0x330>
+c010ed4f:	c7 45 c4 01 00 00 00 	movl   $0x1,-0x3c(%ebp)
+c010ed56:	8b 45 c4             	mov    -0x3c(%ebp),%eax
+c010ed59:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010ed5d:	c7 04 24 98 36 11 c0 	movl   $0xc0113698,(%esp)
+c010ed64:	e8 2b 16 00 00       	call   c0110394 <__Z11PrintResultPcb>
+c010ed69:	c7 45 e4 a6 36 11 c0 	movl   $0xc01136a6,-0x1c(%ebp)
+c010ed70:	8b 55 fc             	mov    -0x4(%ebp),%edx
+c010ed73:	8b 45 e4             	mov    -0x1c(%ebp),%eax
+c010ed76:	89 42 44             	mov    %eax,0x44(%edx)
+c010ed79:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010ed7c:	c7 80 a8 01 00 00 00 	movl   $0x0,0x1a8(%eax)
+c010ed83:	00 00 00 
+c010ed86:	c7 44 24 08 02 00 00 	movl   $0x2,0x8(%esp)
+c010ed8d:	00 
+c010ed8e:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
+c010ed95:	c0 
+c010ed96:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010ed99:	89 04 24             	mov    %eax,(%esp)
+c010ed9c:	e8 e3 52 ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
+c010eda1:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010eda4:	c7 45 c0 00 00 00 00 	movl   $0x0,-0x40(%ebp)
+c010edab:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010edae:	83 b8 a8 01 00 00 02 	cmpl   $0x2,0x1a8(%eax)
+c010edb5:	75 0d                	jne    c010edc4 <__Z19NameIandMakNodeTestv+0x39e>
+c010edb7:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
+c010edbb:	75 07                	jne    c010edc4 <__Z19NameIandMakNodeTestv+0x39e>
+c010edbd:	c7 45 c0 01 00 00 00 	movl   $0x1,-0x40(%ebp)
+c010edc4:	8b 45 c0             	mov    -0x40(%ebp),%eax
+c010edc7:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010edcb:	c7 04 24 b1 36 11 c0 	movl   $0xc01136b1,(%esp)
+c010edd2:	e8 bd 15 00 00       	call   c0110394 <__Z11PrintResultPcb>
+c010edd7:	c7 45 e0 bf 36 11 c0 	movl   $0xc01136bf,-0x20(%ebp)
+c010edde:	8b 55 fc             	mov    -0x4(%ebp),%edx
+c010ede1:	8b 45 e0             	mov    -0x20(%ebp),%eax
+c010ede4:	89 42 44             	mov    %eax,0x44(%edx)
+c010ede7:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010edea:	c7 80 a8 01 00 00 00 	movl   $0x0,0x1a8(%eax)
+c010edf1:	00 00 00 
+c010edf4:	c7 44 24 08 01 00 00 	movl   $0x1,0x8(%esp)
+c010edfb:	00 
+c010edfc:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
+c010ee03:	c0 
+c010ee04:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010ee07:	89 04 24             	mov    %eax,(%esp)
+c010ee0a:	e8 75 52 ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
+c010ee0f:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010ee12:	c7 45 bc 00 00 00 00 	movl   $0x0,-0x44(%ebp)
+c010ee19:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010ee1c:	83 b8 a8 01 00 00 02 	cmpl   $0x2,0x1a8(%eax)
+c010ee23:	75 0d                	jne    c010ee32 <__Z19NameIandMakNodeTestv+0x40c>
+c010ee25:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
+c010ee29:	75 07                	jne    c010ee32 <__Z19NameIandMakNodeTestv+0x40c>
+c010ee2b:	c7 45 bc 01 00 00 00 	movl   $0x1,-0x44(%ebp)
+c010ee32:	8b 45 bc             	mov    -0x44(%ebp),%eax
+c010ee35:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010ee39:	c7 04 24 d5 36 11 c0 	movl   $0xc01136d5,(%esp)
+c010ee40:	e8 4f 15 00 00       	call   c0110394 <__Z11PrintResultPcb>
+c010ee45:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010ee48:	c7 80 a8 01 00 00 00 	movl   $0x0,0x1a8(%eax)
+c010ee4f:	00 00 00 
+c010ee52:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010ee55:	8b 80 e8 00 00 00    	mov    0xe8(%eax),%eax
+c010ee5b:	8b 40 1c             	mov    0x1c(%eax),%eax
+c010ee5e:	89 45 f0             	mov    %eax,-0x10(%ebp)
+c010ee61:	c7 44 24 04 ff 41 00 	movl   $0x41ff,0x4(%esp)
+c010ee68:	00 
+c010ee69:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010ee6c:	89 04 24             	mov    %eax,(%esp)
+c010ee6f:	e8 f0 56 ff ff       	call   c0104564 <__ZN11FileManager7MakNodeEj>
+c010ee74:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010ee77:	c7 45 b8 00 00 00 00 	movl   $0x0,-0x48(%ebp)
+c010ee7e:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010ee81:	83 b8 a8 01 00 00 00 	cmpl   $0x0,0x1a8(%eax)
+c010ee88:	75 21                	jne    c010eeab <__Z19NameIandMakNodeTestv+0x485>
+c010ee8a:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
+c010ee8e:	74 1b                	je     c010eeab <__Z19NameIandMakNodeTestv+0x485>
+c010ee90:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010ee93:	8b 90 e8 00 00 00    	mov    0xe8(%eax),%edx
+c010ee99:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c010ee9c:	83 c0 20             	add    $0x20,%eax
+c010ee9f:	39 42 1c             	cmp    %eax,0x1c(%edx)
+c010eea2:	75 07                	jne    c010eeab <__Z19NameIandMakNodeTestv+0x485>
+c010eea4:	c7 45 b8 01 00 00 00 	movl   $0x1,-0x48(%ebp)
+c010eeab:	8b 45 b8             	mov    -0x48(%ebp),%eax
+c010eeae:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010eeb2:	c7 04 24 e3 36 11 c0 	movl   $0xc01136e3,(%esp)
+c010eeb9:	e8 d6 14 00 00       	call   c0110394 <__Z11PrintResultPcb>
+c010eebe:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010eec1:	89 04 24             	mov    %eax,(%esp)
+c010eec4:	e8 bf 7f ff ff       	call   c0106e88 <__ZN5Inode5PreleEv>
+c010eec9:	8b 55 fc             	mov    -0x4(%ebp),%edx
+c010eecc:	8b 45 e0             	mov    -0x20(%ebp),%eax
+c010eecf:	89 42 44             	mov    %eax,0x44(%edx)
+c010eed2:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010eed5:	c7 80 a8 01 00 00 00 	movl   $0x0,0x1a8(%eax)
+c010eedc:	00 00 00 
+c010eedf:	c7 44 24 08 01 00 00 	movl   $0x1,0x8(%esp)
+c010eee6:	00 
+c010eee7:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
+c010eeee:	c0 
+c010eeef:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010eef2:	89 04 24             	mov    %eax,(%esp)
+c010eef5:	e8 8a 51 ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
+c010eefa:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010eefd:	c7 45 b4 00 00 00 00 	movl   $0x0,-0x4c(%ebp)
+c010ef04:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010ef07:	83 b8 a8 01 00 00 00 	cmpl   $0x0,0x1a8(%eax)
+c010ef0e:	75 1c                	jne    c010ef2c <__Z19NameIandMakNodeTestv+0x506>
+c010ef10:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
+c010ef14:	75 16                	jne    c010ef2c <__Z19NameIandMakNodeTestv+0x506>
+c010ef16:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010ef19:	8b 80 e8 00 00 00    	mov    0xe8(%eax),%eax
+c010ef1f:	83 78 1c 00          	cmpl   $0x0,0x1c(%eax)
+c010ef23:	75 07                	jne    c010ef2c <__Z19NameIandMakNodeTestv+0x506>
+c010ef25:	c7 45 b4 01 00 00 00 	movl   $0x1,-0x4c(%ebp)
+c010ef2c:	8b 45 b4             	mov    -0x4c(%ebp),%eax
+c010ef2f:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010ef33:	c7 04 24 f1 36 11 c0 	movl   $0xc01136f1,(%esp)
+c010ef3a:	e8 55 14 00 00       	call   c0110394 <__Z11PrintResultPcb>
+c010ef3f:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010ef42:	8b 80 e8 00 00 00    	mov    0xe8(%eax),%eax
+c010ef48:	8b 40 1c             	mov    0x1c(%eax),%eax
+c010ef4b:	89 45 f0             	mov    %eax,-0x10(%ebp)
+c010ef4e:	c7 44 24 04 ff 01 00 	movl   $0x1ff,0x4(%esp)
+c010ef55:	00 
+c010ef56:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010ef59:	89 04 24             	mov    %eax,(%esp)
+c010ef5c:	e8 03 56 ff ff       	call   c0104564 <__ZN11FileManager7MakNodeEj>
+c010ef61:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010ef64:	c7 45 b0 00 00 00 00 	movl   $0x0,-0x50(%ebp)
+c010ef6b:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010ef6e:	83 b8 a8 01 00 00 00 	cmpl   $0x0,0x1a8(%eax)
+c010ef75:	75 21                	jne    c010ef98 <__Z19NameIandMakNodeTestv+0x572>
+c010ef77:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
+c010ef7b:	74 1b                	je     c010ef98 <__Z19NameIandMakNodeTestv+0x572>
+c010ef7d:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010ef80:	8b 90 e8 00 00 00    	mov    0xe8(%eax),%edx
+c010ef86:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c010ef89:	83 c0 20             	add    $0x20,%eax
+c010ef8c:	39 42 1c             	cmp    %eax,0x1c(%edx)
+c010ef8f:	75 07                	jne    c010ef98 <__Z19NameIandMakNodeTestv+0x572>
+c010ef91:	c7 45 b0 01 00 00 00 	movl   $0x1,-0x50(%ebp)
+c010ef98:	8b 45 b0             	mov    -0x50(%ebp),%eax
+c010ef9b:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010ef9f:	c7 04 24 ff 36 11 c0 	movl   $0xc01136ff,(%esp)
+c010efa6:	e8 e9 13 00 00       	call   c0110394 <__Z11PrintResultPcb>
+c010efab:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010efae:	89 04 24             	mov    %eax,(%esp)
+c010efb1:	e8 d2 7e ff ff       	call   c0106e88 <__ZN5Inode5PreleEv>
+c010efb6:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010efb9:	8b 40 04             	mov    0x4(%eax),%eax
+c010efbc:	89 04 24             	mov    %eax,(%esp)
+c010efbf:	e8 ec 62 ff ff       	call   c01052b0 <__ZN10FileSystem6UpdateEv>
+c010efc4:	e8 9f 81 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010efc9:	89 04 24             	mov    %eax,(%esp)
+c010efcc:	e8 03 84 ff ff       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
+c010efd1:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
+c010efd8:	00 
+c010efd9:	89 04 24             	mov    %eax,(%esp)
+c010efdc:	e8 f5 22 ff ff       	call   c01012d6 <__ZN13BufferManager6BflushEs>
+c010efe1:	b8 01 00 00 00       	mov    $0x1,%eax
+c010efe6:	c9                   	leave  
+c010efe7:	c3                   	ret    
 
-c010f3da <__Z14TestFileSystemv>:
-c010f3da:	55                   	push   %ebp
-c010f3db:	89 e5                	mov    %esp,%ebp
-c010f3dd:	83 ec 08             	sub    $0x8,%esp
-c010f3e0:	e8 a7 fb ff ff       	call   c010ef8c <__Z9NameITestv>
-c010f3e5:	0f b6 c0             	movzbl %al,%eax
-c010f3e8:	83 f8 01             	cmp    $0x1,%eax
-c010f3eb:	75 09                	jne    c010f3f6 <__Z14TestFileSystemv+0x1c>
-c010f3ed:	c7 45 fc 01 00 00 00 	movl   $0x1,-0x4(%ebp)
-c010f3f4:	eb 07                	jmp    c010f3fd <__Z14TestFileSystemv+0x23>
-c010f3f6:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%ebp)
-c010f3fd:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010f400:	c9                   	leave  
-c010f401:	c3                   	ret    
+c010efe8 <__Z9NameITestv>:
+c010efe8:	55                   	push   %ebp
+c010efe9:	89 e5                	mov    %esp,%ebp
+c010efeb:	83 ec 18             	sub    $0x18,%esp
+c010efee:	e8 75 81 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010eff3:	89 04 24             	mov    %eax,(%esp)
+c010eff6:	e8 09 84 ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
+c010effb:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c010effe:	e8 65 81 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010f003:	89 04 24             	mov    %eax,(%esp)
+c010f006:	e8 ed 83 ff ff       	call   c01073f8 <__ZN6Kernel14GetFileManagerEv>
+c010f00b:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c010f00e:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010f011:	c7 40 44 0d 37 11 c0 	movl   $0xc011370d,0x44(%eax)
+c010f018:	c7 44 24 08 01 00 00 	movl   $0x1,0x8(%esp)
+c010f01f:	00 
+c010f020:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
+c010f027:	c0 
+c010f028:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010f02b:	89 04 24             	mov    %eax,(%esp)
+c010f02e:	e8 51 50 ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
+c010f033:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010f036:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010f039:	83 b8 a8 01 00 00 00 	cmpl   $0x0,0x1a8(%eax)
+c010f040:	74 1b                	je     c010f05d <__Z9NameITestv+0x75>
+c010f042:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010f045:	8b 80 a8 01 00 00    	mov    0x1a8(%eax),%eax
+c010f04b:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010f04f:	c7 04 24 fd 34 11 c0 	movl   $0xc01134fd,(%esp)
+c010f056:	e8 49 26 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f05b:	eb fe                	jmp    c010f05b <__Z9NameITestv+0x73>
+c010f05d:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
+c010f061:	75 6d                	jne    c010f0d0 <__Z9NameITestv+0xe8>
+c010f063:	c7 44 24 04 ff 01 00 	movl   $0x1ff,0x4(%esp)
+c010f06a:	00 
+c010f06b:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010f06e:	89 04 24             	mov    %eax,(%esp)
+c010f071:	e8 ee 54 ff ff       	call   c0104564 <__ZN11FileManager7MakNodeEj>
+c010f076:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010f079:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
+c010f07d:	75 0e                	jne    c010f08d <__Z9NameITestv+0xa5>
+c010f07f:	c7 04 24 14 37 11 c0 	movl   $0xc0113714,(%esp)
+c010f086:	e8 19 26 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f08b:	eb fe                	jmp    c010f08b <__Z9NameITestv+0xa3>
+c010f08d:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010f090:	8b 80 e8 00 00 00    	mov    0xe8(%eax),%eax
+c010f096:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010f09a:	c7 04 24 25 35 11 c0 	movl   $0xc0113525,(%esp)
+c010f0a1:	e8 26 f3 ff ff       	call   c010e3cc <__Z10PrintInodePcP5Inode>
+c010f0a6:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010f0a9:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010f0ad:	c7 04 24 2b 37 11 c0 	movl   $0xc011372b,(%esp)
+c010f0b4:	e8 13 f3 ff ff       	call   c010e3cc <__Z10PrintInodePcP5Inode>
+c010f0b9:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010f0bc:	89 04 24             	mov    %eax,(%esp)
+c010f0bf:	e8 c4 7d ff ff       	call   c0106e88 <__ZN5Inode5PreleEv>
+c010f0c4:	c7 04 24 32 35 11 c0 	movl   $0xc0113532,(%esp)
+c010f0cb:	e8 d4 25 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f0d0:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010f0d3:	c7 40 44 32 37 11 c0 	movl   $0xc0113732,0x44(%eax)
+c010f0da:	c7 44 24 08 00 00 00 	movl   $0x0,0x8(%esp)
+c010f0e1:	00 
+c010f0e2:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
+c010f0e9:	c0 
+c010f0ea:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010f0ed:	89 04 24             	mov    %eax,(%esp)
+c010f0f0:	e8 8f 4f ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
+c010f0f5:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010f0f8:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
+c010f0fc:	75 0e                	jne    c010f10c <__Z9NameITestv+0x124>
+c010f0fe:	c7 04 24 39 37 11 c0 	movl   $0xc0113739,(%esp)
+c010f105:	e8 9a 25 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f10a:	eb 0e                	jmp    c010f11a <__Z9NameITestv+0x132>
+c010f10c:	c7 04 24 53 37 11 c0 	movl   $0xc0113753,(%esp)
+c010f113:	e8 8c 25 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f118:	eb fe                	jmp    c010f118 <__Z9NameITestv+0x130>
+c010f11a:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010f11d:	c7 80 a8 01 00 00 00 	movl   $0x0,0x1a8(%eax)
+c010f124:	00 00 00 
+c010f127:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010f12a:	c7 40 44 0d 37 11 c0 	movl   $0xc011370d,0x44(%eax)
+c010f131:	c7 44 24 08 00 00 00 	movl   $0x0,0x8(%esp)
+c010f138:	00 
+c010f139:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
+c010f140:	c0 
+c010f141:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010f144:	89 04 24             	mov    %eax,(%esp)
+c010f147:	e8 38 4f ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
+c010f14c:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010f14f:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
+c010f153:	75 0e                	jne    c010f163 <__Z9NameITestv+0x17b>
+c010f155:	c7 04 24 69 37 11 c0 	movl   $0xc0113769,(%esp)
+c010f15c:	e8 43 25 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f161:	eb fe                	jmp    c010f161 <__Z9NameITestv+0x179>
+c010f163:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010f166:	89 04 24             	mov    %eax,(%esp)
+c010f169:	e8 1a 7d ff ff       	call   c0106e88 <__ZN5Inode5PreleEv>
+c010f16e:	c7 04 24 83 37 11 c0 	movl   $0xc0113783,(%esp)
+c010f175:	e8 2a 25 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f17a:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010f17d:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010f181:	c7 04 24 99 37 11 c0 	movl   $0xc0113799,(%esp)
+c010f188:	e8 3f f2 ff ff       	call   c010e3cc <__Z10PrintInodePcP5Inode>
+c010f18d:	e8 06 25 00 00       	call   c0111698 <__ZN8Diagnose8TraceOffEv>
+c010f192:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010f195:	8b 40 04             	mov    0x4(%eax),%eax
+c010f198:	89 04 24             	mov    %eax,(%esp)
+c010f19b:	e8 10 61 ff ff       	call   c01052b0 <__ZN10FileSystem6UpdateEv>
+c010f1a0:	e8 c3 7f ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010f1a5:	89 04 24             	mov    %eax,(%esp)
+c010f1a8:	e8 27 82 ff ff       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
+c010f1ad:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
+c010f1b4:	00 
+c010f1b5:	89 04 24             	mov    %eax,(%esp)
+c010f1b8:	e8 19 21 ff ff       	call   c01012d6 <__ZN13BufferManager6BflushEs>
+c010f1bd:	e8 ca 24 00 00       	call   c011168c <__ZN8Diagnose7TraceOnEv>
+c010f1c2:	b8 01 00 00 00       	mov    $0x1,%eax
+c010f1c7:	c9                   	leave  
+c010f1c8:	c3                   	ret    
+c010f1c9:	90                   	nop    
 
-c010f402 <__Z41__static_initialization_and_destruction_0ii>:
-c010f402:	55                   	push   %ebp
-c010f403:	89 e5                	mov    %esp,%ebp
-c010f405:	83 ec 08             	sub    $0x8,%esp
-c010f408:	81 7d 0c ff ff 00 00 	cmpl   $0xffff,0xc(%ebp)
-c010f40f:	75 12                	jne    c010f423 <__Z41__static_initialization_and_destruction_0ii+0x21>
-c010f411:	83 7d 08 01          	cmpl   $0x1,0x8(%ebp)
-c010f415:	75 0c                	jne    c010f423 <__Z41__static_initialization_and_destruction_0ii+0x21>
-c010f417:	c7 04 24 80 09 12 c0 	movl   $0xc0120980,(%esp)
-c010f41e:	e8 f7 5a ff ff       	call   c0104f1a <__ZN10SuperBlockC1Ev>
-c010f423:	81 7d 0c ff ff 00 00 	cmpl   $0xffff,0xc(%ebp)
-c010f42a:	75 12                	jne    c010f43e <__Z41__static_initialization_and_destruction_0ii+0x3c>
-c010f42c:	83 7d 08 00          	cmpl   $0x0,0x8(%ebp)
-c010f430:	75 0c                	jne    c010f43e <__Z41__static_initialization_and_destruction_0ii+0x3c>
-c010f432:	c7 04 24 80 09 12 c0 	movl   $0xc0120980,(%esp)
-c010f439:	e8 e8 5a ff ff       	call   c0104f26 <__ZN10SuperBlockD1Ev>
-c010f43e:	c9                   	leave  
-c010f43f:	c3                   	ret    
+c010f1ca <__Z12SetupDirTreev>:
+c010f1ca:	55                   	push   %ebp
+c010f1cb:	89 e5                	mov    %esp,%ebp
+c010f1cd:	83 ec 18             	sub    $0x18,%esp
+c010f1d0:	e8 93 7f ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010f1d5:	89 04 24             	mov    %eax,(%esp)
+c010f1d8:	e8 27 82 ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
+c010f1dd:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c010f1e0:	e8 83 7f ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010f1e5:	89 04 24             	mov    %eax,(%esp)
+c010f1e8:	e8 0b 82 ff ff       	call   c01073f8 <__ZN6Kernel14GetFileManagerEv>
+c010f1ed:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c010f1f0:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010f1f3:	c7 40 44 9f 37 11 c0 	movl   $0xc011379f,0x44(%eax)
+c010f1fa:	c7 44 24 08 01 00 00 	movl   $0x1,0x8(%esp)
+c010f201:	00 
+c010f202:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
+c010f209:	c0 
+c010f20a:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010f20d:	89 04 24             	mov    %eax,(%esp)
+c010f210:	e8 6f 4e ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
+c010f215:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010f218:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010f21b:	83 b8 a8 01 00 00 00 	cmpl   $0x0,0x1a8(%eax)
+c010f222:	74 1b                	je     c010f23f <__Z12SetupDirTreev+0x75>
+c010f224:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010f227:	8b 80 a8 01 00 00    	mov    0x1a8(%eax),%eax
+c010f22d:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010f231:	c7 04 24 fd 34 11 c0 	movl   $0xc01134fd,(%esp)
+c010f238:	e8 67 24 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f23d:	eb fe                	jmp    c010f23d <__Z12SetupDirTreev+0x73>
+c010f23f:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
+c010f243:	75 6d                	jne    c010f2b2 <__Z12SetupDirTreev+0xe8>
+c010f245:	c7 44 24 04 ff 41 00 	movl   $0x41ff,0x4(%esp)
+c010f24c:	00 
+c010f24d:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010f250:	89 04 24             	mov    %eax,(%esp)
+c010f253:	e8 0c 53 ff ff       	call   c0104564 <__ZN11FileManager7MakNodeEj>
+c010f258:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010f25b:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
+c010f25f:	75 0e                	jne    c010f26f <__Z12SetupDirTreev+0xa5>
+c010f261:	c7 04 24 a7 37 11 c0 	movl   $0xc01137a7,(%esp)
+c010f268:	e8 37 24 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f26d:	eb fe                	jmp    c010f26d <__Z12SetupDirTreev+0xa3>
+c010f26f:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010f272:	8b 80 e8 00 00 00    	mov    0xe8(%eax),%eax
+c010f278:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010f27c:	c7 04 24 c3 37 11 c0 	movl   $0xc01137c3,(%esp)
+c010f283:	e8 44 f1 ff ff       	call   c010e3cc <__Z10PrintInodePcP5Inode>
+c010f288:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010f28b:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010f28f:	c7 04 24 d0 37 11 c0 	movl   $0xc01137d0,(%esp)
+c010f296:	e8 31 f1 ff ff       	call   c010e3cc <__Z10PrintInodePcP5Inode>
+c010f29b:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010f29e:	89 04 24             	mov    %eax,(%esp)
+c010f2a1:	e8 e2 7b ff ff       	call   c0106e88 <__ZN5Inode5PreleEv>
+c010f2a6:	c7 04 24 dc 37 11 c0 	movl   $0xc01137dc,(%esp)
+c010f2ad:	e8 f2 23 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f2b2:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010f2b5:	c7 40 44 fa 37 11 c0 	movl   $0xc01137fa,0x44(%eax)
+c010f2bc:	c7 44 24 08 01 00 00 	movl   $0x1,0x8(%esp)
+c010f2c3:	00 
+c010f2c4:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
+c010f2cb:	c0 
+c010f2cc:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010f2cf:	89 04 24             	mov    %eax,(%esp)
+c010f2d2:	e8 ad 4d ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
+c010f2d7:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010f2da:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
+c010f2de:	75 41                	jne    c010f321 <__Z12SetupDirTreev+0x157>
+c010f2e0:	c7 44 24 04 ff 41 00 	movl   $0x41ff,0x4(%esp)
+c010f2e7:	00 
+c010f2e8:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010f2eb:	89 04 24             	mov    %eax,(%esp)
+c010f2ee:	e8 71 52 ff ff       	call   c0104564 <__ZN11FileManager7MakNodeEj>
+c010f2f3:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010f2f6:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
+c010f2fa:	75 0e                	jne    c010f30a <__Z12SetupDirTreev+0x140>
+c010f2fc:	c7 04 24 0c 38 11 c0 	movl   $0xc011380c,(%esp)
+c010f303:	e8 9c 23 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f308:	eb fe                	jmp    c010f308 <__Z12SetupDirTreev+0x13e>
+c010f30a:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010f30d:	89 04 24             	mov    %eax,(%esp)
+c010f310:	e8 73 7b ff ff       	call   c0106e88 <__ZN5Inode5PreleEv>
+c010f315:	c7 04 24 28 38 11 c0 	movl   $0xc0113828,(%esp)
+c010f31c:	e8 83 23 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f321:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010f324:	c7 40 44 46 38 11 c0 	movl   $0xc0113846,0x44(%eax)
+c010f32b:	c7 44 24 08 01 00 00 	movl   $0x1,0x8(%esp)
+c010f332:	00 
+c010f333:	c7 44 24 04 3e 45 10 	movl   $0xc010453e,0x4(%esp)
+c010f33a:	c0 
+c010f33b:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010f33e:	89 04 24             	mov    %eax,(%esp)
+c010f341:	e8 3e 4d ff ff       	call   c0104084 <__ZN11FileManager5NameIEPFcvENS_19DirectorySearchModeE>
+c010f346:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010f349:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010f34c:	83 b8 a8 01 00 00 00 	cmpl   $0x0,0x1a8(%eax)
+c010f353:	74 1b                	je     c010f370 <__Z12SetupDirTreev+0x1a6>
+c010f355:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010f358:	8b 80 a8 01 00 00    	mov    0x1a8(%eax),%eax
+c010f35e:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010f362:	c7 04 24 4b 38 11 c0 	movl   $0xc011384b,(%esp)
+c010f369:	e8 36 23 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f36e:	eb fe                	jmp    c010f36e <__Z12SetupDirTreev+0x1a4>
+c010f370:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
+c010f374:	0f 85 89 00 00 00    	jne    c010f403 <__Z12SetupDirTreev+0x239>
+c010f37a:	c7 44 24 04 ff 01 00 	movl   $0x1ff,0x4(%esp)
+c010f381:	00 
+c010f382:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010f385:	89 04 24             	mov    %eax,(%esp)
+c010f388:	e8 d7 51 ff ff       	call   c0104564 <__ZN11FileManager7MakNodeEj>
+c010f38d:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010f390:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
+c010f394:	75 0e                	jne    c010f3a4 <__Z12SetupDirTreev+0x1da>
+c010f396:	c7 04 24 5d 38 11 c0 	movl   $0xc011385d,(%esp)
+c010f39d:	e8 02 23 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f3a2:	eb fe                	jmp    c010f3a2 <__Z12SetupDirTreev+0x1d8>
+c010f3a4:	8b 55 f4             	mov    -0xc(%ebp),%edx
+c010f3a7:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010f3aa:	8b 00                	mov    (%eax),%eax
+c010f3ac:	83 c8 06             	or     $0x6,%eax
+c010f3af:	89 02                	mov    %eax,(%edx)
+c010f3b1:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010f3b4:	c7 40 04 ff c1 00 00 	movl   $0xc1ff,0x4(%eax)
+c010f3bb:	e8 cc 22 00 00       	call   c011168c <__ZN8Diagnose7TraceOnEv>
+c010f3c0:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010f3c3:	8b 80 e8 00 00 00    	mov    0xe8(%eax),%eax
+c010f3c9:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010f3cd:	c7 04 24 72 38 11 c0 	movl   $0xc0113872,(%esp)
+c010f3d4:	e8 f3 ef ff ff       	call   c010e3cc <__Z10PrintInodePcP5Inode>
+c010f3d9:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010f3dc:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010f3e0:	c7 04 24 46 38 11 c0 	movl   $0xc0113846,(%esp)
+c010f3e7:	e8 e0 ef ff ff       	call   c010e3cc <__Z10PrintInodePcP5Inode>
+c010f3ec:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010f3ef:	89 04 24             	mov    %eax,(%esp)
+c010f3f2:	e8 91 7a ff ff       	call   c0106e88 <__ZN5Inode5PreleEv>
+c010f3f7:	c7 04 24 74 38 11 c0 	movl   $0xc0113874,(%esp)
+c010f3fe:	e8 a1 22 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f403:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010f406:	8b 40 04             	mov    0x4(%eax),%eax
+c010f409:	89 04 24             	mov    %eax,(%esp)
+c010f40c:	e8 9f 5e ff ff       	call   c01052b0 <__ZN10FileSystem6UpdateEv>
+c010f411:	e8 52 7d ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010f416:	89 04 24             	mov    %eax,(%esp)
+c010f419:	e8 b6 7f ff ff       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
+c010f41e:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
+c010f425:	00 
+c010f426:	89 04 24             	mov    %eax,(%esp)
+c010f429:	e8 a8 1e ff ff       	call   c01012d6 <__ZN13BufferManager6BflushEs>
+c010f42e:	b8 01 00 00 00       	mov    $0x1,%eax
+c010f433:	c9                   	leave  
+c010f434:	c3                   	ret    
+c010f435:	90                   	nop    
 
-c010f440 <__GLOBAL__I_spb>:
-c010f440:	55                   	push   %ebp
-c010f441:	89 e5                	mov    %esp,%ebp
-c010f443:	83 ec 08             	sub    $0x8,%esp
-c010f446:	c7 44 24 04 ff ff 00 	movl   $0xffff,0x4(%esp)
-c010f44d:	00 
-c010f44e:	c7 04 24 01 00 00 00 	movl   $0x1,(%esp)
-c010f455:	e8 a8 ff ff ff       	call   c010f402 <__Z41__static_initialization_and_destruction_0ii>
-c010f45a:	c9                   	leave  
-c010f45b:	c3                   	ret    
+c010f436 <__Z14TestFileSystemv>:
+c010f436:	55                   	push   %ebp
+c010f437:	89 e5                	mov    %esp,%ebp
+c010f439:	83 ec 08             	sub    $0x8,%esp
+c010f43c:	e8 a7 fb ff ff       	call   c010efe8 <__Z9NameITestv>
+c010f441:	0f b6 c0             	movzbl %al,%eax
+c010f444:	83 f8 01             	cmp    $0x1,%eax
+c010f447:	75 09                	jne    c010f452 <__Z14TestFileSystemv+0x1c>
+c010f449:	c7 45 fc 01 00 00 00 	movl   $0x1,-0x4(%ebp)
+c010f450:	eb 07                	jmp    c010f459 <__Z14TestFileSystemv+0x23>
+c010f452:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%ebp)
+c010f459:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010f45c:	c9                   	leave  
+c010f45d:	c3                   	ret    
 
-c010f45c <__GLOBAL__D_spb>:
-c010f45c:	55                   	push   %ebp
-c010f45d:	89 e5                	mov    %esp,%ebp
-c010f45f:	83 ec 08             	sub    $0x8,%esp
-c010f462:	c7 44 24 04 ff ff 00 	movl   $0xffff,0x4(%esp)
-c010f469:	00 
-c010f46a:	c7 04 24 00 00 00 00 	movl   $0x0,(%esp)
-c010f471:	e8 8c ff ff ff       	call   c010f402 <__Z41__static_initialization_and_destruction_0ii>
-c010f476:	c9                   	leave  
-c010f477:	c3                   	ret    
+c010f45e <__Z41__static_initialization_and_destruction_0ii>:
+c010f45e:	55                   	push   %ebp
+c010f45f:	89 e5                	mov    %esp,%ebp
+c010f461:	83 ec 08             	sub    $0x8,%esp
+c010f464:	81 7d 0c ff ff 00 00 	cmpl   $0xffff,0xc(%ebp)
+c010f46b:	75 12                	jne    c010f47f <__Z41__static_initialization_and_destruction_0ii+0x21>
+c010f46d:	83 7d 08 01          	cmpl   $0x1,0x8(%ebp)
+c010f471:	75 0c                	jne    c010f47f <__Z41__static_initialization_and_destruction_0ii+0x21>
+c010f473:	c7 04 24 80 09 12 c0 	movl   $0xc0120980,(%esp)
+c010f47a:	e8 9b 5a ff ff       	call   c0104f1a <__ZN10SuperBlockC1Ev>
+c010f47f:	81 7d 0c ff ff 00 00 	cmpl   $0xffff,0xc(%ebp)
+c010f486:	75 12                	jne    c010f49a <__Z41__static_initialization_and_destruction_0ii+0x3c>
+c010f488:	83 7d 08 00          	cmpl   $0x0,0x8(%ebp)
+c010f48c:	75 0c                	jne    c010f49a <__Z41__static_initialization_and_destruction_0ii+0x3c>
+c010f48e:	c7 04 24 80 09 12 c0 	movl   $0xc0120980,(%esp)
+c010f495:	e8 8c 5a ff ff       	call   c0104f26 <__ZN10SuperBlockD1Ev>
+c010f49a:	c9                   	leave  
+c010f49b:	c3                   	ret    
 
-c010f478 <__Z10FileRWTestv>:
-c010f478:	55                   	push   %ebp
-c010f479:	89 e5                	mov    %esp,%ebp
-c010f47b:	81 ec 78 02 00 00    	sub    $0x278,%esp
-c010f481:	e8 e2 7c ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010f486:	89 04 24             	mov    %eax,(%esp)
-c010f489:	e8 46 7f ff ff       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
-c010f48e:	89 45 f0             	mov    %eax,-0x10(%ebp)
-c010f491:	e8 d2 7c ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010f496:	89 04 24             	mov    %eax,(%esp)
-c010f499:	e8 66 7f ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
-c010f49e:	89 45 ec             	mov    %eax,-0x14(%ebp)
-c010f4a1:	c7 45 e8 ff ff ff ff 	movl   $0xffffffff,-0x18(%ebp)
-c010f4a8:	c7 44 24 04 ff 01 00 	movl   $0x1ff,0x4(%esp)
-c010f4af:	00 
-c010f4b0:	c7 04 24 f4 30 11 c0 	movl   $0xc01130f4,(%esp)
-c010f4b7:	e8 cc 89 ff ff       	call   c0107e88 <__Z9lib_creatPcj>
-c010f4bc:	89 45 e8             	mov    %eax,-0x18(%ebp)
-c010f4bf:	c7 45 e4 00 00 00 00 	movl   $0x0,-0x1c(%ebp)
-c010f4c6:	c7 45 e0 07 00 00 00 	movl   $0x7,-0x20(%ebp)
-c010f4cd:	c7 45 dc 00 00 00 00 	movl   $0x0,-0x24(%ebp)
-c010f4d4:	8b 45 dc             	mov    -0x24(%ebp),%eax
-c010f4d7:	3b 45 e0             	cmp    -0x20(%ebp),%eax
-c010f4da:	0f 8d a3 00 00 00    	jge    c010f583 <__Z10FileRWTestv+0x10b>
-c010f4e0:	8b 45 dc             	mov    -0x24(%ebp),%eax
-c010f4e3:	89 44 24 08          	mov    %eax,0x8(%esp)
-c010f4e7:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
-c010f4ee:	00 
-c010f4ef:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c010f49c <__GLOBAL__I_spb>:
+c010f49c:	55                   	push   %ebp
+c010f49d:	89 e5                	mov    %esp,%ebp
+c010f49f:	83 ec 08             	sub    $0x8,%esp
+c010f4a2:	c7 44 24 04 ff ff 00 	movl   $0xffff,0x4(%esp)
+c010f4a9:	00 
+c010f4aa:	c7 04 24 01 00 00 00 	movl   $0x1,(%esp)
+c010f4b1:	e8 a8 ff ff ff       	call   c010f45e <__Z41__static_initialization_and_destruction_0ii>
+c010f4b6:	c9                   	leave  
+c010f4b7:	c3                   	ret    
+
+c010f4b8 <__GLOBAL__D_spb>:
+c010f4b8:	55                   	push   %ebp
+c010f4b9:	89 e5                	mov    %esp,%ebp
+c010f4bb:	83 ec 08             	sub    $0x8,%esp
+c010f4be:	c7 44 24 04 ff ff 00 	movl   $0xffff,0x4(%esp)
+c010f4c5:	00 
+c010f4c6:	c7 04 24 00 00 00 00 	movl   $0x0,(%esp)
+c010f4cd:	e8 8c ff ff ff       	call   c010f45e <__Z41__static_initialization_and_destruction_0ii>
+c010f4d2:	c9                   	leave  
+c010f4d3:	c3                   	ret    
+
+c010f4d4 <__Z10FileRWTestv>:
+c010f4d4:	55                   	push   %ebp
+c010f4d5:	89 e5                	mov    %esp,%ebp
+c010f4d7:	81 ec 78 02 00 00    	sub    $0x278,%esp
+c010f4dd:	e8 86 7c ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010f4e2:	89 04 24             	mov    %eax,(%esp)
+c010f4e5:	e8 ea 7e ff ff       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
+c010f4ea:	89 45 f0             	mov    %eax,-0x10(%ebp)
+c010f4ed:	e8 76 7c ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
 c010f4f2:	89 04 24             	mov    %eax,(%esp)
-c010f4f5:	e8 36 1a ff ff       	call   c0100f30 <__ZN13BufferManager5BreadEsi>
-c010f4fa:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010f4fd:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010f500:	89 04 24             	mov    %eax,(%esp)
-c010f503:	e8 2e ea ff ff       	call   c010df36 <__Z14CheckSumBufferP3Buf>
-c010f508:	89 c2                	mov    %eax,%edx
-c010f50a:	8d 45 e4             	lea    -0x1c(%ebp),%eax
-c010f50d:	01 10                	add    %edx,(%eax)
-c010f50f:	c7 44 24 08 00 02 00 	movl   $0x200,0x8(%esp)
-c010f516:	00 
-c010f517:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010f51a:	8b 40 20             	mov    0x20(%eax),%eax
-c010f51d:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010f521:	8b 45 e8             	mov    -0x18(%ebp),%eax
-c010f524:	89 04 24             	mov    %eax,(%esp)
-c010f527:	e8 32 8a ff ff       	call   c0107f5e <__Z9lib_writeiPci>
-c010f52c:	89 45 d8             	mov    %eax,-0x28(%ebp)
-c010f52f:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010f532:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010f536:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c010f539:	89 04 24             	mov    %eax,(%esp)
-c010f53c:	e8 57 18 ff ff       	call   c0100d98 <__ZN13BufferManager6BrelseEP3Buf>
-c010f541:	81 7d d8 00 02 00 00 	cmpl   $0x200,-0x28(%ebp)
-c010f548:	74 2f                	je     c010f579 <__Z10FileRWTestv+0x101>
-c010f54a:	8b 45 ec             	mov    -0x14(%ebp),%eax
-c010f54d:	8b 80 a8 01 00 00    	mov    0x1a8(%eax),%eax
-c010f553:	89 44 24 08          	mov    %eax,0x8(%esp)
-c010f557:	8b 45 d8             	mov    -0x28(%ebp),%eax
-c010f55a:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010f55e:	c7 04 24 00 31 11 c0 	movl   $0xc0113100,(%esp)
-c010f565:	e8 de 20 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f56a:	c7 85 a0 fd ff ff 00 	movl   $0x0,-0x260(%ebp)
-c010f571:	00 00 00 
-c010f574:	e9 87 01 00 00       	jmp    c010f700 <__Z10FileRWTestv+0x288>
-c010f579:	8d 45 dc             	lea    -0x24(%ebp),%eax
-c010f57c:	ff 00                	incl   (%eax)
-c010f57e:	e9 51 ff ff ff       	jmp    c010f4d4 <__Z10FileRWTestv+0x5c>
-c010f583:	8b 45 e8             	mov    -0x18(%ebp),%eax
-c010f586:	89 04 24             	mov    %eax,(%esp)
-c010f589:	e8 66 89 ff ff       	call   c0107ef4 <__Z9lib_closei>
-c010f58e:	8b 45 e4             	mov    -0x1c(%ebp),%eax
-c010f591:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010f595:	c7 04 24 30 31 11 c0 	movl   $0xc0113130,(%esp)
-c010f59c:	e8 a7 20 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f5a1:	e8 e4 9a ff ff       	call   c010908a <_Delay>
-c010f5a6:	e8 df 9a ff ff       	call   c010908a <_Delay>
-c010f5ab:	8b 45 ec             	mov    -0x14(%ebp),%eax
-c010f5ae:	83 b8 a8 01 00 00 00 	cmpl   $0x0,0x1a8(%eax)
-c010f5b5:	74 1b                	je     c010f5d2 <__Z10FileRWTestv+0x15a>
-c010f5b7:	8b 45 ec             	mov    -0x14(%ebp),%eax
-c010f5ba:	8b 80 a8 01 00 00    	mov    0x1a8(%eax),%eax
-c010f5c0:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010f5c4:	c7 04 24 41 31 11 c0 	movl   $0xc0113141,(%esp)
-c010f5cb:	e8 78 20 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f5d0:	eb fe                	jmp    c010f5d0 <__Z10FileRWTestv+0x158>
-c010f5d2:	c7 44 24 04 ff 01 00 	movl   $0x1ff,0x4(%esp)
-c010f5d9:	00 
-c010f5da:	c7 04 24 f4 30 11 c0 	movl   $0xc01130f4,(%esp)
-c010f5e1:	e8 d8 88 ff ff       	call   c0107ebe <__Z8lib_openPcj>
-c010f5e6:	89 45 e8             	mov    %eax,-0x18(%ebp)
-c010f5e9:	c7 45 d8 00 00 00 00 	movl   $0x0,-0x28(%ebp)
-c010f5f0:	8d 45 a8             	lea    -0x58(%ebp),%eax
-c010f5f3:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010f5f6:	8b 55 f4             	mov    -0xc(%ebp),%edx
-c010f5f9:	8d 85 a8 fd ff ff    	lea    -0x258(%ebp),%eax
-c010f5ff:	89 42 20             	mov    %eax,0x20(%edx)
-c010f602:	c7 45 dc 00 00 00 00 	movl   $0x0,-0x24(%ebp)
-c010f609:	8b 45 dc             	mov    -0x24(%ebp),%eax
-c010f60c:	3b 45 e0             	cmp    -0x20(%ebp),%eax
-c010f60f:	7d 77                	jge    c010f688 <__Z10FileRWTestv+0x210>
-c010f611:	c7 44 24 08 00 02 00 	movl   $0x200,0x8(%esp)
-c010f618:	00 
-c010f619:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010f61c:	8b 40 20             	mov    0x20(%eax),%eax
-c010f61f:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010f623:	8b 45 e8             	mov    -0x18(%ebp),%eax
-c010f626:	89 04 24             	mov    %eax,(%esp)
-c010f629:	e8 f8 88 ff ff       	call   c0107f26 <__Z8lib_readiPci>
-c010f62e:	89 85 a4 fd ff ff    	mov    %eax,-0x25c(%ebp)
-c010f634:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010f637:	89 04 24             	mov    %eax,(%esp)
-c010f63a:	e8 f7 e8 ff ff       	call   c010df36 <__Z14CheckSumBufferP3Buf>
-c010f63f:	89 c2                	mov    %eax,%edx
-c010f641:	8d 45 d8             	lea    -0x28(%ebp),%eax
-c010f644:	01 10                	add    %edx,(%eax)
-c010f646:	81 bd a4 fd ff ff 00 	cmpl   $0x200,-0x25c(%ebp)
-c010f64d:	02 00 00 
-c010f650:	74 2f                	je     c010f681 <__Z10FileRWTestv+0x209>
-c010f652:	8b 45 ec             	mov    -0x14(%ebp),%eax
-c010f655:	8b 80 a8 01 00 00    	mov    0x1a8(%eax),%eax
-c010f65b:	89 44 24 08          	mov    %eax,0x8(%esp)
-c010f65f:	8b 85 a4 fd ff ff    	mov    -0x25c(%ebp),%eax
-c010f665:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010f669:	c7 04 24 50 31 11 c0 	movl   $0xc0113150,(%esp)
-c010f670:	e8 d3 1f 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f675:	c7 85 a0 fd ff ff 00 	movl   $0x0,-0x260(%ebp)
-c010f67c:	00 00 00 
-c010f67f:	eb 7f                	jmp    c010f700 <__Z10FileRWTestv+0x288>
-c010f681:	8d 45 dc             	lea    -0x24(%ebp),%eax
-c010f684:	ff 00                	incl   (%eax)
-c010f686:	eb 81                	jmp    c010f609 <__Z10FileRWTestv+0x191>
-c010f688:	8b 45 e8             	mov    -0x18(%ebp),%eax
-c010f68b:	89 04 24             	mov    %eax,(%esp)
-c010f68e:	e8 61 88 ff ff       	call   c0107ef4 <__Z9lib_closei>
-c010f693:	8b 45 d8             	mov    -0x28(%ebp),%eax
-c010f696:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010f69a:	c7 04 24 7f 31 11 c0 	movl   $0xc011317f,(%esp)
-c010f6a1:	e8 a2 1f 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f6a6:	8b 45 e4             	mov    -0x1c(%ebp),%eax
-c010f6a9:	3b 45 d8             	cmp    -0x28(%ebp),%eax
-c010f6ac:	74 0c                	je     c010f6ba <__Z10FileRWTestv+0x242>
-c010f6ae:	c7 85 a0 fd ff ff 00 	movl   $0x0,-0x260(%ebp)
-c010f6b5:	00 00 00 
-c010f6b8:	eb 46                	jmp    c010f700 <__Z10FileRWTestv+0x288>
-c010f6ba:	e8 7d 1f 00 00       	call   c011163c <__ZN8Diagnose8TraceOffEv>
-c010f6bf:	e8 a4 7a ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010f6c4:	89 04 24             	mov    %eax,(%esp)
-c010f6c7:	e8 20 7d ff ff       	call   c01073ec <__ZN6Kernel13GetFileSystemEv>
-c010f6cc:	89 04 24             	mov    %eax,(%esp)
-c010f6cf:	e8 dc 5b ff ff       	call   c01052b0 <__ZN10FileSystem6UpdateEv>
-c010f6d4:	e8 8f 7a ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010f6d9:	89 04 24             	mov    %eax,(%esp)
-c010f6dc:	e8 f3 7c ff ff       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
-c010f6e1:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
-c010f6e8:	00 
-c010f6e9:	89 04 24             	mov    %eax,(%esp)
-c010f6ec:	e8 e5 1b ff ff       	call   c01012d6 <__ZN13BufferManager6BflushEs>
-c010f6f1:	e8 3a 1f 00 00       	call   c0111630 <__ZN8Diagnose7TraceOnEv>
-c010f6f6:	c7 85 a0 fd ff ff 01 	movl   $0x1,-0x260(%ebp)
-c010f6fd:	00 00 00 
-c010f700:	8b 85 a0 fd ff ff    	mov    -0x260(%ebp),%eax
-c010f706:	c9                   	leave  
-c010f707:	c3                   	ret    
+c010f4f5:	e8 0a 7f ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
+c010f4fa:	89 45 ec             	mov    %eax,-0x14(%ebp)
+c010f4fd:	c7 45 e8 ff ff ff ff 	movl   $0xffffffff,-0x18(%ebp)
+c010f504:	c7 44 24 04 ff 01 00 	movl   $0x1ff,0x4(%esp)
+c010f50b:	00 
+c010f50c:	c7 04 24 f4 30 11 c0 	movl   $0xc01130f4,(%esp)
+c010f513:	e8 70 89 ff ff       	call   c0107e88 <__Z9lib_creatPcj>
+c010f518:	89 45 e8             	mov    %eax,-0x18(%ebp)
+c010f51b:	c7 45 e4 00 00 00 00 	movl   $0x0,-0x1c(%ebp)
+c010f522:	c7 45 e0 07 00 00 00 	movl   $0x7,-0x20(%ebp)
+c010f529:	c7 45 dc 00 00 00 00 	movl   $0x0,-0x24(%ebp)
+c010f530:	8b 45 dc             	mov    -0x24(%ebp),%eax
+c010f533:	3b 45 e0             	cmp    -0x20(%ebp),%eax
+c010f536:	0f 8d a3 00 00 00    	jge    c010f5df <__Z10FileRWTestv+0x10b>
+c010f53c:	8b 45 dc             	mov    -0x24(%ebp),%eax
+c010f53f:	89 44 24 08          	mov    %eax,0x8(%esp)
+c010f543:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
+c010f54a:	00 
+c010f54b:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c010f54e:	89 04 24             	mov    %eax,(%esp)
+c010f551:	e8 da 19 ff ff       	call   c0100f30 <__ZN13BufferManager5BreadEsi>
+c010f556:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010f559:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010f55c:	89 04 24             	mov    %eax,(%esp)
+c010f55f:	e8 2e ea ff ff       	call   c010df92 <__Z14CheckSumBufferP3Buf>
+c010f564:	89 c2                	mov    %eax,%edx
+c010f566:	8d 45 e4             	lea    -0x1c(%ebp),%eax
+c010f569:	01 10                	add    %edx,(%eax)
+c010f56b:	c7 44 24 08 00 02 00 	movl   $0x200,0x8(%esp)
+c010f572:	00 
+c010f573:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010f576:	8b 40 20             	mov    0x20(%eax),%eax
+c010f579:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010f57d:	8b 45 e8             	mov    -0x18(%ebp),%eax
+c010f580:	89 04 24             	mov    %eax,(%esp)
+c010f583:	e8 d6 89 ff ff       	call   c0107f5e <__Z9lib_writeiPci>
+c010f588:	89 45 d8             	mov    %eax,-0x28(%ebp)
+c010f58b:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010f58e:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010f592:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c010f595:	89 04 24             	mov    %eax,(%esp)
+c010f598:	e8 fb 17 ff ff       	call   c0100d98 <__ZN13BufferManager6BrelseEP3Buf>
+c010f59d:	81 7d d8 00 02 00 00 	cmpl   $0x200,-0x28(%ebp)
+c010f5a4:	74 2f                	je     c010f5d5 <__Z10FileRWTestv+0x101>
+c010f5a6:	8b 45 ec             	mov    -0x14(%ebp),%eax
+c010f5a9:	8b 80 a8 01 00 00    	mov    0x1a8(%eax),%eax
+c010f5af:	89 44 24 08          	mov    %eax,0x8(%esp)
+c010f5b3:	8b 45 d8             	mov    -0x28(%ebp),%eax
+c010f5b6:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010f5ba:	c7 04 24 00 31 11 c0 	movl   $0xc0113100,(%esp)
+c010f5c1:	e8 de 20 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f5c6:	c7 85 a0 fd ff ff 00 	movl   $0x0,-0x260(%ebp)
+c010f5cd:	00 00 00 
+c010f5d0:	e9 87 01 00 00       	jmp    c010f75c <__Z10FileRWTestv+0x288>
+c010f5d5:	8d 45 dc             	lea    -0x24(%ebp),%eax
+c010f5d8:	ff 00                	incl   (%eax)
+c010f5da:	e9 51 ff ff ff       	jmp    c010f530 <__Z10FileRWTestv+0x5c>
+c010f5df:	8b 45 e8             	mov    -0x18(%ebp),%eax
+c010f5e2:	89 04 24             	mov    %eax,(%esp)
+c010f5e5:	e8 0a 89 ff ff       	call   c0107ef4 <__Z9lib_closei>
+c010f5ea:	8b 45 e4             	mov    -0x1c(%ebp),%eax
+c010f5ed:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010f5f1:	c7 04 24 30 31 11 c0 	movl   $0xc0113130,(%esp)
+c010f5f8:	e8 a7 20 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f5fd:	e8 88 9a ff ff       	call   c010908a <_Delay>
+c010f602:	e8 83 9a ff ff       	call   c010908a <_Delay>
+c010f607:	8b 45 ec             	mov    -0x14(%ebp),%eax
+c010f60a:	83 b8 a8 01 00 00 00 	cmpl   $0x0,0x1a8(%eax)
+c010f611:	74 1b                	je     c010f62e <__Z10FileRWTestv+0x15a>
+c010f613:	8b 45 ec             	mov    -0x14(%ebp),%eax
+c010f616:	8b 80 a8 01 00 00    	mov    0x1a8(%eax),%eax
+c010f61c:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010f620:	c7 04 24 41 31 11 c0 	movl   $0xc0113141,(%esp)
+c010f627:	e8 78 20 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f62c:	eb fe                	jmp    c010f62c <__Z10FileRWTestv+0x158>
+c010f62e:	c7 44 24 04 ff 01 00 	movl   $0x1ff,0x4(%esp)
+c010f635:	00 
+c010f636:	c7 04 24 f4 30 11 c0 	movl   $0xc01130f4,(%esp)
+c010f63d:	e8 7c 88 ff ff       	call   c0107ebe <__Z8lib_openPcj>
+c010f642:	89 45 e8             	mov    %eax,-0x18(%ebp)
+c010f645:	c7 45 d8 00 00 00 00 	movl   $0x0,-0x28(%ebp)
+c010f64c:	8d 45 a8             	lea    -0x58(%ebp),%eax
+c010f64f:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010f652:	8b 55 f4             	mov    -0xc(%ebp),%edx
+c010f655:	8d 85 a8 fd ff ff    	lea    -0x258(%ebp),%eax
+c010f65b:	89 42 20             	mov    %eax,0x20(%edx)
+c010f65e:	c7 45 dc 00 00 00 00 	movl   $0x0,-0x24(%ebp)
+c010f665:	8b 45 dc             	mov    -0x24(%ebp),%eax
+c010f668:	3b 45 e0             	cmp    -0x20(%ebp),%eax
+c010f66b:	7d 77                	jge    c010f6e4 <__Z10FileRWTestv+0x210>
+c010f66d:	c7 44 24 08 00 02 00 	movl   $0x200,0x8(%esp)
+c010f674:	00 
+c010f675:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010f678:	8b 40 20             	mov    0x20(%eax),%eax
+c010f67b:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010f67f:	8b 45 e8             	mov    -0x18(%ebp),%eax
+c010f682:	89 04 24             	mov    %eax,(%esp)
+c010f685:	e8 9c 88 ff ff       	call   c0107f26 <__Z8lib_readiPci>
+c010f68a:	89 85 a4 fd ff ff    	mov    %eax,-0x25c(%ebp)
+c010f690:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010f693:	89 04 24             	mov    %eax,(%esp)
+c010f696:	e8 f7 e8 ff ff       	call   c010df92 <__Z14CheckSumBufferP3Buf>
+c010f69b:	89 c2                	mov    %eax,%edx
+c010f69d:	8d 45 d8             	lea    -0x28(%ebp),%eax
+c010f6a0:	01 10                	add    %edx,(%eax)
+c010f6a2:	81 bd a4 fd ff ff 00 	cmpl   $0x200,-0x25c(%ebp)
+c010f6a9:	02 00 00 
+c010f6ac:	74 2f                	je     c010f6dd <__Z10FileRWTestv+0x209>
+c010f6ae:	8b 45 ec             	mov    -0x14(%ebp),%eax
+c010f6b1:	8b 80 a8 01 00 00    	mov    0x1a8(%eax),%eax
+c010f6b7:	89 44 24 08          	mov    %eax,0x8(%esp)
+c010f6bb:	8b 85 a4 fd ff ff    	mov    -0x25c(%ebp),%eax
+c010f6c1:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010f6c5:	c7 04 24 50 31 11 c0 	movl   $0xc0113150,(%esp)
+c010f6cc:	e8 d3 1f 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f6d1:	c7 85 a0 fd ff ff 00 	movl   $0x0,-0x260(%ebp)
+c010f6d8:	00 00 00 
+c010f6db:	eb 7f                	jmp    c010f75c <__Z10FileRWTestv+0x288>
+c010f6dd:	8d 45 dc             	lea    -0x24(%ebp),%eax
+c010f6e0:	ff 00                	incl   (%eax)
+c010f6e2:	eb 81                	jmp    c010f665 <__Z10FileRWTestv+0x191>
+c010f6e4:	8b 45 e8             	mov    -0x18(%ebp),%eax
+c010f6e7:	89 04 24             	mov    %eax,(%esp)
+c010f6ea:	e8 05 88 ff ff       	call   c0107ef4 <__Z9lib_closei>
+c010f6ef:	8b 45 d8             	mov    -0x28(%ebp),%eax
+c010f6f2:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010f6f6:	c7 04 24 7f 31 11 c0 	movl   $0xc011317f,(%esp)
+c010f6fd:	e8 a2 1f 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f702:	8b 45 e4             	mov    -0x1c(%ebp),%eax
+c010f705:	3b 45 d8             	cmp    -0x28(%ebp),%eax
+c010f708:	74 0c                	je     c010f716 <__Z10FileRWTestv+0x242>
+c010f70a:	c7 85 a0 fd ff ff 00 	movl   $0x0,-0x260(%ebp)
+c010f711:	00 00 00 
+c010f714:	eb 46                	jmp    c010f75c <__Z10FileRWTestv+0x288>
+c010f716:	e8 7d 1f 00 00       	call   c0111698 <__ZN8Diagnose8TraceOffEv>
+c010f71b:	e8 48 7a ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010f720:	89 04 24             	mov    %eax,(%esp)
+c010f723:	e8 c4 7c ff ff       	call   c01073ec <__ZN6Kernel13GetFileSystemEv>
+c010f728:	89 04 24             	mov    %eax,(%esp)
+c010f72b:	e8 80 5b ff ff       	call   c01052b0 <__ZN10FileSystem6UpdateEv>
+c010f730:	e8 33 7a ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010f735:	89 04 24             	mov    %eax,(%esp)
+c010f738:	e8 97 7c ff ff       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
+c010f73d:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
+c010f744:	00 
+c010f745:	89 04 24             	mov    %eax,(%esp)
+c010f748:	e8 89 1b ff ff       	call   c01012d6 <__ZN13BufferManager6BflushEs>
+c010f74d:	e8 3a 1f 00 00       	call   c011168c <__ZN8Diagnose7TraceOnEv>
+c010f752:	c7 85 a0 fd ff ff 01 	movl   $0x1,-0x260(%ebp)
+c010f759:	00 00 00 
+c010f75c:	8b 85 a0 fd ff ff    	mov    -0x260(%ebp),%eax
+c010f762:	c9                   	leave  
+c010f763:	c3                   	ret    
 
-c010f708 <__Z10SelectTestv>:
-c010f708:	55                   	push   %ebp
-c010f709:	89 e5                	mov    %esp,%ebp
-c010f70b:	83 ec 18             	sub    $0x18,%esp
-c010f70e:	e8 55 7a ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010f713:	89 04 24             	mov    %eax,(%esp)
-c010f716:	e8 95 7c ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
-c010f71b:	89 04 24             	mov    %eax,(%esp)
-c010f71e:	e8 d9 c3 ff ff       	call   c010bafc <__ZN14ProcessManager7NewProcEv>
-c010f723:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c010f726:	c7 45 f8 28 00 00 00 	movl   $0x28,-0x8(%ebp)
-c010f72d:	e8 36 7a ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010f732:	89 04 24             	mov    %eax,(%esp)
-c010f735:	e8 ca 7c ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
-c010f73a:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010f73d:	83 7d fc 00          	cmpl   $0x0,-0x4(%ebp)
-c010f741:	0f 85 c1 00 00 00    	jne    c010f808 <__Z10SelectTestv+0x100>
-c010f747:	e8 1c 7a ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010f74c:	89 04 24             	mov    %eax,(%esp)
-c010f74f:	e8 5c 7c ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
-c010f754:	89 04 24             	mov    %eax,(%esp)
-c010f757:	e8 a0 c3 ff ff       	call   c010bafc <__ZN14ProcessManager7NewProcEv>
-c010f75c:	89 45 f0             	mov    %eax,-0x10(%ebp)
-c010f75f:	83 7d f0 00          	cmpl   $0x0,-0x10(%ebp)
-c010f763:	75 4c                	jne    c010f7b1 <__Z10SelectTestv+0xa9>
-c010f765:	c7 04 24 94 31 11 c0 	movl   $0xc0113194,(%esp)
-c010f76c:	e8 d7 1e 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f771:	8d 45 f8             	lea    -0x8(%ebp),%eax
-c010f774:	ff 00                	incl   (%eax)
-c010f776:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010f779:	8b 50 10             	mov    0x10(%eax),%edx
-c010f77c:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010f77f:	89 42 20             	mov    %eax,0x20(%edx)
-c010f782:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010f785:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010f789:	c7 04 24 b9 31 11 c0 	movl   $0xc01131b9,(%esp)
-c010f790:	e8 b3 1e 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f795:	e8 f0 98 ff ff       	call   c010908a <_Delay>
-c010f79a:	e8 c9 79 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010f79f:	89 04 24             	mov    %eax,(%esp)
-c010f7a2:	e8 09 7c ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
-c010f7a7:	89 04 24             	mov    %eax,(%esp)
-c010f7aa:	e8 13 c5 ff ff       	call   c010bcc2 <__ZN14ProcessManager5SwtchEv>
-c010f7af:	eb b4                	jmp    c010f765 <__Z10SelectTestv+0x5d>
-c010f7b1:	83 7d f0 01          	cmpl   $0x1,-0x10(%ebp)
-c010f7b5:	0f 85 ad 00 00 00    	jne    c010f868 <__Z10SelectTestv+0x160>
-c010f7bb:	c7 04 24 d0 31 11 c0 	movl   $0xc01131d0,(%esp)
-c010f7c2:	e8 81 1e 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f7c7:	8d 45 f8             	lea    -0x8(%ebp),%eax
-c010f7ca:	83 00 03             	addl   $0x3,(%eax)
-c010f7cd:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010f7d0:	8b 50 10             	mov    0x10(%eax),%edx
-c010f7d3:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010f7d6:	89 42 20             	mov    %eax,0x20(%edx)
-c010f7d9:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010f7dc:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010f7e0:	c7 04 24 b9 31 11 c0 	movl   $0xc01131b9,(%esp)
-c010f7e7:	e8 5c 1e 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f7ec:	e8 99 98 ff ff       	call   c010908a <_Delay>
-c010f7f1:	e8 72 79 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010f7f6:	89 04 24             	mov    %eax,(%esp)
-c010f7f9:	e8 b2 7b ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
-c010f7fe:	89 04 24             	mov    %eax,(%esp)
-c010f801:	e8 bc c4 ff ff       	call   c010bcc2 <__ZN14ProcessManager5SwtchEv>
-c010f806:	eb b3                	jmp    c010f7bb <__Z10SelectTestv+0xb3>
-c010f808:	83 7d fc 01          	cmpl   $0x1,-0x4(%ebp)
-c010f80c:	75 5a                	jne    c010f868 <__Z10SelectTestv+0x160>
-c010f80e:	c7 45 f0 00 00 00 00 	movl   $0x0,-0x10(%ebp)
-c010f815:	83 7d f0 00          	cmpl   $0x0,-0x10(%ebp)
-c010f819:	75 4d                	jne    c010f868 <__Z10SelectTestv+0x160>
-c010f81b:	c7 04 24 f8 31 11 c0 	movl   $0xc01131f8,(%esp)
-c010f822:	e8 21 1e 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f827:	8d 45 f8             	lea    -0x8(%ebp),%eax
-c010f82a:	83 00 02             	addl   $0x2,(%eax)
-c010f82d:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010f830:	8b 50 10             	mov    0x10(%eax),%edx
-c010f833:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010f836:	89 42 20             	mov    %eax,0x20(%edx)
-c010f839:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010f83c:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010f840:	c7 04 24 b9 31 11 c0 	movl   $0xc01131b9,(%esp)
-c010f847:	e8 fc 1d 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f84c:	e8 39 98 ff ff       	call   c010908a <_Delay>
-c010f851:	e8 12 79 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010f856:	89 04 24             	mov    %eax,(%esp)
-c010f859:	e8 52 7b ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
-c010f85e:	89 04 24             	mov    %eax,(%esp)
-c010f861:	e8 5c c4 ff ff       	call   c010bcc2 <__ZN14ProcessManager5SwtchEv>
-c010f866:	eb b3                	jmp    c010f81b <__Z10SelectTestv+0x113>
-c010f868:	b8 01 00 00 00       	mov    $0x1,%eax
-c010f86d:	c9                   	leave  
-c010f86e:	c3                   	ret    
-c010f86f:	90                   	nop    
+c010f764 <__Z10SelectTestv>:
+c010f764:	55                   	push   %ebp
+c010f765:	89 e5                	mov    %esp,%ebp
+c010f767:	83 ec 18             	sub    $0x18,%esp
+c010f76a:	e8 f9 79 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010f76f:	89 04 24             	mov    %eax,(%esp)
+c010f772:	e8 39 7c ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
+c010f777:	89 04 24             	mov    %eax,(%esp)
+c010f77a:	e8 7d c3 ff ff       	call   c010bafc <__ZN14ProcessManager7NewProcEv>
+c010f77f:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c010f782:	c7 45 f8 28 00 00 00 	movl   $0x28,-0x8(%ebp)
+c010f789:	e8 da 79 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010f78e:	89 04 24             	mov    %eax,(%esp)
+c010f791:	e8 6e 7c ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
+c010f796:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010f799:	83 7d fc 00          	cmpl   $0x0,-0x4(%ebp)
+c010f79d:	0f 85 c1 00 00 00    	jne    c010f864 <__Z10SelectTestv+0x100>
+c010f7a3:	e8 c0 79 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010f7a8:	89 04 24             	mov    %eax,(%esp)
+c010f7ab:	e8 00 7c ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
+c010f7b0:	89 04 24             	mov    %eax,(%esp)
+c010f7b3:	e8 44 c3 ff ff       	call   c010bafc <__ZN14ProcessManager7NewProcEv>
+c010f7b8:	89 45 f0             	mov    %eax,-0x10(%ebp)
+c010f7bb:	83 7d f0 00          	cmpl   $0x0,-0x10(%ebp)
+c010f7bf:	75 4c                	jne    c010f80d <__Z10SelectTestv+0xa9>
+c010f7c1:	c7 04 24 94 31 11 c0 	movl   $0xc0113194,(%esp)
+c010f7c8:	e8 d7 1e 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f7cd:	8d 45 f8             	lea    -0x8(%ebp),%eax
+c010f7d0:	ff 00                	incl   (%eax)
+c010f7d2:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010f7d5:	8b 50 10             	mov    0x10(%eax),%edx
+c010f7d8:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010f7db:	89 42 20             	mov    %eax,0x20(%edx)
+c010f7de:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010f7e1:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010f7e5:	c7 04 24 b9 31 11 c0 	movl   $0xc01131b9,(%esp)
+c010f7ec:	e8 b3 1e 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f7f1:	e8 94 98 ff ff       	call   c010908a <_Delay>
+c010f7f6:	e8 6d 79 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010f7fb:	89 04 24             	mov    %eax,(%esp)
+c010f7fe:	e8 ad 7b ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
+c010f803:	89 04 24             	mov    %eax,(%esp)
+c010f806:	e8 b7 c4 ff ff       	call   c010bcc2 <__ZN14ProcessManager5SwtchEv>
+c010f80b:	eb b4                	jmp    c010f7c1 <__Z10SelectTestv+0x5d>
+c010f80d:	83 7d f0 01          	cmpl   $0x1,-0x10(%ebp)
+c010f811:	0f 85 ad 00 00 00    	jne    c010f8c4 <__Z10SelectTestv+0x160>
+c010f817:	c7 04 24 d0 31 11 c0 	movl   $0xc01131d0,(%esp)
+c010f81e:	e8 81 1e 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f823:	8d 45 f8             	lea    -0x8(%ebp),%eax
+c010f826:	83 00 03             	addl   $0x3,(%eax)
+c010f829:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010f82c:	8b 50 10             	mov    0x10(%eax),%edx
+c010f82f:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010f832:	89 42 20             	mov    %eax,0x20(%edx)
+c010f835:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010f838:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010f83c:	c7 04 24 b9 31 11 c0 	movl   $0xc01131b9,(%esp)
+c010f843:	e8 5c 1e 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f848:	e8 3d 98 ff ff       	call   c010908a <_Delay>
+c010f84d:	e8 16 79 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010f852:	89 04 24             	mov    %eax,(%esp)
+c010f855:	e8 56 7b ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
+c010f85a:	89 04 24             	mov    %eax,(%esp)
+c010f85d:	e8 60 c4 ff ff       	call   c010bcc2 <__ZN14ProcessManager5SwtchEv>
+c010f862:	eb b3                	jmp    c010f817 <__Z10SelectTestv+0xb3>
+c010f864:	83 7d fc 01          	cmpl   $0x1,-0x4(%ebp)
+c010f868:	75 5a                	jne    c010f8c4 <__Z10SelectTestv+0x160>
+c010f86a:	c7 45 f0 00 00 00 00 	movl   $0x0,-0x10(%ebp)
+c010f871:	83 7d f0 00          	cmpl   $0x0,-0x10(%ebp)
+c010f875:	75 4d                	jne    c010f8c4 <__Z10SelectTestv+0x160>
+c010f877:	c7 04 24 f8 31 11 c0 	movl   $0xc01131f8,(%esp)
+c010f87e:	e8 21 1e 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f883:	8d 45 f8             	lea    -0x8(%ebp),%eax
+c010f886:	83 00 02             	addl   $0x2,(%eax)
+c010f889:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010f88c:	8b 50 10             	mov    0x10(%eax),%edx
+c010f88f:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010f892:	89 42 20             	mov    %eax,0x20(%edx)
+c010f895:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010f898:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010f89c:	c7 04 24 b9 31 11 c0 	movl   $0xc01131b9,(%esp)
+c010f8a3:	e8 fc 1d 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f8a8:	e8 dd 97 ff ff       	call   c010908a <_Delay>
+c010f8ad:	e8 b6 78 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010f8b2:	89 04 24             	mov    %eax,(%esp)
+c010f8b5:	e8 f6 7a ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
+c010f8ba:	89 04 24             	mov    %eax,(%esp)
+c010f8bd:	e8 00 c4 ff ff       	call   c010bcc2 <__ZN14ProcessManager5SwtchEv>
+c010f8c2:	eb b3                	jmp    c010f877 <__Z10SelectTestv+0x113>
+c010f8c4:	b8 01 00 00 00       	mov    $0x1,%eax
+c010f8c9:	c9                   	leave  
+c010f8ca:	c3                   	ret    
+c010f8cb:	90                   	nop    
 
-c010f870 <__Z8ForkTestv>:
-c010f870:	55                   	push   %ebp
-c010f871:	89 e5                	mov    %esp,%ebp
-c010f873:	83 ec 18             	sub    $0x18,%esp
-c010f876:	c7 45 fc 28 00 00 00 	movl   $0x28,-0x4(%ebp)
-c010f87d:	e8 e6 78 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010f882:	89 04 24             	mov    %eax,(%esp)
-c010f885:	e8 7a 7b ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
-c010f88a:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c010f88d:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010f890:	8b 50 10             	mov    0x10(%eax),%edx
-c010f893:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010f896:	89 42 20             	mov    %eax,0x20(%edx)
-c010f899:	c7 45 f4 00 00 00 00 	movl   $0x0,-0xc(%ebp)
-c010f8a0:	83 7d f4 01          	cmpl   $0x1,-0xc(%ebp)
-c010f8a4:	7f 0c                	jg     c010f8b2 <__Z8ForkTestv+0x42>
-c010f8a6:	e8 4f 87 ff ff       	call   c0107ffa <__Z8lib_forkv>
-c010f8ab:	8d 45 f4             	lea    -0xc(%ebp),%eax
-c010f8ae:	ff 00                	incl   (%eax)
-c010f8b0:	eb ee                	jmp    c010f8a0 <__Z8ForkTestv+0x30>
-c010f8b2:	ff 05 80 0d 12 c0    	incl   0xc0120d80
-c010f8b8:	83 3d 80 0d 12 c0 03 	cmpl   $0x3,0xc0120d80
-c010f8bf:	7f 02                	jg     c010f8c3 <__Z8ForkTestv+0x53>
-c010f8c1:	eb f5                	jmp    c010f8b8 <__Z8ForkTestv+0x48>
-c010f8c3:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010f8c6:	8b 40 10             	mov    0x10(%eax),%eax
-c010f8c9:	8b 40 04             	mov    0x4(%eax),%eax
-c010f8cc:	89 44 24 08          	mov    %eax,0x8(%esp)
-c010f8d0:	a1 80 0d 12 c0       	mov    0xc0120d80,%eax
-c010f8d5:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010f8d9:	c7 04 24 1c 32 11 c0 	movl   $0xc011321c,(%esp)
-c010f8e0:	e8 63 1d 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f8e5:	83 3d 90 0d 12 c0 76 	cmpl   $0x76,0xc0120d90
-c010f8ec:	7e 15                	jle    c010f903 <__Z8ForkTestv+0x93>
-c010f8ee:	a1 94 0d 12 c0       	mov    0xc0120d94,%eax
-c010f8f3:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010f8f7:	c7 04 24 41 32 11 c0 	movl   $0xc0113241,(%esp)
-c010f8fe:	e8 45 1d 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f903:	eb fe                	jmp    c010f903 <__Z8ForkTestv+0x93>
-c010f905:	90                   	nop    
+c010f8cc <__Z8ForkTestv>:
+c010f8cc:	55                   	push   %ebp
+c010f8cd:	89 e5                	mov    %esp,%ebp
+c010f8cf:	83 ec 18             	sub    $0x18,%esp
+c010f8d2:	c7 45 fc 28 00 00 00 	movl   $0x28,-0x4(%ebp)
+c010f8d9:	e8 8a 78 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010f8de:	89 04 24             	mov    %eax,(%esp)
+c010f8e1:	e8 1e 7b ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
+c010f8e6:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c010f8e9:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010f8ec:	8b 50 10             	mov    0x10(%eax),%edx
+c010f8ef:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010f8f2:	89 42 20             	mov    %eax,0x20(%edx)
+c010f8f5:	c7 45 f4 00 00 00 00 	movl   $0x0,-0xc(%ebp)
+c010f8fc:	83 7d f4 01          	cmpl   $0x1,-0xc(%ebp)
+c010f900:	7f 0c                	jg     c010f90e <__Z8ForkTestv+0x42>
+c010f902:	e8 f3 86 ff ff       	call   c0107ffa <__Z8lib_forkv>
+c010f907:	8d 45 f4             	lea    -0xc(%ebp),%eax
+c010f90a:	ff 00                	incl   (%eax)
+c010f90c:	eb ee                	jmp    c010f8fc <__Z8ForkTestv+0x30>
+c010f90e:	ff 05 80 0d 12 c0    	incl   0xc0120d80
+c010f914:	83 3d 80 0d 12 c0 03 	cmpl   $0x3,0xc0120d80
+c010f91b:	7f 02                	jg     c010f91f <__Z8ForkTestv+0x53>
+c010f91d:	eb f5                	jmp    c010f914 <__Z8ForkTestv+0x48>
+c010f91f:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010f922:	8b 40 10             	mov    0x10(%eax),%eax
+c010f925:	8b 40 04             	mov    0x4(%eax),%eax
+c010f928:	89 44 24 08          	mov    %eax,0x8(%esp)
+c010f92c:	a1 80 0d 12 c0       	mov    0xc0120d80,%eax
+c010f931:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010f935:	c7 04 24 1c 32 11 c0 	movl   $0xc011321c,(%esp)
+c010f93c:	e8 63 1d 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f941:	83 3d 90 0d 12 c0 76 	cmpl   $0x76,0xc0120d90
+c010f948:	7e 15                	jle    c010f95f <__Z8ForkTestv+0x93>
+c010f94a:	a1 94 0d 12 c0       	mov    0xc0120d94,%eax
+c010f94f:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010f953:	c7 04 24 41 32 11 c0 	movl   $0xc0113241,(%esp)
+c010f95a:	e8 45 1d 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f95f:	eb fe                	jmp    c010f95f <__Z8ForkTestv+0x93>
+c010f961:	90                   	nop    
 
-c010f906 <__Z12ExitWaitTestv>:
-c010f906:	55                   	push   %ebp
-c010f907:	89 e5                	mov    %esp,%ebp
-c010f909:	83 ec 38             	sub    $0x38,%esp
-c010f90c:	c7 45 fc 28 00 00 00 	movl   $0x28,-0x4(%ebp)
-c010f913:	e8 50 78 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010f918:	89 04 24             	mov    %eax,(%esp)
-c010f91b:	e8 e4 7a ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
-c010f920:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c010f923:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010f926:	8b 50 10             	mov    0x10(%eax),%edx
-c010f929:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c010f92c:	89 42 20             	mov    %eax,0x20(%edx)
-c010f92f:	e8 34 78 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010f934:	89 04 24             	mov    %eax,(%esp)
-c010f937:	e8 74 7a ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
-c010f93c:	89 04 24             	mov    %eax,(%esp)
-c010f93f:	e8 b8 c1 ff ff       	call   c010bafc <__ZN14ProcessManager7NewProcEv>
-c010f944:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010f947:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
-c010f94b:	75 4a                	jne    c010f997 <__Z12ExitWaitTestv+0x91>
-c010f94d:	c7 04 24 54 32 11 c0 	movl   $0xc0113254,(%esp)
-c010f954:	e8 ef 1c 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f959:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010f95c:	8b 40 10             	mov    0x10(%eax),%eax
-c010f95f:	ff 40 20             	incl   0x20(%eax)
-c010f962:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010f965:	8b 40 10             	mov    0x10(%eax),%eax
-c010f968:	8b 40 20             	mov    0x20(%eax),%eax
-c010f96b:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010f96f:	c7 04 24 b9 31 11 c0 	movl   $0xc01131b9,(%esp)
-c010f976:	e8 cd 1c 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f97b:	e8 0a 97 ff ff       	call   c010908a <_Delay>
-c010f980:	e8 e3 77 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010f985:	89 04 24             	mov    %eax,(%esp)
-c010f988:	e8 23 7a ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
-c010f98d:	89 04 24             	mov    %eax,(%esp)
-c010f990:	e8 2d c3 ff ff       	call   c010bcc2 <__ZN14ProcessManager5SwtchEv>
-c010f995:	eb b6                	jmp    c010f94d <__Z12ExitWaitTestv+0x47>
-c010f997:	83 7d f4 01          	cmpl   $0x1,-0xc(%ebp)
-c010f99b:	0f 85 3d 01 00 00    	jne    c010fade <__Z12ExitWaitTestv+0x1d8>
-c010f9a1:	e8 c2 77 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010f9a6:	89 04 24             	mov    %eax,(%esp)
-c010f9a9:	e8 02 7a ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
-c010f9ae:	89 04 24             	mov    %eax,(%esp)
-c010f9b1:	e8 46 c1 ff ff       	call   c010bafc <__ZN14ProcessManager7NewProcEv>
-c010f9b6:	89 45 f0             	mov    %eax,-0x10(%ebp)
-c010f9b9:	83 7d f0 00          	cmpl   $0x0,-0x10(%ebp)
-c010f9bd:	0f 85 90 00 00 00    	jne    c010fa53 <__Z12ExitWaitTestv+0x14d>
-c010f9c3:	c7 04 24 f8 31 11 c0 	movl   $0xc01131f8,(%esp)
-c010f9ca:	e8 79 1c 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f9cf:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010f9d2:	8b 40 10             	mov    0x10(%eax),%eax
-c010f9d5:	ff 40 20             	incl   0x20(%eax)
-c010f9d8:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010f9db:	8b 40 10             	mov    0x10(%eax),%eax
-c010f9de:	8b 40 20             	mov    0x20(%eax),%eax
-c010f9e1:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010f9e5:	c7 04 24 76 32 11 c0 	movl   $0xc0113276,(%esp)
-c010f9ec:	e8 57 1c 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f9f1:	c7 04 24 8a 32 11 c0 	movl   $0xc011328a,(%esp)
-c010f9f8:	e8 4b 1c 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010f9fd:	e8 88 96 ff ff       	call   c010908a <_Delay>
-c010fa02:	8d 45 f0             	lea    -0x10(%ebp),%eax
-c010fa05:	89 04 24             	mov    %eax,(%esp)
-c010fa08:	e8 bb 85 ff ff       	call   c0107fc8 <__Z8lib_waitPi>
-c010fa0d:	89 45 ec             	mov    %eax,-0x14(%ebp)
-c010fa10:	83 7d ec ff          	cmpl   $0xffffffff,-0x14(%ebp)
-c010fa14:	74 09                	je     c010fa1f <__Z12ExitWaitTestv+0x119>
-c010fa16:	c7 45 e8 9f 32 11 c0 	movl   $0xc011329f,-0x18(%ebp)
-c010fa1d:	eb 07                	jmp    c010fa26 <__Z12ExitWaitTestv+0x120>
-c010fa1f:	c7 45 e8 aa 32 11 c0 	movl   $0xc01132aa,-0x18(%ebp)
-c010fa26:	8b 45 e8             	mov    -0x18(%ebp),%eax
-c010fa29:	89 44 24 10          	mov    %eax,0x10(%esp)
-c010fa2d:	8d 45 f0             	lea    -0x10(%ebp),%eax
-c010fa30:	89 44 24 0c          	mov    %eax,0xc(%esp)
-c010fa34:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c010fa37:	89 44 24 08          	mov    %eax,0x8(%esp)
-c010fa3b:	8b 45 ec             	mov    -0x14(%ebp),%eax
-c010fa3e:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010fa42:	c7 04 24 b4 32 11 c0 	movl   $0xc01132b4,(%esp)
-c010fa49:	e8 fa 1b 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010fa4e:	e9 70 ff ff ff       	jmp    c010f9c3 <__Z12ExitWaitTestv+0xbd>
-c010fa53:	83 7d f0 01          	cmpl   $0x1,-0x10(%ebp)
-c010fa57:	0f 85 81 00 00 00    	jne    c010fade <__Z12ExitWaitTestv+0x1d8>
-c010fa5d:	c7 45 ec 02 00 00 00 	movl   $0x2,-0x14(%ebp)
-c010fa64:	8d 45 ec             	lea    -0x14(%ebp),%eax
-c010fa67:	ff 08                	decl   (%eax)
-c010fa69:	83 7d ec 00          	cmpl   $0x0,-0x14(%ebp)
-c010fa6d:	74 4a                	je     c010fab9 <__Z12ExitWaitTestv+0x1b3>
-c010fa6f:	c7 04 24 ec 32 11 c0 	movl   $0xc01132ec,(%esp)
-c010fa76:	e8 cd 1b 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010fa7b:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010fa7e:	8b 40 10             	mov    0x10(%eax),%eax
-c010fa81:	ff 40 20             	incl   0x20(%eax)
-c010fa84:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010fa87:	8b 40 10             	mov    0x10(%eax),%eax
-c010fa8a:	8b 40 20             	mov    0x20(%eax),%eax
-c010fa8d:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010fa91:	c7 04 24 0e 33 11 c0 	movl   $0xc011330e,(%esp)
-c010fa98:	e8 ab 1b 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010fa9d:	e8 e8 95 ff ff       	call   c010908a <_Delay>
-c010faa2:	e8 c1 76 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010faa7:	89 04 24             	mov    %eax,(%esp)
-c010faaa:	e8 01 79 ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
-c010faaf:	89 04 24             	mov    %eax,(%esp)
-c010fab2:	e8 0b c2 ff ff       	call   c010bcc2 <__ZN14ProcessManager5SwtchEv>
-c010fab7:	eb ab                	jmp    c010fa64 <__Z12ExitWaitTestv+0x15e>
-c010fab9:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c010fabc:	8b 40 10             	mov    0x10(%eax),%eax
-c010fabf:	8b 40 04             	mov    0x4(%eax),%eax
-c010fac2:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010fac6:	c7 04 24 22 33 11 c0 	movl   $0xc0113322,(%esp)
-c010facd:	e8 76 1b 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010fad2:	c7 04 24 86 00 00 00 	movl   $0x86,(%esp)
-c010fad9:	e8 b8 84 ff ff       	call   c0107f96 <__Z8lib_exiti>
-c010fade:	b8 01 00 00 00       	mov    $0x1,%eax
-c010fae3:	c9                   	leave  
-c010fae4:	c3                   	ret    
-c010fae5:	90                   	nop    
+c010f962 <__Z12ExitWaitTestv>:
+c010f962:	55                   	push   %ebp
+c010f963:	89 e5                	mov    %esp,%ebp
+c010f965:	83 ec 38             	sub    $0x38,%esp
+c010f968:	c7 45 fc 28 00 00 00 	movl   $0x28,-0x4(%ebp)
+c010f96f:	e8 f4 77 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010f974:	89 04 24             	mov    %eax,(%esp)
+c010f977:	e8 88 7a ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
+c010f97c:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c010f97f:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010f982:	8b 50 10             	mov    0x10(%eax),%edx
+c010f985:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c010f988:	89 42 20             	mov    %eax,0x20(%edx)
+c010f98b:	e8 d8 77 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010f990:	89 04 24             	mov    %eax,(%esp)
+c010f993:	e8 18 7a ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
+c010f998:	89 04 24             	mov    %eax,(%esp)
+c010f99b:	e8 5c c1 ff ff       	call   c010bafc <__ZN14ProcessManager7NewProcEv>
+c010f9a0:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010f9a3:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
+c010f9a7:	75 4a                	jne    c010f9f3 <__Z12ExitWaitTestv+0x91>
+c010f9a9:	c7 04 24 54 32 11 c0 	movl   $0xc0113254,(%esp)
+c010f9b0:	e8 ef 1c 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f9b5:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010f9b8:	8b 40 10             	mov    0x10(%eax),%eax
+c010f9bb:	ff 40 20             	incl   0x20(%eax)
+c010f9be:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010f9c1:	8b 40 10             	mov    0x10(%eax),%eax
+c010f9c4:	8b 40 20             	mov    0x20(%eax),%eax
+c010f9c7:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010f9cb:	c7 04 24 b9 31 11 c0 	movl   $0xc01131b9,(%esp)
+c010f9d2:	e8 cd 1c 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010f9d7:	e8 ae 96 ff ff       	call   c010908a <_Delay>
+c010f9dc:	e8 87 77 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010f9e1:	89 04 24             	mov    %eax,(%esp)
+c010f9e4:	e8 c7 79 ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
+c010f9e9:	89 04 24             	mov    %eax,(%esp)
+c010f9ec:	e8 d1 c2 ff ff       	call   c010bcc2 <__ZN14ProcessManager5SwtchEv>
+c010f9f1:	eb b6                	jmp    c010f9a9 <__Z12ExitWaitTestv+0x47>
+c010f9f3:	83 7d f4 01          	cmpl   $0x1,-0xc(%ebp)
+c010f9f7:	0f 85 3d 01 00 00    	jne    c010fb3a <__Z12ExitWaitTestv+0x1d8>
+c010f9fd:	e8 66 77 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010fa02:	89 04 24             	mov    %eax,(%esp)
+c010fa05:	e8 a6 79 ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
+c010fa0a:	89 04 24             	mov    %eax,(%esp)
+c010fa0d:	e8 ea c0 ff ff       	call   c010bafc <__ZN14ProcessManager7NewProcEv>
+c010fa12:	89 45 f0             	mov    %eax,-0x10(%ebp)
+c010fa15:	83 7d f0 00          	cmpl   $0x0,-0x10(%ebp)
+c010fa19:	0f 85 90 00 00 00    	jne    c010faaf <__Z12ExitWaitTestv+0x14d>
+c010fa1f:	c7 04 24 f8 31 11 c0 	movl   $0xc01131f8,(%esp)
+c010fa26:	e8 79 1c 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010fa2b:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010fa2e:	8b 40 10             	mov    0x10(%eax),%eax
+c010fa31:	ff 40 20             	incl   0x20(%eax)
+c010fa34:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010fa37:	8b 40 10             	mov    0x10(%eax),%eax
+c010fa3a:	8b 40 20             	mov    0x20(%eax),%eax
+c010fa3d:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010fa41:	c7 04 24 76 32 11 c0 	movl   $0xc0113276,(%esp)
+c010fa48:	e8 57 1c 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010fa4d:	c7 04 24 8a 32 11 c0 	movl   $0xc011328a,(%esp)
+c010fa54:	e8 4b 1c 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010fa59:	e8 2c 96 ff ff       	call   c010908a <_Delay>
+c010fa5e:	8d 45 f0             	lea    -0x10(%ebp),%eax
+c010fa61:	89 04 24             	mov    %eax,(%esp)
+c010fa64:	e8 5f 85 ff ff       	call   c0107fc8 <__Z8lib_waitPi>
+c010fa69:	89 45 ec             	mov    %eax,-0x14(%ebp)
+c010fa6c:	83 7d ec ff          	cmpl   $0xffffffff,-0x14(%ebp)
+c010fa70:	74 09                	je     c010fa7b <__Z12ExitWaitTestv+0x119>
+c010fa72:	c7 45 e8 9f 32 11 c0 	movl   $0xc011329f,-0x18(%ebp)
+c010fa79:	eb 07                	jmp    c010fa82 <__Z12ExitWaitTestv+0x120>
+c010fa7b:	c7 45 e8 aa 32 11 c0 	movl   $0xc01132aa,-0x18(%ebp)
+c010fa82:	8b 45 e8             	mov    -0x18(%ebp),%eax
+c010fa85:	89 44 24 10          	mov    %eax,0x10(%esp)
+c010fa89:	8d 45 f0             	lea    -0x10(%ebp),%eax
+c010fa8c:	89 44 24 0c          	mov    %eax,0xc(%esp)
+c010fa90:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c010fa93:	89 44 24 08          	mov    %eax,0x8(%esp)
+c010fa97:	8b 45 ec             	mov    -0x14(%ebp),%eax
+c010fa9a:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010fa9e:	c7 04 24 b4 32 11 c0 	movl   $0xc01132b4,(%esp)
+c010faa5:	e8 fa 1b 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010faaa:	e9 70 ff ff ff       	jmp    c010fa1f <__Z12ExitWaitTestv+0xbd>
+c010faaf:	83 7d f0 01          	cmpl   $0x1,-0x10(%ebp)
+c010fab3:	0f 85 81 00 00 00    	jne    c010fb3a <__Z12ExitWaitTestv+0x1d8>
+c010fab9:	c7 45 ec 02 00 00 00 	movl   $0x2,-0x14(%ebp)
+c010fac0:	8d 45 ec             	lea    -0x14(%ebp),%eax
+c010fac3:	ff 08                	decl   (%eax)
+c010fac5:	83 7d ec 00          	cmpl   $0x0,-0x14(%ebp)
+c010fac9:	74 4a                	je     c010fb15 <__Z12ExitWaitTestv+0x1b3>
+c010facb:	c7 04 24 ec 32 11 c0 	movl   $0xc01132ec,(%esp)
+c010fad2:	e8 cd 1b 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010fad7:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010fada:	8b 40 10             	mov    0x10(%eax),%eax
+c010fadd:	ff 40 20             	incl   0x20(%eax)
+c010fae0:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010fae3:	8b 40 10             	mov    0x10(%eax),%eax
+c010fae6:	8b 40 20             	mov    0x20(%eax),%eax
+c010fae9:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010faed:	c7 04 24 0e 33 11 c0 	movl   $0xc011330e,(%esp)
+c010faf4:	e8 ab 1b 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010faf9:	e8 8c 95 ff ff       	call   c010908a <_Delay>
+c010fafe:	e8 65 76 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010fb03:	89 04 24             	mov    %eax,(%esp)
+c010fb06:	e8 a5 78 ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
+c010fb0b:	89 04 24             	mov    %eax,(%esp)
+c010fb0e:	e8 af c1 ff ff       	call   c010bcc2 <__ZN14ProcessManager5SwtchEv>
+c010fb13:	eb ab                	jmp    c010fac0 <__Z12ExitWaitTestv+0x15e>
+c010fb15:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c010fb18:	8b 40 10             	mov    0x10(%eax),%eax
+c010fb1b:	8b 40 04             	mov    0x4(%eax),%eax
+c010fb1e:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010fb22:	c7 04 24 22 33 11 c0 	movl   $0xc0113322,(%esp)
+c010fb29:	e8 76 1b 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010fb2e:	c7 04 24 86 00 00 00 	movl   $0x86,(%esp)
+c010fb35:	e8 5c 84 ff ff       	call   c0107f96 <__Z8lib_exiti>
+c010fb3a:	b8 01 00 00 00       	mov    $0x1,%eax
+c010fb3f:	c9                   	leave  
+c010fb40:	c3                   	ret    
+c010fb41:	90                   	nop    
 
-c010fae6 <__Z8ExecTestv>:
-c010fae6:	55                   	push   %ebp
-c010fae7:	89 e5                	mov    %esp,%ebp
-c010fae9:	57                   	push   %edi
-c010faea:	83 ec 34             	sub    $0x34,%esp
-c010faed:	c7 45 e8 37 33 11 c0 	movl   $0xc0113337,-0x18(%ebp)
-c010faf4:	8d 7d d8             	lea    -0x28(%ebp),%edi
-c010faf7:	fc                   	cld    
-c010faf8:	b9 0a 00 00 00       	mov    $0xa,%ecx
-c010fafd:	b0 00                	mov    $0x0,%al
-c010faff:	f3 aa                	rep stos %al,%es:(%edi)
-c010fb01:	c6 45 d8 2d          	movb   $0x2d,-0x28(%ebp)
-c010fb05:	c6 45 d9 66          	movb   $0x66,-0x27(%ebp)
-c010fb09:	c6 45 da 6e          	movb   $0x6e,-0x26(%ebp)
-c010fb0d:	c6 45 db 6f          	movb   $0x6f,-0x25(%ebp)
-c010fb11:	c6 45 dc 2d          	movb   $0x2d,-0x24(%ebp)
-c010fb15:	c6 45 dd 70          	movb   $0x70,-0x23(%ebp)
-c010fb19:	c6 45 de 77          	movb   $0x77,-0x22(%ebp)
-c010fb1d:	c6 45 df 64          	movb   $0x64,-0x21(%ebp)
-c010fb21:	8d 45 d8             	lea    -0x28(%ebp),%eax
-c010fb24:	89 45 ec             	mov    %eax,-0x14(%ebp)
-c010fb27:	c7 45 f0 00 00 00 00 	movl   $0x0,-0x10(%ebp)
-c010fb2e:	8d 45 e8             	lea    -0x18(%ebp),%eax
-c010fb31:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010fb35:	c7 04 24 3e 33 11 c0 	movl   $0xc011333e,(%esp)
-c010fb3c:	e8 15 85 ff ff       	call   c0108056 <__Z9lib_execvPcPS_>
-c010fb41:	b8 01 00 00 00       	mov    $0x1,%eax
-c010fb46:	83 c4 34             	add    $0x34,%esp
-c010fb49:	5f                   	pop    %edi
-c010fb4a:	5d                   	pop    %ebp
-c010fb4b:	c3                   	ret    
+c010fb42 <__Z8ExecTestv>:
+c010fb42:	55                   	push   %ebp
+c010fb43:	89 e5                	mov    %esp,%ebp
+c010fb45:	57                   	push   %edi
+c010fb46:	83 ec 34             	sub    $0x34,%esp
+c010fb49:	c7 45 e8 37 33 11 c0 	movl   $0xc0113337,-0x18(%ebp)
+c010fb50:	8d 7d d8             	lea    -0x28(%ebp),%edi
+c010fb53:	fc                   	cld    
+c010fb54:	b9 0a 00 00 00       	mov    $0xa,%ecx
+c010fb59:	b0 00                	mov    $0x0,%al
+c010fb5b:	f3 aa                	rep stos %al,%es:(%edi)
+c010fb5d:	c6 45 d8 2d          	movb   $0x2d,-0x28(%ebp)
+c010fb61:	c6 45 d9 66          	movb   $0x66,-0x27(%ebp)
+c010fb65:	c6 45 da 6e          	movb   $0x6e,-0x26(%ebp)
+c010fb69:	c6 45 db 6f          	movb   $0x6f,-0x25(%ebp)
+c010fb6d:	c6 45 dc 2d          	movb   $0x2d,-0x24(%ebp)
+c010fb71:	c6 45 dd 70          	movb   $0x70,-0x23(%ebp)
+c010fb75:	c6 45 de 77          	movb   $0x77,-0x22(%ebp)
+c010fb79:	c6 45 df 64          	movb   $0x64,-0x21(%ebp)
+c010fb7d:	8d 45 d8             	lea    -0x28(%ebp),%eax
+c010fb80:	89 45 ec             	mov    %eax,-0x14(%ebp)
+c010fb83:	c7 45 f0 00 00 00 00 	movl   $0x0,-0x10(%ebp)
+c010fb8a:	8d 45 e8             	lea    -0x18(%ebp),%eax
+c010fb8d:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010fb91:	c7 04 24 3e 33 11 c0 	movl   $0xc011333e,(%esp)
+c010fb98:	e8 b9 84 ff ff       	call   c0108056 <__Z9lib_execvPcPS_>
+c010fb9d:	b8 01 00 00 00       	mov    $0x1,%eax
+c010fba2:	83 c4 34             	add    $0x34,%esp
+c010fba5:	5f                   	pop    %edi
+c010fba6:	5d                   	pop    %ebp
+c010fba7:	c3                   	ret    
 
-c010fb4c <__Z12CopyFileTestPcS_>:
-c010fb4c:	55                   	push   %ebp
-c010fb4d:	89 e5                	mov    %esp,%ebp
-c010fb4f:	81 ec 38 02 00 00    	sub    $0x238,%esp
-c010fb55:	c7 45 f4 ff ff ff ff 	movl   $0xffffffff,-0xc(%ebp)
-c010fb5c:	c7 45 f0 ff ff ff ff 	movl   $0xffffffff,-0x10(%ebp)
-c010fb63:	c7 44 24 04 ff 01 00 	movl   $0x1ff,0x4(%esp)
-c010fb6a:	00 
-c010fb6b:	8b 45 0c             	mov    0xc(%ebp),%eax
-c010fb6e:	89 04 24             	mov    %eax,(%esp)
-c010fb71:	e8 48 83 ff ff       	call   c0107ebe <__Z8lib_openPcj>
-c010fb76:	89 85 e4 fd ff ff    	mov    %eax,-0x21c(%ebp)
-c010fb7c:	83 bd e4 fd ff ff 00 	cmpl   $0x0,-0x21c(%ebp)
-c010fb83:	7e 0f                	jle    c010fb94 <__Z12CopyFileTestPcS_+0x48>
-c010fb85:	c7 85 d8 fd ff ff 01 	movl   $0x1,-0x228(%ebp)
-c010fb8c:	00 00 00 
-c010fb8f:	e9 56 01 00 00       	jmp    c010fcea <__Z12CopyFileTestPcS_+0x19e>
-c010fb94:	c7 44 24 04 ff 01 00 	movl   $0x1ff,0x4(%esp)
-c010fb9b:	00 
-c010fb9c:	8b 45 08             	mov    0x8(%ebp),%eax
-c010fb9f:	89 04 24             	mov    %eax,(%esp)
-c010fba2:	e8 17 83 ff ff       	call   c0107ebe <__Z8lib_openPcj>
-c010fba7:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c010fbaa:	83 7d f4 ff          	cmpl   $0xffffffff,-0xc(%ebp)
-c010fbae:	75 1b                	jne    c010fbcb <__Z12CopyFileTestPcS_+0x7f>
-c010fbb0:	c7 04 24 49 33 11 c0 	movl   $0xc0113349,(%esp)
-c010fbb7:	e8 8c 1a 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010fbbc:	c7 85 d8 fd ff ff 00 	movl   $0x0,-0x228(%ebp)
-c010fbc3:	00 00 00 
-c010fbc6:	e9 1f 01 00 00       	jmp    c010fcea <__Z12CopyFileTestPcS_+0x19e>
-c010fbcb:	c7 44 24 04 ff 01 00 	movl   $0x1ff,0x4(%esp)
-c010fbd2:	00 
-c010fbd3:	8b 45 0c             	mov    0xc(%ebp),%eax
-c010fbd6:	89 04 24             	mov    %eax,(%esp)
-c010fbd9:	e8 aa 82 ff ff       	call   c0107e88 <__Z9lib_creatPcj>
-c010fbde:	89 45 f0             	mov    %eax,-0x10(%ebp)
-c010fbe1:	83 7d f0 ff          	cmpl   $0xffffffff,-0x10(%ebp)
-c010fbe5:	75 1b                	jne    c010fc02 <__Z12CopyFileTestPcS_+0xb6>
-c010fbe7:	c7 04 24 63 33 11 c0 	movl   $0xc0113363,(%esp)
-c010fbee:	e8 55 1a 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010fbf3:	c7 85 d8 fd ff ff 00 	movl   $0x0,-0x228(%ebp)
-c010fbfa:	00 00 00 
-c010fbfd:	e9 e8 00 00 00       	jmp    c010fcea <__Z12CopyFileTestPcS_+0x19e>
-c010fc02:	c7 85 e0 fd ff ff 00 	movl   $0x0,-0x220(%ebp)
-c010fc09:	00 00 00 
-c010fc0c:	c7 85 dc fd ff ff 00 	movl   $0x0,-0x224(%ebp)
-c010fc13:	00 00 00 
-c010fc16:	c7 44 24 08 00 02 00 	movl   $0x200,0x8(%esp)
-c010fc1d:	00 
-c010fc1e:	8d 85 e8 fd ff ff    	lea    -0x218(%ebp),%eax
-c010fc24:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010fc28:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010fc2b:	89 04 24             	mov    %eax,(%esp)
-c010fc2e:	e8 f3 82 ff ff       	call   c0107f26 <__Z8lib_readiPci>
-c010fc33:	89 85 e0 fd ff ff    	mov    %eax,-0x220(%ebp)
-c010fc39:	83 bd e0 fd ff ff 00 	cmpl   $0x0,-0x220(%ebp)
-c010fc40:	74 73                	je     c010fcb5 <__Z12CopyFileTestPcS_+0x169>
-c010fc42:	83 bd e0 fd ff ff 00 	cmpl   $0x0,-0x220(%ebp)
-c010fc49:	79 1b                	jns    c010fc66 <__Z12CopyFileTestPcS_+0x11a>
-c010fc4b:	c7 04 24 7d 33 11 c0 	movl   $0xc011337d,(%esp)
-c010fc52:	e8 f1 19 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010fc57:	c7 85 d8 fd ff ff 00 	movl   $0x0,-0x228(%ebp)
-c010fc5e:	00 00 00 
-c010fc61:	e9 84 00 00 00       	jmp    c010fcea <__Z12CopyFileTestPcS_+0x19e>
-c010fc66:	8b 85 e0 fd ff ff    	mov    -0x220(%ebp),%eax
-c010fc6c:	89 44 24 08          	mov    %eax,0x8(%esp)
-c010fc70:	8d 85 e8 fd ff ff    	lea    -0x218(%ebp),%eax
-c010fc76:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010fc7a:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c010fc7d:	89 04 24             	mov    %eax,(%esp)
-c010fc80:	e8 d9 82 ff ff       	call   c0107f5e <__Z9lib_writeiPci>
-c010fc85:	89 85 dc fd ff ff    	mov    %eax,-0x224(%ebp)
-c010fc8b:	8b 85 e0 fd ff ff    	mov    -0x220(%ebp),%eax
-c010fc91:	3b 85 dc fd ff ff    	cmp    -0x224(%ebp),%eax
-c010fc97:	0f 84 79 ff ff ff    	je     c010fc16 <__Z12CopyFileTestPcS_+0xca>
-c010fc9d:	c7 04 24 95 33 11 c0 	movl   $0xc0113395,(%esp)
-c010fca4:	e8 9f 19 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010fca9:	c7 85 d8 fd ff ff 00 	movl   $0x0,-0x228(%ebp)
-c010fcb0:	00 00 00 
-c010fcb3:	eb 35                	jmp    c010fcea <__Z12CopyFileTestPcS_+0x19e>
-c010fcb5:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010fcb8:	89 04 24             	mov    %eax,(%esp)
-c010fcbb:	e8 34 82 ff ff       	call   c0107ef4 <__Z9lib_closei>
-c010fcc0:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c010fcc3:	89 04 24             	mov    %eax,(%esp)
-c010fcc6:	e8 29 82 ff ff       	call   c0107ef4 <__Z9lib_closei>
-c010fccb:	e8 98 74 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010fcd0:	89 04 24             	mov    %eax,(%esp)
-c010fcd3:	e8 14 77 ff ff       	call   c01073ec <__ZN6Kernel13GetFileSystemEv>
-c010fcd8:	89 04 24             	mov    %eax,(%esp)
-c010fcdb:	e8 d0 55 ff ff       	call   c01052b0 <__ZN10FileSystem6UpdateEv>
-c010fce0:	c7 85 d8 fd ff ff 01 	movl   $0x1,-0x228(%ebp)
-c010fce7:	00 00 00 
-c010fcea:	8b 85 d8 fd ff ff    	mov    -0x228(%ebp),%eax
-c010fcf0:	c9                   	leave  
-c010fcf1:	c3                   	ret    
+c010fba8 <__Z12CopyFileTestPcS_>:
+c010fba8:	55                   	push   %ebp
+c010fba9:	89 e5                	mov    %esp,%ebp
+c010fbab:	81 ec 38 02 00 00    	sub    $0x238,%esp
+c010fbb1:	c7 45 f4 ff ff ff ff 	movl   $0xffffffff,-0xc(%ebp)
+c010fbb8:	c7 45 f0 ff ff ff ff 	movl   $0xffffffff,-0x10(%ebp)
+c010fbbf:	c7 44 24 04 ff 01 00 	movl   $0x1ff,0x4(%esp)
+c010fbc6:	00 
+c010fbc7:	8b 45 0c             	mov    0xc(%ebp),%eax
+c010fbca:	89 04 24             	mov    %eax,(%esp)
+c010fbcd:	e8 ec 82 ff ff       	call   c0107ebe <__Z8lib_openPcj>
+c010fbd2:	89 85 e4 fd ff ff    	mov    %eax,-0x21c(%ebp)
+c010fbd8:	83 bd e4 fd ff ff 00 	cmpl   $0x0,-0x21c(%ebp)
+c010fbdf:	7e 0f                	jle    c010fbf0 <__Z12CopyFileTestPcS_+0x48>
+c010fbe1:	c7 85 d8 fd ff ff 01 	movl   $0x1,-0x228(%ebp)
+c010fbe8:	00 00 00 
+c010fbeb:	e9 56 01 00 00       	jmp    c010fd46 <__Z12CopyFileTestPcS_+0x19e>
+c010fbf0:	c7 44 24 04 ff 01 00 	movl   $0x1ff,0x4(%esp)
+c010fbf7:	00 
+c010fbf8:	8b 45 08             	mov    0x8(%ebp),%eax
+c010fbfb:	89 04 24             	mov    %eax,(%esp)
+c010fbfe:	e8 bb 82 ff ff       	call   c0107ebe <__Z8lib_openPcj>
+c010fc03:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c010fc06:	83 7d f4 ff          	cmpl   $0xffffffff,-0xc(%ebp)
+c010fc0a:	75 1b                	jne    c010fc27 <__Z12CopyFileTestPcS_+0x7f>
+c010fc0c:	c7 04 24 49 33 11 c0 	movl   $0xc0113349,(%esp)
+c010fc13:	e8 8c 1a 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010fc18:	c7 85 d8 fd ff ff 00 	movl   $0x0,-0x228(%ebp)
+c010fc1f:	00 00 00 
+c010fc22:	e9 1f 01 00 00       	jmp    c010fd46 <__Z12CopyFileTestPcS_+0x19e>
+c010fc27:	c7 44 24 04 ff 01 00 	movl   $0x1ff,0x4(%esp)
+c010fc2e:	00 
+c010fc2f:	8b 45 0c             	mov    0xc(%ebp),%eax
+c010fc32:	89 04 24             	mov    %eax,(%esp)
+c010fc35:	e8 4e 82 ff ff       	call   c0107e88 <__Z9lib_creatPcj>
+c010fc3a:	89 45 f0             	mov    %eax,-0x10(%ebp)
+c010fc3d:	83 7d f0 ff          	cmpl   $0xffffffff,-0x10(%ebp)
+c010fc41:	75 1b                	jne    c010fc5e <__Z12CopyFileTestPcS_+0xb6>
+c010fc43:	c7 04 24 63 33 11 c0 	movl   $0xc0113363,(%esp)
+c010fc4a:	e8 55 1a 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010fc4f:	c7 85 d8 fd ff ff 00 	movl   $0x0,-0x228(%ebp)
+c010fc56:	00 00 00 
+c010fc59:	e9 e8 00 00 00       	jmp    c010fd46 <__Z12CopyFileTestPcS_+0x19e>
+c010fc5e:	c7 85 e0 fd ff ff 00 	movl   $0x0,-0x220(%ebp)
+c010fc65:	00 00 00 
+c010fc68:	c7 85 dc fd ff ff 00 	movl   $0x0,-0x224(%ebp)
+c010fc6f:	00 00 00 
+c010fc72:	c7 44 24 08 00 02 00 	movl   $0x200,0x8(%esp)
+c010fc79:	00 
+c010fc7a:	8d 85 e8 fd ff ff    	lea    -0x218(%ebp),%eax
+c010fc80:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010fc84:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010fc87:	89 04 24             	mov    %eax,(%esp)
+c010fc8a:	e8 97 82 ff ff       	call   c0107f26 <__Z8lib_readiPci>
+c010fc8f:	89 85 e0 fd ff ff    	mov    %eax,-0x220(%ebp)
+c010fc95:	83 bd e0 fd ff ff 00 	cmpl   $0x0,-0x220(%ebp)
+c010fc9c:	74 73                	je     c010fd11 <__Z12CopyFileTestPcS_+0x169>
+c010fc9e:	83 bd e0 fd ff ff 00 	cmpl   $0x0,-0x220(%ebp)
+c010fca5:	79 1b                	jns    c010fcc2 <__Z12CopyFileTestPcS_+0x11a>
+c010fca7:	c7 04 24 7d 33 11 c0 	movl   $0xc011337d,(%esp)
+c010fcae:	e8 f1 19 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010fcb3:	c7 85 d8 fd ff ff 00 	movl   $0x0,-0x228(%ebp)
+c010fcba:	00 00 00 
+c010fcbd:	e9 84 00 00 00       	jmp    c010fd46 <__Z12CopyFileTestPcS_+0x19e>
+c010fcc2:	8b 85 e0 fd ff ff    	mov    -0x220(%ebp),%eax
+c010fcc8:	89 44 24 08          	mov    %eax,0x8(%esp)
+c010fccc:	8d 85 e8 fd ff ff    	lea    -0x218(%ebp),%eax
+c010fcd2:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010fcd6:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c010fcd9:	89 04 24             	mov    %eax,(%esp)
+c010fcdc:	e8 7d 82 ff ff       	call   c0107f5e <__Z9lib_writeiPci>
+c010fce1:	89 85 dc fd ff ff    	mov    %eax,-0x224(%ebp)
+c010fce7:	8b 85 e0 fd ff ff    	mov    -0x220(%ebp),%eax
+c010fced:	3b 85 dc fd ff ff    	cmp    -0x224(%ebp),%eax
+c010fcf3:	0f 84 79 ff ff ff    	je     c010fc72 <__Z12CopyFileTestPcS_+0xca>
+c010fcf9:	c7 04 24 95 33 11 c0 	movl   $0xc0113395,(%esp)
+c010fd00:	e8 9f 19 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010fd05:	c7 85 d8 fd ff ff 00 	movl   $0x0,-0x228(%ebp)
+c010fd0c:	00 00 00 
+c010fd0f:	eb 35                	jmp    c010fd46 <__Z12CopyFileTestPcS_+0x19e>
+c010fd11:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010fd14:	89 04 24             	mov    %eax,(%esp)
+c010fd17:	e8 d8 81 ff ff       	call   c0107ef4 <__Z9lib_closei>
+c010fd1c:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c010fd1f:	89 04 24             	mov    %eax,(%esp)
+c010fd22:	e8 cd 81 ff ff       	call   c0107ef4 <__Z9lib_closei>
+c010fd27:	e8 3c 74 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010fd2c:	89 04 24             	mov    %eax,(%esp)
+c010fd2f:	e8 b8 76 ff ff       	call   c01073ec <__ZN6Kernel13GetFileSystemEv>
+c010fd34:	89 04 24             	mov    %eax,(%esp)
+c010fd37:	e8 74 55 ff ff       	call   c01052b0 <__ZN10FileSystem6UpdateEv>
+c010fd3c:	c7 85 d8 fd ff ff 01 	movl   $0x1,-0x228(%ebp)
+c010fd43:	00 00 00 
+c010fd46:	8b 85 d8 fd ff ff    	mov    -0x228(%ebp),%eax
+c010fd4c:	c9                   	leave  
+c010fd4d:	c3                   	ret    
 
-c010fcf2 <__Z14PrepareExeFilev>:
-c010fcf2:	55                   	push   %ebp
-c010fcf3:	89 e5                	mov    %esp,%ebp
-c010fcf5:	57                   	push   %edi
-c010fcf6:	81 ec 94 00 00 00    	sub    $0x94,%esp
-c010fcfc:	c7 45 f4 38 4a 00 00 	movl   $0x4a38,-0xc(%ebp)
-c010fd03:	e8 60 74 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010fd08:	89 04 24             	mov    %eax,(%esp)
-c010fd0b:	e8 c4 76 ff ff       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
-c010fd10:	89 45 ec             	mov    %eax,-0x14(%ebp)
-c010fd13:	e8 50 74 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010fd18:	89 04 24             	mov    %eax,(%esp)
-c010fd1b:	e8 e4 76 ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
-c010fd20:	89 45 e8             	mov    %eax,-0x18(%ebp)
-c010fd23:	8d 7d b8             	lea    -0x48(%ebp),%edi
-c010fd26:	fc                   	cld    
-c010fd27:	ba 00 00 00 00       	mov    $0x0,%edx
-c010fd2c:	b8 0a 00 00 00       	mov    $0xa,%eax
-c010fd31:	89 c1                	mov    %eax,%ecx
-c010fd33:	89 d0                	mov    %edx,%eax
-c010fd35:	f3 ab                	rep stos %eax,%es:(%edi)
-c010fd37:	c7 45 b8 ae 33 11 c0 	movl   $0xc01133ae,-0x48(%ebp)
-c010fd3e:	c7 45 bc 3e 33 11 c0 	movl   $0xc011333e,-0x44(%ebp)
-c010fd45:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c010fd48:	89 44 24 08          	mov    %eax,0x8(%esp)
-c010fd4c:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
-c010fd53:	00 
-c010fd54:	8b 45 ec             	mov    -0x14(%ebp),%eax
-c010fd57:	89 04 24             	mov    %eax,(%esp)
-c010fd5a:	e8 d1 11 ff ff       	call   c0100f30 <__ZN13BufferManager5BreadEsi>
-c010fd5f:	89 45 f0             	mov    %eax,-0x10(%ebp)
-c010fd62:	c7 45 b4 00 00 00 00 	movl   $0x0,-0x4c(%ebp)
-c010fd69:	c7 44 24 08 02 00 00 	movl   $0x2,0x8(%esp)
-c010fd70:	00 
-c010fd71:	8d 45 a8             	lea    -0x58(%ebp),%eax
-c010fd74:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010fd78:	8b 55 f0             	mov    -0x10(%ebp),%edx
-c010fd7b:	8b 45 b4             	mov    -0x4c(%ebp),%eax
-c010fd7e:	c1 e0 03             	shl    $0x3,%eax
-c010fd81:	03 42 20             	add    0x20(%edx),%eax
-c010fd84:	89 04 24             	mov    %eax,(%esp)
-c010fd87:	e8 5c 16 00 00       	call   c01113e8 <__ZN7Utility9DWordCopyEPiS0_i>
-c010fd8c:	83 7d a8 00          	cmpl   $0x0,-0x58(%ebp)
-c010fd90:	74 06                	je     c010fd98 <__Z14PrepareExeFilev+0xa6>
-c010fd92:	83 7d ac 00          	cmpl   $0x0,-0x54(%ebp)
-c010fd96:	75 53                	jne    c010fdeb <__Z14PrepareExeFilev+0xf9>
-c010fd98:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c010fd9b:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010fd9f:	8b 45 ec             	mov    -0x14(%ebp),%eax
-c010fda2:	89 04 24             	mov    %eax,(%esp)
-c010fda5:	e8 ee 0f ff ff       	call   c0100d98 <__ZN13BufferManager6BrelseEP3Buf>
-c010fdaa:	e8 8d 18 00 00       	call   c011163c <__ZN8Diagnose8TraceOffEv>
-c010fdaf:	e8 b4 73 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010fdb4:	89 04 24             	mov    %eax,(%esp)
-c010fdb7:	e8 30 76 ff ff       	call   c01073ec <__ZN6Kernel13GetFileSystemEv>
-c010fdbc:	89 04 24             	mov    %eax,(%esp)
-c010fdbf:	e8 ec 54 ff ff       	call   c01052b0 <__ZN10FileSystem6UpdateEv>
-c010fdc4:	e8 9f 73 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c010fdc9:	89 04 24             	mov    %eax,(%esp)
-c010fdcc:	e8 03 76 ff ff       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
-c010fdd1:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
-c010fdd8:	00 
-c010fdd9:	89 04 24             	mov    %eax,(%esp)
-c010fddc:	e8 f5 14 ff ff       	call   c01012d6 <__ZN13BufferManager6BflushEs>
-c010fde1:	e8 4a 18 00 00       	call   c0111630 <__ZN8Diagnose7TraceOnEv>
-c010fde6:	e9 f2 01 00 00       	jmp    c010ffdd <__Z14PrepareExeFilev+0x2eb>
-c010fdeb:	c7 45 a4 ff ff ff ff 	movl   $0xffffffff,-0x5c(%ebp)
-c010fdf2:	c7 44 24 04 ff 01 00 	movl   $0x1ff,0x4(%esp)
-c010fdf9:	00 
-c010fdfa:	8b 45 b4             	mov    -0x4c(%ebp),%eax
-c010fdfd:	8b 44 85 b8          	mov    -0x48(%ebp,%eax,4),%eax
-c010fe01:	89 04 24             	mov    %eax,(%esp)
-c010fe04:	e8 7f 80 ff ff       	call   c0107e88 <__Z9lib_creatPcj>
-c010fe09:	89 45 a4             	mov    %eax,-0x5c(%ebp)
-c010fe0c:	8d 45 b4             	lea    -0x4c(%ebp),%eax
-c010fe0f:	ff 00                	incl   (%eax)
-c010fe11:	8b 45 a8             	mov    -0x58(%ebp),%eax
-c010fe14:	89 45 a0             	mov    %eax,-0x60(%ebp)
-c010fe17:	8b 45 ac             	mov    -0x54(%ebp),%eax
-c010fe1a:	89 45 9c             	mov    %eax,-0x64(%ebp)
-c010fe1d:	8b 45 9c             	mov    -0x64(%ebp),%eax
-c010fe20:	89 44 24 08          	mov    %eax,0x8(%esp)
-c010fe24:	8b 45 a0             	mov    -0x60(%ebp),%eax
-c010fe27:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010fe2b:	c7 04 24 bd 33 11 c0 	movl   $0xc01133bd,(%esp)
-c010fe32:	e8 11 18 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010fe37:	c7 45 98 00 00 00 00 	movl   $0x0,-0x68(%ebp)
-c010fe3e:	8b 45 9c             	mov    -0x64(%ebp),%eax
-c010fe41:	89 45 8c             	mov    %eax,-0x74(%ebp)
-c010fe44:	83 7d 8c 00          	cmpl   $0x0,-0x74(%ebp)
-c010fe48:	79 07                	jns    c010fe51 <__Z14PrepareExeFilev+0x15f>
-c010fe4a:	81 45 8c ff 01 00 00 	addl   $0x1ff,-0x74(%ebp)
-c010fe51:	8b 45 8c             	mov    -0x74(%ebp),%eax
-c010fe54:	c1 f8 09             	sar    $0x9,%eax
-c010fe57:	3b 45 98             	cmp    -0x68(%ebp),%eax
-c010fe5a:	0f 8e 8a 00 00 00    	jle    c010feea <__Z14PrepareExeFilev+0x1f8>
-c010fe60:	8b 45 98             	mov    -0x68(%ebp),%eax
-c010fe63:	03 45 a0             	add    -0x60(%ebp),%eax
-c010fe66:	89 44 24 08          	mov    %eax,0x8(%esp)
-c010fe6a:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
-c010fe71:	00 
-c010fe72:	8b 45 ec             	mov    -0x14(%ebp),%eax
-c010fe75:	89 04 24             	mov    %eax,(%esp)
-c010fe78:	e8 b3 10 ff ff       	call   c0100f30 <__ZN13BufferManager5BreadEsi>
-c010fe7d:	89 45 94             	mov    %eax,-0x6c(%ebp)
-c010fe80:	c7 44 24 08 00 02 00 	movl   $0x200,0x8(%esp)
-c010fe87:	00 
-c010fe88:	8b 45 94             	mov    -0x6c(%ebp),%eax
-c010fe8b:	8b 40 20             	mov    0x20(%eax),%eax
-c010fe8e:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010fe92:	8b 45 a4             	mov    -0x5c(%ebp),%eax
-c010fe95:	89 04 24             	mov    %eax,(%esp)
-c010fe98:	e8 c1 80 ff ff       	call   c0107f5e <__Z9lib_writeiPci>
-c010fe9d:	89 45 90             	mov    %eax,-0x70(%ebp)
-c010fea0:	8b 45 94             	mov    -0x6c(%ebp),%eax
-c010fea3:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010fea7:	8b 45 ec             	mov    -0x14(%ebp),%eax
-c010feaa:	89 04 24             	mov    %eax,(%esp)
-c010fead:	e8 e6 0e ff ff       	call   c0100d98 <__ZN13BufferManager6BrelseEP3Buf>
-c010feb2:	81 7d 90 00 02 00 00 	cmpl   $0x200,-0x70(%ebp)
-c010feb9:	74 25                	je     c010fee0 <__Z14PrepareExeFilev+0x1ee>
-c010febb:	8b 45 e8             	mov    -0x18(%ebp),%eax
-c010febe:	8b 80 a8 01 00 00    	mov    0x1a8(%eax),%eax
-c010fec4:	89 44 24 08          	mov    %eax,0x8(%esp)
-c010fec8:	8b 45 90             	mov    -0x70(%ebp),%eax
-c010fecb:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010fecf:	c7 04 24 00 31 11 c0 	movl   $0xc0113100,(%esp)
-c010fed6:	e8 6d 17 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010fedb:	e9 fd 00 00 00       	jmp    c010ffdd <__Z14PrepareExeFilev+0x2eb>
-c010fee0:	8d 45 98             	lea    -0x68(%ebp),%eax
-c010fee3:	ff 00                	incl   (%eax)
-c010fee5:	e9 54 ff ff ff       	jmp    c010fe3e <__Z14PrepareExeFilev+0x14c>
-c010feea:	8b 45 9c             	mov    -0x64(%ebp),%eax
-c010feed:	25 ff 01 00 00       	and    $0x1ff,%eax
-c010fef2:	85 c0                	test   %eax,%eax
-c010fef4:	0f 84 d3 00 00 00    	je     c010ffcd <__Z14PrepareExeFilev+0x2db>
-c010fefa:	8b 45 98             	mov    -0x68(%ebp),%eax
-c010fefd:	03 45 a0             	add    -0x60(%ebp),%eax
-c010ff00:	89 44 24 08          	mov    %eax,0x8(%esp)
-c010ff04:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
-c010ff0b:	00 
-c010ff0c:	8b 45 ec             	mov    -0x14(%ebp),%eax
-c010ff0f:	89 04 24             	mov    %eax,(%esp)
-c010ff12:	e8 19 10 ff ff       	call   c0100f30 <__ZN13BufferManager5BreadEsi>
-c010ff17:	89 45 94             	mov    %eax,-0x6c(%ebp)
-c010ff1a:	8b 55 9c             	mov    -0x64(%ebp),%edx
-c010ff1d:	89 55 88             	mov    %edx,-0x78(%ebp)
-c010ff20:	8b 45 88             	mov    -0x78(%ebp),%eax
-c010ff23:	89 45 84             	mov    %eax,-0x7c(%ebp)
-c010ff26:	83 7d 84 00          	cmpl   $0x0,-0x7c(%ebp)
-c010ff2a:	79 07                	jns    c010ff33 <__Z14PrepareExeFilev+0x241>
-c010ff2c:	81 45 84 ff 01 00 00 	addl   $0x1ff,-0x7c(%ebp)
-c010ff33:	8b 45 84             	mov    -0x7c(%ebp),%eax
-c010ff36:	c1 f8 09             	sar    $0x9,%eax
-c010ff39:	c1 e0 09             	shl    $0x9,%eax
-c010ff3c:	8b 55 88             	mov    -0x78(%ebp),%edx
-c010ff3f:	29 c2                	sub    %eax,%edx
-c010ff41:	89 d0                	mov    %edx,%eax
-c010ff43:	89 44 24 08          	mov    %eax,0x8(%esp)
-c010ff47:	8b 45 94             	mov    -0x6c(%ebp),%eax
-c010ff4a:	8b 40 20             	mov    0x20(%eax),%eax
-c010ff4d:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010ff51:	8b 45 a4             	mov    -0x5c(%ebp),%eax
-c010ff54:	89 04 24             	mov    %eax,(%esp)
-c010ff57:	e8 02 80 ff ff       	call   c0107f5e <__Z9lib_writeiPci>
-c010ff5c:	89 45 90             	mov    %eax,-0x70(%ebp)
-c010ff5f:	8b 45 94             	mov    -0x6c(%ebp),%eax
-c010ff62:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010ff66:	8b 45 ec             	mov    -0x14(%ebp),%eax
-c010ff69:	89 04 24             	mov    %eax,(%esp)
-c010ff6c:	e8 27 0e ff ff       	call   c0100d98 <__ZN13BufferManager6BrelseEP3Buf>
-c010ff71:	8b 45 9c             	mov    -0x64(%ebp),%eax
-c010ff74:	89 45 80             	mov    %eax,-0x80(%ebp)
-c010ff77:	8b 55 80             	mov    -0x80(%ebp),%edx
-c010ff7a:	89 95 7c ff ff ff    	mov    %edx,-0x84(%ebp)
-c010ff80:	83 bd 7c ff ff ff 00 	cmpl   $0x0,-0x84(%ebp)
-c010ff87:	79 0a                	jns    c010ff93 <__Z14PrepareExeFilev+0x2a1>
-c010ff89:	81 85 7c ff ff ff ff 	addl   $0x1ff,-0x84(%ebp)
-c010ff90:	01 00 00 
-c010ff93:	8b 85 7c ff ff ff    	mov    -0x84(%ebp),%eax
-c010ff99:	c1 f8 09             	sar    $0x9,%eax
-c010ff9c:	c1 e0 09             	shl    $0x9,%eax
-c010ff9f:	8b 55 80             	mov    -0x80(%ebp),%edx
-c010ffa2:	29 c2                	sub    %eax,%edx
-c010ffa4:	89 d0                	mov    %edx,%eax
-c010ffa6:	3b 45 90             	cmp    -0x70(%ebp),%eax
-c010ffa9:	74 22                	je     c010ffcd <__Z14PrepareExeFilev+0x2db>
-c010ffab:	8b 45 e8             	mov    -0x18(%ebp),%eax
-c010ffae:	8b 80 a8 01 00 00    	mov    0x1a8(%eax),%eax
-c010ffb4:	89 44 24 08          	mov    %eax,0x8(%esp)
-c010ffb8:	8b 45 90             	mov    -0x70(%ebp),%eax
-c010ffbb:	89 44 24 04          	mov    %eax,0x4(%esp)
-c010ffbf:	c7 04 24 00 31 11 c0 	movl   $0xc0113100,(%esp)
-c010ffc6:	e8 7d 16 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c010ffcb:	eb 10                	jmp    c010ffdd <__Z14PrepareExeFilev+0x2eb>
-c010ffcd:	8b 45 a4             	mov    -0x5c(%ebp),%eax
-c010ffd0:	89 04 24             	mov    %eax,(%esp)
-c010ffd3:	e8 1c 7f ff ff       	call   c0107ef4 <__Z9lib_closei>
-c010ffd8:	e9 8c fd ff ff       	jmp    c010fd69 <__Z14PrepareExeFilev+0x77>
-c010ffdd:	81 c4 94 00 00 00    	add    $0x94,%esp
-c010ffe3:	5f                   	pop    %edi
-c010ffe4:	5d                   	pop    %ebp
-c010ffe5:	c3                   	ret    
+c010fd4e <__Z14PrepareExeFilev>:
+c010fd4e:	55                   	push   %ebp
+c010fd4f:	89 e5                	mov    %esp,%ebp
+c010fd51:	57                   	push   %edi
+c010fd52:	81 ec 94 00 00 00    	sub    $0x94,%esp
+c010fd58:	c7 45 f4 38 4a 00 00 	movl   $0x4a38,-0xc(%ebp)
+c010fd5f:	e8 04 74 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010fd64:	89 04 24             	mov    %eax,(%esp)
+c010fd67:	e8 68 76 ff ff       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
+c010fd6c:	89 45 ec             	mov    %eax,-0x14(%ebp)
+c010fd6f:	e8 f4 73 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010fd74:	89 04 24             	mov    %eax,(%esp)
+c010fd77:	e8 88 76 ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
+c010fd7c:	89 45 e8             	mov    %eax,-0x18(%ebp)
+c010fd7f:	8d 7d b8             	lea    -0x48(%ebp),%edi
+c010fd82:	fc                   	cld    
+c010fd83:	ba 00 00 00 00       	mov    $0x0,%edx
+c010fd88:	b8 0a 00 00 00       	mov    $0xa,%eax
+c010fd8d:	89 c1                	mov    %eax,%ecx
+c010fd8f:	89 d0                	mov    %edx,%eax
+c010fd91:	f3 ab                	rep stos %eax,%es:(%edi)
+c010fd93:	c7 45 b8 ae 33 11 c0 	movl   $0xc01133ae,-0x48(%ebp)
+c010fd9a:	c7 45 bc 3e 33 11 c0 	movl   $0xc011333e,-0x44(%ebp)
+c010fda1:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c010fda4:	89 44 24 08          	mov    %eax,0x8(%esp)
+c010fda8:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
+c010fdaf:	00 
+c010fdb0:	8b 45 ec             	mov    -0x14(%ebp),%eax
+c010fdb3:	89 04 24             	mov    %eax,(%esp)
+c010fdb6:	e8 75 11 ff ff       	call   c0100f30 <__ZN13BufferManager5BreadEsi>
+c010fdbb:	89 45 f0             	mov    %eax,-0x10(%ebp)
+c010fdbe:	c7 45 b4 00 00 00 00 	movl   $0x0,-0x4c(%ebp)
+c010fdc5:	c7 44 24 08 02 00 00 	movl   $0x2,0x8(%esp)
+c010fdcc:	00 
+c010fdcd:	8d 45 a8             	lea    -0x58(%ebp),%eax
+c010fdd0:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010fdd4:	8b 55 f0             	mov    -0x10(%ebp),%edx
+c010fdd7:	8b 45 b4             	mov    -0x4c(%ebp),%eax
+c010fdda:	c1 e0 03             	shl    $0x3,%eax
+c010fddd:	03 42 20             	add    0x20(%edx),%eax
+c010fde0:	89 04 24             	mov    %eax,(%esp)
+c010fde3:	e8 5c 16 00 00       	call   c0111444 <__ZN7Utility9DWordCopyEPiS0_i>
+c010fde8:	83 7d a8 00          	cmpl   $0x0,-0x58(%ebp)
+c010fdec:	74 06                	je     c010fdf4 <__Z14PrepareExeFilev+0xa6>
+c010fdee:	83 7d ac 00          	cmpl   $0x0,-0x54(%ebp)
+c010fdf2:	75 53                	jne    c010fe47 <__Z14PrepareExeFilev+0xf9>
+c010fdf4:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c010fdf7:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010fdfb:	8b 45 ec             	mov    -0x14(%ebp),%eax
+c010fdfe:	89 04 24             	mov    %eax,(%esp)
+c010fe01:	e8 92 0f ff ff       	call   c0100d98 <__ZN13BufferManager6BrelseEP3Buf>
+c010fe06:	e8 8d 18 00 00       	call   c0111698 <__ZN8Diagnose8TraceOffEv>
+c010fe0b:	e8 58 73 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010fe10:	89 04 24             	mov    %eax,(%esp)
+c010fe13:	e8 d4 75 ff ff       	call   c01073ec <__ZN6Kernel13GetFileSystemEv>
+c010fe18:	89 04 24             	mov    %eax,(%esp)
+c010fe1b:	e8 90 54 ff ff       	call   c01052b0 <__ZN10FileSystem6UpdateEv>
+c010fe20:	e8 43 73 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c010fe25:	89 04 24             	mov    %eax,(%esp)
+c010fe28:	e8 a7 75 ff ff       	call   c01073d4 <__ZN6Kernel16GetBufferManagerEv>
+c010fe2d:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
+c010fe34:	00 
+c010fe35:	89 04 24             	mov    %eax,(%esp)
+c010fe38:	e8 99 14 ff ff       	call   c01012d6 <__ZN13BufferManager6BflushEs>
+c010fe3d:	e8 4a 18 00 00       	call   c011168c <__ZN8Diagnose7TraceOnEv>
+c010fe42:	e9 f2 01 00 00       	jmp    c0110039 <__Z14PrepareExeFilev+0x2eb>
+c010fe47:	c7 45 a4 ff ff ff ff 	movl   $0xffffffff,-0x5c(%ebp)
+c010fe4e:	c7 44 24 04 ff 01 00 	movl   $0x1ff,0x4(%esp)
+c010fe55:	00 
+c010fe56:	8b 45 b4             	mov    -0x4c(%ebp),%eax
+c010fe59:	8b 44 85 b8          	mov    -0x48(%ebp,%eax,4),%eax
+c010fe5d:	89 04 24             	mov    %eax,(%esp)
+c010fe60:	e8 23 80 ff ff       	call   c0107e88 <__Z9lib_creatPcj>
+c010fe65:	89 45 a4             	mov    %eax,-0x5c(%ebp)
+c010fe68:	8d 45 b4             	lea    -0x4c(%ebp),%eax
+c010fe6b:	ff 00                	incl   (%eax)
+c010fe6d:	8b 45 a8             	mov    -0x58(%ebp),%eax
+c010fe70:	89 45 a0             	mov    %eax,-0x60(%ebp)
+c010fe73:	8b 45 ac             	mov    -0x54(%ebp),%eax
+c010fe76:	89 45 9c             	mov    %eax,-0x64(%ebp)
+c010fe79:	8b 45 9c             	mov    -0x64(%ebp),%eax
+c010fe7c:	89 44 24 08          	mov    %eax,0x8(%esp)
+c010fe80:	8b 45 a0             	mov    -0x60(%ebp),%eax
+c010fe83:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010fe87:	c7 04 24 bd 33 11 c0 	movl   $0xc01133bd,(%esp)
+c010fe8e:	e8 11 18 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010fe93:	c7 45 98 00 00 00 00 	movl   $0x0,-0x68(%ebp)
+c010fe9a:	8b 45 9c             	mov    -0x64(%ebp),%eax
+c010fe9d:	89 45 8c             	mov    %eax,-0x74(%ebp)
+c010fea0:	83 7d 8c 00          	cmpl   $0x0,-0x74(%ebp)
+c010fea4:	79 07                	jns    c010fead <__Z14PrepareExeFilev+0x15f>
+c010fea6:	81 45 8c ff 01 00 00 	addl   $0x1ff,-0x74(%ebp)
+c010fead:	8b 45 8c             	mov    -0x74(%ebp),%eax
+c010feb0:	c1 f8 09             	sar    $0x9,%eax
+c010feb3:	3b 45 98             	cmp    -0x68(%ebp),%eax
+c010feb6:	0f 8e 8a 00 00 00    	jle    c010ff46 <__Z14PrepareExeFilev+0x1f8>
+c010febc:	8b 45 98             	mov    -0x68(%ebp),%eax
+c010febf:	03 45 a0             	add    -0x60(%ebp),%eax
+c010fec2:	89 44 24 08          	mov    %eax,0x8(%esp)
+c010fec6:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
+c010fecd:	00 
+c010fece:	8b 45 ec             	mov    -0x14(%ebp),%eax
+c010fed1:	89 04 24             	mov    %eax,(%esp)
+c010fed4:	e8 57 10 ff ff       	call   c0100f30 <__ZN13BufferManager5BreadEsi>
+c010fed9:	89 45 94             	mov    %eax,-0x6c(%ebp)
+c010fedc:	c7 44 24 08 00 02 00 	movl   $0x200,0x8(%esp)
+c010fee3:	00 
+c010fee4:	8b 45 94             	mov    -0x6c(%ebp),%eax
+c010fee7:	8b 40 20             	mov    0x20(%eax),%eax
+c010feea:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010feee:	8b 45 a4             	mov    -0x5c(%ebp),%eax
+c010fef1:	89 04 24             	mov    %eax,(%esp)
+c010fef4:	e8 65 80 ff ff       	call   c0107f5e <__Z9lib_writeiPci>
+c010fef9:	89 45 90             	mov    %eax,-0x70(%ebp)
+c010fefc:	8b 45 94             	mov    -0x6c(%ebp),%eax
+c010feff:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010ff03:	8b 45 ec             	mov    -0x14(%ebp),%eax
+c010ff06:	89 04 24             	mov    %eax,(%esp)
+c010ff09:	e8 8a 0e ff ff       	call   c0100d98 <__ZN13BufferManager6BrelseEP3Buf>
+c010ff0e:	81 7d 90 00 02 00 00 	cmpl   $0x200,-0x70(%ebp)
+c010ff15:	74 25                	je     c010ff3c <__Z14PrepareExeFilev+0x1ee>
+c010ff17:	8b 45 e8             	mov    -0x18(%ebp),%eax
+c010ff1a:	8b 80 a8 01 00 00    	mov    0x1a8(%eax),%eax
+c010ff20:	89 44 24 08          	mov    %eax,0x8(%esp)
+c010ff24:	8b 45 90             	mov    -0x70(%ebp),%eax
+c010ff27:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010ff2b:	c7 04 24 00 31 11 c0 	movl   $0xc0113100,(%esp)
+c010ff32:	e8 6d 17 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c010ff37:	e9 fd 00 00 00       	jmp    c0110039 <__Z14PrepareExeFilev+0x2eb>
+c010ff3c:	8d 45 98             	lea    -0x68(%ebp),%eax
+c010ff3f:	ff 00                	incl   (%eax)
+c010ff41:	e9 54 ff ff ff       	jmp    c010fe9a <__Z14PrepareExeFilev+0x14c>
+c010ff46:	8b 45 9c             	mov    -0x64(%ebp),%eax
+c010ff49:	25 ff 01 00 00       	and    $0x1ff,%eax
+c010ff4e:	85 c0                	test   %eax,%eax
+c010ff50:	0f 84 d3 00 00 00    	je     c0110029 <__Z14PrepareExeFilev+0x2db>
+c010ff56:	8b 45 98             	mov    -0x68(%ebp),%eax
+c010ff59:	03 45 a0             	add    -0x60(%ebp),%eax
+c010ff5c:	89 44 24 08          	mov    %eax,0x8(%esp)
+c010ff60:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
+c010ff67:	00 
+c010ff68:	8b 45 ec             	mov    -0x14(%ebp),%eax
+c010ff6b:	89 04 24             	mov    %eax,(%esp)
+c010ff6e:	e8 bd 0f ff ff       	call   c0100f30 <__ZN13BufferManager5BreadEsi>
+c010ff73:	89 45 94             	mov    %eax,-0x6c(%ebp)
+c010ff76:	8b 55 9c             	mov    -0x64(%ebp),%edx
+c010ff79:	89 55 88             	mov    %edx,-0x78(%ebp)
+c010ff7c:	8b 45 88             	mov    -0x78(%ebp),%eax
+c010ff7f:	89 45 84             	mov    %eax,-0x7c(%ebp)
+c010ff82:	83 7d 84 00          	cmpl   $0x0,-0x7c(%ebp)
+c010ff86:	79 07                	jns    c010ff8f <__Z14PrepareExeFilev+0x241>
+c010ff88:	81 45 84 ff 01 00 00 	addl   $0x1ff,-0x7c(%ebp)
+c010ff8f:	8b 45 84             	mov    -0x7c(%ebp),%eax
+c010ff92:	c1 f8 09             	sar    $0x9,%eax
+c010ff95:	c1 e0 09             	shl    $0x9,%eax
+c010ff98:	8b 55 88             	mov    -0x78(%ebp),%edx
+c010ff9b:	29 c2                	sub    %eax,%edx
+c010ff9d:	89 d0                	mov    %edx,%eax
+c010ff9f:	89 44 24 08          	mov    %eax,0x8(%esp)
+c010ffa3:	8b 45 94             	mov    -0x6c(%ebp),%eax
+c010ffa6:	8b 40 20             	mov    0x20(%eax),%eax
+c010ffa9:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010ffad:	8b 45 a4             	mov    -0x5c(%ebp),%eax
+c010ffb0:	89 04 24             	mov    %eax,(%esp)
+c010ffb3:	e8 a6 7f ff ff       	call   c0107f5e <__Z9lib_writeiPci>
+c010ffb8:	89 45 90             	mov    %eax,-0x70(%ebp)
+c010ffbb:	8b 45 94             	mov    -0x6c(%ebp),%eax
+c010ffbe:	89 44 24 04          	mov    %eax,0x4(%esp)
+c010ffc2:	8b 45 ec             	mov    -0x14(%ebp),%eax
+c010ffc5:	89 04 24             	mov    %eax,(%esp)
+c010ffc8:	e8 cb 0d ff ff       	call   c0100d98 <__ZN13BufferManager6BrelseEP3Buf>
+c010ffcd:	8b 45 9c             	mov    -0x64(%ebp),%eax
+c010ffd0:	89 45 80             	mov    %eax,-0x80(%ebp)
+c010ffd3:	8b 55 80             	mov    -0x80(%ebp),%edx
+c010ffd6:	89 95 7c ff ff ff    	mov    %edx,-0x84(%ebp)
+c010ffdc:	83 bd 7c ff ff ff 00 	cmpl   $0x0,-0x84(%ebp)
+c010ffe3:	79 0a                	jns    c010ffef <__Z14PrepareExeFilev+0x2a1>
+c010ffe5:	81 85 7c ff ff ff ff 	addl   $0x1ff,-0x84(%ebp)
+c010ffec:	01 00 00 
+c010ffef:	8b 85 7c ff ff ff    	mov    -0x84(%ebp),%eax
+c010fff5:	c1 f8 09             	sar    $0x9,%eax
+c010fff8:	c1 e0 09             	shl    $0x9,%eax
+c010fffb:	8b 55 80             	mov    -0x80(%ebp),%edx
+c010fffe:	29 c2                	sub    %eax,%edx
+c0110000:	89 d0                	mov    %edx,%eax
+c0110002:	3b 45 90             	cmp    -0x70(%ebp),%eax
+c0110005:	74 22                	je     c0110029 <__Z14PrepareExeFilev+0x2db>
+c0110007:	8b 45 e8             	mov    -0x18(%ebp),%eax
+c011000a:	8b 80 a8 01 00 00    	mov    0x1a8(%eax),%eax
+c0110010:	89 44 24 08          	mov    %eax,0x8(%esp)
+c0110014:	8b 45 90             	mov    -0x70(%ebp),%eax
+c0110017:	89 44 24 04          	mov    %eax,0x4(%esp)
+c011001b:	c7 04 24 00 31 11 c0 	movl   $0xc0113100,(%esp)
+c0110022:	e8 7d 16 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c0110027:	eb 10                	jmp    c0110039 <__Z14PrepareExeFilev+0x2eb>
+c0110029:	8b 45 a4             	mov    -0x5c(%ebp),%eax
+c011002c:	89 04 24             	mov    %eax,(%esp)
+c011002f:	e8 c0 7e ff ff       	call   c0107ef4 <__Z9lib_closei>
+c0110034:	e9 8c fd ff ff       	jmp    c010fdc5 <__Z14PrepareExeFilev+0x77>
+c0110039:	81 c4 94 00 00 00    	add    $0x94,%esp
+c011003f:	5f                   	pop    %edi
+c0110040:	5d                   	pop    %ebp
+c0110041:	c3                   	ret    
 
-c010ffe6 <__Z12TTyQueueTestv>:
-c010ffe6:	55                   	push   %ebp
-c010ffe7:	89 e5                	mov    %esp,%ebp
-c010ffe9:	81 ec 38 02 00 00    	sub    $0x238,%esp
-c010ffef:	8d 85 e8 fd ff ff    	lea    -0x218(%ebp),%eax
-c010fff5:	89 04 24             	mov    %eax,(%esp)
-c010fff8:	e8 0b 07 00 00       	call   c0110708 <__ZN9TTy_QueueC1Ev>
-c010fffd:	c7 85 e4 fd ff ff d9 	movl   $0xc01133d9,-0x21c(%ebp)
-c0110004:	33 11 c0 
-c0110007:	c7 85 e0 fd ff ff 00 	movl   $0x0,-0x220(%ebp)
-c011000e:	00 00 00 
-c0110011:	83 bd e0 fd ff ff 09 	cmpl   $0x9,-0x220(%ebp)
-c0110018:	7f 2b                	jg     c0110045 <__Z12TTyQueueTestv+0x5f>
-c011001a:	8b 85 e4 fd ff ff    	mov    -0x21c(%ebp),%eax
-c0110020:	03 85 e0 fd ff ff    	add    -0x220(%ebp),%eax
-c0110026:	0f be 00             	movsbl (%eax),%eax
-c0110029:	89 44 24 04          	mov    %eax,0x4(%esp)
-c011002d:	8d 85 e8 fd ff ff    	lea    -0x218(%ebp),%eax
-c0110033:	89 04 24             	mov    %eax,(%esp)
-c0110036:	e8 41 07 00 00       	call   c011077c <__ZN9TTy_Queue7PutCharEc>
-c011003b:	8d 85 e0 fd ff ff    	lea    -0x220(%ebp),%eax
-c0110041:	ff 00                	incl   (%eax)
-c0110043:	eb cc                	jmp    c0110011 <__Z12TTyQueueTestv+0x2b>
-c0110045:	e8 40 90 ff ff       	call   c010908a <_Delay>
-c011004a:	e8 3b 90 ff ff       	call   c010908a <_Delay>
-c011004f:	8d 85 e8 fd ff ff    	lea    -0x218(%ebp),%eax
-c0110055:	89 04 24             	mov    %eax,(%esp)
-c0110058:	e8 4d 07 00 00       	call   c01107aa <__ZN9TTy_Queue7CharNumEv>
-c011005d:	89 44 24 04          	mov    %eax,0x4(%esp)
-c0110061:	c7 04 24 e9 33 11 c0 	movl   $0xc01133e9,(%esp)
-c0110068:	e8 db 15 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c011006d:	c7 85 e0 fd ff ff 00 	movl   $0x0,-0x220(%ebp)
-c0110074:	00 00 00 
-c0110077:	83 bd e0 fd ff ff 01 	cmpl   $0x1,-0x220(%ebp)
-c011007e:	7f 47                	jg     c01100c7 <__Z12TTyQueueTestv+0xe1>
-c0110080:	8d 85 e8 fd ff ff    	lea    -0x218(%ebp),%eax
-c0110086:	89 04 24             	mov    %eax,(%esp)
-c0110089:	e8 9e 06 00 00       	call   c011072c <__ZN9TTy_Queue7GetCharEv>
-c011008e:	88 85 df fd ff ff    	mov    %al,-0x221(%ebp)
-c0110094:	8d 85 e8 fd ff ff    	lea    -0x218(%ebp),%eax
-c011009a:	89 04 24             	mov    %eax,(%esp)
-c011009d:	e8 08 07 00 00       	call   c01107aa <__ZN9TTy_Queue7CharNumEv>
-c01100a2:	89 44 24 08          	mov    %eax,0x8(%esp)
-c01100a6:	0f be 85 df fd ff ff 	movsbl -0x221(%ebp),%eax
-c01100ad:	89 44 24 04          	mov    %eax,0x4(%esp)
-c01100b1:	c7 04 24 fc 33 11 c0 	movl   $0xc01133fc,(%esp)
-c01100b8:	e8 8b 15 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c01100bd:	8d 85 e0 fd ff ff    	lea    -0x220(%ebp),%eax
-c01100c3:	ff 00                	incl   (%eax)
-c01100c5:	eb b0                	jmp    c0110077 <__Z12TTyQueueTestv+0x91>
-c01100c7:	eb fe                	jmp    c01100c7 <__Z12TTyQueueTestv+0xe1>
-c01100c9:	90                   	nop    
+c0110042 <__Z12TTyQueueTestv>:
+c0110042:	55                   	push   %ebp
+c0110043:	89 e5                	mov    %esp,%ebp
+c0110045:	81 ec 38 02 00 00    	sub    $0x238,%esp
+c011004b:	8d 85 e8 fd ff ff    	lea    -0x218(%ebp),%eax
+c0110051:	89 04 24             	mov    %eax,(%esp)
+c0110054:	e8 0b 07 00 00       	call   c0110764 <__ZN9TTy_QueueC1Ev>
+c0110059:	c7 85 e4 fd ff ff d9 	movl   $0xc01133d9,-0x21c(%ebp)
+c0110060:	33 11 c0 
+c0110063:	c7 85 e0 fd ff ff 00 	movl   $0x0,-0x220(%ebp)
+c011006a:	00 00 00 
+c011006d:	83 bd e0 fd ff ff 09 	cmpl   $0x9,-0x220(%ebp)
+c0110074:	7f 2b                	jg     c01100a1 <__Z12TTyQueueTestv+0x5f>
+c0110076:	8b 85 e4 fd ff ff    	mov    -0x21c(%ebp),%eax
+c011007c:	03 85 e0 fd ff ff    	add    -0x220(%ebp),%eax
+c0110082:	0f be 00             	movsbl (%eax),%eax
+c0110085:	89 44 24 04          	mov    %eax,0x4(%esp)
+c0110089:	8d 85 e8 fd ff ff    	lea    -0x218(%ebp),%eax
+c011008f:	89 04 24             	mov    %eax,(%esp)
+c0110092:	e8 41 07 00 00       	call   c01107d8 <__ZN9TTy_Queue7PutCharEc>
+c0110097:	8d 85 e0 fd ff ff    	lea    -0x220(%ebp),%eax
+c011009d:	ff 00                	incl   (%eax)
+c011009f:	eb cc                	jmp    c011006d <__Z12TTyQueueTestv+0x2b>
+c01100a1:	e8 e4 8f ff ff       	call   c010908a <_Delay>
+c01100a6:	e8 df 8f ff ff       	call   c010908a <_Delay>
+c01100ab:	8d 85 e8 fd ff ff    	lea    -0x218(%ebp),%eax
+c01100b1:	89 04 24             	mov    %eax,(%esp)
+c01100b4:	e8 4d 07 00 00       	call   c0110806 <__ZN9TTy_Queue7CharNumEv>
+c01100b9:	89 44 24 04          	mov    %eax,0x4(%esp)
+c01100bd:	c7 04 24 e9 33 11 c0 	movl   $0xc01133e9,(%esp)
+c01100c4:	e8 db 15 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c01100c9:	c7 85 e0 fd ff ff 00 	movl   $0x0,-0x220(%ebp)
+c01100d0:	00 00 00 
+c01100d3:	83 bd e0 fd ff ff 01 	cmpl   $0x1,-0x220(%ebp)
+c01100da:	7f 47                	jg     c0110123 <__Z12TTyQueueTestv+0xe1>
+c01100dc:	8d 85 e8 fd ff ff    	lea    -0x218(%ebp),%eax
+c01100e2:	89 04 24             	mov    %eax,(%esp)
+c01100e5:	e8 9e 06 00 00       	call   c0110788 <__ZN9TTy_Queue7GetCharEv>
+c01100ea:	88 85 df fd ff ff    	mov    %al,-0x221(%ebp)
+c01100f0:	8d 85 e8 fd ff ff    	lea    -0x218(%ebp),%eax
+c01100f6:	89 04 24             	mov    %eax,(%esp)
+c01100f9:	e8 08 07 00 00       	call   c0110806 <__ZN9TTy_Queue7CharNumEv>
+c01100fe:	89 44 24 08          	mov    %eax,0x8(%esp)
+c0110102:	0f be 85 df fd ff ff 	movsbl -0x221(%ebp),%eax
+c0110109:	89 44 24 04          	mov    %eax,0x4(%esp)
+c011010d:	c7 04 24 fc 33 11 c0 	movl   $0xc01133fc,(%esp)
+c0110114:	e8 8b 15 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c0110119:	8d 85 e0 fd ff ff    	lea    -0x220(%ebp),%eax
+c011011f:	ff 00                	incl   (%eax)
+c0110121:	eb b0                	jmp    c01100d3 <__Z12TTyQueueTestv+0x91>
+c0110123:	eb fe                	jmp    c0110123 <__Z12TTyQueueTestv+0xe1>
+c0110125:	90                   	nop    
 
-c01100ca <__Z11ConsoleTestv>:
-c01100ca:	55                   	push   %ebp
-c01100cb:	89 e5                	mov    %esp,%ebp
-c01100cd:	83 ec 78             	sub    $0x78,%esp
-c01100d0:	e8 37 1f ff ff       	call   c010200c <__ZN3CRT11ClearScreenEv>
-c01100d5:	e8 62 15 00 00       	call   c011163c <__ZN8Diagnose8TraceOffEv>
-c01100da:	c7 44 24 08 50 00 00 	movl   $0x50,0x8(%esp)
-c01100e1:	00 
-c01100e2:	8d 45 a8             	lea    -0x58(%ebp),%eax
-c01100e5:	89 44 24 04          	mov    %eax,0x4(%esp)
-c01100e9:	c7 04 24 00 00 00 00 	movl   $0x0,(%esp)
-c01100f0:	e8 31 7e ff ff       	call   c0107f26 <__Z8lib_readiPci>
-c01100f5:	89 45 a4             	mov    %eax,-0x5c(%ebp)
-c01100f8:	8d 45 f8             	lea    -0x8(%ebp),%eax
-c01100fb:	03 45 a4             	add    -0x5c(%ebp),%eax
-c01100fe:	83 e8 51             	sub    $0x51,%eax
-c0110101:	80 38 0a             	cmpb   $0xa,(%eax)
-c0110104:	75 0c                	jne    c0110112 <__Z11ConsoleTestv+0x48>
-c0110106:	8d 45 f8             	lea    -0x8(%ebp),%eax
-c0110109:	03 45 a4             	add    -0x5c(%ebp),%eax
-c011010c:	83 e8 51             	sub    $0x51,%eax
-c011010f:	c6 00 00             	movb   $0x0,(%eax)
-c0110112:	8b 45 a4             	mov    -0x5c(%ebp),%eax
-c0110115:	89 44 24 08          	mov    %eax,0x8(%esp)
-c0110119:	8d 45 a8             	lea    -0x58(%ebp),%eax
-c011011c:	89 44 24 04          	mov    %eax,0x4(%esp)
-c0110120:	c7 04 24 01 00 00 00 	movl   $0x1,(%esp)
-c0110127:	e8 32 7e ff ff       	call   c0107f5e <__Z9lib_writeiPci>
-c011012c:	eb ac                	jmp    c01100da <__Z11ConsoleTestv+0x10>
+c0110126 <__Z11ConsoleTestv>:
+c0110126:	55                   	push   %ebp
+c0110127:	89 e5                	mov    %esp,%ebp
+c0110129:	83 ec 78             	sub    $0x78,%esp
+c011012c:	e8 db 1e ff ff       	call   c010200c <__ZN3CRT11ClearScreenEv>
+c0110131:	e8 62 15 00 00       	call   c0111698 <__ZN8Diagnose8TraceOffEv>
+c0110136:	c7 44 24 08 50 00 00 	movl   $0x50,0x8(%esp)
+c011013d:	00 
+c011013e:	8d 45 a8             	lea    -0x58(%ebp),%eax
+c0110141:	89 44 24 04          	mov    %eax,0x4(%esp)
+c0110145:	c7 04 24 00 00 00 00 	movl   $0x0,(%esp)
+c011014c:	e8 d5 7d ff ff       	call   c0107f26 <__Z8lib_readiPci>
+c0110151:	89 45 a4             	mov    %eax,-0x5c(%ebp)
+c0110154:	8d 45 f8             	lea    -0x8(%ebp),%eax
+c0110157:	03 45 a4             	add    -0x5c(%ebp),%eax
+c011015a:	83 e8 51             	sub    $0x51,%eax
+c011015d:	80 38 0a             	cmpb   $0xa,(%eax)
+c0110160:	75 0c                	jne    c011016e <__Z11ConsoleTestv+0x48>
+c0110162:	8d 45 f8             	lea    -0x8(%ebp),%eax
+c0110165:	03 45 a4             	add    -0x5c(%ebp),%eax
+c0110168:	83 e8 51             	sub    $0x51,%eax
+c011016b:	c6 00 00             	movb   $0x0,(%eax)
+c011016e:	8b 45 a4             	mov    -0x5c(%ebp),%eax
+c0110171:	89 44 24 08          	mov    %eax,0x8(%esp)
+c0110175:	8d 45 a8             	lea    -0x58(%ebp),%eax
+c0110178:	89 44 24 04          	mov    %eax,0x4(%esp)
+c011017c:	c7 04 24 01 00 00 00 	movl   $0x1,(%esp)
+c0110183:	e8 d6 7d ff ff       	call   c0107f5e <__Z9lib_writeiPci>
+c0110188:	eb ac                	jmp    c0110136 <__Z11ConsoleTestv+0x10>
 
-c011012e <__Z14WorkingDirTestv>:
-c011012e:	55                   	push   %ebp
-c011012f:	89 e5                	mov    %esp,%ebp
-c0110131:	83 ec 78             	sub    $0x78,%esp
-c0110134:	e8 2f 70 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c0110139:	89 04 24             	mov    %eax,(%esp)
-c011013c:	e8 c3 72 ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
-c0110141:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c0110144:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c0110147:	05 28 01 00 00       	add    $0x128,%eax
-c011014c:	89 44 24 04          	mov    %eax,0x4(%esp)
-c0110150:	c7 04 24 11 34 11 c0 	movl   $0xc0113411,(%esp)
-c0110157:	e8 ec 14 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c011015c:	c7 04 24 20 34 11 c0 	movl   $0xc0113420,(%esp)
-c0110163:	e8 1c 83 ff ff       	call   c0108484 <__Z9lib_chdirPc>
-c0110168:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c011016b:	05 28 01 00 00       	add    $0x128,%eax
-c0110170:	89 44 24 04          	mov    %eax,0x4(%esp)
-c0110174:	c7 04 24 11 34 11 c0 	movl   $0xc0113411,(%esp)
-c011017b:	e8 c8 14 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c0110180:	c7 04 24 25 34 11 c0 	movl   $0xc0113425,(%esp)
-c0110187:	e8 f8 82 ff ff       	call   c0108484 <__Z9lib_chdirPc>
-c011018c:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c011018f:	05 28 01 00 00       	add    $0x128,%eax
-c0110194:	89 44 24 04          	mov    %eax,0x4(%esp)
-c0110198:	c7 04 24 11 34 11 c0 	movl   $0xc0113411,(%esp)
-c011019f:	e8 a4 14 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c01101a4:	8d 45 98             	lea    -0x68(%ebp),%eax
-c01101a7:	89 04 24             	mov    %eax,(%esp)
-c01101aa:	e8 09 82 ff ff       	call   c01083b8 <__Z7lib_pwdPc>
-c01101af:	8d 45 98             	lea    -0x68(%ebp),%eax
-c01101b2:	89 44 24 04          	mov    %eax,0x4(%esp)
-c01101b6:	c7 04 24 2e 34 11 c0 	movl   $0xc011342e,(%esp)
-c01101bd:	e8 86 14 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c01101c2:	c7 04 24 38 34 11 c0 	movl   $0xc0113438,(%esp)
-c01101c9:	e8 b6 82 ff ff       	call   c0108484 <__Z9lib_chdirPc>
-c01101ce:	8d 45 98             	lea    -0x68(%ebp),%eax
-c01101d1:	89 04 24             	mov    %eax,(%esp)
-c01101d4:	e8 df 81 ff ff       	call   c01083b8 <__Z7lib_pwdPc>
-c01101d9:	8d 45 98             	lea    -0x68(%ebp),%eax
-c01101dc:	89 44 24 04          	mov    %eax,0x4(%esp)
-c01101e0:	c7 04 24 2e 34 11 c0 	movl   $0xc011342e,(%esp)
-c01101e7:	e8 5c 14 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c01101ec:	eb fe                	jmp    c01101ec <__Z14WorkingDirTestv+0xbe>
-c01101ee:	90                   	nop    
-c01101ef:	90                   	nop    
+c011018a <__Z14WorkingDirTestv>:
+c011018a:	55                   	push   %ebp
+c011018b:	89 e5                	mov    %esp,%ebp
+c011018d:	83 ec 78             	sub    $0x78,%esp
+c0110190:	e8 d3 6f ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c0110195:	89 04 24             	mov    %eax,(%esp)
+c0110198:	e8 67 72 ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
+c011019d:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c01101a0:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c01101a3:	05 28 01 00 00       	add    $0x128,%eax
+c01101a8:	89 44 24 04          	mov    %eax,0x4(%esp)
+c01101ac:	c7 04 24 11 34 11 c0 	movl   $0xc0113411,(%esp)
+c01101b3:	e8 ec 14 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c01101b8:	c7 04 24 20 34 11 c0 	movl   $0xc0113420,(%esp)
+c01101bf:	e8 c0 82 ff ff       	call   c0108484 <__Z9lib_chdirPc>
+c01101c4:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c01101c7:	05 28 01 00 00       	add    $0x128,%eax
+c01101cc:	89 44 24 04          	mov    %eax,0x4(%esp)
+c01101d0:	c7 04 24 11 34 11 c0 	movl   $0xc0113411,(%esp)
+c01101d7:	e8 c8 14 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c01101dc:	c7 04 24 25 34 11 c0 	movl   $0xc0113425,(%esp)
+c01101e3:	e8 9c 82 ff ff       	call   c0108484 <__Z9lib_chdirPc>
+c01101e8:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c01101eb:	05 28 01 00 00       	add    $0x128,%eax
+c01101f0:	89 44 24 04          	mov    %eax,0x4(%esp)
+c01101f4:	c7 04 24 11 34 11 c0 	movl   $0xc0113411,(%esp)
+c01101fb:	e8 a4 14 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c0110200:	8d 45 98             	lea    -0x68(%ebp),%eax
+c0110203:	89 04 24             	mov    %eax,(%esp)
+c0110206:	e8 ad 81 ff ff       	call   c01083b8 <__Z7lib_pwdPc>
+c011020b:	8d 45 98             	lea    -0x68(%ebp),%eax
+c011020e:	89 44 24 04          	mov    %eax,0x4(%esp)
+c0110212:	c7 04 24 2e 34 11 c0 	movl   $0xc011342e,(%esp)
+c0110219:	e8 86 14 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c011021e:	c7 04 24 38 34 11 c0 	movl   $0xc0113438,(%esp)
+c0110225:	e8 5a 82 ff ff       	call   c0108484 <__Z9lib_chdirPc>
+c011022a:	8d 45 98             	lea    -0x68(%ebp),%eax
+c011022d:	89 04 24             	mov    %eax,(%esp)
+c0110230:	e8 83 81 ff ff       	call   c01083b8 <__Z7lib_pwdPc>
+c0110235:	8d 45 98             	lea    -0x68(%ebp),%eax
+c0110238:	89 44 24 04          	mov    %eax,0x4(%esp)
+c011023c:	c7 04 24 2e 34 11 c0 	movl   $0xc011342e,(%esp)
+c0110243:	e8 5c 14 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c0110248:	eb fe                	jmp    c0110248 <__Z14WorkingDirTestv+0xbe>
+c011024a:	90                   	nop    
+c011024b:	90                   	nop    
 
-c01101f0 <__Z12PrintMapNodeR14SwapperManageri>:
-c01101f0:	55                   	push   %ebp
-c01101f1:	89 e5                	mov    %esp,%ebp
-c01101f3:	83 ec 18             	sub    $0x18,%esp
-c01101f6:	8b 55 08             	mov    0x8(%ebp),%edx
-c01101f9:	8b 45 0c             	mov    0xc(%ebp),%eax
-c01101fc:	8b 04 c2             	mov    (%edx,%eax,8),%eax
-c01101ff:	89 44 24 0c          	mov    %eax,0xc(%esp)
-c0110203:	8b 55 08             	mov    0x8(%ebp),%edx
-c0110206:	8b 45 0c             	mov    0xc(%ebp),%eax
-c0110209:	8b 44 c2 04          	mov    0x4(%edx,%eax,8),%eax
-c011020d:	89 44 24 08          	mov    %eax,0x8(%esp)
-c0110211:	8b 45 0c             	mov    0xc(%ebp),%eax
-c0110214:	89 44 24 04          	mov    %eax,0x4(%esp)
-c0110218:	c7 04 24 c0 30 11 c0 	movl   $0xc01130c0,(%esp)
-c011021f:	e8 24 14 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c0110224:	c9                   	leave  
-c0110225:	c3                   	ret    
+c011024c <__Z12PrintMapNodeR14SwapperManageri>:
+c011024c:	55                   	push   %ebp
+c011024d:	89 e5                	mov    %esp,%ebp
+c011024f:	83 ec 18             	sub    $0x18,%esp
+c0110252:	8b 55 08             	mov    0x8(%ebp),%edx
+c0110255:	8b 45 0c             	mov    0xc(%ebp),%eax
+c0110258:	8b 04 c2             	mov    (%edx,%eax,8),%eax
+c011025b:	89 44 24 0c          	mov    %eax,0xc(%esp)
+c011025f:	8b 55 08             	mov    0x8(%ebp),%edx
+c0110262:	8b 45 0c             	mov    0xc(%ebp),%eax
+c0110265:	8b 44 c2 04          	mov    0x4(%edx,%eax,8),%eax
+c0110269:	89 44 24 08          	mov    %eax,0x8(%esp)
+c011026d:	8b 45 0c             	mov    0xc(%ebp),%eax
+c0110270:	89 44 24 04          	mov    %eax,0x4(%esp)
+c0110274:	c7 04 24 c0 30 11 c0 	movl   $0xc01130c0,(%esp)
+c011027b:	e8 24 14 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c0110280:	c9                   	leave  
+c0110281:	c3                   	ret    
 
-c0110226 <__Z15PrintAllMapNodeR14SwapperManager>:
-c0110226:	55                   	push   %ebp
-c0110227:	89 e5                	mov    %esp,%ebp
-c0110229:	83 ec 18             	sub    $0x18,%esp
-c011022c:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%ebp)
-c0110233:	81 7d fc ff 01 00 00 	cmpl   $0x1ff,-0x4(%ebp)
-c011023a:	77 46                	ja     c0110282 <__Z15PrintAllMapNodeR14SwapperManager+0x5c>
-c011023c:	8b 55 08             	mov    0x8(%ebp),%edx
-c011023f:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c0110242:	83 3c c2 00          	cmpl   $0x0,(%edx,%eax,8)
-c0110246:	74 3a                	je     c0110282 <__Z15PrintAllMapNodeR14SwapperManager+0x5c>
-c0110248:	8b 55 08             	mov    0x8(%ebp),%edx
-c011024b:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c011024e:	8b 04 c2             	mov    (%edx,%eax,8),%eax
-c0110251:	89 44 24 0c          	mov    %eax,0xc(%esp)
-c0110255:	8b 55 08             	mov    0x8(%ebp),%edx
-c0110258:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c011025b:	8b 44 c2 04          	mov    0x4(%edx,%eax,8),%eax
-c011025f:	89 44 24 08          	mov    %eax,0x8(%esp)
-c0110263:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c0110266:	89 44 24 04          	mov    %eax,0x4(%esp)
-c011026a:	c7 04 24 c0 30 11 c0 	movl   $0xc01130c0,(%esp)
-c0110271:	e8 d2 13 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c0110276:	e8 0f 8e ff ff       	call   c010908a <_Delay>
-c011027b:	8d 45 fc             	lea    -0x4(%ebp),%eax
-c011027e:	ff 00                	incl   (%eax)
-c0110280:	eb b1                	jmp    c0110233 <__Z15PrintAllMapNodeR14SwapperManager+0xd>
-c0110282:	c9                   	leave  
-c0110283:	c3                   	ret    
+c0110282 <__Z15PrintAllMapNodeR14SwapperManager>:
+c0110282:	55                   	push   %ebp
+c0110283:	89 e5                	mov    %esp,%ebp
+c0110285:	83 ec 18             	sub    $0x18,%esp
+c0110288:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%ebp)
+c011028f:	81 7d fc ff 01 00 00 	cmpl   $0x1ff,-0x4(%ebp)
+c0110296:	77 46                	ja     c01102de <__Z15PrintAllMapNodeR14SwapperManager+0x5c>
+c0110298:	8b 55 08             	mov    0x8(%ebp),%edx
+c011029b:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c011029e:	83 3c c2 00          	cmpl   $0x0,(%edx,%eax,8)
+c01102a2:	74 3a                	je     c01102de <__Z15PrintAllMapNodeR14SwapperManager+0x5c>
+c01102a4:	8b 55 08             	mov    0x8(%ebp),%edx
+c01102a7:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c01102aa:	8b 04 c2             	mov    (%edx,%eax,8),%eax
+c01102ad:	89 44 24 0c          	mov    %eax,0xc(%esp)
+c01102b1:	8b 55 08             	mov    0x8(%ebp),%edx
+c01102b4:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c01102b7:	8b 44 c2 04          	mov    0x4(%edx,%eax,8),%eax
+c01102bb:	89 44 24 08          	mov    %eax,0x8(%esp)
+c01102bf:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c01102c2:	89 44 24 04          	mov    %eax,0x4(%esp)
+c01102c6:	c7 04 24 c0 30 11 c0 	movl   $0xc01130c0,(%esp)
+c01102cd:	e8 d2 13 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c01102d2:	e8 b3 8d ff ff       	call   c010908a <_Delay>
+c01102d7:	8d 45 fc             	lea    -0x4(%ebp),%eax
+c01102da:	ff 00                	incl   (%eax)
+c01102dc:	eb b1                	jmp    c011028f <__Z15PrintAllMapNodeR14SwapperManager+0xd>
+c01102de:	c9                   	leave  
+c01102df:	c3                   	ret    
 
-c0110284 <__Z18TestSwapperManagerv>:
-c0110284:	55                   	push   %ebp
-c0110285:	89 e5                	mov    %esp,%ebp
-c0110287:	83 ec 18             	sub    $0x18,%esp
-c011028a:	e8 d9 6e ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c011028f:	89 04 24             	mov    %eax,(%esp)
-c0110292:	e8 31 71 ff ff       	call   c01073c8 <__ZN6Kernel17GetSwapperManagerEv>
-c0110297:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c011029a:	c7 44 24 04 a0 0f 00 	movl   $0xfa0,0x4(%esp)
-c01102a1:	00 
-c01102a2:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c01102a5:	89 04 24             	mov    %eax,(%esp)
-c01102a8:	e8 83 cf ff ff       	call   c010d230 <__ZN14SwapperManager9AllocSwapEm>
-c01102ad:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c01102b0:	c7 44 24 04 00 04 00 	movl   $0x400,0x4(%esp)
-c01102b7:	00 
-c01102b8:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c01102bb:	89 04 24             	mov    %eax,(%esp)
-c01102be:	e8 6d cf ff ff       	call   c010d230 <__ZN14SwapperManager9AllocSwapEm>
-c01102c3:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c01102c6:	83 c0 04             	add    $0x4,%eax
-c01102c9:	89 44 24 08          	mov    %eax,0x8(%esp)
-c01102cd:	c7 44 24 04 d0 07 00 	movl   $0x7d0,0x4(%esp)
-c01102d4:	00 
-c01102d5:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c01102d8:	89 04 24             	mov    %eax,(%esp)
-c01102db:	e8 80 cf ff ff       	call   c010d260 <__ZN14SwapperManager8FreeSwapEmi>
-c01102e0:	c7 44 24 04 00 14 00 	movl   $0x1400,0x4(%esp)
-c01102e7:	00 
-c01102e8:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c01102e0 <__Z18TestSwapperManagerv>:
+c01102e0:	55                   	push   %ebp
+c01102e1:	89 e5                	mov    %esp,%ebp
+c01102e3:	83 ec 18             	sub    $0x18,%esp
+c01102e6:	e8 7d 6e ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
 c01102eb:	89 04 24             	mov    %eax,(%esp)
-c01102ee:	e8 3d cf ff ff       	call   c010d230 <__ZN14SwapperManager9AllocSwapEm>
-c01102f3:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c01102f6:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c01102f9:	89 44 24 08          	mov    %eax,0x8(%esp)
-c01102fd:	c7 44 24 04 00 14 00 	movl   $0x1400,0x4(%esp)
-c0110304:	00 
-c0110305:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c0110308:	89 04 24             	mov    %eax,(%esp)
-c011030b:	e8 50 cf ff ff       	call   c010d260 <__ZN14SwapperManager8FreeSwapEmi>
-c0110310:	c7 44 24 04 01 02 00 	movl   $0x201,0x4(%esp)
-c0110317:	00 
-c0110318:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c011031b:	89 04 24             	mov    %eax,(%esp)
-c011031e:	e8 0d cf ff ff       	call   c010d230 <__ZN14SwapperManager9AllocSwapEm>
-c0110323:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c0110326:	89 04 24             	mov    %eax,(%esp)
-c0110329:	e8 f8 fe ff ff       	call   c0110226 <__Z15PrintAllMapNodeR14SwapperManager>
-c011032e:	b8 01 00 00 00       	mov    $0x1,%eax
-c0110333:	c9                   	leave  
-c0110334:	c3                   	ret    
-c0110335:	90                   	nop    
-c0110336:	90                   	nop    
-c0110337:	90                   	nop    
-
-c0110338 <__Z11PrintResultPcb>:
-c0110338:	55                   	push   %ebp
-c0110339:	89 e5                	mov    %esp,%ebp
-c011033b:	83 ec 18             	sub    $0x18,%esp
-c011033e:	8b 45 0c             	mov    0xc(%ebp),%eax
-c0110341:	88 45 ff             	mov    %al,-0x1(%ebp)
-c0110344:	80 7d ff 00          	cmpb   $0x0,-0x1(%ebp)
-c0110348:	74 09                	je     c0110353 <__Z11PrintResultPcb+0x1b>
-c011034a:	c7 45 f8 a0 30 11 c0 	movl   $0xc01130a0,-0x8(%ebp)
-c0110351:	eb 07                	jmp    c011035a <__Z11PrintResultPcb+0x22>
-c0110353:	c7 45 f8 a5 30 11 c0 	movl   $0xc01130a5,-0x8(%ebp)
-c011035a:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c011035d:	89 44 24 08          	mov    %eax,0x8(%esp)
-c0110361:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110364:	89 44 24 04          	mov    %eax,0x4(%esp)
-c0110368:	c7 04 24 ac 30 11 c0 	movl   $0xc01130ac,(%esp)
-c011036f:	e8 d4 12 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c0110374:	80 7d ff 00          	cmpb   $0x0,-0x1(%ebp)
-c0110378:	75 02                	jne    c011037c <__Z11PrintResultPcb+0x44>
-c011037a:	eb fe                	jmp    c011037a <__Z11PrintResultPcb+0x42>
-c011037c:	c9                   	leave  
-c011037d:	c3                   	ret    
-c011037e:	90                   	nop    
-c011037f:	90                   	nop    
-
-c0110380 <__ZN4TextC2Ev>:
-c0110380:	55                   	push   %ebp
-c0110381:	89 e5                	mov    %esp,%ebp
-c0110383:	5d                   	pop    %ebp
-c0110384:	c3                   	ret    
-c0110385:	90                   	nop    
-
-c0110386 <__ZN4TextC1Ev>:
-c0110386:	55                   	push   %ebp
-c0110387:	89 e5                	mov    %esp,%ebp
-c0110389:	5d                   	pop    %ebp
-c011038a:	c3                   	ret    
-c011038b:	90                   	nop    
-
-c011038c <__ZN4TextD2Ev>:
-c011038c:	55                   	push   %ebp
-c011038d:	89 e5                	mov    %esp,%ebp
-c011038f:	5d                   	pop    %ebp
+c01102ee:	e8 d5 70 ff ff       	call   c01073c8 <__ZN6Kernel17GetSwapperManagerEv>
+c01102f3:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c01102f6:	c7 44 24 04 a0 0f 00 	movl   $0xfa0,0x4(%esp)
+c01102fd:	00 
+c01102fe:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c0110301:	89 04 24             	mov    %eax,(%esp)
+c0110304:	e8 27 cf ff ff       	call   c010d230 <__ZN14SwapperManager9AllocSwapEm>
+c0110309:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c011030c:	c7 44 24 04 00 04 00 	movl   $0x400,0x4(%esp)
+c0110313:	00 
+c0110314:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c0110317:	89 04 24             	mov    %eax,(%esp)
+c011031a:	e8 11 cf ff ff       	call   c010d230 <__ZN14SwapperManager9AllocSwapEm>
+c011031f:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c0110322:	83 c0 04             	add    $0x4,%eax
+c0110325:	89 44 24 08          	mov    %eax,0x8(%esp)
+c0110329:	c7 44 24 04 d0 07 00 	movl   $0x7d0,0x4(%esp)
+c0110330:	00 
+c0110331:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c0110334:	89 04 24             	mov    %eax,(%esp)
+c0110337:	e8 24 cf ff ff       	call   c010d260 <__ZN14SwapperManager8FreeSwapEmi>
+c011033c:	c7 44 24 04 00 14 00 	movl   $0x1400,0x4(%esp)
+c0110343:	00 
+c0110344:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c0110347:	89 04 24             	mov    %eax,(%esp)
+c011034a:	e8 e1 ce ff ff       	call   c010d230 <__ZN14SwapperManager9AllocSwapEm>
+c011034f:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c0110352:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c0110355:	89 44 24 08          	mov    %eax,0x8(%esp)
+c0110359:	c7 44 24 04 00 14 00 	movl   $0x1400,0x4(%esp)
+c0110360:	00 
+c0110361:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c0110364:	89 04 24             	mov    %eax,(%esp)
+c0110367:	e8 f4 ce ff ff       	call   c010d260 <__ZN14SwapperManager8FreeSwapEmi>
+c011036c:	c7 44 24 04 01 02 00 	movl   $0x201,0x4(%esp)
+c0110373:	00 
+c0110374:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c0110377:	89 04 24             	mov    %eax,(%esp)
+c011037a:	e8 b1 ce ff ff       	call   c010d230 <__ZN14SwapperManager9AllocSwapEm>
+c011037f:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c0110382:	89 04 24             	mov    %eax,(%esp)
+c0110385:	e8 f8 fe ff ff       	call   c0110282 <__Z15PrintAllMapNodeR14SwapperManager>
+c011038a:	b8 01 00 00 00       	mov    $0x1,%eax
+c011038f:	c9                   	leave  
 c0110390:	c3                   	ret    
 c0110391:	90                   	nop    
+c0110392:	90                   	nop    
+c0110393:	90                   	nop    
 
-c0110392 <__ZN4TextD1Ev>:
-c0110392:	55                   	push   %ebp
-c0110393:	89 e5                	mov    %esp,%ebp
-c0110395:	5d                   	pop    %ebp
-c0110396:	c3                   	ret    
-c0110397:	90                   	nop    
+c0110394 <__Z11PrintResultPcb>:
+c0110394:	55                   	push   %ebp
+c0110395:	89 e5                	mov    %esp,%ebp
+c0110397:	83 ec 18             	sub    $0x18,%esp
+c011039a:	8b 45 0c             	mov    0xc(%ebp),%eax
+c011039d:	88 45 ff             	mov    %al,-0x1(%ebp)
+c01103a0:	80 7d ff 00          	cmpb   $0x0,-0x1(%ebp)
+c01103a4:	74 09                	je     c01103af <__Z11PrintResultPcb+0x1b>
+c01103a6:	c7 45 f8 a0 30 11 c0 	movl   $0xc01130a0,-0x8(%ebp)
+c01103ad:	eb 07                	jmp    c01103b6 <__Z11PrintResultPcb+0x22>
+c01103af:	c7 45 f8 a5 30 11 c0 	movl   $0xc01130a5,-0x8(%ebp)
+c01103b6:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c01103b9:	89 44 24 08          	mov    %eax,0x8(%esp)
+c01103bd:	8b 45 08             	mov    0x8(%ebp),%eax
+c01103c0:	89 44 24 04          	mov    %eax,0x4(%esp)
+c01103c4:	c7 04 24 ac 30 11 c0 	movl   $0xc01130ac,(%esp)
+c01103cb:	e8 d4 12 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c01103d0:	80 7d ff 00          	cmpb   $0x0,-0x1(%ebp)
+c01103d4:	75 02                	jne    c01103d8 <__Z11PrintResultPcb+0x44>
+c01103d6:	eb fe                	jmp    c01103d6 <__Z11PrintResultPcb+0x42>
+c01103d8:	c9                   	leave  
+c01103d9:	c3                   	ret    
+c01103da:	90                   	nop    
+c01103db:	90                   	nop    
 
-c0110398 <__ZN4Text6XccDecEv>:
-c0110398:	55                   	push   %ebp
-c0110399:	89 e5                	mov    %esp,%ebp
-c011039b:	83 ec 18             	sub    $0x18,%esp
-c011039e:	8b 45 08             	mov    0x8(%ebp),%eax
-c01103a1:	66 83 78 12 00       	cmpw   $0x0,0x12(%eax)
-c01103a6:	75 02                	jne    c01103aa <__ZN4Text6XccDecEv+0x12>
-c01103a8:	eb 3f                	jmp    c01103e9 <__ZN4Text6XccDecEv+0x51>
-c01103aa:	8b 55 08             	mov    0x8(%ebp),%edx
-c01103ad:	8b 45 08             	mov    0x8(%ebp),%eax
-c01103b0:	0f b7 40 12          	movzwl 0x12(%eax),%eax
-c01103b4:	48                   	dec    %eax
-c01103b5:	66 89 42 12          	mov    %ax,0x12(%edx)
-c01103b9:	66 85 c0             	test   %ax,%ax
-c01103bc:	75 2b                	jne    c01103e9 <__ZN4Text6XccDecEv+0x51>
-c01103be:	e8 a5 6d ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c01103c3:	89 04 24             	mov    %eax,(%esp)
-c01103c6:	e8 d9 6f ff ff       	call   c01073a4 <__ZN6Kernel18GetUserPageManagerEv>
-c01103cb:	89 c2                	mov    %eax,%edx
-c01103cd:	8b 45 08             	mov    0x8(%ebp),%eax
-c01103d0:	8b 40 04             	mov    0x4(%eax),%eax
-c01103d3:	89 44 24 08          	mov    %eax,0x8(%esp)
-c01103d7:	8b 45 08             	mov    0x8(%ebp),%eax
-c01103da:	8b 40 08             	mov    0x8(%eax),%eax
-c01103dd:	89 44 24 04          	mov    %eax,0x4(%esp)
-c01103e1:	89 14 24             	mov    %edx,(%esp)
-c01103e4:	e8 65 a0 ff ff       	call   c010a44e <__ZN11PageManager10FreeMemoryEmm>
-c01103e9:	c9                   	leave  
-c01103ea:	c3                   	ret    
-c01103eb:	90                   	nop    
+c01103dc <__ZN4TextC2Ev>:
+c01103dc:	55                   	push   %ebp
+c01103dd:	89 e5                	mov    %esp,%ebp
+c01103df:	5d                   	pop    %ebp
+c01103e0:	c3                   	ret    
+c01103e1:	90                   	nop    
 
-c01103ec <__ZN4Text5XFreeEv>:
-c01103ec:	55                   	push   %ebp
-c01103ed:	89 e5                	mov    %esp,%ebp
-c01103ef:	83 ec 18             	sub    $0x18,%esp
-c01103f2:	8b 45 08             	mov    0x8(%ebp),%eax
-c01103f5:	89 04 24             	mov    %eax,(%esp)
-c01103f8:	e8 9b ff ff ff       	call   c0110398 <__ZN4Text6XccDecEv>
-c01103fd:	8b 55 08             	mov    0x8(%ebp),%edx
-c0110400:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110403:	0f b7 40 10          	movzwl 0x10(%eax),%eax
-c0110407:	48                   	dec    %eax
-c0110408:	66 89 42 10          	mov    %ax,0x10(%edx)
-c011040c:	66 85 c0             	test   %ax,%ax
-c011040f:	75 56                	jne    c0110467 <__ZN4Text5XFreeEv+0x7b>
-c0110411:	e8 52 6d ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c0110416:	89 04 24             	mov    %eax,(%esp)
-c0110419:	e8 aa 6f ff ff       	call   c01073c8 <__ZN6Kernel17GetSwapperManagerEv>
-c011041e:	89 c2                	mov    %eax,%edx
-c0110420:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110423:	8b 00                	mov    (%eax),%eax
-c0110425:	89 44 24 08          	mov    %eax,0x8(%esp)
+c01103e2 <__ZN4TextC1Ev>:
+c01103e2:	55                   	push   %ebp
+c01103e3:	89 e5                	mov    %esp,%ebp
+c01103e5:	5d                   	pop    %ebp
+c01103e6:	c3                   	ret    
+c01103e7:	90                   	nop    
+
+c01103e8 <__ZN4TextD2Ev>:
+c01103e8:	55                   	push   %ebp
+c01103e9:	89 e5                	mov    %esp,%ebp
+c01103eb:	5d                   	pop    %ebp
+c01103ec:	c3                   	ret    
+c01103ed:	90                   	nop    
+
+c01103ee <__ZN4TextD1Ev>:
+c01103ee:	55                   	push   %ebp
+c01103ef:	89 e5                	mov    %esp,%ebp
+c01103f1:	5d                   	pop    %ebp
+c01103f2:	c3                   	ret    
+c01103f3:	90                   	nop    
+
+c01103f4 <__ZN4Text6XccDecEv>:
+c01103f4:	55                   	push   %ebp
+c01103f5:	89 e5                	mov    %esp,%ebp
+c01103f7:	83 ec 18             	sub    $0x18,%esp
+c01103fa:	8b 45 08             	mov    0x8(%ebp),%eax
+c01103fd:	66 83 78 12 00       	cmpw   $0x0,0x12(%eax)
+c0110402:	75 02                	jne    c0110406 <__ZN4Text6XccDecEv+0x12>
+c0110404:	eb 3f                	jmp    c0110445 <__ZN4Text6XccDecEv+0x51>
+c0110406:	8b 55 08             	mov    0x8(%ebp),%edx
+c0110409:	8b 45 08             	mov    0x8(%ebp),%eax
+c011040c:	0f b7 40 12          	movzwl 0x12(%eax),%eax
+c0110410:	48                   	dec    %eax
+c0110411:	66 89 42 12          	mov    %ax,0x12(%edx)
+c0110415:	66 85 c0             	test   %ax,%ax
+c0110418:	75 2b                	jne    c0110445 <__ZN4Text6XccDecEv+0x51>
+c011041a:	e8 49 6d ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c011041f:	89 04 24             	mov    %eax,(%esp)
+c0110422:	e8 7d 6f ff ff       	call   c01073a4 <__ZN6Kernel18GetUserPageManagerEv>
+c0110427:	89 c2                	mov    %eax,%edx
 c0110429:	8b 45 08             	mov    0x8(%ebp),%eax
-c011042c:	8b 40 08             	mov    0x8(%eax),%eax
-c011042f:	89 44 24 04          	mov    %eax,0x4(%esp)
-c0110433:	89 14 24             	mov    %edx,(%esp)
-c0110436:	e8 25 ce ff ff       	call   c010d260 <__ZN14SwapperManager8FreeSwapEmi>
-c011043b:	e8 28 6d ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c0110440:	89 04 24             	mov    %eax,(%esp)
-c0110443:	e8 b0 6f ff ff       	call   c01073f8 <__ZN6Kernel14GetFileManagerEv>
-c0110448:	8b 50 08             	mov    0x8(%eax),%edx
-c011044b:	8b 45 08             	mov    0x8(%ebp),%eax
-c011044e:	8b 40 0c             	mov    0xc(%eax),%eax
-c0110451:	89 44 24 04          	mov    %eax,0x4(%esp)
-c0110455:	89 14 24             	mov    %edx,(%esp)
-c0110458:	e8 17 9c ff ff       	call   c010a074 <__ZN10InodeTable4IPutEP5Inode>
-c011045d:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110460:	c7 40 0c 00 00 00 00 	movl   $0x0,0xc(%eax)
-c0110467:	c9                   	leave  
-c0110468:	c3                   	ret    
-c0110469:	90                   	nop    
-c011046a:	90                   	nop    
-c011046b:	90                   	nop    
+c011042c:	8b 40 04             	mov    0x4(%eax),%eax
+c011042f:	89 44 24 08          	mov    %eax,0x8(%esp)
+c0110433:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110436:	8b 40 08             	mov    0x8(%eax),%eax
+c0110439:	89 44 24 04          	mov    %eax,0x4(%esp)
+c011043d:	89 14 24             	mov    %edx,(%esp)
+c0110440:	e8 09 a0 ff ff       	call   c010a44e <__ZN11PageManager10FreeMemoryEmm>
+c0110445:	c9                   	leave  
+c0110446:	c3                   	ret    
+c0110447:	90                   	nop    
 
-c011046c <__ZN4Time21TimeInterruptEntranceEv>:
-c011046c:	55                   	push   %ebp
-c011046d:	89 e5                	mov    %esp,%ebp
-c011046f:	83 ec 08             	sub    $0x8,%esp
-c0110472:	fc                   	cld    
-c0110473:	50                   	push   %eax
-c0110474:	55                   	push   %ebp
-c0110475:	57                   	push   %edi
-c0110476:	56                   	push   %esi
-c0110477:	52                   	push   %edx
-c0110478:	51                   	push   %ecx
-c0110479:	53                   	push   %ebx
-c011047a:	06                   	push   %es
-c011047b:	1e                   	push   %ds
-c011047c:	0f a0                	push   %fs
-c011047e:	0f a8                	push   %gs
-c0110480:	8d 55 04             	lea    0x4(%ebp),%edx
-c0110483:	52                   	push   %edx
-c0110484:	8d 54 24 04          	lea    0x4(%esp),%edx
-c0110488:	52                   	push   %edx
-c0110489:	66 ba 10 00          	mov    $0x10,%dx
-c011048d:	8e da                	mov    %edx,%ds
-c011048f:	8e c2                	mov    %edx,%es
-c0110491:	b8 f8 04 11 c0       	mov    $0xc01104f8,%eax
-c0110496:	ff d0                	call   *%eax
-c0110498:	89 6d fc             	mov    %ebp,-0x4(%ebp)
-c011049b:	83 45 fc 04          	addl   $0x4,-0x4(%ebp)
-c011049f:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c01104a2:	8b 40 04             	mov    0x4(%eax),%eax
-c01104a5:	83 e0 03             	and    $0x3,%eax
-c01104a8:	85 c0                	test   %eax,%eax
-c01104aa:	74 37                	je     c01104e3 <__ZN4Time21TimeInterruptEntranceEv+0x77>
-c01104ac:	e8 4f 1b 00 00       	call   c0112000 <__ZN11X86Assembly3CLIEv>
-c01104b1:	e8 b2 6c ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c01104b6:	89 04 24             	mov    %eax,(%esp)
-c01104b9:	e8 f2 6e ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
-c01104be:	83 b8 ec 1c 00 00 00 	cmpl   $0x0,0x1cec(%eax)
-c01104c5:	7e 1c                	jle    c01104e3 <__ZN4Time21TimeInterruptEntranceEv+0x77>
-c01104c7:	e8 54 1b 00 00       	call   c0112020 <__ZN11X86Assembly3STIEv>
-c01104cc:	e8 97 6c ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c01104d1:	89 04 24             	mov    %eax,(%esp)
-c01104d4:	e8 d7 6e ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
-c01104d9:	89 04 24             	mov    %eax,(%esp)
-c01104dc:	e8 e1 b7 ff ff       	call   c010bcc2 <__ZN14ProcessManager5SwtchEv>
-c01104e1:	eb c9                	jmp    c01104ac <__ZN4Time21TimeInterruptEntranceEv+0x40>
-c01104e3:	83 c4 08             	add    $0x8,%esp
-c01104e6:	0f a9                	pop    %gs
-c01104e8:	0f a1                	pop    %fs
-c01104ea:	1f                   	pop    %ds
-c01104eb:	07                   	pop    %es
-c01104ec:	5b                   	pop    %ebx
-c01104ed:	59                   	pop    %ecx
-c01104ee:	5a                   	pop    %edx
-c01104ef:	5e                   	pop    %esi
-c01104f0:	5f                   	pop    %edi
-c01104f1:	5d                   	pop    %ebp
-c01104f2:	58                   	pop    %eax
-c01104f3:	c9                   	leave  
-c01104f4:	cf                   	iret   
-c01104f5:	c9                   	leave  
-c01104f6:	c3                   	ret    
-c01104f7:	90                   	nop    
+c0110448 <__ZN4Text5XFreeEv>:
+c0110448:	55                   	push   %ebp
+c0110449:	89 e5                	mov    %esp,%ebp
+c011044b:	83 ec 18             	sub    $0x18,%esp
+c011044e:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110451:	89 04 24             	mov    %eax,(%esp)
+c0110454:	e8 9b ff ff ff       	call   c01103f4 <__ZN4Text6XccDecEv>
+c0110459:	8b 55 08             	mov    0x8(%ebp),%edx
+c011045c:	8b 45 08             	mov    0x8(%ebp),%eax
+c011045f:	0f b7 40 10          	movzwl 0x10(%eax),%eax
+c0110463:	48                   	dec    %eax
+c0110464:	66 89 42 10          	mov    %ax,0x10(%edx)
+c0110468:	66 85 c0             	test   %ax,%ax
+c011046b:	75 56                	jne    c01104c3 <__ZN4Text5XFreeEv+0x7b>
+c011046d:	e8 f6 6c ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c0110472:	89 04 24             	mov    %eax,(%esp)
+c0110475:	e8 4e 6f ff ff       	call   c01073c8 <__ZN6Kernel17GetSwapperManagerEv>
+c011047a:	89 c2                	mov    %eax,%edx
+c011047c:	8b 45 08             	mov    0x8(%ebp),%eax
+c011047f:	8b 00                	mov    (%eax),%eax
+c0110481:	89 44 24 08          	mov    %eax,0x8(%esp)
+c0110485:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110488:	8b 40 08             	mov    0x8(%eax),%eax
+c011048b:	89 44 24 04          	mov    %eax,0x4(%esp)
+c011048f:	89 14 24             	mov    %edx,(%esp)
+c0110492:	e8 c9 cd ff ff       	call   c010d260 <__ZN14SwapperManager8FreeSwapEmi>
+c0110497:	e8 cc 6c ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c011049c:	89 04 24             	mov    %eax,(%esp)
+c011049f:	e8 54 6f ff ff       	call   c01073f8 <__ZN6Kernel14GetFileManagerEv>
+c01104a4:	8b 50 08             	mov    0x8(%eax),%edx
+c01104a7:	8b 45 08             	mov    0x8(%ebp),%eax
+c01104aa:	8b 40 0c             	mov    0xc(%eax),%eax
+c01104ad:	89 44 24 04          	mov    %eax,0x4(%esp)
+c01104b1:	89 14 24             	mov    %edx,(%esp)
+c01104b4:	e8 bb 9b ff ff       	call   c010a074 <__ZN10InodeTable4IPutEP5Inode>
+c01104b9:	8b 45 08             	mov    0x8(%ebp),%eax
+c01104bc:	c7 40 0c 00 00 00 00 	movl   $0x0,0xc(%eax)
+c01104c3:	c9                   	leave  
+c01104c4:	c3                   	ret    
+c01104c5:	90                   	nop    
+c01104c6:	90                   	nop    
+c01104c7:	90                   	nop    
 
-c01104f8 <__ZN4Time5ClockEP7pt_regsP10pt_context>:
-c01104f8:	55                   	push   %ebp
-c01104f9:	89 e5                	mov    %esp,%ebp
-c01104fb:	53                   	push   %ebx
-c01104fc:	83 ec 24             	sub    $0x24,%esp
-c01104ff:	e8 64 6c ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c0110504:	89 04 24             	mov    %eax,(%esp)
-c0110507:	e8 f8 6e ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
-c011050c:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c011050f:	e8 54 6c ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c0110514:	89 04 24             	mov    %eax,(%esp)
-c0110517:	e8 94 6e ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
-c011051c:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c011051f:	8b 45 0c             	mov    0xc(%ebp),%eax
-c0110522:	8b 40 04             	mov    0x4(%eax),%eax
-c0110525:	83 e0 03             	and    $0x3,%eax
-c0110528:	83 f8 03             	cmp    $0x3,%eax
-c011052b:	75 08                	jne    c0110535 <__ZN4Time5ClockEP7pt_regsP10pt_context+0x3d>
-c011052d:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c0110530:	ff 40 48             	incl   0x48(%eax)
-c0110533:	eb 06                	jmp    c011053b <__ZN4Time5ClockEP7pt_regsP10pt_context+0x43>
-c0110535:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c0110538:	ff 40 4c             	incl   0x4c(%eax)
-c011053b:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c011053e:	8b 40 10             	mov    0x10(%eax),%eax
-c0110541:	89 45 f0             	mov    %eax,-0x10(%ebp)
-c0110544:	8b 5d f0             	mov    -0x10(%ebp),%ebx
-c0110547:	c7 44 24 04 00 04 00 	movl   $0x400,0x4(%esp)
-c011054e:	00 
-c011054f:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c0110552:	ff 40 24             	incl   0x24(%eax)
-c0110555:	8b 40 24             	mov    0x24(%eax),%eax
-c0110558:	89 04 24             	mov    %eax,(%esp)
-c011055b:	e8 b0 0e 00 00       	call   c0111410 <__ZN7Utility3MinEii>
-c0110560:	89 43 24             	mov    %eax,0x24(%ebx)
-c0110563:	ff 05 90 0d 12 c0    	incl   0xc0120d90
-c0110569:	83 3d 90 0d 12 c0 77 	cmpl   $0x77,0xc0120d90
-c0110570:	7f 19                	jg     c011058b <__ZN4Time5ClockEP7pt_regsP10pt_context+0x93>
-c0110572:	c7 44 24 04 20 00 00 	movl   $0x20,0x4(%esp)
-c0110579:	00 
-c011057a:	c7 04 24 20 00 00 00 	movl   $0x20,(%esp)
-c0110581:	e8 c2 1b 00 00       	call   c0112148 <__ZN6IOPort7OutByteEth>
-c0110586:	e9 5f 01 00 00       	jmp    c01106ea <__ZN4Time5ClockEP7pt_regsP10pt_context+0x1f2>
-c011058b:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c011058e:	83 78 18 03          	cmpl   $0x3,0x18(%eax)
-c0110592:	75 26                	jne    c01105ba <__ZN4Time5ClockEP7pt_regsP10pt_context+0xc2>
-c0110594:	8b 45 0c             	mov    0xc(%ebp),%eax
-c0110597:	8b 40 04             	mov    0x4(%eax),%eax
-c011059a:	83 e0 03             	and    $0x3,%eax
-c011059d:	85 c0                	test   %eax,%eax
-c011059f:	75 19                	jne    c01105ba <__ZN4Time5ClockEP7pt_regsP10pt_context+0xc2>
-c01105a1:	c7 44 24 04 20 00 00 	movl   $0x20,0x4(%esp)
-c01105a8:	00 
-c01105a9:	c7 04 24 20 00 00 00 	movl   $0x20,(%esp)
-c01105b0:	e8 93 1b 00 00       	call   c0112148 <__ZN6IOPort7OutByteEth>
-c01105b5:	e9 30 01 00 00       	jmp    c01106ea <__ZN4Time5ClockEP7pt_regsP10pt_context+0x1f2>
-c01105ba:	83 2d 90 0d 12 c0 78 	subl   $0x78,0xc0120d90
-c01105c1:	ff 05 94 0d 12 c0    	incl   0xc0120d94
-c01105c7:	e8 54 1a 00 00       	call   c0112020 <__ZN11X86Assembly3STIEv>
-c01105cc:	c7 44 24 04 20 00 00 	movl   $0x20,0x4(%esp)
-c01105d3:	00 
-c01105d4:	c7 04 24 20 00 00 00 	movl   $0x20,(%esp)
-c01105db:	e8 68 1b 00 00       	call   c0112148 <__ZN6IOPort7OutByteEth>
-c01105e0:	a1 94 0d 12 c0       	mov    0xc0120d94,%eax
-c01105e5:	3b 05 98 0d 12 c0    	cmp    0xc0120d98,%eax
-c01105eb:	75 13                	jne    c0110600 <__ZN4Time5ClockEP7pt_regsP10pt_context+0x108>
-c01105ed:	c7 44 24 04 98 0d 12 	movl   $0xc0120d98,0x4(%esp)
-c01105f4:	c0 
-c01105f5:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c01105f8:	89 04 24             	mov    %eax,(%esp)
-c01105fb:	e8 50 c9 ff ff       	call   c010cf50 <__ZN14ProcessManager9WakeUpAllEm>
-c0110600:	c7 45 ec 00 00 00 00 	movl   $0x0,-0x14(%ebp)
-c0110607:	83 7d ec 63          	cmpl   $0x63,-0x14(%ebp)
-c011060b:	7f 73                	jg     c0110680 <__ZN4Time5ClockEP7pt_regsP10pt_context+0x188>
-c011060d:	8b 45 ec             	mov    -0x14(%ebp),%eax
-c0110610:	c1 e0 06             	shl    $0x6,%eax
-c0110613:	03 45 f4             	add    -0xc(%ebp),%eax
-c0110616:	89 45 e8             	mov    %eax,-0x18(%ebp)
-c0110619:	8b 45 e8             	mov    -0x18(%ebp),%eax
-c011061c:	83 78 18 00          	cmpl   $0x0,0x18(%eax)
-c0110620:	74 57                	je     c0110679 <__ZN4Time5ClockEP7pt_regsP10pt_context+0x181>
-c0110622:	8b 5d e8             	mov    -0x18(%ebp),%ebx
-c0110625:	c7 44 24 04 7f 00 00 	movl   $0x7f,0x4(%esp)
-c011062c:	00 
-c011062d:	8b 45 e8             	mov    -0x18(%ebp),%eax
-c0110630:	ff 40 2c             	incl   0x2c(%eax)
-c0110633:	8b 40 2c             	mov    0x2c(%eax),%eax
-c0110636:	89 04 24             	mov    %eax,(%esp)
-c0110639:	e8 d2 0d 00 00       	call   c0111410 <__ZN7Utility3MinEii>
-c011063e:	89 43 2c             	mov    %eax,0x2c(%ebx)
-c0110641:	8b 45 e8             	mov    -0x18(%ebp),%eax
-c0110644:	83 78 24 14          	cmpl   $0x14,0x24(%eax)
-c0110648:	7e 11                	jle    c011065b <__ZN4Time5ClockEP7pt_regsP10pt_context+0x163>
-c011064a:	8b 45 e8             	mov    -0x18(%ebp),%eax
-c011064d:	8b 55 e8             	mov    -0x18(%ebp),%edx
-c0110650:	8b 52 24             	mov    0x24(%edx),%edx
-c0110653:	83 ea 14             	sub    $0x14,%edx
-c0110656:	89 50 24             	mov    %edx,0x24(%eax)
-c0110659:	eb 0a                	jmp    c0110665 <__ZN4Time5ClockEP7pt_regsP10pt_context+0x16d>
-c011065b:	8b 45 e8             	mov    -0x18(%ebp),%eax
-c011065e:	c7 40 24 00 00 00 00 	movl   $0x0,0x24(%eax)
-c0110665:	8b 45 e8             	mov    -0x18(%ebp),%eax
-c0110668:	83 78 20 64          	cmpl   $0x64,0x20(%eax)
-c011066c:	7e 0b                	jle    c0110679 <__ZN4Time5ClockEP7pt_regsP10pt_context+0x181>
-c011066e:	8b 45 e8             	mov    -0x18(%ebp),%eax
-c0110671:	89 04 24             	mov    %eax,(%esp)
-c0110674:	e8 d5 a4 ff ff       	call   c010ab4e <__ZN7Process6SetPriEv>
-c0110679:	8d 45 ec             	lea    -0x14(%ebp),%eax
-c011067c:	ff 00                	incl   (%eax)
-c011067e:	eb 87                	jmp    c0110607 <__ZN4Time5ClockEP7pt_regsP10pt_context+0x10f>
-c0110680:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c0110683:	83 b8 f0 1c 00 00 00 	cmpl   $0x0,0x1cf0(%eax)
-c011068a:	74 24                	je     c01106b0 <__ZN4Time5ClockEP7pt_regsP10pt_context+0x1b8>
-c011068c:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c011068f:	c7 80 f0 1c 00 00 00 	movl   $0x0,0x1cf0(%eax)
-c0110696:	00 00 00 
-c0110699:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c011069c:	05 f0 1c 00 00       	add    $0x1cf0,%eax
-c01106a1:	89 44 24 04          	mov    %eax,0x4(%esp)
-c01106a5:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c01106a8:	89 04 24             	mov    %eax,(%esp)
-c01106ab:	e8 a0 c8 ff ff       	call   c010cf50 <__ZN14ProcessManager9WakeUpAllEm>
-c01106b0:	8b 45 0c             	mov    0xc(%ebp),%eax
-c01106b3:	8b 40 04             	mov    0x4(%eax),%eax
-c01106b6:	83 e0 03             	and    $0x3,%eax
-c01106b9:	83 f8 03             	cmp    $0x3,%eax
-c01106bc:	75 2c                	jne    c01106ea <__ZN4Time5ClockEP7pt_regsP10pt_context+0x1f2>
-c01106be:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c01106c1:	89 04 24             	mov    %eax,(%esp)
-c01106c4:	e8 79 af ff ff       	call   c010b642 <__ZN7Process5IsSigEv>
-c01106c9:	85 c0                	test   %eax,%eax
-c01106cb:	74 12                	je     c01106df <__ZN4Time5ClockEP7pt_regsP10pt_context+0x1e7>
-c01106cd:	8b 45 0c             	mov    0xc(%ebp),%eax
-c01106d0:	89 44 24 04          	mov    %eax,0x4(%esp)
-c01106d4:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c01106d7:	89 04 24             	mov    %eax,(%esp)
-c01106da:	e8 b9 af ff ff       	call   c010b698 <__ZN7Process4PSigEP10pt_context>
-c01106df:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c01106e2:	89 04 24             	mov    %eax,(%esp)
-c01106e5:	e8 64 a4 ff ff       	call   c010ab4e <__ZN7Process6SetPriEv>
-c01106ea:	83 c4 24             	add    $0x24,%esp
-c01106ed:	5b                   	pop    %ebx
-c01106ee:	5d                   	pop    %ebp
-c01106ef:	c3                   	ret    
+c01104c8 <__ZN4Time21TimeInterruptEntranceEv>:
+c01104c8:	55                   	push   %ebp
+c01104c9:	89 e5                	mov    %esp,%ebp
+c01104cb:	83 ec 08             	sub    $0x8,%esp
+c01104ce:	fc                   	cld    
+c01104cf:	50                   	push   %eax
+c01104d0:	55                   	push   %ebp
+c01104d1:	57                   	push   %edi
+c01104d2:	56                   	push   %esi
+c01104d3:	52                   	push   %edx
+c01104d4:	51                   	push   %ecx
+c01104d5:	53                   	push   %ebx
+c01104d6:	06                   	push   %es
+c01104d7:	1e                   	push   %ds
+c01104d8:	0f a0                	push   %fs
+c01104da:	0f a8                	push   %gs
+c01104dc:	8d 55 04             	lea    0x4(%ebp),%edx
+c01104df:	52                   	push   %edx
+c01104e0:	8d 54 24 04          	lea    0x4(%esp),%edx
+c01104e4:	52                   	push   %edx
+c01104e5:	66 ba 10 00          	mov    $0x10,%dx
+c01104e9:	8e da                	mov    %edx,%ds
+c01104eb:	8e c2                	mov    %edx,%es
+c01104ed:	b8 54 05 11 c0       	mov    $0xc0110554,%eax
+c01104f2:	ff d0                	call   *%eax
+c01104f4:	89 6d fc             	mov    %ebp,-0x4(%ebp)
+c01104f7:	83 45 fc 04          	addl   $0x4,-0x4(%ebp)
+c01104fb:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c01104fe:	8b 40 04             	mov    0x4(%eax),%eax
+c0110501:	83 e0 03             	and    $0x3,%eax
+c0110504:	85 c0                	test   %eax,%eax
+c0110506:	74 37                	je     c011053f <__ZN4Time21TimeInterruptEntranceEv+0x77>
+c0110508:	e8 f3 1a 00 00       	call   c0112000 <__ZN11X86Assembly3CLIEv>
+c011050d:	e8 56 6c ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c0110512:	89 04 24             	mov    %eax,(%esp)
+c0110515:	e8 96 6e ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
+c011051a:	83 b8 ec 1c 00 00 00 	cmpl   $0x0,0x1cec(%eax)
+c0110521:	7e 1c                	jle    c011053f <__ZN4Time21TimeInterruptEntranceEv+0x77>
+c0110523:	e8 f8 1a 00 00       	call   c0112020 <__ZN11X86Assembly3STIEv>
+c0110528:	e8 3b 6c ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c011052d:	89 04 24             	mov    %eax,(%esp)
+c0110530:	e8 7b 6e ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
+c0110535:	89 04 24             	mov    %eax,(%esp)
+c0110538:	e8 85 b7 ff ff       	call   c010bcc2 <__ZN14ProcessManager5SwtchEv>
+c011053d:	eb c9                	jmp    c0110508 <__ZN4Time21TimeInterruptEntranceEv+0x40>
+c011053f:	83 c4 08             	add    $0x8,%esp
+c0110542:	0f a9                	pop    %gs
+c0110544:	0f a1                	pop    %fs
+c0110546:	1f                   	pop    %ds
+c0110547:	07                   	pop    %es
+c0110548:	5b                   	pop    %ebx
+c0110549:	59                   	pop    %ecx
+c011054a:	5a                   	pop    %edx
+c011054b:	5e                   	pop    %esi
+c011054c:	5f                   	pop    %edi
+c011054d:	5d                   	pop    %ebp
+c011054e:	58                   	pop    %eax
+c011054f:	c9                   	leave  
+c0110550:	cf                   	iret   
+c0110551:	c9                   	leave  
+c0110552:	c3                   	ret    
+c0110553:	90                   	nop    
 
-c01106f0 <__ZN9TTy_QueueC2Ev>:
-c01106f0:	55                   	push   %ebp
-c01106f1:	89 e5                	mov    %esp,%ebp
-c01106f3:	8b 45 08             	mov    0x8(%ebp),%eax
-c01106f6:	c7 00 00 00 00 00    	movl   $0x0,(%eax)
-c01106fc:	8b 45 08             	mov    0x8(%ebp),%eax
-c01106ff:	c7 40 04 00 00 00 00 	movl   $0x0,0x4(%eax)
-c0110706:	5d                   	pop    %ebp
-c0110707:	c3                   	ret    
+c0110554 <__ZN4Time5ClockEP7pt_regsP10pt_context>:
+c0110554:	55                   	push   %ebp
+c0110555:	89 e5                	mov    %esp,%ebp
+c0110557:	53                   	push   %ebx
+c0110558:	83 ec 24             	sub    $0x24,%esp
+c011055b:	e8 08 6c ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c0110560:	89 04 24             	mov    %eax,(%esp)
+c0110563:	e8 9c 6e ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
+c0110568:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c011056b:	e8 f8 6b ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c0110570:	89 04 24             	mov    %eax,(%esp)
+c0110573:	e8 38 6e ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
+c0110578:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c011057b:	8b 45 0c             	mov    0xc(%ebp),%eax
+c011057e:	8b 40 04             	mov    0x4(%eax),%eax
+c0110581:	83 e0 03             	and    $0x3,%eax
+c0110584:	83 f8 03             	cmp    $0x3,%eax
+c0110587:	75 08                	jne    c0110591 <__ZN4Time5ClockEP7pt_regsP10pt_context+0x3d>
+c0110589:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c011058c:	ff 40 48             	incl   0x48(%eax)
+c011058f:	eb 06                	jmp    c0110597 <__ZN4Time5ClockEP7pt_regsP10pt_context+0x43>
+c0110591:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c0110594:	ff 40 4c             	incl   0x4c(%eax)
+c0110597:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c011059a:	8b 40 10             	mov    0x10(%eax),%eax
+c011059d:	89 45 f0             	mov    %eax,-0x10(%ebp)
+c01105a0:	8b 5d f0             	mov    -0x10(%ebp),%ebx
+c01105a3:	c7 44 24 04 00 04 00 	movl   $0x400,0x4(%esp)
+c01105aa:	00 
+c01105ab:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c01105ae:	ff 40 24             	incl   0x24(%eax)
+c01105b1:	8b 40 24             	mov    0x24(%eax),%eax
+c01105b4:	89 04 24             	mov    %eax,(%esp)
+c01105b7:	e8 b0 0e 00 00       	call   c011146c <__ZN7Utility3MinEii>
+c01105bc:	89 43 24             	mov    %eax,0x24(%ebx)
+c01105bf:	ff 05 90 0d 12 c0    	incl   0xc0120d90
+c01105c5:	83 3d 90 0d 12 c0 77 	cmpl   $0x77,0xc0120d90
+c01105cc:	7f 19                	jg     c01105e7 <__ZN4Time5ClockEP7pt_regsP10pt_context+0x93>
+c01105ce:	c7 44 24 04 20 00 00 	movl   $0x20,0x4(%esp)
+c01105d5:	00 
+c01105d6:	c7 04 24 20 00 00 00 	movl   $0x20,(%esp)
+c01105dd:	e8 66 1b 00 00       	call   c0112148 <__ZN6IOPort7OutByteEth>
+c01105e2:	e9 5f 01 00 00       	jmp    c0110746 <__ZN4Time5ClockEP7pt_regsP10pt_context+0x1f2>
+c01105e7:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c01105ea:	83 78 18 03          	cmpl   $0x3,0x18(%eax)
+c01105ee:	75 26                	jne    c0110616 <__ZN4Time5ClockEP7pt_regsP10pt_context+0xc2>
+c01105f0:	8b 45 0c             	mov    0xc(%ebp),%eax
+c01105f3:	8b 40 04             	mov    0x4(%eax),%eax
+c01105f6:	83 e0 03             	and    $0x3,%eax
+c01105f9:	85 c0                	test   %eax,%eax
+c01105fb:	75 19                	jne    c0110616 <__ZN4Time5ClockEP7pt_regsP10pt_context+0xc2>
+c01105fd:	c7 44 24 04 20 00 00 	movl   $0x20,0x4(%esp)
+c0110604:	00 
+c0110605:	c7 04 24 20 00 00 00 	movl   $0x20,(%esp)
+c011060c:	e8 37 1b 00 00       	call   c0112148 <__ZN6IOPort7OutByteEth>
+c0110611:	e9 30 01 00 00       	jmp    c0110746 <__ZN4Time5ClockEP7pt_regsP10pt_context+0x1f2>
+c0110616:	83 2d 90 0d 12 c0 78 	subl   $0x78,0xc0120d90
+c011061d:	ff 05 94 0d 12 c0    	incl   0xc0120d94
+c0110623:	e8 f8 19 00 00       	call   c0112020 <__ZN11X86Assembly3STIEv>
+c0110628:	c7 44 24 04 20 00 00 	movl   $0x20,0x4(%esp)
+c011062f:	00 
+c0110630:	c7 04 24 20 00 00 00 	movl   $0x20,(%esp)
+c0110637:	e8 0c 1b 00 00       	call   c0112148 <__ZN6IOPort7OutByteEth>
+c011063c:	a1 94 0d 12 c0       	mov    0xc0120d94,%eax
+c0110641:	3b 05 98 0d 12 c0    	cmp    0xc0120d98,%eax
+c0110647:	75 13                	jne    c011065c <__ZN4Time5ClockEP7pt_regsP10pt_context+0x108>
+c0110649:	c7 44 24 04 98 0d 12 	movl   $0xc0120d98,0x4(%esp)
+c0110650:	c0 
+c0110651:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c0110654:	89 04 24             	mov    %eax,(%esp)
+c0110657:	e8 f4 c8 ff ff       	call   c010cf50 <__ZN14ProcessManager9WakeUpAllEm>
+c011065c:	c7 45 ec 00 00 00 00 	movl   $0x0,-0x14(%ebp)
+c0110663:	83 7d ec 63          	cmpl   $0x63,-0x14(%ebp)
+c0110667:	7f 73                	jg     c01106dc <__ZN4Time5ClockEP7pt_regsP10pt_context+0x188>
+c0110669:	8b 45 ec             	mov    -0x14(%ebp),%eax
+c011066c:	c1 e0 06             	shl    $0x6,%eax
+c011066f:	03 45 f4             	add    -0xc(%ebp),%eax
+c0110672:	89 45 e8             	mov    %eax,-0x18(%ebp)
+c0110675:	8b 45 e8             	mov    -0x18(%ebp),%eax
+c0110678:	83 78 18 00          	cmpl   $0x0,0x18(%eax)
+c011067c:	74 57                	je     c01106d5 <__ZN4Time5ClockEP7pt_regsP10pt_context+0x181>
+c011067e:	8b 5d e8             	mov    -0x18(%ebp),%ebx
+c0110681:	c7 44 24 04 7f 00 00 	movl   $0x7f,0x4(%esp)
+c0110688:	00 
+c0110689:	8b 45 e8             	mov    -0x18(%ebp),%eax
+c011068c:	ff 40 2c             	incl   0x2c(%eax)
+c011068f:	8b 40 2c             	mov    0x2c(%eax),%eax
+c0110692:	89 04 24             	mov    %eax,(%esp)
+c0110695:	e8 d2 0d 00 00       	call   c011146c <__ZN7Utility3MinEii>
+c011069a:	89 43 2c             	mov    %eax,0x2c(%ebx)
+c011069d:	8b 45 e8             	mov    -0x18(%ebp),%eax
+c01106a0:	83 78 24 14          	cmpl   $0x14,0x24(%eax)
+c01106a4:	7e 11                	jle    c01106b7 <__ZN4Time5ClockEP7pt_regsP10pt_context+0x163>
+c01106a6:	8b 45 e8             	mov    -0x18(%ebp),%eax
+c01106a9:	8b 55 e8             	mov    -0x18(%ebp),%edx
+c01106ac:	8b 52 24             	mov    0x24(%edx),%edx
+c01106af:	83 ea 14             	sub    $0x14,%edx
+c01106b2:	89 50 24             	mov    %edx,0x24(%eax)
+c01106b5:	eb 0a                	jmp    c01106c1 <__ZN4Time5ClockEP7pt_regsP10pt_context+0x16d>
+c01106b7:	8b 45 e8             	mov    -0x18(%ebp),%eax
+c01106ba:	c7 40 24 00 00 00 00 	movl   $0x0,0x24(%eax)
+c01106c1:	8b 45 e8             	mov    -0x18(%ebp),%eax
+c01106c4:	83 78 20 64          	cmpl   $0x64,0x20(%eax)
+c01106c8:	7e 0b                	jle    c01106d5 <__ZN4Time5ClockEP7pt_regsP10pt_context+0x181>
+c01106ca:	8b 45 e8             	mov    -0x18(%ebp),%eax
+c01106cd:	89 04 24             	mov    %eax,(%esp)
+c01106d0:	e8 79 a4 ff ff       	call   c010ab4e <__ZN7Process6SetPriEv>
+c01106d5:	8d 45 ec             	lea    -0x14(%ebp),%eax
+c01106d8:	ff 00                	incl   (%eax)
+c01106da:	eb 87                	jmp    c0110663 <__ZN4Time5ClockEP7pt_regsP10pt_context+0x10f>
+c01106dc:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c01106df:	83 b8 f0 1c 00 00 00 	cmpl   $0x0,0x1cf0(%eax)
+c01106e6:	74 24                	je     c011070c <__ZN4Time5ClockEP7pt_regsP10pt_context+0x1b8>
+c01106e8:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c01106eb:	c7 80 f0 1c 00 00 00 	movl   $0x0,0x1cf0(%eax)
+c01106f2:	00 00 00 
+c01106f5:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c01106f8:	05 f0 1c 00 00       	add    $0x1cf0,%eax
+c01106fd:	89 44 24 04          	mov    %eax,0x4(%esp)
+c0110701:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c0110704:	89 04 24             	mov    %eax,(%esp)
+c0110707:	e8 44 c8 ff ff       	call   c010cf50 <__ZN14ProcessManager9WakeUpAllEm>
+c011070c:	8b 45 0c             	mov    0xc(%ebp),%eax
+c011070f:	8b 40 04             	mov    0x4(%eax),%eax
+c0110712:	83 e0 03             	and    $0x3,%eax
+c0110715:	83 f8 03             	cmp    $0x3,%eax
+c0110718:	75 2c                	jne    c0110746 <__ZN4Time5ClockEP7pt_regsP10pt_context+0x1f2>
+c011071a:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c011071d:	89 04 24             	mov    %eax,(%esp)
+c0110720:	e8 1d af ff ff       	call   c010b642 <__ZN7Process5IsSigEv>
+c0110725:	85 c0                	test   %eax,%eax
+c0110727:	74 12                	je     c011073b <__ZN4Time5ClockEP7pt_regsP10pt_context+0x1e7>
+c0110729:	8b 45 0c             	mov    0xc(%ebp),%eax
+c011072c:	89 44 24 04          	mov    %eax,0x4(%esp)
+c0110730:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c0110733:	89 04 24             	mov    %eax,(%esp)
+c0110736:	e8 5d af ff ff       	call   c010b698 <__ZN7Process4PSigEP10pt_context>
+c011073b:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c011073e:	89 04 24             	mov    %eax,(%esp)
+c0110741:	e8 08 a4 ff ff       	call   c010ab4e <__ZN7Process6SetPriEv>
+c0110746:	83 c4 24             	add    $0x24,%esp
+c0110749:	5b                   	pop    %ebx
+c011074a:	5d                   	pop    %ebp
+c011074b:	c3                   	ret    
 
-c0110708 <__ZN9TTy_QueueC1Ev>:
-c0110708:	55                   	push   %ebp
-c0110709:	89 e5                	mov    %esp,%ebp
-c011070b:	8b 45 08             	mov    0x8(%ebp),%eax
-c011070e:	c7 00 00 00 00 00    	movl   $0x0,(%eax)
-c0110714:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110717:	c7 40 04 00 00 00 00 	movl   $0x0,0x4(%eax)
-c011071e:	5d                   	pop    %ebp
-c011071f:	c3                   	ret    
-
-c0110720 <__ZN9TTy_QueueD2Ev>:
-c0110720:	55                   	push   %ebp
-c0110721:	89 e5                	mov    %esp,%ebp
-c0110723:	5d                   	pop    %ebp
-c0110724:	c3                   	ret    
-c0110725:	90                   	nop    
-
-c0110726 <__ZN9TTy_QueueD1Ev>:
-c0110726:	55                   	push   %ebp
-c0110727:	89 e5                	mov    %esp,%ebp
-c0110729:	5d                   	pop    %ebp
-c011072a:	c3                   	ret    
-c011072b:	90                   	nop    
-
-c011072c <__ZN9TTy_Queue7GetCharEv>:
-c011072c:	55                   	push   %ebp
-c011072d:	89 e5                	mov    %esp,%ebp
-c011072f:	83 ec 08             	sub    $0x8,%esp
-c0110732:	c6 45 ff ff          	movb   $0xff,-0x1(%ebp)
-c0110736:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110739:	8b 55 08             	mov    0x8(%ebp),%edx
-c011073c:	8b 00                	mov    (%eax),%eax
-c011073e:	3b 42 04             	cmp    0x4(%edx),%eax
-c0110741:	75 09                	jne    c011074c <__ZN9TTy_Queue7GetCharEv+0x20>
-c0110743:	0f be 45 ff          	movsbl -0x1(%ebp),%eax
-c0110747:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c011074a:	eb 2a                	jmp    c0110776 <__ZN9TTy_Queue7GetCharEv+0x4a>
-c011074c:	8b 55 08             	mov    0x8(%ebp),%edx
+c011074c <__ZN9TTy_QueueC2Ev>:
+c011074c:	55                   	push   %ebp
+c011074d:	89 e5                	mov    %esp,%ebp
 c011074f:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110752:	8b 40 04             	mov    0x4(%eax),%eax
-c0110755:	0f b6 44 10 08       	movzbl 0x8(%eax,%edx,1),%eax
-c011075a:	88 45 ff             	mov    %al,-0x1(%ebp)
-c011075d:	8b 55 08             	mov    0x8(%ebp),%edx
-c0110760:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110763:	8b 40 04             	mov    0x4(%eax),%eax
-c0110766:	40                   	inc    %eax
-c0110767:	25 ff 01 00 00       	and    $0x1ff,%eax
-c011076c:	89 42 04             	mov    %eax,0x4(%edx)
-c011076f:	0f be 45 ff          	movsbl -0x1(%ebp),%eax
-c0110773:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c0110776:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c0110779:	c9                   	leave  
-c011077a:	c3                   	ret    
-c011077b:	90                   	nop    
+c0110752:	c7 00 00 00 00 00    	movl   $0x0,(%eax)
+c0110758:	8b 45 08             	mov    0x8(%ebp),%eax
+c011075b:	c7 40 04 00 00 00 00 	movl   $0x0,0x4(%eax)
+c0110762:	5d                   	pop    %ebp
+c0110763:	c3                   	ret    
 
-c011077c <__ZN9TTy_Queue7PutCharEc>:
+c0110764 <__ZN9TTy_QueueC1Ev>:
+c0110764:	55                   	push   %ebp
+c0110765:	89 e5                	mov    %esp,%ebp
+c0110767:	8b 45 08             	mov    0x8(%ebp),%eax
+c011076a:	c7 00 00 00 00 00    	movl   $0x0,(%eax)
+c0110770:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110773:	c7 40 04 00 00 00 00 	movl   $0x0,0x4(%eax)
+c011077a:	5d                   	pop    %ebp
+c011077b:	c3                   	ret    
+
+c011077c <__ZN9TTy_QueueD2Ev>:
 c011077c:	55                   	push   %ebp
 c011077d:	89 e5                	mov    %esp,%ebp
-c011077f:	83 ec 04             	sub    $0x4,%esp
-c0110782:	8b 45 0c             	mov    0xc(%ebp),%eax
-c0110785:	88 45 ff             	mov    %al,-0x1(%ebp)
-c0110788:	8b 4d 08             	mov    0x8(%ebp),%ecx
-c011078b:	8b 45 08             	mov    0x8(%ebp),%eax
-c011078e:	8b 10                	mov    (%eax),%edx
-c0110790:	0f b6 45 ff          	movzbl -0x1(%ebp),%eax
-c0110794:	88 44 0a 08          	mov    %al,0x8(%edx,%ecx,1)
-c0110798:	8b 55 08             	mov    0x8(%ebp),%edx
-c011079b:	8b 45 08             	mov    0x8(%ebp),%eax
-c011079e:	8b 00                	mov    (%eax),%eax
-c01107a0:	40                   	inc    %eax
-c01107a1:	25 ff 01 00 00       	and    $0x1ff,%eax
-c01107a6:	89 02                	mov    %eax,(%edx)
-c01107a8:	c9                   	leave  
-c01107a9:	c3                   	ret    
+c011077f:	5d                   	pop    %ebp
+c0110780:	c3                   	ret    
+c0110781:	90                   	nop    
 
-c01107aa <__ZN9TTy_Queue7CharNumEv>:
-c01107aa:	55                   	push   %ebp
-c01107ab:	89 e5                	mov    %esp,%ebp
-c01107ad:	83 ec 04             	sub    $0x4,%esp
-c01107b0:	8b 4d 08             	mov    0x8(%ebp),%ecx
-c01107b3:	8b 45 08             	mov    0x8(%ebp),%eax
-c01107b6:	8b 50 04             	mov    0x4(%eax),%edx
-c01107b9:	8b 01                	mov    (%ecx),%eax
-c01107bb:	29 d0                	sub    %edx,%eax
-c01107bd:	25 ff 01 00 00       	and    $0x1ff,%eax
-c01107c2:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c01107c5:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c01107c8:	c9                   	leave  
-c01107c9:	c3                   	ret    
+c0110782 <__ZN9TTy_QueueD1Ev>:
+c0110782:	55                   	push   %ebp
+c0110783:	89 e5                	mov    %esp,%ebp
+c0110785:	5d                   	pop    %ebp
+c0110786:	c3                   	ret    
+c0110787:	90                   	nop    
 
-c01107ca <__ZN9TTy_Queue11CurrentCharEv>:
-c01107ca:	55                   	push   %ebp
-c01107cb:	89 e5                	mov    %esp,%ebp
-c01107cd:	8b 55 08             	mov    0x8(%ebp),%edx
-c01107d0:	8b 45 08             	mov    0x8(%ebp),%eax
-c01107d3:	03 42 04             	add    0x4(%edx),%eax
-c01107d6:	83 c0 08             	add    $0x8,%eax
-c01107d9:	5d                   	pop    %ebp
-c01107da:	c3                   	ret    
-c01107db:	90                   	nop    
+c0110788 <__ZN9TTy_Queue7GetCharEv>:
+c0110788:	55                   	push   %ebp
+c0110789:	89 e5                	mov    %esp,%ebp
+c011078b:	83 ec 08             	sub    $0x8,%esp
+c011078e:	c6 45 ff ff          	movb   $0xff,-0x1(%ebp)
+c0110792:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110795:	8b 55 08             	mov    0x8(%ebp),%edx
+c0110798:	8b 00                	mov    (%eax),%eax
+c011079a:	3b 42 04             	cmp    0x4(%edx),%eax
+c011079d:	75 09                	jne    c01107a8 <__ZN9TTy_Queue7GetCharEv+0x20>
+c011079f:	0f be 45 ff          	movsbl -0x1(%ebp),%eax
+c01107a3:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c01107a6:	eb 2a                	jmp    c01107d2 <__ZN9TTy_Queue7GetCharEv+0x4a>
+c01107a8:	8b 55 08             	mov    0x8(%ebp),%edx
+c01107ab:	8b 45 08             	mov    0x8(%ebp),%eax
+c01107ae:	8b 40 04             	mov    0x4(%eax),%eax
+c01107b1:	0f b6 44 10 08       	movzbl 0x8(%eax,%edx,1),%eax
+c01107b6:	88 45 ff             	mov    %al,-0x1(%ebp)
+c01107b9:	8b 55 08             	mov    0x8(%ebp),%edx
+c01107bc:	8b 45 08             	mov    0x8(%ebp),%eax
+c01107bf:	8b 40 04             	mov    0x4(%eax),%eax
+c01107c2:	40                   	inc    %eax
+c01107c3:	25 ff 01 00 00       	and    $0x1ff,%eax
+c01107c8:	89 42 04             	mov    %eax,0x4(%edx)
+c01107cb:	0f be 45 ff          	movsbl -0x1(%ebp),%eax
+c01107cf:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c01107d2:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c01107d5:	c9                   	leave  
+c01107d6:	c3                   	ret    
+c01107d7:	90                   	nop    
 
-c01107dc <__ZN3TTyC2Ev>:
-c01107dc:	55                   	push   %ebp
-c01107dd:	89 e5                	mov    %esp,%ebp
-c01107df:	83 ec 04             	sub    $0x4,%esp
-c01107e2:	8b 45 08             	mov    0x8(%ebp),%eax
-c01107e5:	89 04 24             	mov    %eax,(%esp)
-c01107e8:	e8 1b ff ff ff       	call   c0110708 <__ZN9TTy_QueueC1Ev>
-c01107ed:	8b 45 08             	mov    0x8(%ebp),%eax
-c01107f0:	05 08 02 00 00       	add    $0x208,%eax
-c01107f5:	89 04 24             	mov    %eax,(%esp)
-c01107f8:	e8 0b ff ff ff       	call   c0110708 <__ZN9TTy_QueueC1Ev>
-c01107fd:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110800:	05 10 04 00 00       	add    $0x410,%eax
-c0110805:	89 04 24             	mov    %eax,(%esp)
-c0110808:	e8 fb fe ff ff       	call   c0110708 <__ZN9TTy_QueueC1Ev>
-c011080d:	c9                   	leave  
-c011080e:	c3                   	ret    
-c011080f:	90                   	nop    
+c01107d8 <__ZN9TTy_Queue7PutCharEc>:
+c01107d8:	55                   	push   %ebp
+c01107d9:	89 e5                	mov    %esp,%ebp
+c01107db:	83 ec 04             	sub    $0x4,%esp
+c01107de:	8b 45 0c             	mov    0xc(%ebp),%eax
+c01107e1:	88 45 ff             	mov    %al,-0x1(%ebp)
+c01107e4:	8b 4d 08             	mov    0x8(%ebp),%ecx
+c01107e7:	8b 45 08             	mov    0x8(%ebp),%eax
+c01107ea:	8b 10                	mov    (%eax),%edx
+c01107ec:	0f b6 45 ff          	movzbl -0x1(%ebp),%eax
+c01107f0:	88 44 0a 08          	mov    %al,0x8(%edx,%ecx,1)
+c01107f4:	8b 55 08             	mov    0x8(%ebp),%edx
+c01107f7:	8b 45 08             	mov    0x8(%ebp),%eax
+c01107fa:	8b 00                	mov    (%eax),%eax
+c01107fc:	40                   	inc    %eax
+c01107fd:	25 ff 01 00 00       	and    $0x1ff,%eax
+c0110802:	89 02                	mov    %eax,(%edx)
+c0110804:	c9                   	leave  
+c0110805:	c3                   	ret    
 
-c0110810 <__ZN3TTyC1Ev>:
-c0110810:	55                   	push   %ebp
-c0110811:	89 e5                	mov    %esp,%ebp
-c0110813:	83 ec 04             	sub    $0x4,%esp
-c0110816:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110819:	89 04 24             	mov    %eax,(%esp)
-c011081c:	e8 e7 fe ff ff       	call   c0110708 <__ZN9TTy_QueueC1Ev>
-c0110821:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110824:	05 08 02 00 00       	add    $0x208,%eax
-c0110829:	89 04 24             	mov    %eax,(%esp)
-c011082c:	e8 d7 fe ff ff       	call   c0110708 <__ZN9TTy_QueueC1Ev>
-c0110831:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110834:	05 10 04 00 00       	add    $0x410,%eax
-c0110839:	89 04 24             	mov    %eax,(%esp)
-c011083c:	e8 c7 fe ff ff       	call   c0110708 <__ZN9TTy_QueueC1Ev>
-c0110841:	c9                   	leave  
-c0110842:	c3                   	ret    
-c0110843:	90                   	nop    
+c0110806 <__ZN9TTy_Queue7CharNumEv>:
+c0110806:	55                   	push   %ebp
+c0110807:	89 e5                	mov    %esp,%ebp
+c0110809:	83 ec 04             	sub    $0x4,%esp
+c011080c:	8b 4d 08             	mov    0x8(%ebp),%ecx
+c011080f:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110812:	8b 50 04             	mov    0x4(%eax),%edx
+c0110815:	8b 01                	mov    (%ecx),%eax
+c0110817:	29 d0                	sub    %edx,%eax
+c0110819:	25 ff 01 00 00       	and    $0x1ff,%eax
+c011081e:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c0110821:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c0110824:	c9                   	leave  
+c0110825:	c3                   	ret    
 
-c0110844 <__ZN3TTyD2Ev>:
-c0110844:	55                   	push   %ebp
-c0110845:	89 e5                	mov    %esp,%ebp
-c0110847:	83 ec 04             	sub    $0x4,%esp
-c011084a:	8b 45 08             	mov    0x8(%ebp),%eax
-c011084d:	05 10 04 00 00       	add    $0x410,%eax
-c0110852:	89 04 24             	mov    %eax,(%esp)
-c0110855:	e8 cc fe ff ff       	call   c0110726 <__ZN9TTy_QueueD1Ev>
-c011085a:	8b 45 08             	mov    0x8(%ebp),%eax
-c011085d:	05 08 02 00 00       	add    $0x208,%eax
-c0110862:	89 04 24             	mov    %eax,(%esp)
-c0110865:	e8 bc fe ff ff       	call   c0110726 <__ZN9TTy_QueueD1Ev>
-c011086a:	8b 45 08             	mov    0x8(%ebp),%eax
-c011086d:	89 04 24             	mov    %eax,(%esp)
-c0110870:	e8 b1 fe ff ff       	call   c0110726 <__ZN9TTy_QueueD1Ev>
-c0110875:	c9                   	leave  
-c0110876:	c3                   	ret    
-c0110877:	90                   	nop    
+c0110826 <__ZN9TTy_Queue11CurrentCharEv>:
+c0110826:	55                   	push   %ebp
+c0110827:	89 e5                	mov    %esp,%ebp
+c0110829:	8b 55 08             	mov    0x8(%ebp),%edx
+c011082c:	8b 45 08             	mov    0x8(%ebp),%eax
+c011082f:	03 42 04             	add    0x4(%edx),%eax
+c0110832:	83 c0 08             	add    $0x8,%eax
+c0110835:	5d                   	pop    %ebp
+c0110836:	c3                   	ret    
+c0110837:	90                   	nop    
 
-c0110878 <__ZN3TTyD1Ev>:
-c0110878:	55                   	push   %ebp
-c0110879:	89 e5                	mov    %esp,%ebp
-c011087b:	83 ec 04             	sub    $0x4,%esp
-c011087e:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110881:	05 10 04 00 00       	add    $0x410,%eax
-c0110886:	89 04 24             	mov    %eax,(%esp)
-c0110889:	e8 98 fe ff ff       	call   c0110726 <__ZN9TTy_QueueD1Ev>
-c011088e:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110891:	05 08 02 00 00       	add    $0x208,%eax
-c0110896:	89 04 24             	mov    %eax,(%esp)
-c0110899:	e8 88 fe ff ff       	call   c0110726 <__ZN9TTy_QueueD1Ev>
-c011089e:	8b 45 08             	mov    0x8(%ebp),%eax
-c01108a1:	89 04 24             	mov    %eax,(%esp)
-c01108a4:	e8 7d fe ff ff       	call   c0110726 <__ZN9TTy_QueueD1Ev>
-c01108a9:	c9                   	leave  
-c01108aa:	c3                   	ret    
-c01108ab:	90                   	nop    
+c0110838 <__ZN3TTyC2Ev>:
+c0110838:	55                   	push   %ebp
+c0110839:	89 e5                	mov    %esp,%ebp
+c011083b:	83 ec 04             	sub    $0x4,%esp
+c011083e:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110841:	89 04 24             	mov    %eax,(%esp)
+c0110844:	e8 1b ff ff ff       	call   c0110764 <__ZN9TTy_QueueC1Ev>
+c0110849:	8b 45 08             	mov    0x8(%ebp),%eax
+c011084c:	05 08 02 00 00       	add    $0x208,%eax
+c0110851:	89 04 24             	mov    %eax,(%esp)
+c0110854:	e8 0b ff ff ff       	call   c0110764 <__ZN9TTy_QueueC1Ev>
+c0110859:	8b 45 08             	mov    0x8(%ebp),%eax
+c011085c:	05 10 04 00 00       	add    $0x410,%eax
+c0110861:	89 04 24             	mov    %eax,(%esp)
+c0110864:	e8 fb fe ff ff       	call   c0110764 <__ZN9TTy_QueueC1Ev>
+c0110869:	c9                   	leave  
+c011086a:	c3                   	ret    
+c011086b:	90                   	nop    
 
-c01108ac <__ZN3TTy6TTReadEv>:
-c01108ac:	55                   	push   %ebp
-c01108ad:	89 e5                	mov    %esp,%ebp
-c01108af:	83 ec 08             	sub    $0x8,%esp
-c01108b2:	8b 45 08             	mov    0x8(%ebp),%eax
-c01108b5:	8b 80 24 06 00 00    	mov    0x624(%eax),%eax
-c01108bb:	d1 e8                	shr    %eax
-c01108bd:	83 f0 01             	xor    $0x1,%eax
-c01108c0:	83 e0 01             	and    $0x1,%eax
-c01108c3:	84 c0                	test   %al,%al
-c01108c5:	74 02                	je     c01108c9 <__ZN3TTy6TTReadEv+0x1d>
-c01108c7:	eb 61                	jmp    c011092a <__ZN3TTy6TTReadEv+0x7e>
-c01108c9:	8b 45 08             	mov    0x8(%ebp),%eax
-c01108cc:	05 08 02 00 00       	add    $0x208,%eax
-c01108d1:	89 04 24             	mov    %eax,(%esp)
-c01108d4:	e8 d1 fe ff ff       	call   c01107aa <__ZN9TTy_Queue7CharNumEv>
-c01108d9:	85 c0                	test   %eax,%eax
-c01108db:	75 11                	jne    c01108ee <__ZN3TTy6TTReadEv+0x42>
-c01108dd:	8b 45 08             	mov    0x8(%ebp),%eax
-c01108e0:	89 04 24             	mov    %eax,(%esp)
-c01108e3:	e8 14 03 00 00       	call   c0110bfc <__ZN3TTy5CanonEv>
-c01108e8:	85 c0                	test   %eax,%eax
-c01108ea:	75 02                	jne    c01108ee <__ZN3TTy6TTReadEv+0x42>
-c01108ec:	eb 3c                	jmp    c011092a <__ZN3TTy6TTReadEv+0x7e>
-c01108ee:	8b 45 08             	mov    0x8(%ebp),%eax
-c01108f1:	05 08 02 00 00       	add    $0x208,%eax
-c01108f6:	89 04 24             	mov    %eax,(%esp)
-c01108f9:	e8 ac fe ff ff       	call   c01107aa <__ZN9TTy_Queue7CharNumEv>
-c01108fe:	85 c0                	test   %eax,%eax
-c0110900:	74 28                	je     c011092a <__ZN3TTy6TTReadEv+0x7e>
-c0110902:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110905:	05 08 02 00 00       	add    $0x208,%eax
-c011090a:	89 04 24             	mov    %eax,(%esp)
-c011090d:	e8 1a fe ff ff       	call   c011072c <__ZN9TTy_Queue7GetCharEv>
-c0110912:	0f be c0             	movsbl %al,%eax
-c0110915:	89 44 24 04          	mov    %eax,0x4(%esp)
-c0110919:	8b 45 08             	mov    0x8(%ebp),%eax
-c011091c:	89 04 24             	mov    %eax,(%esp)
-c011091f:	e8 4a 04 00 00       	call   c0110d6e <__ZN3TTy5PassCEc>
-c0110924:	85 c0                	test   %eax,%eax
-c0110926:	78 02                	js     c011092a <__ZN3TTy6TTReadEv+0x7e>
-c0110928:	eb c4                	jmp    c01108ee <__ZN3TTy6TTReadEv+0x42>
-c011092a:	c9                   	leave  
-c011092b:	c3                   	ret    
+c011086c <__ZN3TTyC1Ev>:
+c011086c:	55                   	push   %ebp
+c011086d:	89 e5                	mov    %esp,%ebp
+c011086f:	83 ec 04             	sub    $0x4,%esp
+c0110872:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110875:	89 04 24             	mov    %eax,(%esp)
+c0110878:	e8 e7 fe ff ff       	call   c0110764 <__ZN9TTy_QueueC1Ev>
+c011087d:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110880:	05 08 02 00 00       	add    $0x208,%eax
+c0110885:	89 04 24             	mov    %eax,(%esp)
+c0110888:	e8 d7 fe ff ff       	call   c0110764 <__ZN9TTy_QueueC1Ev>
+c011088d:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110890:	05 10 04 00 00       	add    $0x410,%eax
+c0110895:	89 04 24             	mov    %eax,(%esp)
+c0110898:	e8 c7 fe ff ff       	call   c0110764 <__ZN9TTy_QueueC1Ev>
+c011089d:	c9                   	leave  
+c011089e:	c3                   	ret    
+c011089f:	90                   	nop    
 
-c011092c <__ZN3TTy7TTWriteEv>:
-c011092c:	55                   	push   %ebp
-c011092d:	89 e5                	mov    %esp,%ebp
-c011092f:	83 ec 18             	sub    $0x18,%esp
-c0110932:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110935:	8b 80 24 06 00 00    	mov    0x624(%eax),%eax
-c011093b:	d1 e8                	shr    %eax
-c011093d:	83 f0 01             	xor    $0x1,%eax
-c0110940:	83 e0 01             	and    $0x1,%eax
-c0110943:	84 c0                	test   %al,%al
-c0110945:	74 05                	je     c011094c <__ZN3TTy7TTWriteEv+0x20>
-c0110947:	e9 80 00 00 00       	jmp    c01109cc <__ZN3TTy7TTWriteEv+0xa0>
-c011094c:	8b 45 08             	mov    0x8(%ebp),%eax
-c011094f:	89 04 24             	mov    %eax,(%esp)
-c0110952:	e8 75 04 00 00       	call   c0110dcc <__ZN3TTy5CPassEv>
-c0110957:	88 45 ff             	mov    %al,-0x1(%ebp)
-c011095a:	80 7d ff 00          	cmpb   $0x0,-0x1(%ebp)
-c011095e:	7e 4c                	jle    c01109ac <__ZN3TTy7TTWriteEv+0x80>
-c0110960:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110963:	05 10 04 00 00       	add    $0x410,%eax
-c0110968:	89 04 24             	mov    %eax,(%esp)
-c011096b:	e8 3a fe ff ff       	call   c01107aa <__ZN9TTy_Queue7CharNumEv>
-c0110970:	3d 00 02 00 00       	cmp    $0x200,%eax
-c0110975:	7e 20                	jle    c0110997 <__ZN3TTy7TTWriteEv+0x6b>
-c0110977:	8b 45 08             	mov    0x8(%ebp),%eax
-c011097a:	89 04 24             	mov    %eax,(%esp)
-c011097d:	e8 c4 01 00 00       	call   c0110b46 <__ZN3TTy7TTStartEv>
-c0110982:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110985:	05 10 04 00 00       	add    $0x410,%eax
-c011098a:	89 04 24             	mov    %eax,(%esp)
-c011098d:	e8 38 fe ff ff       	call   c01107ca <__ZN9TTy_Queue11CurrentCharEv>
-c0110992:	a3 8c 50 11 c0       	mov    %eax,0xc011508c
-c0110997:	0f be 45 ff          	movsbl -0x1(%ebp),%eax
-c011099b:	89 44 24 04          	mov    %eax,0x4(%esp)
-c011099f:	8b 45 08             	mov    0x8(%ebp),%eax
-c01109a2:	89 04 24             	mov    %eax,(%esp)
-c01109a5:	e8 1c 01 00 00       	call   c0110ac6 <__ZN3TTy9TTyOutputEc>
-c01109aa:	eb a0                	jmp    c011094c <__ZN3TTy7TTWriteEv+0x20>
-c01109ac:	8b 45 08             	mov    0x8(%ebp),%eax
-c01109af:	89 04 24             	mov    %eax,(%esp)
-c01109b2:	e8 8f 01 00 00       	call   c0110b46 <__ZN3TTy7TTStartEv>
-c01109b7:	8b 45 08             	mov    0x8(%ebp),%eax
-c01109ba:	05 10 04 00 00       	add    $0x410,%eax
-c01109bf:	89 04 24             	mov    %eax,(%esp)
-c01109c2:	e8 03 fe ff ff       	call   c01107ca <__ZN9TTy_Queue11CurrentCharEv>
-c01109c7:	a3 8c 50 11 c0       	mov    %eax,0xc011508c
-c01109cc:	c9                   	leave  
-c01109cd:	c3                   	ret    
+c01108a0 <__ZN3TTyD2Ev>:
+c01108a0:	55                   	push   %ebp
+c01108a1:	89 e5                	mov    %esp,%ebp
+c01108a3:	83 ec 04             	sub    $0x4,%esp
+c01108a6:	8b 45 08             	mov    0x8(%ebp),%eax
+c01108a9:	05 10 04 00 00       	add    $0x410,%eax
+c01108ae:	89 04 24             	mov    %eax,(%esp)
+c01108b1:	e8 cc fe ff ff       	call   c0110782 <__ZN9TTy_QueueD1Ev>
+c01108b6:	8b 45 08             	mov    0x8(%ebp),%eax
+c01108b9:	05 08 02 00 00       	add    $0x208,%eax
+c01108be:	89 04 24             	mov    %eax,(%esp)
+c01108c1:	e8 bc fe ff ff       	call   c0110782 <__ZN9TTy_QueueD1Ev>
+c01108c6:	8b 45 08             	mov    0x8(%ebp),%eax
+c01108c9:	89 04 24             	mov    %eax,(%esp)
+c01108cc:	e8 b1 fe ff ff       	call   c0110782 <__ZN9TTy_QueueD1Ev>
+c01108d1:	c9                   	leave  
+c01108d2:	c3                   	ret    
+c01108d3:	90                   	nop    
 
-c01109ce <__ZN3TTy8TTyInputEc>:
-c01109ce:	55                   	push   %ebp
-c01109cf:	89 e5                	mov    %esp,%ebp
-c01109d1:	83 ec 18             	sub    $0x18,%esp
-c01109d4:	8b 45 0c             	mov    0xc(%ebp),%eax
-c01109d7:	88 45 ff             	mov    %al,-0x1(%ebp)
-c01109da:	b2 ff                	mov    $0xff,%dl
-c01109dc:	8d 45 ff             	lea    -0x1(%ebp),%eax
-c01109df:	20 10                	and    %dl,(%eax)
-c01109e1:	0f b6 45 ff          	movzbl -0x1(%ebp),%eax
-c01109e5:	3c 0d                	cmp    $0xd,%al
-c01109e7:	75 17                	jne    c0110a00 <__ZN3TTy8TTyInputEc+0x32>
-c01109e9:	8b 45 08             	mov    0x8(%ebp),%eax
-c01109ec:	8b 80 18 06 00 00    	mov    0x618(%eax),%eax
-c01109f2:	c1 e8 04             	shr    $0x4,%eax
-c01109f5:	83 e0 01             	and    $0x1,%eax
-c01109f8:	84 c0                	test   %al,%al
-c01109fa:	74 04                	je     c0110a00 <__ZN3TTy8TTyInputEc+0x32>
-c01109fc:	c6 45 ff 0a          	movb   $0xa,-0x1(%ebp)
-c0110a00:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110a03:	8b 80 18 06 00 00    	mov    0x618(%eax),%eax
-c0110a09:	c1 e8 02             	shr    $0x2,%eax
-c0110a0c:	83 e0 01             	and    $0x1,%eax
-c0110a0f:	84 c0                	test   %al,%al
-c0110a11:	74 12                	je     c0110a25 <__ZN3TTy8TTyInputEc+0x57>
-c0110a13:	80 7d ff 40          	cmpb   $0x40,-0x1(%ebp)
-c0110a17:	7e 0c                	jle    c0110a25 <__ZN3TTy8TTyInputEc+0x57>
-c0110a19:	80 7d ff 5a          	cmpb   $0x5a,-0x1(%ebp)
-c0110a1d:	7f 06                	jg     c0110a25 <__ZN3TTy8TTyInputEc+0x57>
-c0110a1f:	8d 45 ff             	lea    -0x1(%ebp),%eax
-c0110a22:	80 00 20             	addb   $0x20,(%eax)
-c0110a25:	0f be 45 ff          	movsbl -0x1(%ebp),%eax
-c0110a29:	89 44 24 04          	mov    %eax,0x4(%esp)
-c0110a2d:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110a30:	89 04 24             	mov    %eax,(%esp)
-c0110a33:	e8 44 fd ff ff       	call   c011077c <__ZN9TTy_Queue7PutCharEc>
-c0110a38:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110a3b:	8b 80 18 06 00 00    	mov    0x618(%eax),%eax
-c0110a41:	c1 e8 05             	shr    $0x5,%eax
-c0110a44:	83 e0 01             	and    $0x1,%eax
-c0110a47:	84 c0                	test   %al,%al
-c0110a49:	75 0e                	jne    c0110a59 <__ZN3TTy8TTyInputEc+0x8b>
-c0110a4b:	80 7d ff 0a          	cmpb   $0xa,-0x1(%ebp)
-c0110a4f:	74 08                	je     c0110a59 <__ZN3TTy8TTyInputEc+0x8b>
-c0110a51:	80 7d ff 04          	cmpb   $0x4,-0x1(%ebp)
-c0110a55:	74 02                	je     c0110a59 <__ZN3TTy8TTyInputEc+0x8b>
-c0110a57:	eb 3a                	jmp    c0110a93 <__ZN3TTy8TTyInputEc+0xc5>
-c0110a59:	e8 0a 67 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c0110a5e:	89 04 24             	mov    %eax,(%esp)
-c0110a61:	e8 4a 69 ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
-c0110a66:	89 c2                	mov    %eax,%edx
-c0110a68:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110a6b:	89 44 24 04          	mov    %eax,0x4(%esp)
-c0110a6f:	89 14 24             	mov    %edx,(%esp)
-c0110a72:	e8 d9 c4 ff ff       	call   c010cf50 <__ZN14ProcessManager9WakeUpAllEm>
-c0110a77:	c7 44 24 04 07 00 00 	movl   $0x7,0x4(%esp)
-c0110a7e:	00 
-c0110a7f:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110a82:	89 04 24             	mov    %eax,(%esp)
-c0110a85:	e8 f2 fc ff ff       	call   c011077c <__ZN9TTy_Queue7PutCharEc>
-c0110a8a:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110a8d:	ff 80 1c 06 00 00    	incl   0x61c(%eax)
-c0110a93:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110a96:	8b 80 18 06 00 00    	mov    0x618(%eax),%eax
-c0110a9c:	c1 e8 03             	shr    $0x3,%eax
-c0110a9f:	83 e0 01             	and    $0x1,%eax
-c0110aa2:	84 c0                	test   %al,%al
-c0110aa4:	74 1e                	je     c0110ac4 <__ZN3TTy8TTyInputEc+0xf6>
-c0110aa6:	0f be 45 ff          	movsbl -0x1(%ebp),%eax
-c0110aaa:	89 44 24 04          	mov    %eax,0x4(%esp)
-c0110aae:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110ab1:	89 04 24             	mov    %eax,(%esp)
-c0110ab4:	e8 0d 00 00 00       	call   c0110ac6 <__ZN3TTy9TTyOutputEc>
-c0110ab9:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110abc:	89 04 24             	mov    %eax,(%esp)
-c0110abf:	e8 82 00 00 00       	call   c0110b46 <__ZN3TTy7TTStartEv>
-c0110ac4:	c9                   	leave  
-c0110ac5:	c3                   	ret    
+c01108d4 <__ZN3TTyD1Ev>:
+c01108d4:	55                   	push   %ebp
+c01108d5:	89 e5                	mov    %esp,%ebp
+c01108d7:	83 ec 04             	sub    $0x4,%esp
+c01108da:	8b 45 08             	mov    0x8(%ebp),%eax
+c01108dd:	05 10 04 00 00       	add    $0x410,%eax
+c01108e2:	89 04 24             	mov    %eax,(%esp)
+c01108e5:	e8 98 fe ff ff       	call   c0110782 <__ZN9TTy_QueueD1Ev>
+c01108ea:	8b 45 08             	mov    0x8(%ebp),%eax
+c01108ed:	05 08 02 00 00       	add    $0x208,%eax
+c01108f2:	89 04 24             	mov    %eax,(%esp)
+c01108f5:	e8 88 fe ff ff       	call   c0110782 <__ZN9TTy_QueueD1Ev>
+c01108fa:	8b 45 08             	mov    0x8(%ebp),%eax
+c01108fd:	89 04 24             	mov    %eax,(%esp)
+c0110900:	e8 7d fe ff ff       	call   c0110782 <__ZN9TTy_QueueD1Ev>
+c0110905:	c9                   	leave  
+c0110906:	c3                   	ret    
+c0110907:	90                   	nop    
 
-c0110ac6 <__ZN3TTy9TTyOutputEc>:
-c0110ac6:	55                   	push   %ebp
-c0110ac7:	89 e5                	mov    %esp,%ebp
-c0110ac9:	83 ec 0c             	sub    $0xc,%esp
-c0110acc:	8b 45 0c             	mov    0xc(%ebp),%eax
-c0110acf:	88 45 ff             	mov    %al,-0x1(%ebp)
-c0110ad2:	b2 ff                	mov    $0xff,%dl
-c0110ad4:	8d 45 ff             	lea    -0x1(%ebp),%eax
-c0110ad7:	20 10                	and    %dl,(%eax)
-c0110ad9:	0f b6 45 ff          	movzbl -0x1(%ebp),%eax
-c0110add:	3c 04                	cmp    $0x4,%al
-c0110adf:	75 18                	jne    c0110af9 <__ZN3TTy9TTyOutputEc+0x33>
-c0110ae1:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110ae4:	8b 80 18 06 00 00    	mov    0x618(%eax),%eax
-c0110aea:	c1 e8 05             	shr    $0x5,%eax
-c0110aed:	83 f0 01             	xor    $0x1,%eax
-c0110af0:	83 e0 01             	and    $0x1,%eax
-c0110af3:	84 c0                	test   %al,%al
-c0110af5:	74 02                	je     c0110af9 <__ZN3TTy9TTyOutputEc+0x33>
-c0110af7:	eb 4a                	jmp    c0110b43 <__ZN3TTy9TTyOutputEc+0x7d>
-c0110af9:	80 7d ff 0a          	cmpb   $0xa,-0x1(%ebp)
-c0110afd:	75 26                	jne    c0110b25 <__ZN3TTy9TTyOutputEc+0x5f>
-c0110aff:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110b02:	8b 80 18 06 00 00    	mov    0x618(%eax),%eax
-c0110b08:	c1 e8 04             	shr    $0x4,%eax
-c0110b0b:	83 e0 01             	and    $0x1,%eax
-c0110b0e:	84 c0                	test   %al,%al
-c0110b10:	74 13                	je     c0110b25 <__ZN3TTy9TTyOutputEc+0x5f>
-c0110b12:	c7 44 24 04 0d 00 00 	movl   $0xd,0x4(%esp)
-c0110b19:	00 
-c0110b1a:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110b1d:	89 04 24             	mov    %eax,(%esp)
-c0110b20:	e8 a1 ff ff ff       	call   c0110ac6 <__ZN3TTy9TTyOutputEc>
-c0110b25:	80 7d ff 00          	cmpb   $0x0,-0x1(%ebp)
-c0110b29:	74 18                	je     c0110b43 <__ZN3TTy9TTyOutputEc+0x7d>
-c0110b2b:	0f be 45 ff          	movsbl -0x1(%ebp),%eax
-c0110b2f:	89 44 24 04          	mov    %eax,0x4(%esp)
-c0110b33:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110b36:	05 10 04 00 00       	add    $0x410,%eax
-c0110b3b:	89 04 24             	mov    %eax,(%esp)
-c0110b3e:	e8 39 fc ff ff       	call   c011077c <__ZN9TTy_Queue7PutCharEc>
-c0110b43:	c9                   	leave  
-c0110b44:	c3                   	ret    
-c0110b45:	90                   	nop    
+c0110908 <__ZN3TTy6TTReadEv>:
+c0110908:	55                   	push   %ebp
+c0110909:	89 e5                	mov    %esp,%ebp
+c011090b:	83 ec 08             	sub    $0x8,%esp
+c011090e:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110911:	8b 80 24 06 00 00    	mov    0x624(%eax),%eax
+c0110917:	d1 e8                	shr    %eax
+c0110919:	83 f0 01             	xor    $0x1,%eax
+c011091c:	83 e0 01             	and    $0x1,%eax
+c011091f:	84 c0                	test   %al,%al
+c0110921:	74 02                	je     c0110925 <__ZN3TTy6TTReadEv+0x1d>
+c0110923:	eb 61                	jmp    c0110986 <__ZN3TTy6TTReadEv+0x7e>
+c0110925:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110928:	05 08 02 00 00       	add    $0x208,%eax
+c011092d:	89 04 24             	mov    %eax,(%esp)
+c0110930:	e8 d1 fe ff ff       	call   c0110806 <__ZN9TTy_Queue7CharNumEv>
+c0110935:	85 c0                	test   %eax,%eax
+c0110937:	75 11                	jne    c011094a <__ZN3TTy6TTReadEv+0x42>
+c0110939:	8b 45 08             	mov    0x8(%ebp),%eax
+c011093c:	89 04 24             	mov    %eax,(%esp)
+c011093f:	e8 14 03 00 00       	call   c0110c58 <__ZN3TTy5CanonEv>
+c0110944:	85 c0                	test   %eax,%eax
+c0110946:	75 02                	jne    c011094a <__ZN3TTy6TTReadEv+0x42>
+c0110948:	eb 3c                	jmp    c0110986 <__ZN3TTy6TTReadEv+0x7e>
+c011094a:	8b 45 08             	mov    0x8(%ebp),%eax
+c011094d:	05 08 02 00 00       	add    $0x208,%eax
+c0110952:	89 04 24             	mov    %eax,(%esp)
+c0110955:	e8 ac fe ff ff       	call   c0110806 <__ZN9TTy_Queue7CharNumEv>
+c011095a:	85 c0                	test   %eax,%eax
+c011095c:	74 28                	je     c0110986 <__ZN3TTy6TTReadEv+0x7e>
+c011095e:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110961:	05 08 02 00 00       	add    $0x208,%eax
+c0110966:	89 04 24             	mov    %eax,(%esp)
+c0110969:	e8 1a fe ff ff       	call   c0110788 <__ZN9TTy_Queue7GetCharEv>
+c011096e:	0f be c0             	movsbl %al,%eax
+c0110971:	89 44 24 04          	mov    %eax,0x4(%esp)
+c0110975:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110978:	89 04 24             	mov    %eax,(%esp)
+c011097b:	e8 4a 04 00 00       	call   c0110dca <__ZN3TTy5PassCEc>
+c0110980:	85 c0                	test   %eax,%eax
+c0110982:	78 02                	js     c0110986 <__ZN3TTy6TTReadEv+0x7e>
+c0110984:	eb c4                	jmp    c011094a <__ZN3TTy6TTReadEv+0x42>
+c0110986:	c9                   	leave  
+c0110987:	c3                   	ret    
 
-c0110b46 <__ZN3TTy7TTStartEv>:
-c0110b46:	55                   	push   %ebp
-c0110b47:	89 e5                	mov    %esp,%ebp
-c0110b49:	83 ec 08             	sub    $0x8,%esp
-c0110b4c:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110b4f:	89 04 24             	mov    %eax,(%esp)
-c0110b52:	e8 09 12 ff ff       	call   c0101d60 <__ZN3CRT8CRTStartEP3TTy>
-c0110b57:	c9                   	leave  
-c0110b58:	c3                   	ret    
-c0110b59:	90                   	nop    
+c0110988 <__ZN3TTy7TTWriteEv>:
+c0110988:	55                   	push   %ebp
+c0110989:	89 e5                	mov    %esp,%ebp
+c011098b:	83 ec 18             	sub    $0x18,%esp
+c011098e:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110991:	8b 80 24 06 00 00    	mov    0x624(%eax),%eax
+c0110997:	d1 e8                	shr    %eax
+c0110999:	83 f0 01             	xor    $0x1,%eax
+c011099c:	83 e0 01             	and    $0x1,%eax
+c011099f:	84 c0                	test   %al,%al
+c01109a1:	74 05                	je     c01109a8 <__ZN3TTy7TTWriteEv+0x20>
+c01109a3:	e9 80 00 00 00       	jmp    c0110a28 <__ZN3TTy7TTWriteEv+0xa0>
+c01109a8:	8b 45 08             	mov    0x8(%ebp),%eax
+c01109ab:	89 04 24             	mov    %eax,(%esp)
+c01109ae:	e8 75 04 00 00       	call   c0110e28 <__ZN3TTy5CPassEv>
+c01109b3:	88 45 ff             	mov    %al,-0x1(%ebp)
+c01109b6:	80 7d ff 00          	cmpb   $0x0,-0x1(%ebp)
+c01109ba:	7e 4c                	jle    c0110a08 <__ZN3TTy7TTWriteEv+0x80>
+c01109bc:	8b 45 08             	mov    0x8(%ebp),%eax
+c01109bf:	05 10 04 00 00       	add    $0x410,%eax
+c01109c4:	89 04 24             	mov    %eax,(%esp)
+c01109c7:	e8 3a fe ff ff       	call   c0110806 <__ZN9TTy_Queue7CharNumEv>
+c01109cc:	3d 00 02 00 00       	cmp    $0x200,%eax
+c01109d1:	7e 20                	jle    c01109f3 <__ZN3TTy7TTWriteEv+0x6b>
+c01109d3:	8b 45 08             	mov    0x8(%ebp),%eax
+c01109d6:	89 04 24             	mov    %eax,(%esp)
+c01109d9:	e8 c4 01 00 00       	call   c0110ba2 <__ZN3TTy7TTStartEv>
+c01109de:	8b 45 08             	mov    0x8(%ebp),%eax
+c01109e1:	05 10 04 00 00       	add    $0x410,%eax
+c01109e6:	89 04 24             	mov    %eax,(%esp)
+c01109e9:	e8 38 fe ff ff       	call   c0110826 <__ZN9TTy_Queue11CurrentCharEv>
+c01109ee:	a3 8c 50 11 c0       	mov    %eax,0xc011508c
+c01109f3:	0f be 45 ff          	movsbl -0x1(%ebp),%eax
+c01109f7:	89 44 24 04          	mov    %eax,0x4(%esp)
+c01109fb:	8b 45 08             	mov    0x8(%ebp),%eax
+c01109fe:	89 04 24             	mov    %eax,(%esp)
+c0110a01:	e8 1c 01 00 00       	call   c0110b22 <__ZN3TTy9TTyOutputEc>
+c0110a06:	eb a0                	jmp    c01109a8 <__ZN3TTy7TTWriteEv+0x20>
+c0110a08:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110a0b:	89 04 24             	mov    %eax,(%esp)
+c0110a0e:	e8 8f 01 00 00       	call   c0110ba2 <__ZN3TTy7TTStartEv>
+c0110a13:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110a16:	05 10 04 00 00       	add    $0x410,%eax
+c0110a1b:	89 04 24             	mov    %eax,(%esp)
+c0110a1e:	e8 03 fe ff ff       	call   c0110826 <__ZN9TTy_Queue11CurrentCharEv>
+c0110a23:	a3 8c 50 11 c0       	mov    %eax,0xc011508c
+c0110a28:	c9                   	leave  
+c0110a29:	c3                   	ret    
 
-c0110b5a <__ZN3TTy8FlushTTyEv>:
-c0110b5a:	55                   	push   %ebp
-c0110b5b:	89 e5                	mov    %esp,%ebp
-c0110b5d:	83 ec 08             	sub    $0x8,%esp
-c0110b60:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110b63:	05 08 02 00 00       	add    $0x208,%eax
-c0110b68:	89 04 24             	mov    %eax,(%esp)
-c0110b6b:	e8 bc fb ff ff       	call   c011072c <__ZN9TTy_Queue7GetCharEv>
-c0110b70:	84 c0                	test   %al,%al
-c0110b72:	78 02                	js     c0110b76 <__ZN3TTy8FlushTTyEv+0x1c>
-c0110b74:	eb ea                	jmp    c0110b60 <__ZN3TTy8FlushTTyEv+0x6>
+c0110a2a <__ZN3TTy8TTyInputEc>:
+c0110a2a:	55                   	push   %ebp
+c0110a2b:	89 e5                	mov    %esp,%ebp
+c0110a2d:	83 ec 18             	sub    $0x18,%esp
+c0110a30:	8b 45 0c             	mov    0xc(%ebp),%eax
+c0110a33:	88 45 ff             	mov    %al,-0x1(%ebp)
+c0110a36:	b2 ff                	mov    $0xff,%dl
+c0110a38:	8d 45 ff             	lea    -0x1(%ebp),%eax
+c0110a3b:	20 10                	and    %dl,(%eax)
+c0110a3d:	0f b6 45 ff          	movzbl -0x1(%ebp),%eax
+c0110a41:	3c 0d                	cmp    $0xd,%al
+c0110a43:	75 17                	jne    c0110a5c <__ZN3TTy8TTyInputEc+0x32>
+c0110a45:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110a48:	8b 80 18 06 00 00    	mov    0x618(%eax),%eax
+c0110a4e:	c1 e8 04             	shr    $0x4,%eax
+c0110a51:	83 e0 01             	and    $0x1,%eax
+c0110a54:	84 c0                	test   %al,%al
+c0110a56:	74 04                	je     c0110a5c <__ZN3TTy8TTyInputEc+0x32>
+c0110a58:	c6 45 ff 0a          	movb   $0xa,-0x1(%ebp)
+c0110a5c:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110a5f:	8b 80 18 06 00 00    	mov    0x618(%eax),%eax
+c0110a65:	c1 e8 02             	shr    $0x2,%eax
+c0110a68:	83 e0 01             	and    $0x1,%eax
+c0110a6b:	84 c0                	test   %al,%al
+c0110a6d:	74 12                	je     c0110a81 <__ZN3TTy8TTyInputEc+0x57>
+c0110a6f:	80 7d ff 40          	cmpb   $0x40,-0x1(%ebp)
+c0110a73:	7e 0c                	jle    c0110a81 <__ZN3TTy8TTyInputEc+0x57>
+c0110a75:	80 7d ff 5a          	cmpb   $0x5a,-0x1(%ebp)
+c0110a79:	7f 06                	jg     c0110a81 <__ZN3TTy8TTyInputEc+0x57>
+c0110a7b:	8d 45 ff             	lea    -0x1(%ebp),%eax
+c0110a7e:	80 00 20             	addb   $0x20,(%eax)
+c0110a81:	0f be 45 ff          	movsbl -0x1(%ebp),%eax
+c0110a85:	89 44 24 04          	mov    %eax,0x4(%esp)
+c0110a89:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110a8c:	89 04 24             	mov    %eax,(%esp)
+c0110a8f:	e8 44 fd ff ff       	call   c01107d8 <__ZN9TTy_Queue7PutCharEc>
+c0110a94:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110a97:	8b 80 18 06 00 00    	mov    0x618(%eax),%eax
+c0110a9d:	c1 e8 05             	shr    $0x5,%eax
+c0110aa0:	83 e0 01             	and    $0x1,%eax
+c0110aa3:	84 c0                	test   %al,%al
+c0110aa5:	75 0e                	jne    c0110ab5 <__ZN3TTy8TTyInputEc+0x8b>
+c0110aa7:	80 7d ff 0a          	cmpb   $0xa,-0x1(%ebp)
+c0110aab:	74 08                	je     c0110ab5 <__ZN3TTy8TTyInputEc+0x8b>
+c0110aad:	80 7d ff 04          	cmpb   $0x4,-0x1(%ebp)
+c0110ab1:	74 02                	je     c0110ab5 <__ZN3TTy8TTyInputEc+0x8b>
+c0110ab3:	eb 3a                	jmp    c0110aef <__ZN3TTy8TTyInputEc+0xc5>
+c0110ab5:	e8 ae 66 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c0110aba:	89 04 24             	mov    %eax,(%esp)
+c0110abd:	e8 ee 68 ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
+c0110ac2:	89 c2                	mov    %eax,%edx
+c0110ac4:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110ac7:	89 44 24 04          	mov    %eax,0x4(%esp)
+c0110acb:	89 14 24             	mov    %edx,(%esp)
+c0110ace:	e8 7d c4 ff ff       	call   c010cf50 <__ZN14ProcessManager9WakeUpAllEm>
+c0110ad3:	c7 44 24 04 07 00 00 	movl   $0x7,0x4(%esp)
+c0110ada:	00 
+c0110adb:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110ade:	89 04 24             	mov    %eax,(%esp)
+c0110ae1:	e8 f2 fc ff ff       	call   c01107d8 <__ZN9TTy_Queue7PutCharEc>
+c0110ae6:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110ae9:	ff 80 1c 06 00 00    	incl   0x61c(%eax)
+c0110aef:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110af2:	8b 80 18 06 00 00    	mov    0x618(%eax),%eax
+c0110af8:	c1 e8 03             	shr    $0x3,%eax
+c0110afb:	83 e0 01             	and    $0x1,%eax
+c0110afe:	84 c0                	test   %al,%al
+c0110b00:	74 1e                	je     c0110b20 <__ZN3TTy8TTyInputEc+0xf6>
+c0110b02:	0f be 45 ff          	movsbl -0x1(%ebp),%eax
+c0110b06:	89 44 24 04          	mov    %eax,0x4(%esp)
+c0110b0a:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110b0d:	89 04 24             	mov    %eax,(%esp)
+c0110b10:	e8 0d 00 00 00       	call   c0110b22 <__ZN3TTy9TTyOutputEc>
+c0110b15:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110b18:	89 04 24             	mov    %eax,(%esp)
+c0110b1b:	e8 82 00 00 00       	call   c0110ba2 <__ZN3TTy7TTStartEv>
+c0110b20:	c9                   	leave  
+c0110b21:	c3                   	ret    
+
+c0110b22 <__ZN3TTy9TTyOutputEc>:
+c0110b22:	55                   	push   %ebp
+c0110b23:	89 e5                	mov    %esp,%ebp
+c0110b25:	83 ec 0c             	sub    $0xc,%esp
+c0110b28:	8b 45 0c             	mov    0xc(%ebp),%eax
+c0110b2b:	88 45 ff             	mov    %al,-0x1(%ebp)
+c0110b2e:	b2 ff                	mov    $0xff,%dl
+c0110b30:	8d 45 ff             	lea    -0x1(%ebp),%eax
+c0110b33:	20 10                	and    %dl,(%eax)
+c0110b35:	0f b6 45 ff          	movzbl -0x1(%ebp),%eax
+c0110b39:	3c 04                	cmp    $0x4,%al
+c0110b3b:	75 18                	jne    c0110b55 <__ZN3TTy9TTyOutputEc+0x33>
+c0110b3d:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110b40:	8b 80 18 06 00 00    	mov    0x618(%eax),%eax
+c0110b46:	c1 e8 05             	shr    $0x5,%eax
+c0110b49:	83 f0 01             	xor    $0x1,%eax
+c0110b4c:	83 e0 01             	and    $0x1,%eax
+c0110b4f:	84 c0                	test   %al,%al
+c0110b51:	74 02                	je     c0110b55 <__ZN3TTy9TTyOutputEc+0x33>
+c0110b53:	eb 4a                	jmp    c0110b9f <__ZN3TTy9TTyOutputEc+0x7d>
+c0110b55:	80 7d ff 0a          	cmpb   $0xa,-0x1(%ebp)
+c0110b59:	75 26                	jne    c0110b81 <__ZN3TTy9TTyOutputEc+0x5f>
+c0110b5b:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110b5e:	8b 80 18 06 00 00    	mov    0x618(%eax),%eax
+c0110b64:	c1 e8 04             	shr    $0x4,%eax
+c0110b67:	83 e0 01             	and    $0x1,%eax
+c0110b6a:	84 c0                	test   %al,%al
+c0110b6c:	74 13                	je     c0110b81 <__ZN3TTy9TTyOutputEc+0x5f>
+c0110b6e:	c7 44 24 04 0d 00 00 	movl   $0xd,0x4(%esp)
+c0110b75:	00 
 c0110b76:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110b79:	05 10 04 00 00       	add    $0x410,%eax
-c0110b7e:	89 04 24             	mov    %eax,(%esp)
-c0110b81:	e8 a6 fb ff ff       	call   c011072c <__ZN9TTy_Queue7GetCharEv>
-c0110b86:	84 c0                	test   %al,%al
-c0110b88:	78 02                	js     c0110b8c <__ZN3TTy8FlushTTyEv+0x32>
-c0110b8a:	eb ea                	jmp    c0110b76 <__ZN3TTy8FlushTTyEv+0x1c>
-c0110b8c:	e8 d7 65 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c0110b91:	89 04 24             	mov    %eax,(%esp)
-c0110b94:	e8 17 68 ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
-c0110b99:	89 c2                	mov    %eax,%edx
-c0110b9b:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110b9e:	05 08 02 00 00       	add    $0x208,%eax
-c0110ba3:	89 44 24 04          	mov    %eax,0x4(%esp)
-c0110ba7:	89 14 24             	mov    %edx,(%esp)
-c0110baa:	e8 a1 c3 ff ff       	call   c010cf50 <__ZN14ProcessManager9WakeUpAllEm>
-c0110baf:	e8 b4 65 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c0110bb4:	89 04 24             	mov    %eax,(%esp)
-c0110bb7:	e8 f4 67 ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
-c0110bbc:	89 c2                	mov    %eax,%edx
-c0110bbe:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110bc1:	05 10 04 00 00       	add    $0x410,%eax
-c0110bc6:	89 44 24 04          	mov    %eax,0x4(%esp)
-c0110bca:	89 14 24             	mov    %edx,(%esp)
-c0110bcd:	e8 7e c3 ff ff       	call   c010cf50 <__ZN14ProcessManager9WakeUpAllEm>
-c0110bd2:	e8 29 14 00 00       	call   c0112000 <__ZN11X86Assembly3CLIEv>
-c0110bd7:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110b79:	89 04 24             	mov    %eax,(%esp)
+c0110b7c:	e8 a1 ff ff ff       	call   c0110b22 <__ZN3TTy9TTyOutputEc>
+c0110b81:	80 7d ff 00          	cmpb   $0x0,-0x1(%ebp)
+c0110b85:	74 18                	je     c0110b9f <__ZN3TTy9TTyOutputEc+0x7d>
+c0110b87:	0f be 45 ff          	movsbl -0x1(%ebp),%eax
+c0110b8b:	89 44 24 04          	mov    %eax,0x4(%esp)
+c0110b8f:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110b92:	05 10 04 00 00       	add    $0x410,%eax
+c0110b97:	89 04 24             	mov    %eax,(%esp)
+c0110b9a:	e8 39 fc ff ff       	call   c01107d8 <__ZN9TTy_Queue7PutCharEc>
+c0110b9f:	c9                   	leave  
+c0110ba0:	c3                   	ret    
+c0110ba1:	90                   	nop    
+
+c0110ba2 <__ZN3TTy7TTStartEv>:
+c0110ba2:	55                   	push   %ebp
+c0110ba3:	89 e5                	mov    %esp,%ebp
+c0110ba5:	83 ec 08             	sub    $0x8,%esp
+c0110ba8:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110bab:	89 04 24             	mov    %eax,(%esp)
+c0110bae:	e8 ad 11 ff ff       	call   c0101d60 <__ZN3CRT8CRTStartEP3TTy>
+c0110bb3:	c9                   	leave  
+c0110bb4:	c3                   	ret    
+c0110bb5:	90                   	nop    
+
+c0110bb6 <__ZN3TTy8FlushTTyEv>:
+c0110bb6:	55                   	push   %ebp
+c0110bb7:	89 e5                	mov    %esp,%ebp
+c0110bb9:	83 ec 08             	sub    $0x8,%esp
+c0110bbc:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110bbf:	05 08 02 00 00       	add    $0x208,%eax
+c0110bc4:	89 04 24             	mov    %eax,(%esp)
+c0110bc7:	e8 bc fb ff ff       	call   c0110788 <__ZN9TTy_Queue7GetCharEv>
+c0110bcc:	84 c0                	test   %al,%al
+c0110bce:	78 02                	js     c0110bd2 <__ZN3TTy8FlushTTyEv+0x1c>
+c0110bd0:	eb ea                	jmp    c0110bbc <__ZN3TTy8FlushTTyEv+0x6>
+c0110bd2:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110bd5:	05 10 04 00 00       	add    $0x410,%eax
 c0110bda:	89 04 24             	mov    %eax,(%esp)
-c0110bdd:	e8 4a fb ff ff       	call   c011072c <__ZN9TTy_Queue7GetCharEv>
+c0110bdd:	e8 a6 fb ff ff       	call   c0110788 <__ZN9TTy_Queue7GetCharEv>
 c0110be2:	84 c0                	test   %al,%al
-c0110be4:	78 02                	js     c0110be8 <__ZN3TTy8FlushTTyEv+0x8e>
-c0110be6:	eb ef                	jmp    c0110bd7 <__ZN3TTy8FlushTTyEv+0x7d>
-c0110be8:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110beb:	c7 80 1c 06 00 00 00 	movl   $0x0,0x61c(%eax)
-c0110bf2:	00 00 00 
-c0110bf5:	e8 26 14 00 00       	call   c0112020 <__ZN11X86Assembly3STIEv>
-c0110bfa:	c9                   	leave  
-c0110bfb:	c3                   	ret    
+c0110be4:	78 02                	js     c0110be8 <__ZN3TTy8FlushTTyEv+0x32>
+c0110be6:	eb ea                	jmp    c0110bd2 <__ZN3TTy8FlushTTyEv+0x1c>
+c0110be8:	e8 7b 65 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c0110bed:	89 04 24             	mov    %eax,(%esp)
+c0110bf0:	e8 bb 67 ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
+c0110bf5:	89 c2                	mov    %eax,%edx
+c0110bf7:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110bfa:	05 08 02 00 00       	add    $0x208,%eax
+c0110bff:	89 44 24 04          	mov    %eax,0x4(%esp)
+c0110c03:	89 14 24             	mov    %edx,(%esp)
+c0110c06:	e8 45 c3 ff ff       	call   c010cf50 <__ZN14ProcessManager9WakeUpAllEm>
+c0110c0b:	e8 58 65 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c0110c10:	89 04 24             	mov    %eax,(%esp)
+c0110c13:	e8 98 67 ff ff       	call   c01073b0 <__ZN6Kernel17GetProcessManagerEv>
+c0110c18:	89 c2                	mov    %eax,%edx
+c0110c1a:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110c1d:	05 10 04 00 00       	add    $0x410,%eax
+c0110c22:	89 44 24 04          	mov    %eax,0x4(%esp)
+c0110c26:	89 14 24             	mov    %edx,(%esp)
+c0110c29:	e8 22 c3 ff ff       	call   c010cf50 <__ZN14ProcessManager9WakeUpAllEm>
+c0110c2e:	e8 cd 13 00 00       	call   c0112000 <__ZN11X86Assembly3CLIEv>
+c0110c33:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110c36:	89 04 24             	mov    %eax,(%esp)
+c0110c39:	e8 4a fb ff ff       	call   c0110788 <__ZN9TTy_Queue7GetCharEv>
+c0110c3e:	84 c0                	test   %al,%al
+c0110c40:	78 02                	js     c0110c44 <__ZN3TTy8FlushTTyEv+0x8e>
+c0110c42:	eb ef                	jmp    c0110c33 <__ZN3TTy8FlushTTyEv+0x7d>
+c0110c44:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110c47:	c7 80 1c 06 00 00 00 	movl   $0x0,0x61c(%eax)
+c0110c4e:	00 00 00 
+c0110c51:	e8 ca 13 00 00       	call   c0112020 <__ZN11X86Assembly3STIEv>
+c0110c56:	c9                   	leave  
+c0110c57:	c3                   	ret    
 
-c0110bfc <__ZN3TTy5CanonEv>:
-c0110bfc:	55                   	push   %ebp
-c0110bfd:	89 e5                	mov    %esp,%ebp
-c0110bff:	83 ec 28             	sub    $0x28,%esp
-c0110c02:	e8 61 65 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c0110c07:	89 04 24             	mov    %eax,(%esp)
-c0110c0a:	e8 f5 67 ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
-c0110c0f:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c0110c12:	e8 e9 13 00 00       	call   c0112000 <__ZN11X86Assembly3CLIEv>
-c0110c17:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110c1a:	83 b8 1c 06 00 00 00 	cmpl   $0x0,0x61c(%eax)
-c0110c21:	75 40                	jne    c0110c63 <__ZN3TTy5CanonEv+0x67>
-c0110c23:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110c26:	8b 80 24 06 00 00    	mov    0x624(%eax),%eax
-c0110c2c:	d1 e8                	shr    %eax
-c0110c2e:	83 f0 01             	xor    $0x1,%eax
-c0110c31:	83 e0 01             	and    $0x1,%eax
-c0110c34:	84 c0                	test   %al,%al
-c0110c36:	74 0c                	je     c0110c44 <__ZN3TTy5CanonEv+0x48>
-c0110c38:	c7 45 ec 00 00 00 00 	movl   $0x0,-0x14(%ebp)
-c0110c3f:	e9 24 01 00 00       	jmp    c0110d68 <__ZN3TTy5CanonEv+0x16c>
-c0110c44:	c7 44 24 08 0a 00 00 	movl   $0xa,0x8(%esp)
-c0110c4b:	00 
-c0110c4c:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110c4f:	89 44 24 04          	mov    %eax,0x4(%esp)
-c0110c53:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c0110c56:	8b 40 10             	mov    0x10(%eax),%eax
-c0110c59:	89 04 24             	mov    %eax,(%esp)
-c0110c5c:	e8 9b 9f ff ff       	call   c010abfc <__ZN7Process5SleepEmi>
-c0110c61:	eb b4                	jmp    c0110c17 <__ZN3TTy5CanonEv+0x1b>
-c0110c63:	e8 b8 13 00 00       	call   c0112020 <__ZN11X86Assembly3STIEv>
-c0110c68:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110c6b:	05 2c 06 00 00       	add    $0x62c,%eax
-c0110c70:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c0110c58 <__ZN3TTy5CanonEv>:
+c0110c58:	55                   	push   %ebp
+c0110c59:	89 e5                	mov    %esp,%ebp
+c0110c5b:	83 ec 28             	sub    $0x28,%esp
+c0110c5e:	e8 05 65 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c0110c63:	89 04 24             	mov    %eax,(%esp)
+c0110c66:	e8 99 67 ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
+c0110c6b:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c0110c6e:	e8 8d 13 00 00       	call   c0112000 <__ZN11X86Assembly3CLIEv>
 c0110c73:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110c76:	89 04 24             	mov    %eax,(%esp)
-c0110c79:	e8 ae fa ff ff       	call   c011072c <__ZN9TTy_Queue7GetCharEv>
-c0110c7e:	88 45 fb             	mov    %al,-0x5(%ebp)
-c0110c81:	80 7d fb 00          	cmpb   $0x0,-0x5(%ebp)
-c0110c85:	0f 88 9c 00 00 00    	js     c0110d27 <__ZN3TTy5CanonEv+0x12b>
-c0110c8b:	80 7d fb 07          	cmpb   $0x7,-0x5(%ebp)
-c0110c8f:	75 0e                	jne    c0110c9f <__ZN3TTy5CanonEv+0xa3>
-c0110c91:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110c94:	ff 88 1c 06 00 00    	decl   0x61c(%eax)
-c0110c9a:	e9 88 00 00 00       	jmp    c0110d27 <__ZN3TTy5CanonEv+0x12b>
-c0110c9f:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110ca2:	8b 80 18 06 00 00    	mov    0x618(%eax),%eax
-c0110ca8:	c1 e8 05             	shr    $0x5,%eax
-c0110cab:	83 f0 01             	xor    $0x1,%eax
-c0110cae:	83 e0 01             	and    $0x1,%eax
-c0110cb1:	84 c0                	test   %al,%al
-c0110cb3:	74 51                	je     c0110d06 <__ZN3TTy5CanonEv+0x10a>
-c0110cb5:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c0110cb8:	48                   	dec    %eax
-c0110cb9:	80 38 5c             	cmpb   $0x5c,(%eax)
-c0110cbc:	74 48                	je     c0110d06 <__ZN3TTy5CanonEv+0x10a>
-c0110cbe:	0f be 45 fb          	movsbl -0x5(%ebp),%eax
-c0110cc2:	8b 55 08             	mov    0x8(%ebp),%edx
-c0110cc5:	0f be 92 20 06 00 00 	movsbl 0x620(%edx),%edx
-c0110ccc:	39 d0                	cmp    %edx,%eax
-c0110cce:	75 14                	jne    c0110ce4 <__ZN3TTy5CanonEv+0xe8>
-c0110cd0:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110cd3:	05 2c 06 00 00       	add    $0x62c,%eax
-c0110cd8:	3b 45 fc             	cmp    -0x4(%ebp),%eax
-c0110cdb:	73 96                	jae    c0110c73 <__ZN3TTy5CanonEv+0x77>
-c0110cdd:	8d 45 fc             	lea    -0x4(%ebp),%eax
-c0110ce0:	ff 08                	decl   (%eax)
-c0110ce2:	eb 8f                	jmp    c0110c73 <__ZN3TTy5CanonEv+0x77>
-c0110ce4:	0f be 45 fb          	movsbl -0x5(%ebp),%eax
-c0110ce8:	8b 55 08             	mov    0x8(%ebp),%edx
-c0110ceb:	0f be 92 21 06 00 00 	movsbl 0x621(%edx),%edx
-c0110cf2:	39 d0                	cmp    %edx,%eax
-c0110cf4:	75 05                	jne    c0110cfb <__ZN3TTy5CanonEv+0xff>
-c0110cf6:	e9 6d ff ff ff       	jmp    c0110c68 <__ZN3TTy5CanonEv+0x6c>
-c0110cfb:	80 7d fb 04          	cmpb   $0x4,-0x5(%ebp)
-c0110cff:	75 05                	jne    c0110d06 <__ZN3TTy5CanonEv+0x10a>
-c0110d01:	e9 6d ff ff ff       	jmp    c0110c73 <__ZN3TTy5CanonEv+0x77>
-c0110d06:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c0110d09:	89 c2                	mov    %eax,%edx
-c0110d0b:	0f b6 45 fb          	movzbl -0x5(%ebp),%eax
-c0110d0f:	88 02                	mov    %al,(%edx)
-c0110d11:	8d 45 fc             	lea    -0x4(%ebp),%eax
-c0110d14:	ff 00                	incl   (%eax)
-c0110d16:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110d19:	05 2a 07 00 00       	add    $0x72a,%eax
-c0110d1e:	3b 45 fc             	cmp    -0x4(%ebp),%eax
-c0110d21:	0f 87 4c ff ff ff    	ja     c0110c73 <__ZN3TTy5CanonEv+0x77>
-c0110d27:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c0110d2a:	89 45 f0             	mov    %eax,-0x10(%ebp)
-c0110d2d:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110d30:	05 2c 06 00 00       	add    $0x62c,%eax
-c0110d35:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c0110d38:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c0110d3b:	3b 45 f0             	cmp    -0x10(%ebp),%eax
-c0110d3e:	73 21                	jae    c0110d61 <__ZN3TTy5CanonEv+0x165>
-c0110d40:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c0110d43:	0f be 00             	movsbl (%eax),%eax
-c0110d46:	89 44 24 04          	mov    %eax,0x4(%esp)
-c0110d4a:	8d 45 fc             	lea    -0x4(%ebp),%eax
-c0110d4d:	ff 00                	incl   (%eax)
-c0110d4f:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110d52:	05 08 02 00 00       	add    $0x208,%eax
-c0110d57:	89 04 24             	mov    %eax,(%esp)
-c0110d5a:	e8 1d fa ff ff       	call   c011077c <__ZN9TTy_Queue7PutCharEc>
-c0110d5f:	eb d7                	jmp    c0110d38 <__ZN3TTy5CanonEv+0x13c>
-c0110d61:	c7 45 ec 01 00 00 00 	movl   $0x1,-0x14(%ebp)
-c0110d68:	8b 45 ec             	mov    -0x14(%ebp),%eax
-c0110d6b:	c9                   	leave  
-c0110d6c:	c3                   	ret    
-c0110d6d:	90                   	nop    
+c0110c76:	83 b8 1c 06 00 00 00 	cmpl   $0x0,0x61c(%eax)
+c0110c7d:	75 40                	jne    c0110cbf <__ZN3TTy5CanonEv+0x67>
+c0110c7f:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110c82:	8b 80 24 06 00 00    	mov    0x624(%eax),%eax
+c0110c88:	d1 e8                	shr    %eax
+c0110c8a:	83 f0 01             	xor    $0x1,%eax
+c0110c8d:	83 e0 01             	and    $0x1,%eax
+c0110c90:	84 c0                	test   %al,%al
+c0110c92:	74 0c                	je     c0110ca0 <__ZN3TTy5CanonEv+0x48>
+c0110c94:	c7 45 ec 00 00 00 00 	movl   $0x0,-0x14(%ebp)
+c0110c9b:	e9 24 01 00 00       	jmp    c0110dc4 <__ZN3TTy5CanonEv+0x16c>
+c0110ca0:	c7 44 24 08 0a 00 00 	movl   $0xa,0x8(%esp)
+c0110ca7:	00 
+c0110ca8:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110cab:	89 44 24 04          	mov    %eax,0x4(%esp)
+c0110caf:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c0110cb2:	8b 40 10             	mov    0x10(%eax),%eax
+c0110cb5:	89 04 24             	mov    %eax,(%esp)
+c0110cb8:	e8 3f 9f ff ff       	call   c010abfc <__ZN7Process5SleepEmi>
+c0110cbd:	eb b4                	jmp    c0110c73 <__ZN3TTy5CanonEv+0x1b>
+c0110cbf:	e8 5c 13 00 00       	call   c0112020 <__ZN11X86Assembly3STIEv>
+c0110cc4:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110cc7:	05 2c 06 00 00       	add    $0x62c,%eax
+c0110ccc:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c0110ccf:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110cd2:	89 04 24             	mov    %eax,(%esp)
+c0110cd5:	e8 ae fa ff ff       	call   c0110788 <__ZN9TTy_Queue7GetCharEv>
+c0110cda:	88 45 fb             	mov    %al,-0x5(%ebp)
+c0110cdd:	80 7d fb 00          	cmpb   $0x0,-0x5(%ebp)
+c0110ce1:	0f 88 9c 00 00 00    	js     c0110d83 <__ZN3TTy5CanonEv+0x12b>
+c0110ce7:	80 7d fb 07          	cmpb   $0x7,-0x5(%ebp)
+c0110ceb:	75 0e                	jne    c0110cfb <__ZN3TTy5CanonEv+0xa3>
+c0110ced:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110cf0:	ff 88 1c 06 00 00    	decl   0x61c(%eax)
+c0110cf6:	e9 88 00 00 00       	jmp    c0110d83 <__ZN3TTy5CanonEv+0x12b>
+c0110cfb:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110cfe:	8b 80 18 06 00 00    	mov    0x618(%eax),%eax
+c0110d04:	c1 e8 05             	shr    $0x5,%eax
+c0110d07:	83 f0 01             	xor    $0x1,%eax
+c0110d0a:	83 e0 01             	and    $0x1,%eax
+c0110d0d:	84 c0                	test   %al,%al
+c0110d0f:	74 51                	je     c0110d62 <__ZN3TTy5CanonEv+0x10a>
+c0110d11:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c0110d14:	48                   	dec    %eax
+c0110d15:	80 38 5c             	cmpb   $0x5c,(%eax)
+c0110d18:	74 48                	je     c0110d62 <__ZN3TTy5CanonEv+0x10a>
+c0110d1a:	0f be 45 fb          	movsbl -0x5(%ebp),%eax
+c0110d1e:	8b 55 08             	mov    0x8(%ebp),%edx
+c0110d21:	0f be 92 20 06 00 00 	movsbl 0x620(%edx),%edx
+c0110d28:	39 d0                	cmp    %edx,%eax
+c0110d2a:	75 14                	jne    c0110d40 <__ZN3TTy5CanonEv+0xe8>
+c0110d2c:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110d2f:	05 2c 06 00 00       	add    $0x62c,%eax
+c0110d34:	3b 45 fc             	cmp    -0x4(%ebp),%eax
+c0110d37:	73 96                	jae    c0110ccf <__ZN3TTy5CanonEv+0x77>
+c0110d39:	8d 45 fc             	lea    -0x4(%ebp),%eax
+c0110d3c:	ff 08                	decl   (%eax)
+c0110d3e:	eb 8f                	jmp    c0110ccf <__ZN3TTy5CanonEv+0x77>
+c0110d40:	0f be 45 fb          	movsbl -0x5(%ebp),%eax
+c0110d44:	8b 55 08             	mov    0x8(%ebp),%edx
+c0110d47:	0f be 92 21 06 00 00 	movsbl 0x621(%edx),%edx
+c0110d4e:	39 d0                	cmp    %edx,%eax
+c0110d50:	75 05                	jne    c0110d57 <__ZN3TTy5CanonEv+0xff>
+c0110d52:	e9 6d ff ff ff       	jmp    c0110cc4 <__ZN3TTy5CanonEv+0x6c>
+c0110d57:	80 7d fb 04          	cmpb   $0x4,-0x5(%ebp)
+c0110d5b:	75 05                	jne    c0110d62 <__ZN3TTy5CanonEv+0x10a>
+c0110d5d:	e9 6d ff ff ff       	jmp    c0110ccf <__ZN3TTy5CanonEv+0x77>
+c0110d62:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c0110d65:	89 c2                	mov    %eax,%edx
+c0110d67:	0f b6 45 fb          	movzbl -0x5(%ebp),%eax
+c0110d6b:	88 02                	mov    %al,(%edx)
+c0110d6d:	8d 45 fc             	lea    -0x4(%ebp),%eax
+c0110d70:	ff 00                	incl   (%eax)
+c0110d72:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110d75:	05 2a 07 00 00       	add    $0x72a,%eax
+c0110d7a:	3b 45 fc             	cmp    -0x4(%ebp),%eax
+c0110d7d:	0f 87 4c ff ff ff    	ja     c0110ccf <__ZN3TTy5CanonEv+0x77>
+c0110d83:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c0110d86:	89 45 f0             	mov    %eax,-0x10(%ebp)
+c0110d89:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110d8c:	05 2c 06 00 00       	add    $0x62c,%eax
+c0110d91:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c0110d94:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c0110d97:	3b 45 f0             	cmp    -0x10(%ebp),%eax
+c0110d9a:	73 21                	jae    c0110dbd <__ZN3TTy5CanonEv+0x165>
+c0110d9c:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c0110d9f:	0f be 00             	movsbl (%eax),%eax
+c0110da2:	89 44 24 04          	mov    %eax,0x4(%esp)
+c0110da6:	8d 45 fc             	lea    -0x4(%ebp),%eax
+c0110da9:	ff 00                	incl   (%eax)
+c0110dab:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110dae:	05 08 02 00 00       	add    $0x208,%eax
+c0110db3:	89 04 24             	mov    %eax,(%esp)
+c0110db6:	e8 1d fa ff ff       	call   c01107d8 <__ZN9TTy_Queue7PutCharEc>
+c0110dbb:	eb d7                	jmp    c0110d94 <__ZN3TTy5CanonEv+0x13c>
+c0110dbd:	c7 45 ec 01 00 00 00 	movl   $0x1,-0x14(%ebp)
+c0110dc4:	8b 45 ec             	mov    -0x14(%ebp),%eax
+c0110dc7:	c9                   	leave  
+c0110dc8:	c3                   	ret    
+c0110dc9:	90                   	nop    
 
-c0110d6e <__ZN3TTy5PassCEc>:
-c0110d6e:	55                   	push   %ebp
-c0110d6f:	89 e5                	mov    %esp,%ebp
-c0110d71:	83 ec 18             	sub    $0x18,%esp
-c0110d74:	8b 45 0c             	mov    0xc(%ebp),%eax
-c0110d77:	88 45 ff             	mov    %al,-0x1(%ebp)
-c0110d7a:	e8 e9 63 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c0110d7f:	89 04 24             	mov    %eax,(%esp)
-c0110d82:	e8 7d 66 ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
-c0110d87:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c0110d8a:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c0110d8d:	83 b8 fc 01 00 00 00 	cmpl   $0x0,0x1fc(%eax)
-c0110d94:	7e 29                	jle    c0110dbf <__ZN3TTy5PassCEc+0x51>
-c0110d96:	8b 55 f8             	mov    -0x8(%ebp),%edx
-c0110d99:	8b 82 f4 01 00 00    	mov    0x1f4(%edx),%eax
-c0110d9f:	89 c1                	mov    %eax,%ecx
-c0110da1:	0f b6 45 ff          	movzbl -0x1(%ebp),%eax
-c0110da5:	88 01                	mov    %al,(%ecx)
-c0110da7:	ff 82 f4 01 00 00    	incl   0x1f4(%edx)
-c0110dad:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c0110db0:	ff 88 fc 01 00 00    	decl   0x1fc(%eax)
-c0110db6:	c7 45 f4 00 00 00 00 	movl   $0x0,-0xc(%ebp)
-c0110dbd:	eb 07                	jmp    c0110dc6 <__ZN3TTy5PassCEc+0x58>
-c0110dbf:	c7 45 f4 ff ff ff ff 	movl   $0xffffffff,-0xc(%ebp)
-c0110dc6:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c0110dc9:	c9                   	leave  
-c0110dca:	c3                   	ret    
-c0110dcb:	90                   	nop    
+c0110dca <__ZN3TTy5PassCEc>:
+c0110dca:	55                   	push   %ebp
+c0110dcb:	89 e5                	mov    %esp,%ebp
+c0110dcd:	83 ec 18             	sub    $0x18,%esp
+c0110dd0:	8b 45 0c             	mov    0xc(%ebp),%eax
+c0110dd3:	88 45 ff             	mov    %al,-0x1(%ebp)
+c0110dd6:	e8 8d 63 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c0110ddb:	89 04 24             	mov    %eax,(%esp)
+c0110dde:	e8 21 66 ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
+c0110de3:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c0110de6:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c0110de9:	83 b8 fc 01 00 00 00 	cmpl   $0x0,0x1fc(%eax)
+c0110df0:	7e 29                	jle    c0110e1b <__ZN3TTy5PassCEc+0x51>
+c0110df2:	8b 55 f8             	mov    -0x8(%ebp),%edx
+c0110df5:	8b 82 f4 01 00 00    	mov    0x1f4(%edx),%eax
+c0110dfb:	89 c1                	mov    %eax,%ecx
+c0110dfd:	0f b6 45 ff          	movzbl -0x1(%ebp),%eax
+c0110e01:	88 01                	mov    %al,(%ecx)
+c0110e03:	ff 82 f4 01 00 00    	incl   0x1f4(%edx)
+c0110e09:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c0110e0c:	ff 88 fc 01 00 00    	decl   0x1fc(%eax)
+c0110e12:	c7 45 f4 00 00 00 00 	movl   $0x0,-0xc(%ebp)
+c0110e19:	eb 07                	jmp    c0110e22 <__ZN3TTy5PassCEc+0x58>
+c0110e1b:	c7 45 f4 ff ff ff ff 	movl   $0xffffffff,-0xc(%ebp)
+c0110e22:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c0110e25:	c9                   	leave  
+c0110e26:	c3                   	ret    
+c0110e27:	90                   	nop    
 
-c0110dcc <__ZN3TTy5CPassEv>:
-c0110dcc:	55                   	push   %ebp
-c0110dcd:	89 e5                	mov    %esp,%ebp
-c0110dcf:	83 ec 18             	sub    $0x18,%esp
-c0110dd2:	e8 91 63 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
-c0110dd7:	89 04 24             	mov    %eax,(%esp)
-c0110dda:	e8 25 66 ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
-c0110ddf:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c0110de2:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c0110de5:	8b 90 f4 01 00 00    	mov    0x1f4(%eax),%edx
-c0110deb:	ff 80 f4 01 00 00    	incl   0x1f4(%eax)
-c0110df1:	0f b6 02             	movzbl (%edx),%eax
-c0110df4:	88 45 ff             	mov    %al,-0x1(%ebp)
-c0110df7:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c0110dfa:	83 b8 fc 01 00 00 00 	cmpl   $0x0,0x1fc(%eax)
-c0110e01:	7e 12                	jle    c0110e15 <__ZN3TTy5CPassEv+0x49>
-c0110e03:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c0110e06:	ff 88 fc 01 00 00    	decl   0x1fc(%eax)
-c0110e0c:	0f be 45 ff          	movsbl -0x1(%ebp),%eax
-c0110e10:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c0110e13:	eb 07                	jmp    c0110e1c <__ZN3TTy5CPassEv+0x50>
-c0110e15:	c7 45 f4 ff ff ff ff 	movl   $0xffffffff,-0xc(%ebp)
-c0110e1c:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c0110e1f:	c9                   	leave  
-c0110e20:	c3                   	ret    
-c0110e21:	90                   	nop    
+c0110e28 <__ZN3TTy5CPassEv>:
+c0110e28:	55                   	push   %ebp
+c0110e29:	89 e5                	mov    %esp,%ebp
+c0110e2b:	83 ec 18             	sub    $0x18,%esp
+c0110e2e:	e8 35 63 ff ff       	call   c0107168 <__ZN6Kernel8InstanceEv>
+c0110e33:	89 04 24             	mov    %eax,(%esp)
+c0110e36:	e8 c9 65 ff ff       	call   c0107404 <__ZN6Kernel7GetUserEv>
+c0110e3b:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c0110e3e:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c0110e41:	8b 90 f4 01 00 00    	mov    0x1f4(%eax),%edx
+c0110e47:	ff 80 f4 01 00 00    	incl   0x1f4(%eax)
+c0110e4d:	0f b6 02             	movzbl (%edx),%eax
+c0110e50:	88 45 ff             	mov    %al,-0x1(%ebp)
+c0110e53:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c0110e56:	83 b8 fc 01 00 00 00 	cmpl   $0x0,0x1fc(%eax)
+c0110e5d:	7e 12                	jle    c0110e71 <__ZN3TTy5CPassEv+0x49>
+c0110e5f:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c0110e62:	ff 88 fc 01 00 00    	decl   0x1fc(%eax)
+c0110e68:	0f be 45 ff          	movsbl -0x1(%ebp),%eax
+c0110e6c:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c0110e6f:	eb 07                	jmp    c0110e78 <__ZN3TTy5CPassEv+0x50>
+c0110e71:	c7 45 f4 ff ff ff ff 	movl   $0xffffffff,-0xc(%ebp)
+c0110e78:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c0110e7b:	c9                   	leave  
+c0110e7c:	c3                   	ret    
+c0110e7d:	90                   	nop    
 
-c0110e22 <__Z41__static_initialization_and_destruction_0ii>:
-c0110e22:	55                   	push   %ebp
-c0110e23:	89 e5                	mov    %esp,%ebp
-c0110e25:	83 ec 04             	sub    $0x4,%esp
-c0110e28:	81 7d 0c ff ff 00 00 	cmpl   $0xffff,0xc(%ebp)
-c0110e2f:	75 12                	jne    c0110e43 <__Z41__static_initialization_and_destruction_0ii+0x21>
-c0110e31:	83 7d 08 01          	cmpl   $0x1,0x8(%ebp)
-c0110e35:	75 0c                	jne    c0110e43 <__Z41__static_initialization_and_destruction_0ii+0x21>
-c0110e37:	c7 04 24 a0 0d 12 c0 	movl   $0xc0120da0,(%esp)
-c0110e3e:	e8 cd f9 ff ff       	call   c0110810 <__ZN3TTyC1Ev>
-c0110e43:	81 7d 0c ff ff 00 00 	cmpl   $0xffff,0xc(%ebp)
-c0110e4a:	75 12                	jne    c0110e5e <__Z41__static_initialization_and_destruction_0ii+0x3c>
-c0110e4c:	83 7d 08 00          	cmpl   $0x0,0x8(%ebp)
-c0110e50:	75 0c                	jne    c0110e5e <__Z41__static_initialization_and_destruction_0ii+0x3c>
-c0110e52:	c7 04 24 a0 0d 12 c0 	movl   $0xc0120da0,(%esp)
-c0110e59:	e8 1a fa ff ff       	call   c0110878 <__ZN3TTyD1Ev>
-c0110e5e:	c9                   	leave  
-c0110e5f:	c3                   	ret    
+c0110e7e <__Z41__static_initialization_and_destruction_0ii>:
+c0110e7e:	55                   	push   %ebp
+c0110e7f:	89 e5                	mov    %esp,%ebp
+c0110e81:	83 ec 04             	sub    $0x4,%esp
+c0110e84:	81 7d 0c ff ff 00 00 	cmpl   $0xffff,0xc(%ebp)
+c0110e8b:	75 12                	jne    c0110e9f <__Z41__static_initialization_and_destruction_0ii+0x21>
+c0110e8d:	83 7d 08 01          	cmpl   $0x1,0x8(%ebp)
+c0110e91:	75 0c                	jne    c0110e9f <__Z41__static_initialization_and_destruction_0ii+0x21>
+c0110e93:	c7 04 24 a0 0d 12 c0 	movl   $0xc0120da0,(%esp)
+c0110e9a:	e8 cd f9 ff ff       	call   c011086c <__ZN3TTyC1Ev>
+c0110e9f:	81 7d 0c ff ff 00 00 	cmpl   $0xffff,0xc(%ebp)
+c0110ea6:	75 12                	jne    c0110eba <__Z41__static_initialization_and_destruction_0ii+0x3c>
+c0110ea8:	83 7d 08 00          	cmpl   $0x0,0x8(%ebp)
+c0110eac:	75 0c                	jne    c0110eba <__Z41__static_initialization_and_destruction_0ii+0x3c>
+c0110eae:	c7 04 24 a0 0d 12 c0 	movl   $0xc0120da0,(%esp)
+c0110eb5:	e8 1a fa ff ff       	call   c01108d4 <__ZN3TTyD1Ev>
+c0110eba:	c9                   	leave  
+c0110ebb:	c3                   	ret    
 
-c0110e60 <__GLOBAL__I__ZN9TTy_QueueC2Ev>:
-c0110e60:	55                   	push   %ebp
-c0110e61:	89 e5                	mov    %esp,%ebp
-c0110e63:	83 ec 08             	sub    $0x8,%esp
-c0110e66:	c7 44 24 04 ff ff 00 	movl   $0xffff,0x4(%esp)
-c0110e6d:	00 
-c0110e6e:	c7 04 24 01 00 00 00 	movl   $0x1,(%esp)
-c0110e75:	e8 a8 ff ff ff       	call   c0110e22 <__Z41__static_initialization_and_destruction_0ii>
-c0110e7a:	c9                   	leave  
-c0110e7b:	c3                   	ret    
+c0110ebc <__GLOBAL__I__ZN9TTy_QueueC2Ev>:
+c0110ebc:	55                   	push   %ebp
+c0110ebd:	89 e5                	mov    %esp,%ebp
+c0110ebf:	83 ec 08             	sub    $0x8,%esp
+c0110ec2:	c7 44 24 04 ff ff 00 	movl   $0xffff,0x4(%esp)
+c0110ec9:	00 
+c0110eca:	c7 04 24 01 00 00 00 	movl   $0x1,(%esp)
+c0110ed1:	e8 a8 ff ff ff       	call   c0110e7e <__Z41__static_initialization_and_destruction_0ii>
+c0110ed6:	c9                   	leave  
+c0110ed7:	c3                   	ret    
 
-c0110e7c <__GLOBAL__D__ZN9TTy_QueueC2Ev>:
-c0110e7c:	55                   	push   %ebp
-c0110e7d:	89 e5                	mov    %esp,%ebp
-c0110e7f:	83 ec 08             	sub    $0x8,%esp
-c0110e82:	c7 44 24 04 ff ff 00 	movl   $0xffff,0x4(%esp)
-c0110e89:	00 
-c0110e8a:	c7 04 24 00 00 00 00 	movl   $0x0,(%esp)
-c0110e91:	e8 8c ff ff ff       	call   c0110e22 <__Z41__static_initialization_and_destruction_0ii>
-c0110e96:	c9                   	leave  
-c0110e97:	c3                   	ret    
+c0110ed8 <__GLOBAL__D__ZN9TTy_QueueC2Ev>:
+c0110ed8:	55                   	push   %ebp
+c0110ed9:	89 e5                	mov    %esp,%ebp
+c0110edb:	83 ec 08             	sub    $0x8,%esp
+c0110ede:	c7 44 24 04 ff ff 00 	movl   $0xffff,0x4(%esp)
+c0110ee5:	00 
+c0110ee6:	c7 04 24 00 00 00 00 	movl   $0x0,(%esp)
+c0110eed:	e8 8c ff ff ff       	call   c0110e7e <__Z41__static_initialization_and_destruction_0ii>
+c0110ef2:	c9                   	leave  
+c0110ef3:	c3                   	ret    
 
-c0110e98 <__ZN4User6SetuidEv>:
-c0110e98:	55                   	push   %ebp
-c0110e99:	89 e5                	mov    %esp,%ebp
-c0110e9b:	83 ec 08             	sub    $0x8,%esp
-c0110e9e:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110ea1:	8b 40 30             	mov    0x30(%eax),%eax
-c0110ea4:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
-c0110ea8:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110eab:	0f bf 90 b4 01 00 00 	movswl 0x1b4(%eax),%edx
-c0110eb2:	0f bf 45 fe          	movswl -0x2(%ebp),%eax
-c0110eb6:	39 c2                	cmp    %eax,%edx
-c0110eb8:	74 11                	je     c0110ecb <__ZN4User6SetuidEv+0x33>
-c0110eba:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110ebd:	89 04 24             	mov    %eax,(%esp)
-c0110ec0:	e8 2f 01 00 00       	call   c0110ff4 <__ZN4User5SUserEv>
-c0110ec5:	84 c0                	test   %al,%al
-c0110ec7:	75 02                	jne    c0110ecb <__ZN4User6SetuidEv+0x33>
-c0110ec9:	eb 2b                	jmp    c0110ef6 <__ZN4User6SetuidEv+0x5e>
-c0110ecb:	8b 55 08             	mov    0x8(%ebp),%edx
-c0110ece:	0f b7 45 fe          	movzwl -0x2(%ebp),%eax
-c0110ed2:	66 89 82 b0 01 00 00 	mov    %ax,0x1b0(%edx)
-c0110ed9:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110edc:	8b 50 10             	mov    0x10(%eax),%edx
-c0110edf:	0f b7 45 fe          	movzwl -0x2(%ebp),%eax
-c0110ee3:	66 89 02             	mov    %ax,(%edx)
-c0110ee6:	8b 55 08             	mov    0x8(%ebp),%edx
-c0110ee9:	0f b7 45 fe          	movzwl -0x2(%ebp),%eax
-c0110eed:	66 89 82 b4 01 00 00 	mov    %ax,0x1b4(%edx)
-c0110ef4:	eb 0d                	jmp    c0110f03 <__ZN4User6SetuidEv+0x6b>
-c0110ef6:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110ef9:	c7 80 a8 01 00 00 01 	movl   $0x1,0x1a8(%eax)
-c0110f00:	00 00 00 
-c0110f03:	c9                   	leave  
-c0110f04:	c3                   	ret    
-c0110f05:	90                   	nop    
+c0110ef4 <__ZN4User6SetuidEv>:
+c0110ef4:	55                   	push   %ebp
+c0110ef5:	89 e5                	mov    %esp,%ebp
+c0110ef7:	83 ec 08             	sub    $0x8,%esp
+c0110efa:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110efd:	8b 40 30             	mov    0x30(%eax),%eax
+c0110f00:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
+c0110f04:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110f07:	0f bf 90 b4 01 00 00 	movswl 0x1b4(%eax),%edx
+c0110f0e:	0f bf 45 fe          	movswl -0x2(%ebp),%eax
+c0110f12:	39 c2                	cmp    %eax,%edx
+c0110f14:	74 11                	je     c0110f27 <__ZN4User6SetuidEv+0x33>
+c0110f16:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110f19:	89 04 24             	mov    %eax,(%esp)
+c0110f1c:	e8 2f 01 00 00       	call   c0111050 <__ZN4User5SUserEv>
+c0110f21:	84 c0                	test   %al,%al
+c0110f23:	75 02                	jne    c0110f27 <__ZN4User6SetuidEv+0x33>
+c0110f25:	eb 2b                	jmp    c0110f52 <__ZN4User6SetuidEv+0x5e>
+c0110f27:	8b 55 08             	mov    0x8(%ebp),%edx
+c0110f2a:	0f b7 45 fe          	movzwl -0x2(%ebp),%eax
+c0110f2e:	66 89 82 b0 01 00 00 	mov    %ax,0x1b0(%edx)
+c0110f35:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110f38:	8b 50 10             	mov    0x10(%eax),%edx
+c0110f3b:	0f b7 45 fe          	movzwl -0x2(%ebp),%eax
+c0110f3f:	66 89 02             	mov    %ax,(%edx)
+c0110f42:	8b 55 08             	mov    0x8(%ebp),%edx
+c0110f45:	0f b7 45 fe          	movzwl -0x2(%ebp),%eax
+c0110f49:	66 89 82 b4 01 00 00 	mov    %ax,0x1b4(%edx)
+c0110f50:	eb 0d                	jmp    c0110f5f <__ZN4User6SetuidEv+0x6b>
+c0110f52:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110f55:	c7 80 a8 01 00 00 01 	movl   $0x1,0x1a8(%eax)
+c0110f5c:	00 00 00 
+c0110f5f:	c9                   	leave  
+c0110f60:	c3                   	ret    
+c0110f61:	90                   	nop    
 
-c0110f06 <__ZN4User6GetuidEv>:
-c0110f06:	55                   	push   %ebp
-c0110f07:	89 e5                	mov    %esp,%ebp
-c0110f09:	83 ec 04             	sub    $0x4,%esp
-c0110f0c:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110f0f:	0f bf 80 b0 01 00 00 	movswl 0x1b0(%eax),%eax
-c0110f16:	c1 e0 10             	shl    $0x10,%eax
-c0110f19:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c0110f1c:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110f1f:	0f bf 80 b4 01 00 00 	movswl 0x1b4(%eax),%eax
-c0110f26:	0f b6 d0             	movzbl %al,%edx
-c0110f29:	8d 45 fc             	lea    -0x4(%ebp),%eax
-c0110f2c:	09 10                	or     %edx,(%eax)
-c0110f2e:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110f31:	8b 50 2c             	mov    0x2c(%eax),%edx
-c0110f34:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c0110f37:	89 02                	mov    %eax,(%edx)
-c0110f39:	c9                   	leave  
-c0110f3a:	c3                   	ret    
-c0110f3b:	90                   	nop    
+c0110f62 <__ZN4User6GetuidEv>:
+c0110f62:	55                   	push   %ebp
+c0110f63:	89 e5                	mov    %esp,%ebp
+c0110f65:	83 ec 04             	sub    $0x4,%esp
+c0110f68:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110f6b:	0f bf 80 b0 01 00 00 	movswl 0x1b0(%eax),%eax
+c0110f72:	c1 e0 10             	shl    $0x10,%eax
+c0110f75:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c0110f78:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110f7b:	0f bf 80 b4 01 00 00 	movswl 0x1b4(%eax),%eax
+c0110f82:	0f b6 d0             	movzbl %al,%edx
+c0110f85:	8d 45 fc             	lea    -0x4(%ebp),%eax
+c0110f88:	09 10                	or     %edx,(%eax)
+c0110f8a:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110f8d:	8b 50 2c             	mov    0x2c(%eax),%edx
+c0110f90:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c0110f93:	89 02                	mov    %eax,(%edx)
+c0110f95:	c9                   	leave  
+c0110f96:	c3                   	ret    
+c0110f97:	90                   	nop    
 
-c0110f3c <__ZN4User6SetgidEv>:
-c0110f3c:	55                   	push   %ebp
-c0110f3d:	89 e5                	mov    %esp,%ebp
-c0110f3f:	83 ec 08             	sub    $0x8,%esp
-c0110f42:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110f45:	8b 40 30             	mov    0x30(%eax),%eax
-c0110f48:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
-c0110f4c:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110f4f:	0f bf 90 b6 01 00 00 	movswl 0x1b6(%eax),%edx
-c0110f56:	0f bf 45 fe          	movswl -0x2(%ebp),%eax
-c0110f5a:	39 c2                	cmp    %eax,%edx
-c0110f5c:	74 11                	je     c0110f6f <__ZN4User6SetgidEv+0x33>
-c0110f5e:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110f61:	89 04 24             	mov    %eax,(%esp)
-c0110f64:	e8 8b 00 00 00       	call   c0110ff4 <__ZN4User5SUserEv>
-c0110f69:	84 c0                	test   %al,%al
-c0110f6b:	75 02                	jne    c0110f6f <__ZN4User6SetgidEv+0x33>
-c0110f6d:	eb 1e                	jmp    c0110f8d <__ZN4User6SetgidEv+0x51>
-c0110f6f:	8b 55 08             	mov    0x8(%ebp),%edx
-c0110f72:	0f b7 45 fe          	movzwl -0x2(%ebp),%eax
-c0110f76:	66 89 82 b2 01 00 00 	mov    %ax,0x1b2(%edx)
-c0110f7d:	8b 55 08             	mov    0x8(%ebp),%edx
-c0110f80:	0f b7 45 fe          	movzwl -0x2(%ebp),%eax
-c0110f84:	66 89 82 b6 01 00 00 	mov    %ax,0x1b6(%edx)
-c0110f8b:	eb 0d                	jmp    c0110f9a <__ZN4User6SetgidEv+0x5e>
-c0110f8d:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110f90:	c7 80 a8 01 00 00 01 	movl   $0x1,0x1a8(%eax)
-c0110f97:	00 00 00 
-c0110f9a:	c9                   	leave  
-c0110f9b:	c3                   	ret    
+c0110f98 <__ZN4User6SetgidEv>:
+c0110f98:	55                   	push   %ebp
+c0110f99:	89 e5                	mov    %esp,%ebp
+c0110f9b:	83 ec 08             	sub    $0x8,%esp
+c0110f9e:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110fa1:	8b 40 30             	mov    0x30(%eax),%eax
+c0110fa4:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
+c0110fa8:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110fab:	0f bf 90 b6 01 00 00 	movswl 0x1b6(%eax),%edx
+c0110fb2:	0f bf 45 fe          	movswl -0x2(%ebp),%eax
+c0110fb6:	39 c2                	cmp    %eax,%edx
+c0110fb8:	74 11                	je     c0110fcb <__ZN4User6SetgidEv+0x33>
+c0110fba:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110fbd:	89 04 24             	mov    %eax,(%esp)
+c0110fc0:	e8 8b 00 00 00       	call   c0111050 <__ZN4User5SUserEv>
+c0110fc5:	84 c0                	test   %al,%al
+c0110fc7:	75 02                	jne    c0110fcb <__ZN4User6SetgidEv+0x33>
+c0110fc9:	eb 1e                	jmp    c0110fe9 <__ZN4User6SetgidEv+0x51>
+c0110fcb:	8b 55 08             	mov    0x8(%ebp),%edx
+c0110fce:	0f b7 45 fe          	movzwl -0x2(%ebp),%eax
+c0110fd2:	66 89 82 b2 01 00 00 	mov    %ax,0x1b2(%edx)
+c0110fd9:	8b 55 08             	mov    0x8(%ebp),%edx
+c0110fdc:	0f b7 45 fe          	movzwl -0x2(%ebp),%eax
+c0110fe0:	66 89 82 b6 01 00 00 	mov    %ax,0x1b6(%edx)
+c0110fe7:	eb 0d                	jmp    c0110ff6 <__ZN4User6SetgidEv+0x5e>
+c0110fe9:	8b 45 08             	mov    0x8(%ebp),%eax
+c0110fec:	c7 80 a8 01 00 00 01 	movl   $0x1,0x1a8(%eax)
+c0110ff3:	00 00 00 
+c0110ff6:	c9                   	leave  
+c0110ff7:	c3                   	ret    
 
-c0110f9c <__ZN4User6GetgidEv>:
-c0110f9c:	55                   	push   %ebp
-c0110f9d:	89 e5                	mov    %esp,%ebp
-c0110f9f:	83 ec 04             	sub    $0x4,%esp
-c0110fa2:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110fa5:	0f bf 80 b2 01 00 00 	movswl 0x1b2(%eax),%eax
-c0110fac:	c1 e0 10             	shl    $0x10,%eax
-c0110faf:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c0110fb2:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110fb5:	0f bf 80 b6 01 00 00 	movswl 0x1b6(%eax),%eax
-c0110fbc:	0f b6 d0             	movzbl %al,%edx
-c0110fbf:	8d 45 fc             	lea    -0x4(%ebp),%eax
-c0110fc2:	09 10                	or     %edx,(%eax)
-c0110fc4:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110fc7:	8b 50 2c             	mov    0x2c(%eax),%edx
-c0110fca:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c0110fcd:	89 02                	mov    %eax,(%edx)
-c0110fcf:	c9                   	leave  
-c0110fd0:	c3                   	ret    
-c0110fd1:	90                   	nop    
+c0110ff8 <__ZN4User6GetgidEv>:
+c0110ff8:	55                   	push   %ebp
+c0110ff9:	89 e5                	mov    %esp,%ebp
+c0110ffb:	83 ec 04             	sub    $0x4,%esp
+c0110ffe:	8b 45 08             	mov    0x8(%ebp),%eax
+c0111001:	0f bf 80 b2 01 00 00 	movswl 0x1b2(%eax),%eax
+c0111008:	c1 e0 10             	shl    $0x10,%eax
+c011100b:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c011100e:	8b 45 08             	mov    0x8(%ebp),%eax
+c0111011:	0f bf 80 b6 01 00 00 	movswl 0x1b6(%eax),%eax
+c0111018:	0f b6 d0             	movzbl %al,%edx
+c011101b:	8d 45 fc             	lea    -0x4(%ebp),%eax
+c011101e:	09 10                	or     %edx,(%eax)
+c0111020:	8b 45 08             	mov    0x8(%ebp),%eax
+c0111023:	8b 50 2c             	mov    0x2c(%eax),%edx
+c0111026:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c0111029:	89 02                	mov    %eax,(%edx)
+c011102b:	c9                   	leave  
+c011102c:	c3                   	ret    
+c011102d:	90                   	nop    
 
-c0110fd2 <__ZN4User3PwdEv>:
-c0110fd2:	55                   	push   %ebp
-c0110fd3:	89 e5                	mov    %esp,%ebp
-c0110fd5:	83 ec 08             	sub    $0x8,%esp
-c0110fd8:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110fdb:	8b 40 44             	mov    0x44(%eax),%eax
-c0110fde:	89 44 24 04          	mov    %eax,0x4(%esp)
-c0110fe2:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110fe5:	05 28 01 00 00       	add    $0x128,%eax
-c0110fea:	89 04 24             	mov    %eax,(%esp)
-c0110fed:	e8 c4 00 00 00       	call   c01110b6 <__ZN7Utility10StringCopyEPcS0_>
-c0110ff2:	c9                   	leave  
-c0110ff3:	c3                   	ret    
+c011102e <__ZN4User3PwdEv>:
+c011102e:	55                   	push   %ebp
+c011102f:	89 e5                	mov    %esp,%ebp
+c0111031:	83 ec 08             	sub    $0x8,%esp
+c0111034:	8b 45 08             	mov    0x8(%ebp),%eax
+c0111037:	8b 40 44             	mov    0x44(%eax),%eax
+c011103a:	89 44 24 04          	mov    %eax,0x4(%esp)
+c011103e:	8b 45 08             	mov    0x8(%ebp),%eax
+c0111041:	05 28 01 00 00       	add    $0x128,%eax
+c0111046:	89 04 24             	mov    %eax,(%esp)
+c0111049:	e8 c4 00 00 00       	call   c0111112 <__ZN7Utility10StringCopyEPcS0_>
+c011104e:	c9                   	leave  
+c011104f:	c3                   	ret    
 
-c0110ff4 <__ZN4User5SUserEv>:
-c0110ff4:	55                   	push   %ebp
-c0110ff5:	89 e5                	mov    %esp,%ebp
-c0110ff7:	83 ec 04             	sub    $0x4,%esp
-c0110ffa:	8b 45 08             	mov    0x8(%ebp),%eax
-c0110ffd:	66 83 b8 b0 01 00 00 	cmpw   $0x0,0x1b0(%eax)
-c0111004:	00 
-c0111005:	75 09                	jne    c0111010 <__ZN4User5SUserEv+0x1c>
-c0111007:	c7 45 fc 01 00 00 00 	movl   $0x1,-0x4(%ebp)
-c011100e:	eb 14                	jmp    c0111024 <__ZN4User5SUserEv+0x30>
-c0111010:	8b 45 08             	mov    0x8(%ebp),%eax
-c0111013:	c7 80 a8 01 00 00 01 	movl   $0x1,0x1a8(%eax)
-c011101a:	00 00 00 
-c011101d:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%ebp)
-c0111024:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c0111027:	c9                   	leave  
-c0111028:	c3                   	ret    
-c0111029:	90                   	nop    
-c011102a:	90                   	nop    
-c011102b:	90                   	nop    
+c0111050 <__ZN4User5SUserEv>:
+c0111050:	55                   	push   %ebp
+c0111051:	89 e5                	mov    %esp,%ebp
+c0111053:	83 ec 04             	sub    $0x4,%esp
+c0111056:	8b 45 08             	mov    0x8(%ebp),%eax
+c0111059:	66 83 b8 b0 01 00 00 	cmpw   $0x0,0x1b0(%eax)
+c0111060:	00 
+c0111061:	75 09                	jne    c011106c <__ZN4User5SUserEv+0x1c>
+c0111063:	c7 45 fc 01 00 00 00 	movl   $0x1,-0x4(%ebp)
+c011106a:	eb 14                	jmp    c0111080 <__ZN4User5SUserEv+0x30>
+c011106c:	8b 45 08             	mov    0x8(%ebp),%eax
+c011106f:	c7 80 a8 01 00 00 01 	movl   $0x1,0x1a8(%eax)
+c0111076:	00 00 00 
+c0111079:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%ebp)
+c0111080:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c0111083:	c9                   	leave  
+c0111084:	c3                   	ret    
+c0111085:	90                   	nop    
+c0111086:	90                   	nop    
+c0111087:	90                   	nop    
 
-c011102c <__ZN7Utility7MemCopyEmmj>:
-c011102c:	55                   	push   %ebp
-c011102d:	89 e5                	mov    %esp,%ebp
-c011102f:	83 ec 0c             	sub    $0xc,%esp
-c0111032:	8b 45 08             	mov    0x8(%ebp),%eax
-c0111035:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c0111038:	8b 45 0c             	mov    0xc(%ebp),%eax
-c011103b:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c011103e:	c7 45 f4 00 00 00 00 	movl   $0x0,-0xc(%ebp)
-c0111045:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c0111048:	3b 45 10             	cmp    0x10(%ebp),%eax
-c011104b:	73 1a                	jae    c0111067 <__ZN7Utility7MemCopyEmmj+0x3b>
-c011104d:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c0111050:	8b 55 f4             	mov    -0xc(%ebp),%edx
-c0111053:	01 c2                	add    %eax,%edx
-c0111055:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c0111058:	03 45 f4             	add    -0xc(%ebp),%eax
-c011105b:	0f b6 00             	movzbl (%eax),%eax
-c011105e:	88 02                	mov    %al,(%edx)
-c0111060:	8d 45 f4             	lea    -0xc(%ebp),%eax
-c0111063:	ff 00                	incl   (%eax)
-c0111065:	eb de                	jmp    c0111045 <__ZN7Utility7MemCopyEmmj+0x19>
-c0111067:	c9                   	leave  
-c0111068:	c3                   	ret    
-c0111069:	90                   	nop    
-
-c011106a <__ZN7Utility12CaluPageNeedEjj>:
-c011106a:	55                   	push   %ebp
-c011106b:	89 e5                	mov    %esp,%ebp
-c011106d:	83 ec 08             	sub    $0x8,%esp
-c0111070:	8b 55 08             	mov    0x8(%ebp),%edx
-c0111073:	8d 45 0c             	lea    0xc(%ebp),%eax
-c0111076:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c0111079:	89 d0                	mov    %edx,%eax
-c011107b:	8b 4d f8             	mov    -0x8(%ebp),%ecx
-c011107e:	ba 00 00 00 00       	mov    $0x0,%edx
-c0111083:	f7 31                	divl   (%ecx)
-c0111085:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c0111088:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c011108b:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c011108e:	8b 55 08             	mov    0x8(%ebp),%edx
-c0111091:	8d 4d 0c             	lea    0xc(%ebp),%ecx
-c0111094:	89 4d f8             	mov    %ecx,-0x8(%ebp)
-c0111097:	89 d0                	mov    %edx,%eax
-c0111099:	8b 4d f8             	mov    -0x8(%ebp),%ecx
-c011109c:	ba 00 00 00 00       	mov    $0x0,%edx
-c01110a1:	f7 31                	divl   (%ecx)
-c01110a3:	85 d2                	test   %edx,%edx
-c01110a5:	0f 95 c0             	setne  %al
-c01110a8:	0f b6 c0             	movzbl %al,%eax
-c01110ab:	03 45 fc             	add    -0x4(%ebp),%eax
-c01110ae:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c0111088 <__ZN7Utility7MemCopyEmmj>:
+c0111088:	55                   	push   %ebp
+c0111089:	89 e5                	mov    %esp,%ebp
+c011108b:	83 ec 0c             	sub    $0xc,%esp
+c011108e:	8b 45 08             	mov    0x8(%ebp),%eax
+c0111091:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c0111094:	8b 45 0c             	mov    0xc(%ebp),%eax
+c0111097:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c011109a:	c7 45 f4 00 00 00 00 	movl   $0x0,-0xc(%ebp)
+c01110a1:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c01110a4:	3b 45 10             	cmp    0x10(%ebp),%eax
+c01110a7:	73 1a                	jae    c01110c3 <__ZN7Utility7MemCopyEmmj+0x3b>
+c01110a9:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c01110ac:	8b 55 f4             	mov    -0xc(%ebp),%edx
+c01110af:	01 c2                	add    %eax,%edx
 c01110b1:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c01110b4:	c9                   	leave  
-c01110b5:	c3                   	ret    
+c01110b4:	03 45 f4             	add    -0xc(%ebp),%eax
+c01110b7:	0f b6 00             	movzbl (%eax),%eax
+c01110ba:	88 02                	mov    %al,(%edx)
+c01110bc:	8d 45 f4             	lea    -0xc(%ebp),%eax
+c01110bf:	ff 00                	incl   (%eax)
+c01110c1:	eb de                	jmp    c01110a1 <__ZN7Utility7MemCopyEmmj+0x19>
+c01110c3:	c9                   	leave  
+c01110c4:	c3                   	ret    
+c01110c5:	90                   	nop    
 
-c01110b6 <__ZN7Utility10StringCopyEPcS0_>:
-c01110b6:	55                   	push   %ebp
-c01110b7:	89 e5                	mov    %esp,%ebp
-c01110b9:	8b 45 0c             	mov    0xc(%ebp),%eax
-c01110bc:	89 c1                	mov    %eax,%ecx
-c01110be:	8b 45 08             	mov    0x8(%ebp),%eax
-c01110c1:	0f b6 10             	movzbl (%eax),%edx
-c01110c4:	ff 45 08             	incl   0x8(%ebp)
-c01110c7:	88 11                	mov    %dl,(%ecx)
-c01110c9:	8d 45 0c             	lea    0xc(%ebp),%eax
-c01110cc:	ff 00                	incl   (%eax)
-c01110ce:	84 d2                	test   %dl,%dl
-c01110d0:	74 02                	je     c01110d4 <__ZN7Utility10StringCopyEPcS0_+0x1e>
-c01110d2:	eb e5                	jmp    c01110b9 <__ZN7Utility10StringCopyEPcS0_+0x3>
-c01110d4:	5d                   	pop    %ebp
-c01110d5:	c3                   	ret    
+c01110c6 <__ZN7Utility12CaluPageNeedEjj>:
+c01110c6:	55                   	push   %ebp
+c01110c7:	89 e5                	mov    %esp,%ebp
+c01110c9:	83 ec 08             	sub    $0x8,%esp
+c01110cc:	8b 55 08             	mov    0x8(%ebp),%edx
+c01110cf:	8d 45 0c             	lea    0xc(%ebp),%eax
+c01110d2:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c01110d5:	89 d0                	mov    %edx,%eax
+c01110d7:	8b 4d f8             	mov    -0x8(%ebp),%ecx
+c01110da:	ba 00 00 00 00       	mov    $0x0,%edx
+c01110df:	f7 31                	divl   (%ecx)
+c01110e1:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c01110e4:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c01110e7:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c01110ea:	8b 55 08             	mov    0x8(%ebp),%edx
+c01110ed:	8d 4d 0c             	lea    0xc(%ebp),%ecx
+c01110f0:	89 4d f8             	mov    %ecx,-0x8(%ebp)
+c01110f3:	89 d0                	mov    %edx,%eax
+c01110f5:	8b 4d f8             	mov    -0x8(%ebp),%ecx
+c01110f8:	ba 00 00 00 00       	mov    $0x0,%edx
+c01110fd:	f7 31                	divl   (%ecx)
+c01110ff:	85 d2                	test   %edx,%edx
+c0111101:	0f 95 c0             	setne  %al
+c0111104:	0f b6 c0             	movzbl %al,%eax
+c0111107:	03 45 fc             	add    -0x4(%ebp),%eax
+c011110a:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c011110d:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c0111110:	c9                   	leave  
+c0111111:	c3                   	ret    
 
-c01110d6 <__ZN7Utility12StringLengthEPc>:
-c01110d6:	55                   	push   %ebp
-c01110d7:	89 e5                	mov    %esp,%ebp
-c01110d9:	83 ec 08             	sub    $0x8,%esp
-c01110dc:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%ebp)
-c01110e3:	8b 45 08             	mov    0x8(%ebp),%eax
-c01110e6:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c01110e9:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c01110ec:	89 c2                	mov    %eax,%edx
-c01110ee:	8d 45 f8             	lea    -0x8(%ebp),%eax
-c01110f1:	ff 00                	incl   (%eax)
-c01110f3:	80 3a 00             	cmpb   $0x0,(%edx)
-c01110f6:	74 07                	je     c01110ff <__ZN7Utility12StringLengthEPc+0x29>
-c01110f8:	8d 45 fc             	lea    -0x4(%ebp),%eax
-c01110fb:	ff 00                	incl   (%eax)
-c01110fd:	eb ea                	jmp    c01110e9 <__ZN7Utility12StringLengthEPc+0x13>
-c01110ff:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c0111102:	c9                   	leave  
-c0111103:	c3                   	ret    
+c0111112 <__ZN7Utility10StringCopyEPcS0_>:
+c0111112:	55                   	push   %ebp
+c0111113:	89 e5                	mov    %esp,%ebp
+c0111115:	8b 45 0c             	mov    0xc(%ebp),%eax
+c0111118:	89 c1                	mov    %eax,%ecx
+c011111a:	8b 45 08             	mov    0x8(%ebp),%eax
+c011111d:	0f b6 10             	movzbl (%eax),%edx
+c0111120:	ff 45 08             	incl   0x8(%ebp)
+c0111123:	88 11                	mov    %dl,(%ecx)
+c0111125:	8d 45 0c             	lea    0xc(%ebp),%eax
+c0111128:	ff 00                	incl   (%eax)
+c011112a:	84 d2                	test   %dl,%dl
+c011112c:	74 02                	je     c0111130 <__ZN7Utility10StringCopyEPcS0_+0x1e>
+c011112e:	eb e5                	jmp    c0111115 <__ZN7Utility10StringCopyEPcS0_+0x3>
+c0111130:	5d                   	pop    %ebp
+c0111131:	c3                   	ret    
 
-c0111104 <__ZN7Utility8CopySeg2Emm>:
-c0111104:	55                   	push   %ebp
-c0111105:	89 e5                	mov    %esp,%ebp
-c0111107:	83 ec 18             	sub    $0x18,%esp
-c011110a:	e8 09 74 ff ff       	call   c0108518 <__ZN7Machine8InstanceEv>
-c011110f:	89 04 24             	mov    %eax,(%esp)
-c0111112:	e8 ff 7d ff ff       	call   c0108f16 <__ZN7Machine21GetUserPageTableArrayEv>
-c0111117:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c011111a:	8b 55 fc             	mov    -0x4(%ebp),%edx
-c011111d:	0f b6 42 01          	movzbl 0x1(%edx),%eax
-c0111121:	c0 e8 04             	shr    $0x4,%al
-c0111124:	0f b6 c8             	movzbl %al,%ecx
-c0111127:	0f b6 42 02          	movzbl 0x2(%edx),%eax
-c011112b:	c1 e0 04             	shl    $0x4,%eax
-c011112e:	09 c1                	or     %eax,%ecx
-c0111130:	0f b6 42 03          	movzbl 0x3(%edx),%eax
-c0111134:	c1 e0 0c             	shl    $0xc,%eax
-c0111137:	09 c8                	or     %ecx,%eax
-c0111139:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c011113c:	8b 55 fc             	mov    -0x4(%ebp),%edx
-c011113f:	83 c2 04             	add    $0x4,%edx
-c0111142:	0f b6 42 01          	movzbl 0x1(%edx),%eax
-c0111146:	c0 e8 04             	shr    $0x4,%al
-c0111149:	0f b6 c8             	movzbl %al,%ecx
-c011114c:	0f b6 42 02          	movzbl 0x2(%edx),%eax
-c0111150:	c1 e0 04             	shl    $0x4,%eax
-c0111153:	09 c1                	or     %eax,%ecx
-c0111155:	0f b6 42 03          	movzbl 0x3(%edx),%eax
-c0111159:	c1 e0 0c             	shl    $0xc,%eax
-c011115c:	09 c8                	or     %ecx,%eax
-c011115e:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c0111161:	8b 4d fc             	mov    -0x4(%ebp),%ecx
-c0111164:	8b 45 08             	mov    0x8(%ebp),%eax
-c0111167:	89 c2                	mov    %eax,%edx
-c0111169:	c1 ea 0c             	shr    $0xc,%edx
-c011116c:	8b 01                	mov    (%ecx),%eax
-c011116e:	c1 e2 0c             	shl    $0xc,%edx
-c0111171:	25 ff 0f 00 00       	and    $0xfff,%eax
-c0111176:	09 d0                	or     %edx,%eax
-c0111178:	89 01                	mov    %eax,(%ecx)
-c011117a:	8b 4d fc             	mov    -0x4(%ebp),%ecx
-c011117d:	83 c1 04             	add    $0x4,%ecx
-c0111180:	8b 45 0c             	mov    0xc(%ebp),%eax
-c0111183:	89 c2                	mov    %eax,%edx
-c0111185:	c1 ea 0c             	shr    $0xc,%edx
-c0111188:	8b 01                	mov    (%ecx),%eax
-c011118a:	c1 e2 0c             	shl    $0xc,%edx
-c011118d:	25 ff 0f 00 00       	and    $0xfff,%eax
-c0111192:	09 d0                	or     %edx,%eax
-c0111194:	89 01                	mov    %eax,(%ecx)
-c0111196:	8b 45 08             	mov    0x8(%ebp),%eax
-c0111199:	25 ff 0f 00 00       	and    $0xfff,%eax
-c011119e:	89 45 f0             	mov    %eax,-0x10(%ebp)
-c01111a1:	8b 45 0c             	mov    0xc(%ebp),%eax
-c01111a4:	25 ff 0f 00 00       	and    $0xfff,%eax
-c01111a9:	05 00 10 00 00       	add    $0x1000,%eax
-c01111ae:	89 45 ec             	mov    %eax,-0x14(%ebp)
-c01111b1:	b8 00 00 20 00       	mov    $0x200000,%eax
-c01111b6:	0f 22 d8             	mov    %eax,%cr3
-c01111b9:	8b 55 ec             	mov    -0x14(%ebp),%edx
-c01111bc:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c01111bf:	0f b6 00             	movzbl (%eax),%eax
-c01111c2:	88 02                	mov    %al,(%edx)
-c01111c4:	8b 4d fc             	mov    -0x4(%ebp),%ecx
-c01111c7:	8b 01                	mov    (%ecx),%eax
-c01111c9:	8b 55 f8             	mov    -0x8(%ebp),%edx
-c01111cc:	c1 e2 0c             	shl    $0xc,%edx
-c01111cf:	25 ff 0f 00 00       	and    $0xfff,%eax
-c01111d4:	09 d0                	or     %edx,%eax
-c01111d6:	89 01                	mov    %eax,(%ecx)
-c01111d8:	8b 4d fc             	mov    -0x4(%ebp),%ecx
-c01111db:	83 c1 04             	add    $0x4,%ecx
-c01111de:	8b 01                	mov    (%ecx),%eax
-c01111e0:	8b 55 f4             	mov    -0xc(%ebp),%edx
-c01111e3:	c1 e2 0c             	shl    $0xc,%edx
-c01111e6:	25 ff 0f 00 00       	and    $0xfff,%eax
-c01111eb:	09 d0                	or     %edx,%eax
-c01111ed:	89 01                	mov    %eax,(%ecx)
-c01111ef:	b8 00 00 20 00       	mov    $0x200000,%eax
-c01111f4:	0f 22 d8             	mov    %eax,%cr3
-c01111f7:	c9                   	leave  
-c01111f8:	c3                   	ret    
-c01111f9:	90                   	nop    
+c0111132 <__ZN7Utility12StringLengthEPc>:
+c0111132:	55                   	push   %ebp
+c0111133:	89 e5                	mov    %esp,%ebp
+c0111135:	83 ec 08             	sub    $0x8,%esp
+c0111138:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%ebp)
+c011113f:	8b 45 08             	mov    0x8(%ebp),%eax
+c0111142:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c0111145:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c0111148:	89 c2                	mov    %eax,%edx
+c011114a:	8d 45 f8             	lea    -0x8(%ebp),%eax
+c011114d:	ff 00                	incl   (%eax)
+c011114f:	80 3a 00             	cmpb   $0x0,(%edx)
+c0111152:	74 07                	je     c011115b <__ZN7Utility12StringLengthEPc+0x29>
+c0111154:	8d 45 fc             	lea    -0x4(%ebp),%eax
+c0111157:	ff 00                	incl   (%eax)
+c0111159:	eb ea                	jmp    c0111145 <__ZN7Utility12StringLengthEPc+0x13>
+c011115b:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c011115e:	c9                   	leave  
+c011115f:	c3                   	ret    
 
-c01111fa <__ZN7Utility7CopySegEmm>:
-c01111fa:	55                   	push   %ebp
-c01111fb:	89 e5                	mov    %esp,%ebp
-c01111fd:	83 ec 18             	sub    $0x18,%esp
-c0111200:	e8 13 73 ff ff       	call   c0108518 <__ZN7Machine8InstanceEv>
-c0111205:	89 04 24             	mov    %eax,(%esp)
-c0111208:	e8 fd 7c ff ff       	call   c0108f0a <__ZN7Machine18GetKernelPageTableEv>
-c011120d:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c0111210:	8b 55 fc             	mov    -0x4(%ebp),%edx
-c0111213:	81 c2 00 04 00 00    	add    $0x400,%edx
-c0111219:	0f b6 42 01          	movzbl 0x1(%edx),%eax
-c011121d:	c0 e8 04             	shr    $0x4,%al
-c0111220:	0f b6 c8             	movzbl %al,%ecx
-c0111223:	0f b6 42 02          	movzbl 0x2(%edx),%eax
-c0111227:	c1 e0 04             	shl    $0x4,%eax
-c011122a:	09 c1                	or     %eax,%ecx
-c011122c:	0f b6 42 03          	movzbl 0x3(%edx),%eax
-c0111230:	c1 e0 0c             	shl    $0xc,%eax
-c0111233:	09 c8                	or     %ecx,%eax
-c0111235:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c0111238:	8b 55 fc             	mov    -0x4(%ebp),%edx
-c011123b:	81 c2 04 04 00 00    	add    $0x404,%edx
-c0111241:	0f b6 42 01          	movzbl 0x1(%edx),%eax
-c0111245:	c0 e8 04             	shr    $0x4,%al
-c0111248:	0f b6 c8             	movzbl %al,%ecx
-c011124b:	0f b6 42 02          	movzbl 0x2(%edx),%eax
-c011124f:	c1 e0 04             	shl    $0x4,%eax
-c0111252:	09 c1                	or     %eax,%ecx
-c0111254:	0f b6 42 03          	movzbl 0x3(%edx),%eax
-c0111258:	c1 e0 0c             	shl    $0xc,%eax
-c011125b:	09 c8                	or     %ecx,%eax
-c011125d:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c0111260:	8b 4d fc             	mov    -0x4(%ebp),%ecx
-c0111263:	81 c1 00 04 00 00    	add    $0x400,%ecx
-c0111269:	8b 45 08             	mov    0x8(%ebp),%eax
-c011126c:	89 c2                	mov    %eax,%edx
-c011126e:	c1 ea 0c             	shr    $0xc,%edx
-c0111271:	8b 01                	mov    (%ecx),%eax
-c0111273:	c1 e2 0c             	shl    $0xc,%edx
-c0111276:	25 ff 0f 00 00       	and    $0xfff,%eax
-c011127b:	09 d0                	or     %edx,%eax
-c011127d:	89 01                	mov    %eax,(%ecx)
-c011127f:	8b 4d fc             	mov    -0x4(%ebp),%ecx
-c0111282:	81 c1 04 04 00 00    	add    $0x404,%ecx
-c0111288:	8b 45 0c             	mov    0xc(%ebp),%eax
-c011128b:	89 c2                	mov    %eax,%edx
-c011128d:	c1 ea 0c             	shr    $0xc,%edx
-c0111290:	8b 01                	mov    (%ecx),%eax
-c0111292:	c1 e2 0c             	shl    $0xc,%edx
-c0111295:	25 ff 0f 00 00       	and    $0xfff,%eax
-c011129a:	09 d0                	or     %edx,%eax
-c011129c:	89 01                	mov    %eax,(%ecx)
-c011129e:	8b 45 08             	mov    0x8(%ebp),%eax
-c01112a1:	25 ff 0f 00 00       	and    $0xfff,%eax
-c01112a6:	2d 00 00 f0 3f       	sub    $0x3ff00000,%eax
-c01112ab:	89 45 f0             	mov    %eax,-0x10(%ebp)
-c01112ae:	8b 45 0c             	mov    0xc(%ebp),%eax
-c01112b1:	25 ff 0f 00 00       	and    $0xfff,%eax
-c01112b6:	2d 00 f0 ef 3f       	sub    $0x3feff000,%eax
-c01112bb:	89 45 ec             	mov    %eax,-0x14(%ebp)
-c01112be:	b8 00 00 20 00       	mov    $0x200000,%eax
-c01112c3:	0f 22 d8             	mov    %eax,%cr3
-c01112c6:	8b 55 ec             	mov    -0x14(%ebp),%edx
-c01112c9:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c01112cc:	0f b6 00             	movzbl (%eax),%eax
-c01112cf:	88 02                	mov    %al,(%edx)
-c01112d1:	8b 4d fc             	mov    -0x4(%ebp),%ecx
-c01112d4:	81 c1 00 04 00 00    	add    $0x400,%ecx
-c01112da:	8b 01                	mov    (%ecx),%eax
-c01112dc:	8b 55 f8             	mov    -0x8(%ebp),%edx
-c01112df:	c1 e2 0c             	shl    $0xc,%edx
-c01112e2:	25 ff 0f 00 00       	and    $0xfff,%eax
-c01112e7:	09 d0                	or     %edx,%eax
-c01112e9:	89 01                	mov    %eax,(%ecx)
-c01112eb:	8b 4d fc             	mov    -0x4(%ebp),%ecx
-c01112ee:	81 c1 04 04 00 00    	add    $0x404,%ecx
-c01112f4:	8b 01                	mov    (%ecx),%eax
-c01112f6:	8b 55 f4             	mov    -0xc(%ebp),%edx
-c01112f9:	c1 e2 0c             	shl    $0xc,%edx
-c01112fc:	25 ff 0f 00 00       	and    $0xfff,%eax
-c0111301:	09 d0                	or     %edx,%eax
-c0111303:	89 01                	mov    %eax,(%ecx)
-c0111305:	b8 00 00 20 00       	mov    $0x200000,%eax
-c011130a:	0f 22 d8             	mov    %eax,%cr3
-c011130d:	c9                   	leave  
-c011130e:	c3                   	ret    
-c011130f:	90                   	nop    
+c0111160 <__ZN7Utility8CopySeg2Emm>:
+c0111160:	55                   	push   %ebp
+c0111161:	89 e5                	mov    %esp,%ebp
+c0111163:	83 ec 18             	sub    $0x18,%esp
+c0111166:	e8 ad 73 ff ff       	call   c0108518 <__ZN7Machine8InstanceEv>
+c011116b:	89 04 24             	mov    %eax,(%esp)
+c011116e:	e8 a3 7d ff ff       	call   c0108f16 <__ZN7Machine21GetUserPageTableArrayEv>
+c0111173:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c0111176:	8b 55 fc             	mov    -0x4(%ebp),%edx
+c0111179:	0f b6 42 01          	movzbl 0x1(%edx),%eax
+c011117d:	c0 e8 04             	shr    $0x4,%al
+c0111180:	0f b6 c8             	movzbl %al,%ecx
+c0111183:	0f b6 42 02          	movzbl 0x2(%edx),%eax
+c0111187:	c1 e0 04             	shl    $0x4,%eax
+c011118a:	09 c1                	or     %eax,%ecx
+c011118c:	0f b6 42 03          	movzbl 0x3(%edx),%eax
+c0111190:	c1 e0 0c             	shl    $0xc,%eax
+c0111193:	09 c8                	or     %ecx,%eax
+c0111195:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c0111198:	8b 55 fc             	mov    -0x4(%ebp),%edx
+c011119b:	83 c2 04             	add    $0x4,%edx
+c011119e:	0f b6 42 01          	movzbl 0x1(%edx),%eax
+c01111a2:	c0 e8 04             	shr    $0x4,%al
+c01111a5:	0f b6 c8             	movzbl %al,%ecx
+c01111a8:	0f b6 42 02          	movzbl 0x2(%edx),%eax
+c01111ac:	c1 e0 04             	shl    $0x4,%eax
+c01111af:	09 c1                	or     %eax,%ecx
+c01111b1:	0f b6 42 03          	movzbl 0x3(%edx),%eax
+c01111b5:	c1 e0 0c             	shl    $0xc,%eax
+c01111b8:	09 c8                	or     %ecx,%eax
+c01111ba:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c01111bd:	8b 4d fc             	mov    -0x4(%ebp),%ecx
+c01111c0:	8b 45 08             	mov    0x8(%ebp),%eax
+c01111c3:	89 c2                	mov    %eax,%edx
+c01111c5:	c1 ea 0c             	shr    $0xc,%edx
+c01111c8:	8b 01                	mov    (%ecx),%eax
+c01111ca:	c1 e2 0c             	shl    $0xc,%edx
+c01111cd:	25 ff 0f 00 00       	and    $0xfff,%eax
+c01111d2:	09 d0                	or     %edx,%eax
+c01111d4:	89 01                	mov    %eax,(%ecx)
+c01111d6:	8b 4d fc             	mov    -0x4(%ebp),%ecx
+c01111d9:	83 c1 04             	add    $0x4,%ecx
+c01111dc:	8b 45 0c             	mov    0xc(%ebp),%eax
+c01111df:	89 c2                	mov    %eax,%edx
+c01111e1:	c1 ea 0c             	shr    $0xc,%edx
+c01111e4:	8b 01                	mov    (%ecx),%eax
+c01111e6:	c1 e2 0c             	shl    $0xc,%edx
+c01111e9:	25 ff 0f 00 00       	and    $0xfff,%eax
+c01111ee:	09 d0                	or     %edx,%eax
+c01111f0:	89 01                	mov    %eax,(%ecx)
+c01111f2:	8b 45 08             	mov    0x8(%ebp),%eax
+c01111f5:	25 ff 0f 00 00       	and    $0xfff,%eax
+c01111fa:	89 45 f0             	mov    %eax,-0x10(%ebp)
+c01111fd:	8b 45 0c             	mov    0xc(%ebp),%eax
+c0111200:	25 ff 0f 00 00       	and    $0xfff,%eax
+c0111205:	05 00 10 00 00       	add    $0x1000,%eax
+c011120a:	89 45 ec             	mov    %eax,-0x14(%ebp)
+c011120d:	b8 00 00 20 00       	mov    $0x200000,%eax
+c0111212:	0f 22 d8             	mov    %eax,%cr3
+c0111215:	8b 55 ec             	mov    -0x14(%ebp),%edx
+c0111218:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c011121b:	0f b6 00             	movzbl (%eax),%eax
+c011121e:	88 02                	mov    %al,(%edx)
+c0111220:	8b 4d fc             	mov    -0x4(%ebp),%ecx
+c0111223:	8b 01                	mov    (%ecx),%eax
+c0111225:	8b 55 f8             	mov    -0x8(%ebp),%edx
+c0111228:	c1 e2 0c             	shl    $0xc,%edx
+c011122b:	25 ff 0f 00 00       	and    $0xfff,%eax
+c0111230:	09 d0                	or     %edx,%eax
+c0111232:	89 01                	mov    %eax,(%ecx)
+c0111234:	8b 4d fc             	mov    -0x4(%ebp),%ecx
+c0111237:	83 c1 04             	add    $0x4,%ecx
+c011123a:	8b 01                	mov    (%ecx),%eax
+c011123c:	8b 55 f4             	mov    -0xc(%ebp),%edx
+c011123f:	c1 e2 0c             	shl    $0xc,%edx
+c0111242:	25 ff 0f 00 00       	and    $0xfff,%eax
+c0111247:	09 d0                	or     %edx,%eax
+c0111249:	89 01                	mov    %eax,(%ecx)
+c011124b:	b8 00 00 20 00       	mov    $0x200000,%eax
+c0111250:	0f 22 d8             	mov    %eax,%cr3
+c0111253:	c9                   	leave  
+c0111254:	c3                   	ret    
+c0111255:	90                   	nop    
 
-c0111310 <__ZN7Utility8GetMajorEs>:
-c0111310:	55                   	push   %ebp
-c0111311:	89 e5                	mov    %esp,%ebp
-c0111313:	83 ec 04             	sub    $0x4,%esp
-c0111316:	8b 45 08             	mov    0x8(%ebp),%eax
-c0111319:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
-c011131d:	0f bf 45 fe          	movswl -0x2(%ebp),%eax
-c0111321:	c1 f8 08             	sar    $0x8,%eax
-c0111324:	66 89 45 fc          	mov    %ax,-0x4(%ebp)
-c0111328:	0f bf 45 fc          	movswl -0x4(%ebp),%eax
-c011132c:	c9                   	leave  
-c011132d:	c3                   	ret    
+c0111256 <__ZN7Utility7CopySegEmm>:
+c0111256:	55                   	push   %ebp
+c0111257:	89 e5                	mov    %esp,%ebp
+c0111259:	83 ec 18             	sub    $0x18,%esp
+c011125c:	e8 b7 72 ff ff       	call   c0108518 <__ZN7Machine8InstanceEv>
+c0111261:	89 04 24             	mov    %eax,(%esp)
+c0111264:	e8 a1 7c ff ff       	call   c0108f0a <__ZN7Machine18GetKernelPageTableEv>
+c0111269:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c011126c:	8b 55 fc             	mov    -0x4(%ebp),%edx
+c011126f:	81 c2 00 04 00 00    	add    $0x400,%edx
+c0111275:	0f b6 42 01          	movzbl 0x1(%edx),%eax
+c0111279:	c0 e8 04             	shr    $0x4,%al
+c011127c:	0f b6 c8             	movzbl %al,%ecx
+c011127f:	0f b6 42 02          	movzbl 0x2(%edx),%eax
+c0111283:	c1 e0 04             	shl    $0x4,%eax
+c0111286:	09 c1                	or     %eax,%ecx
+c0111288:	0f b6 42 03          	movzbl 0x3(%edx),%eax
+c011128c:	c1 e0 0c             	shl    $0xc,%eax
+c011128f:	09 c8                	or     %ecx,%eax
+c0111291:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c0111294:	8b 55 fc             	mov    -0x4(%ebp),%edx
+c0111297:	81 c2 04 04 00 00    	add    $0x404,%edx
+c011129d:	0f b6 42 01          	movzbl 0x1(%edx),%eax
+c01112a1:	c0 e8 04             	shr    $0x4,%al
+c01112a4:	0f b6 c8             	movzbl %al,%ecx
+c01112a7:	0f b6 42 02          	movzbl 0x2(%edx),%eax
+c01112ab:	c1 e0 04             	shl    $0x4,%eax
+c01112ae:	09 c1                	or     %eax,%ecx
+c01112b0:	0f b6 42 03          	movzbl 0x3(%edx),%eax
+c01112b4:	c1 e0 0c             	shl    $0xc,%eax
+c01112b7:	09 c8                	or     %ecx,%eax
+c01112b9:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c01112bc:	8b 4d fc             	mov    -0x4(%ebp),%ecx
+c01112bf:	81 c1 00 04 00 00    	add    $0x400,%ecx
+c01112c5:	8b 45 08             	mov    0x8(%ebp),%eax
+c01112c8:	89 c2                	mov    %eax,%edx
+c01112ca:	c1 ea 0c             	shr    $0xc,%edx
+c01112cd:	8b 01                	mov    (%ecx),%eax
+c01112cf:	c1 e2 0c             	shl    $0xc,%edx
+c01112d2:	25 ff 0f 00 00       	and    $0xfff,%eax
+c01112d7:	09 d0                	or     %edx,%eax
+c01112d9:	89 01                	mov    %eax,(%ecx)
+c01112db:	8b 4d fc             	mov    -0x4(%ebp),%ecx
+c01112de:	81 c1 04 04 00 00    	add    $0x404,%ecx
+c01112e4:	8b 45 0c             	mov    0xc(%ebp),%eax
+c01112e7:	89 c2                	mov    %eax,%edx
+c01112e9:	c1 ea 0c             	shr    $0xc,%edx
+c01112ec:	8b 01                	mov    (%ecx),%eax
+c01112ee:	c1 e2 0c             	shl    $0xc,%edx
+c01112f1:	25 ff 0f 00 00       	and    $0xfff,%eax
+c01112f6:	09 d0                	or     %edx,%eax
+c01112f8:	89 01                	mov    %eax,(%ecx)
+c01112fa:	8b 45 08             	mov    0x8(%ebp),%eax
+c01112fd:	25 ff 0f 00 00       	and    $0xfff,%eax
+c0111302:	2d 00 00 f0 3f       	sub    $0x3ff00000,%eax
+c0111307:	89 45 f0             	mov    %eax,-0x10(%ebp)
+c011130a:	8b 45 0c             	mov    0xc(%ebp),%eax
+c011130d:	25 ff 0f 00 00       	and    $0xfff,%eax
+c0111312:	2d 00 f0 ef 3f       	sub    $0x3feff000,%eax
+c0111317:	89 45 ec             	mov    %eax,-0x14(%ebp)
+c011131a:	b8 00 00 20 00       	mov    $0x200000,%eax
+c011131f:	0f 22 d8             	mov    %eax,%cr3
+c0111322:	8b 55 ec             	mov    -0x14(%ebp),%edx
+c0111325:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c0111328:	0f b6 00             	movzbl (%eax),%eax
+c011132b:	88 02                	mov    %al,(%edx)
+c011132d:	8b 4d fc             	mov    -0x4(%ebp),%ecx
+c0111330:	81 c1 00 04 00 00    	add    $0x400,%ecx
+c0111336:	8b 01                	mov    (%ecx),%eax
+c0111338:	8b 55 f8             	mov    -0x8(%ebp),%edx
+c011133b:	c1 e2 0c             	shl    $0xc,%edx
+c011133e:	25 ff 0f 00 00       	and    $0xfff,%eax
+c0111343:	09 d0                	or     %edx,%eax
+c0111345:	89 01                	mov    %eax,(%ecx)
+c0111347:	8b 4d fc             	mov    -0x4(%ebp),%ecx
+c011134a:	81 c1 04 04 00 00    	add    $0x404,%ecx
+c0111350:	8b 01                	mov    (%ecx),%eax
+c0111352:	8b 55 f4             	mov    -0xc(%ebp),%edx
+c0111355:	c1 e2 0c             	shl    $0xc,%edx
+c0111358:	25 ff 0f 00 00       	and    $0xfff,%eax
+c011135d:	09 d0                	or     %edx,%eax
+c011135f:	89 01                	mov    %eax,(%ecx)
+c0111361:	b8 00 00 20 00       	mov    $0x200000,%eax
+c0111366:	0f 22 d8             	mov    %eax,%cr3
+c0111369:	c9                   	leave  
+c011136a:	c3                   	ret    
+c011136b:	90                   	nop    
 
-c011132e <__ZN7Utility8GetMinorEs>:
-c011132e:	55                   	push   %ebp
-c011132f:	89 e5                	mov    %esp,%ebp
-c0111331:	83 ec 04             	sub    $0x4,%esp
-c0111334:	8b 45 08             	mov    0x8(%ebp),%eax
-c0111337:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
-c011133b:	0f b7 45 fe          	movzwl -0x2(%ebp),%eax
-c011133f:	25 ff 00 00 00       	and    $0xff,%eax
-c0111344:	66 89 45 fc          	mov    %ax,-0x4(%ebp)
-c0111348:	0f bf 45 fc          	movswl -0x4(%ebp),%eax
-c011134c:	c9                   	leave  
-c011134d:	c3                   	ret    
+c011136c <__ZN7Utility8GetMajorEs>:
+c011136c:	55                   	push   %ebp
+c011136d:	89 e5                	mov    %esp,%ebp
+c011136f:	83 ec 04             	sub    $0x4,%esp
+c0111372:	8b 45 08             	mov    0x8(%ebp),%eax
+c0111375:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
+c0111379:	0f bf 45 fe          	movswl -0x2(%ebp),%eax
+c011137d:	c1 f8 08             	sar    $0x8,%eax
+c0111380:	66 89 45 fc          	mov    %ax,-0x4(%ebp)
+c0111384:	0f bf 45 fc          	movswl -0x4(%ebp),%eax
+c0111388:	c9                   	leave  
+c0111389:	c3                   	ret    
 
-c011134e <__ZN7Utility8SetMajorEss>:
-c011134e:	55                   	push   %ebp
-c011134f:	89 e5                	mov    %esp,%ebp
-c0111351:	83 ec 04             	sub    $0x4,%esp
-c0111354:	8b 45 08             	mov    0x8(%ebp),%eax
-c0111357:	8b 55 0c             	mov    0xc(%ebp),%edx
-c011135a:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
-c011135e:	66 89 55 fc          	mov    %dx,-0x4(%ebp)
-c0111362:	0f b7 45 fe          	movzwl -0x2(%ebp),%eax
-c0111366:	25 ff 00 00 00       	and    $0xff,%eax
-c011136b:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
-c011136f:	0f bf 45 fc          	movswl -0x4(%ebp),%eax
-c0111373:	c1 e0 08             	shl    $0x8,%eax
-c0111376:	0f b7 55 fe          	movzwl -0x2(%ebp),%edx
-c011137a:	09 d0                	or     %edx,%eax
-c011137c:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
-c0111380:	0f bf 45 fe          	movswl -0x2(%ebp),%eax
-c0111384:	c9                   	leave  
-c0111385:	c3                   	ret    
+c011138a <__ZN7Utility8GetMinorEs>:
+c011138a:	55                   	push   %ebp
+c011138b:	89 e5                	mov    %esp,%ebp
+c011138d:	83 ec 04             	sub    $0x4,%esp
+c0111390:	8b 45 08             	mov    0x8(%ebp),%eax
+c0111393:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
+c0111397:	0f b7 45 fe          	movzwl -0x2(%ebp),%eax
+c011139b:	25 ff 00 00 00       	and    $0xff,%eax
+c01113a0:	66 89 45 fc          	mov    %ax,-0x4(%ebp)
+c01113a4:	0f bf 45 fc          	movswl -0x4(%ebp),%eax
+c01113a8:	c9                   	leave  
+c01113a9:	c3                   	ret    
 
-c0111386 <__ZN7Utility8SetMinorEss>:
-c0111386:	55                   	push   %ebp
-c0111387:	89 e5                	mov    %esp,%ebp
-c0111389:	83 ec 04             	sub    $0x4,%esp
-c011138c:	8b 45 08             	mov    0x8(%ebp),%eax
-c011138f:	8b 55 0c             	mov    0xc(%ebp),%edx
-c0111392:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
-c0111396:	66 89 55 fc          	mov    %dx,-0x4(%ebp)
-c011139a:	ba 00 ff ff ff       	mov    $0xffffff00,%edx
-c011139f:	0f b7 45 fe          	movzwl -0x2(%ebp),%eax
-c01113a3:	21 d0                	and    %edx,%eax
-c01113a5:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
-c01113a9:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c01113ac:	25 ff 00 00 00       	and    $0xff,%eax
-c01113b1:	0f b7 55 fe          	movzwl -0x2(%ebp),%edx
-c01113b5:	09 d0                	or     %edx,%eax
-c01113b7:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
-c01113bb:	0f bf 45 fe          	movswl -0x2(%ebp),%eax
-c01113bf:	c9                   	leave  
-c01113c0:	c3                   	ret    
-c01113c1:	90                   	nop    
+c01113aa <__ZN7Utility8SetMajorEss>:
+c01113aa:	55                   	push   %ebp
+c01113ab:	89 e5                	mov    %esp,%ebp
+c01113ad:	83 ec 04             	sub    $0x4,%esp
+c01113b0:	8b 45 08             	mov    0x8(%ebp),%eax
+c01113b3:	8b 55 0c             	mov    0xc(%ebp),%edx
+c01113b6:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
+c01113ba:	66 89 55 fc          	mov    %dx,-0x4(%ebp)
+c01113be:	0f b7 45 fe          	movzwl -0x2(%ebp),%eax
+c01113c2:	25 ff 00 00 00       	and    $0xff,%eax
+c01113c7:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
+c01113cb:	0f bf 45 fc          	movswl -0x4(%ebp),%eax
+c01113cf:	c1 e0 08             	shl    $0x8,%eax
+c01113d2:	0f b7 55 fe          	movzwl -0x2(%ebp),%edx
+c01113d6:	09 d0                	or     %edx,%eax
+c01113d8:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
+c01113dc:	0f bf 45 fe          	movswl -0x2(%ebp),%eax
+c01113e0:	c9                   	leave  
+c01113e1:	c3                   	ret    
 
-c01113c2 <__ZN7Utility5PanicEPc>:
-c01113c2:	55                   	push   %ebp
-c01113c3:	89 e5                	mov    %esp,%ebp
-c01113c5:	83 ec 08             	sub    $0x8,%esp
-c01113c8:	e8 63 02 00 00       	call   c0111630 <__ZN8Diagnose7TraceOnEv>
-c01113cd:	8b 45 08             	mov    0x8(%ebp),%eax
-c01113d0:	89 44 24 04          	mov    %eax,0x4(%esp)
-c01113d4:	c7 04 24 20 30 11 c0 	movl   $0xc0113020,(%esp)
-c01113db:	e8 68 02 00 00       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c01113e0:	e8 1b 0c 00 00       	call   c0112000 <__ZN11X86Assembly3CLIEv>
-c01113e5:	eb fe                	jmp    c01113e5 <__ZN7Utility5PanicEPc+0x23>
-c01113e7:	90                   	nop    
+c01113e2 <__ZN7Utility8SetMinorEss>:
+c01113e2:	55                   	push   %ebp
+c01113e3:	89 e5                	mov    %esp,%ebp
+c01113e5:	83 ec 04             	sub    $0x4,%esp
+c01113e8:	8b 45 08             	mov    0x8(%ebp),%eax
+c01113eb:	8b 55 0c             	mov    0xc(%ebp),%edx
+c01113ee:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
+c01113f2:	66 89 55 fc          	mov    %dx,-0x4(%ebp)
+c01113f6:	ba 00 ff ff ff       	mov    $0xffffff00,%edx
+c01113fb:	0f b7 45 fe          	movzwl -0x2(%ebp),%eax
+c01113ff:	21 d0                	and    %edx,%eax
+c0111401:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
+c0111405:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c0111408:	25 ff 00 00 00       	and    $0xff,%eax
+c011140d:	0f b7 55 fe          	movzwl -0x2(%ebp),%edx
+c0111411:	09 d0                	or     %edx,%eax
+c0111413:	66 89 45 fe          	mov    %ax,-0x2(%ebp)
+c0111417:	0f bf 45 fe          	movswl -0x2(%ebp),%eax
+c011141b:	c9                   	leave  
+c011141c:	c3                   	ret    
+c011141d:	90                   	nop    
 
-c01113e8 <__ZN7Utility9DWordCopyEPiS0_i>:
-c01113e8:	55                   	push   %ebp
-c01113e9:	89 e5                	mov    %esp,%ebp
-c01113eb:	8d 45 10             	lea    0x10(%ebp),%eax
-c01113ee:	ff 08                	decl   (%eax)
-c01113f0:	83 7d 10 ff          	cmpl   $0xffffffff,0x10(%ebp)
-c01113f4:	74 18                	je     c011140e <__ZN7Utility9DWordCopyEPiS0_i+0x26>
-c01113f6:	8b 45 0c             	mov    0xc(%ebp),%eax
-c01113f9:	89 c2                	mov    %eax,%edx
-c01113fb:	8b 45 08             	mov    0x8(%ebp),%eax
-c01113fe:	83 45 08 04          	addl   $0x4,0x8(%ebp)
-c0111402:	8b 00                	mov    (%eax),%eax
-c0111404:	89 02                	mov    %eax,(%edx)
-c0111406:	8d 45 0c             	lea    0xc(%ebp),%eax
-c0111409:	83 00 04             	addl   $0x4,(%eax)
-c011140c:	eb dd                	jmp    c01113eb <__ZN7Utility9DWordCopyEPiS0_i+0x3>
-c011140e:	5d                   	pop    %ebp
-c011140f:	c3                   	ret    
+c011141e <__ZN7Utility5PanicEPc>:
+c011141e:	55                   	push   %ebp
+c011141f:	89 e5                	mov    %esp,%ebp
+c0111421:	83 ec 08             	sub    $0x8,%esp
+c0111424:	e8 63 02 00 00       	call   c011168c <__ZN8Diagnose7TraceOnEv>
+c0111429:	8b 45 08             	mov    0x8(%ebp),%eax
+c011142c:	89 44 24 04          	mov    %eax,0x4(%esp)
+c0111430:	c7 04 24 20 30 11 c0 	movl   $0xc0113020,(%esp)
+c0111437:	e8 68 02 00 00       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c011143c:	e8 bf 0b 00 00       	call   c0112000 <__ZN11X86Assembly3CLIEv>
+c0111441:	eb fe                	jmp    c0111441 <__ZN7Utility5PanicEPc+0x23>
+c0111443:	90                   	nop    
 
-c0111410 <__ZN7Utility3MinEii>:
-c0111410:	55                   	push   %ebp
-c0111411:	89 e5                	mov    %esp,%ebp
-c0111413:	83 ec 04             	sub    $0x4,%esp
-c0111416:	8b 45 08             	mov    0x8(%ebp),%eax
-c0111419:	3b 45 0c             	cmp    0xc(%ebp),%eax
-c011141c:	7d 08                	jge    c0111426 <__ZN7Utility3MinEii+0x16>
-c011141e:	8b 45 08             	mov    0x8(%ebp),%eax
-c0111421:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c0111424:	eb 06                	jmp    c011142c <__ZN7Utility3MinEii+0x1c>
-c0111426:	8b 45 0c             	mov    0xc(%ebp),%eax
-c0111429:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c011142c:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c011142f:	c9                   	leave  
-c0111430:	c3                   	ret    
-c0111431:	90                   	nop    
+c0111444 <__ZN7Utility9DWordCopyEPiS0_i>:
+c0111444:	55                   	push   %ebp
+c0111445:	89 e5                	mov    %esp,%ebp
+c0111447:	8d 45 10             	lea    0x10(%ebp),%eax
+c011144a:	ff 08                	decl   (%eax)
+c011144c:	83 7d 10 ff          	cmpl   $0xffffffff,0x10(%ebp)
+c0111450:	74 18                	je     c011146a <__ZN7Utility9DWordCopyEPiS0_i+0x26>
+c0111452:	8b 45 0c             	mov    0xc(%ebp),%eax
+c0111455:	89 c2                	mov    %eax,%edx
+c0111457:	8b 45 08             	mov    0x8(%ebp),%eax
+c011145a:	83 45 08 04          	addl   $0x4,0x8(%ebp)
+c011145e:	8b 00                	mov    (%eax),%eax
+c0111460:	89 02                	mov    %eax,(%edx)
+c0111462:	8d 45 0c             	lea    0xc(%ebp),%eax
+c0111465:	83 00 04             	addl   $0x4,(%eax)
+c0111468:	eb dd                	jmp    c0111447 <__ZN7Utility9DWordCopyEPiS0_i+0x3>
+c011146a:	5d                   	pop    %ebp
+c011146b:	c3                   	ret    
 
-c0111432 <__ZN7Utility3MaxEii>:
-c0111432:	55                   	push   %ebp
-c0111433:	89 e5                	mov    %esp,%ebp
-c0111435:	83 ec 04             	sub    $0x4,%esp
-c0111438:	8b 45 08             	mov    0x8(%ebp),%eax
-c011143b:	3b 45 0c             	cmp    0xc(%ebp),%eax
-c011143e:	7e 08                	jle    c0111448 <__ZN7Utility3MaxEii+0x16>
-c0111440:	8b 45 08             	mov    0x8(%ebp),%eax
-c0111443:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c0111446:	eb 06                	jmp    c011144e <__ZN7Utility3MaxEii+0x1c>
-c0111448:	8b 45 0c             	mov    0xc(%ebp),%eax
-c011144b:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c011144e:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c0111451:	c9                   	leave  
-c0111452:	c3                   	ret    
-c0111453:	90                   	nop    
+c011146c <__ZN7Utility3MinEii>:
+c011146c:	55                   	push   %ebp
+c011146d:	89 e5                	mov    %esp,%ebp
+c011146f:	83 ec 04             	sub    $0x4,%esp
+c0111472:	8b 45 08             	mov    0x8(%ebp),%eax
+c0111475:	3b 45 0c             	cmp    0xc(%ebp),%eax
+c0111478:	7d 08                	jge    c0111482 <__ZN7Utility3MinEii+0x16>
+c011147a:	8b 45 08             	mov    0x8(%ebp),%eax
+c011147d:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c0111480:	eb 06                	jmp    c0111488 <__ZN7Utility3MinEii+0x1c>
+c0111482:	8b 45 0c             	mov    0xc(%ebp),%eax
+c0111485:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c0111488:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c011148b:	c9                   	leave  
+c011148c:	c3                   	ret    
+c011148d:	90                   	nop    
 
-c0111454 <__ZN7Utility11BCDToBinaryEi>:
-c0111454:	55                   	push   %ebp
-c0111455:	89 e5                	mov    %esp,%ebp
-c0111457:	83 ec 04             	sub    $0x4,%esp
-c011145a:	8b 45 08             	mov    0x8(%ebp),%eax
-c011145d:	c1 f8 04             	sar    $0x4,%eax
-c0111460:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c0111463:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c0111466:	c1 e0 02             	shl    $0x2,%eax
-c0111469:	03 45 fc             	add    -0x4(%ebp),%eax
-c011146c:	8d 14 00             	lea    (%eax,%eax,1),%edx
-c011146f:	8b 45 08             	mov    0x8(%ebp),%eax
-c0111472:	83 e0 0f             	and    $0xf,%eax
-c0111475:	01 c2                	add    %eax,%edx
-c0111477:	89 55 fc             	mov    %edx,-0x4(%ebp)
-c011147a:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c011147d:	c9                   	leave  
-c011147e:	c3                   	ret    
-c011147f:	90                   	nop    
+c011148e <__ZN7Utility3MaxEii>:
+c011148e:	55                   	push   %ebp
+c011148f:	89 e5                	mov    %esp,%ebp
+c0111491:	83 ec 04             	sub    $0x4,%esp
+c0111494:	8b 45 08             	mov    0x8(%ebp),%eax
+c0111497:	3b 45 0c             	cmp    0xc(%ebp),%eax
+c011149a:	7e 08                	jle    c01114a4 <__ZN7Utility3MaxEii+0x16>
+c011149c:	8b 45 08             	mov    0x8(%ebp),%eax
+c011149f:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c01114a2:	eb 06                	jmp    c01114aa <__ZN7Utility3MaxEii+0x1c>
+c01114a4:	8b 45 0c             	mov    0xc(%ebp),%eax
+c01114a7:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c01114aa:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c01114ad:	c9                   	leave  
+c01114ae:	c3                   	ret    
+c01114af:	90                   	nop    
 
-c0111480 <__ZN7Utility6IOMoveEPhS0_i>:
-c0111480:	55                   	push   %ebp
-c0111481:	89 e5                	mov    %esp,%ebp
-c0111483:	8d 45 10             	lea    0x10(%ebp),%eax
-c0111486:	ff 08                	decl   (%eax)
-c0111488:	83 7d 10 ff          	cmpl   $0xffffffff,0x10(%ebp)
-c011148c:	74 17                	je     c01114a5 <__ZN7Utility6IOMoveEPhS0_i+0x25>
-c011148e:	8b 45 0c             	mov    0xc(%ebp),%eax
-c0111491:	89 c2                	mov    %eax,%edx
-c0111493:	8b 45 08             	mov    0x8(%ebp),%eax
-c0111496:	ff 45 08             	incl   0x8(%ebp)
-c0111499:	0f b6 00             	movzbl (%eax),%eax
-c011149c:	88 02                	mov    %al,(%edx)
-c011149e:	8d 45 0c             	lea    0xc(%ebp),%eax
-c01114a1:	ff 00                	incl   (%eax)
-c01114a3:	eb de                	jmp    c0111483 <__ZN7Utility6IOMoveEPhS0_i+0x3>
-c01114a5:	5d                   	pop    %ebp
-c01114a6:	c3                   	ret    
-c01114a7:	90                   	nop    
+c01114b0 <__ZN7Utility11BCDToBinaryEi>:
+c01114b0:	55                   	push   %ebp
+c01114b1:	89 e5                	mov    %esp,%ebp
+c01114b3:	83 ec 04             	sub    $0x4,%esp
+c01114b6:	8b 45 08             	mov    0x8(%ebp),%eax
+c01114b9:	c1 f8 04             	sar    $0x4,%eax
+c01114bc:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c01114bf:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c01114c2:	c1 e0 02             	shl    $0x2,%eax
+c01114c5:	03 45 fc             	add    -0x4(%ebp),%eax
+c01114c8:	8d 14 00             	lea    (%eax,%eax,1),%edx
+c01114cb:	8b 45 08             	mov    0x8(%ebp),%eax
+c01114ce:	83 e0 0f             	and    $0xf,%eax
+c01114d1:	01 c2                	add    %eax,%edx
+c01114d3:	89 55 fc             	mov    %edx,-0x4(%ebp)
+c01114d6:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c01114d9:	c9                   	leave  
+c01114da:	c3                   	ret    
+c01114db:	90                   	nop    
 
-c01114a8 <__ZN7Utility14MakeKernelTimeEP10SystemTime>:
-c01114a8:	55                   	push   %ebp
-c01114a9:	89 e5                	mov    %esp,%ebp
-c01114ab:	83 ec 18             	sub    $0x18,%esp
-c01114ae:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%ebp)
-c01114b5:	8b 45 08             	mov    0x8(%ebp),%eax
-c01114b8:	8b 40 14             	mov    0x14(%eax),%eax
-c01114bb:	05 d0 07 00 00       	add    $0x7d0,%eax
-c01114c0:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c01114c3:	8b 45 08             	mov    0x8(%ebp),%eax
-c01114c6:	8b 10                	mov    (%eax),%edx
-c01114c8:	8d 45 fc             	lea    -0x4(%ebp),%eax
-c01114cb:	01 10                	add    %edx,(%eax)
-c01114cd:	8b 45 08             	mov    0x8(%ebp),%eax
-c01114d0:	8b 50 04             	mov    0x4(%eax),%edx
-c01114d3:	89 d0                	mov    %edx,%eax
-c01114d5:	c1 e0 04             	shl    $0x4,%eax
-c01114d8:	29 d0                	sub    %edx,%eax
-c01114da:	8d 14 85 00 00 00 00 	lea    0x0(,%eax,4),%edx
-c01114e1:	8d 45 fc             	lea    -0x4(%ebp),%eax
-c01114e4:	01 10                	add    %edx,(%eax)
-c01114e6:	8b 45 08             	mov    0x8(%ebp),%eax
-c01114e9:	8b 40 08             	mov    0x8(%eax),%eax
-c01114ec:	69 d0 10 0e 00 00    	imul   $0xe10,%eax,%edx
-c01114f2:	8d 45 fc             	lea    -0x4(%ebp),%eax
-c01114f5:	01 10                	add    %edx,(%eax)
-c01114f7:	8b 45 08             	mov    0x8(%ebp),%eax
-c01114fa:	8b 40 0c             	mov    0xc(%eax),%eax
-c01114fd:	48                   	dec    %eax
-c01114fe:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c0111501:	8b 45 08             	mov    0x8(%ebp),%eax
-c0111504:	8b 40 10             	mov    0x10(%eax),%eax
-c0111507:	8b 14 85 40 30 11 c0 	mov    -0x3feecfc0(,%eax,4),%edx
-c011150e:	8d 45 f8             	lea    -0x8(%ebp),%eax
-c0111511:	01 10                	add    %edx,(%eax)
-c0111513:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c0111516:	89 04 24             	mov    %eax,(%esp)
-c0111519:	e8 4e 00 00 00       	call   c011156c <__ZN7Utility10IsLeapYearEi>
-c011151e:	84 c0                	test   %al,%al
-c0111520:	74 0e                	je     c0111530 <__ZN7Utility14MakeKernelTimeEP10SystemTime+0x88>
-c0111522:	8b 45 08             	mov    0x8(%ebp),%eax
-c0111525:	83 78 10 02          	cmpl   $0x2,0x10(%eax)
-c0111529:	7e 05                	jle    c0111530 <__ZN7Utility14MakeKernelTimeEP10SystemTime+0x88>
-c011152b:	8d 45 f8             	lea    -0x8(%ebp),%eax
-c011152e:	ff 00                	incl   (%eax)
-c0111530:	c7 45 f0 b2 07 00 00 	movl   $0x7b2,-0x10(%ebp)
-c0111537:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c011153a:	3b 45 f4             	cmp    -0xc(%ebp),%eax
-c011153d:	7d 19                	jge    c0111558 <__ZN7Utility14MakeKernelTimeEP10SystemTime+0xb0>
-c011153f:	8b 45 f0             	mov    -0x10(%ebp),%eax
-c0111542:	89 04 24             	mov    %eax,(%esp)
-c0111545:	e8 a4 00 00 00       	call   c01115ee <__ZN7Utility10DaysInYearEi>
-c011154a:	89 c2                	mov    %eax,%edx
-c011154c:	8d 45 f8             	lea    -0x8(%ebp),%eax
-c011154f:	01 10                	add    %edx,(%eax)
-c0111551:	8d 45 f0             	lea    -0x10(%ebp),%eax
-c0111554:	ff 00                	incl   (%eax)
-c0111556:	eb df                	jmp    c0111537 <__ZN7Utility14MakeKernelTimeEP10SystemTime+0x8f>
-c0111558:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c011155b:	69 d0 80 51 01 00    	imul   $0x15180,%eax,%edx
-c0111561:	8d 45 fc             	lea    -0x4(%ebp),%eax
-c0111564:	01 10                	add    %edx,(%eax)
-c0111566:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c0111569:	c9                   	leave  
-c011156a:	c3                   	ret    
-c011156b:	90                   	nop    
+c01114dc <__ZN7Utility6IOMoveEPhS0_i>:
+c01114dc:	55                   	push   %ebp
+c01114dd:	89 e5                	mov    %esp,%ebp
+c01114df:	8d 45 10             	lea    0x10(%ebp),%eax
+c01114e2:	ff 08                	decl   (%eax)
+c01114e4:	83 7d 10 ff          	cmpl   $0xffffffff,0x10(%ebp)
+c01114e8:	74 17                	je     c0111501 <__ZN7Utility6IOMoveEPhS0_i+0x25>
+c01114ea:	8b 45 0c             	mov    0xc(%ebp),%eax
+c01114ed:	89 c2                	mov    %eax,%edx
+c01114ef:	8b 45 08             	mov    0x8(%ebp),%eax
+c01114f2:	ff 45 08             	incl   0x8(%ebp)
+c01114f5:	0f b6 00             	movzbl (%eax),%eax
+c01114f8:	88 02                	mov    %al,(%edx)
+c01114fa:	8d 45 0c             	lea    0xc(%ebp),%eax
+c01114fd:	ff 00                	incl   (%eax)
+c01114ff:	eb de                	jmp    c01114df <__ZN7Utility6IOMoveEPhS0_i+0x3>
+c0111501:	5d                   	pop    %ebp
+c0111502:	c3                   	ret    
+c0111503:	90                   	nop    
 
-c011156c <__ZN7Utility10IsLeapYearEi>:
-c011156c:	55                   	push   %ebp
-c011156d:	89 e5                	mov    %esp,%ebp
-c011156f:	83 ec 04             	sub    $0x4,%esp
-c0111572:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%ebp)
-c0111579:	8b 45 08             	mov    0x8(%ebp),%eax
-c011157c:	83 e0 03             	and    $0x3,%eax
-c011157f:	85 c0                	test   %eax,%eax
-c0111581:	75 65                	jne    c01115e8 <__ZN7Utility10IsLeapYearEi+0x7c>
-c0111583:	8b 4d 08             	mov    0x8(%ebp),%ecx
-c0111586:	b8 1f 85 eb 51       	mov    $0x51eb851f,%eax
-c011158b:	f7 e9                	imul   %ecx
-c011158d:	c1 fa 05             	sar    $0x5,%edx
-c0111590:	89 c8                	mov    %ecx,%eax
-c0111592:	c1 f8 1f             	sar    $0x1f,%eax
-c0111595:	29 c2                	sub    %eax,%edx
-c0111597:	89 d0                	mov    %edx,%eax
-c0111599:	c1 e0 02             	shl    $0x2,%eax
-c011159c:	01 d0                	add    %edx,%eax
-c011159e:	8d 14 85 00 00 00 00 	lea    0x0(,%eax,4),%edx
-c01115a5:	01 d0                	add    %edx,%eax
-c01115a7:	c1 e0 02             	shl    $0x2,%eax
-c01115aa:	29 c1                	sub    %eax,%ecx
-c01115ac:	89 c8                	mov    %ecx,%eax
-c01115ae:	85 c0                	test   %eax,%eax
-c01115b0:	75 2f                	jne    c01115e1 <__ZN7Utility10IsLeapYearEi+0x75>
-c01115b2:	8b 4d 08             	mov    0x8(%ebp),%ecx
-c01115b5:	b8 1f 85 eb 51       	mov    $0x51eb851f,%eax
-c01115ba:	f7 e9                	imul   %ecx
-c01115bc:	c1 fa 07             	sar    $0x7,%edx
-c01115bf:	89 c8                	mov    %ecx,%eax
-c01115c1:	c1 f8 1f             	sar    $0x1f,%eax
-c01115c4:	29 c2                	sub    %eax,%edx
-c01115c6:	89 d0                	mov    %edx,%eax
-c01115c8:	c1 e0 02             	shl    $0x2,%eax
-c01115cb:	01 d0                	add    %edx,%eax
-c01115cd:	8d 14 85 00 00 00 00 	lea    0x0(,%eax,4),%edx
-c01115d4:	01 d0                	add    %edx,%eax
-c01115d6:	c1 e0 04             	shl    $0x4,%eax
-c01115d9:	29 c1                	sub    %eax,%ecx
-c01115db:	89 c8                	mov    %ecx,%eax
-c01115dd:	85 c0                	test   %eax,%eax
-c01115df:	75 07                	jne    c01115e8 <__ZN7Utility10IsLeapYearEi+0x7c>
-c01115e1:	c7 45 fc 01 00 00 00 	movl   $0x1,-0x4(%ebp)
-c01115e8:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c01115eb:	c9                   	leave  
-c01115ec:	c3                   	ret    
-c01115ed:	90                   	nop    
+c0111504 <__ZN7Utility14MakeKernelTimeEP10SystemTime>:
+c0111504:	55                   	push   %ebp
+c0111505:	89 e5                	mov    %esp,%ebp
+c0111507:	83 ec 18             	sub    $0x18,%esp
+c011150a:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%ebp)
+c0111511:	8b 45 08             	mov    0x8(%ebp),%eax
+c0111514:	8b 40 14             	mov    0x14(%eax),%eax
+c0111517:	05 d0 07 00 00       	add    $0x7d0,%eax
+c011151c:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c011151f:	8b 45 08             	mov    0x8(%ebp),%eax
+c0111522:	8b 10                	mov    (%eax),%edx
+c0111524:	8d 45 fc             	lea    -0x4(%ebp),%eax
+c0111527:	01 10                	add    %edx,(%eax)
+c0111529:	8b 45 08             	mov    0x8(%ebp),%eax
+c011152c:	8b 50 04             	mov    0x4(%eax),%edx
+c011152f:	89 d0                	mov    %edx,%eax
+c0111531:	c1 e0 04             	shl    $0x4,%eax
+c0111534:	29 d0                	sub    %edx,%eax
+c0111536:	8d 14 85 00 00 00 00 	lea    0x0(,%eax,4),%edx
+c011153d:	8d 45 fc             	lea    -0x4(%ebp),%eax
+c0111540:	01 10                	add    %edx,(%eax)
+c0111542:	8b 45 08             	mov    0x8(%ebp),%eax
+c0111545:	8b 40 08             	mov    0x8(%eax),%eax
+c0111548:	69 d0 10 0e 00 00    	imul   $0xe10,%eax,%edx
+c011154e:	8d 45 fc             	lea    -0x4(%ebp),%eax
+c0111551:	01 10                	add    %edx,(%eax)
+c0111553:	8b 45 08             	mov    0x8(%ebp),%eax
+c0111556:	8b 40 0c             	mov    0xc(%eax),%eax
+c0111559:	48                   	dec    %eax
+c011155a:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c011155d:	8b 45 08             	mov    0x8(%ebp),%eax
+c0111560:	8b 40 10             	mov    0x10(%eax),%eax
+c0111563:	8b 14 85 40 30 11 c0 	mov    -0x3feecfc0(,%eax,4),%edx
+c011156a:	8d 45 f8             	lea    -0x8(%ebp),%eax
+c011156d:	01 10                	add    %edx,(%eax)
+c011156f:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c0111572:	89 04 24             	mov    %eax,(%esp)
+c0111575:	e8 4e 00 00 00       	call   c01115c8 <__ZN7Utility10IsLeapYearEi>
+c011157a:	84 c0                	test   %al,%al
+c011157c:	74 0e                	je     c011158c <__ZN7Utility14MakeKernelTimeEP10SystemTime+0x88>
+c011157e:	8b 45 08             	mov    0x8(%ebp),%eax
+c0111581:	83 78 10 02          	cmpl   $0x2,0x10(%eax)
+c0111585:	7e 05                	jle    c011158c <__ZN7Utility14MakeKernelTimeEP10SystemTime+0x88>
+c0111587:	8d 45 f8             	lea    -0x8(%ebp),%eax
+c011158a:	ff 00                	incl   (%eax)
+c011158c:	c7 45 f0 b2 07 00 00 	movl   $0x7b2,-0x10(%ebp)
+c0111593:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c0111596:	3b 45 f4             	cmp    -0xc(%ebp),%eax
+c0111599:	7d 19                	jge    c01115b4 <__ZN7Utility14MakeKernelTimeEP10SystemTime+0xb0>
+c011159b:	8b 45 f0             	mov    -0x10(%ebp),%eax
+c011159e:	89 04 24             	mov    %eax,(%esp)
+c01115a1:	e8 a4 00 00 00       	call   c011164a <__ZN7Utility10DaysInYearEi>
+c01115a6:	89 c2                	mov    %eax,%edx
+c01115a8:	8d 45 f8             	lea    -0x8(%ebp),%eax
+c01115ab:	01 10                	add    %edx,(%eax)
+c01115ad:	8d 45 f0             	lea    -0x10(%ebp),%eax
+c01115b0:	ff 00                	incl   (%eax)
+c01115b2:	eb df                	jmp    c0111593 <__ZN7Utility14MakeKernelTimeEP10SystemTime+0x8f>
+c01115b4:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c01115b7:	69 d0 80 51 01 00    	imul   $0x15180,%eax,%edx
+c01115bd:	8d 45 fc             	lea    -0x4(%ebp),%eax
+c01115c0:	01 10                	add    %edx,(%eax)
+c01115c2:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c01115c5:	c9                   	leave  
+c01115c6:	c3                   	ret    
+c01115c7:	90                   	nop    
 
-c01115ee <__ZN7Utility10DaysInYearEi>:
-c01115ee:	55                   	push   %ebp
-c01115ef:	89 e5                	mov    %esp,%ebp
-c01115f1:	83 ec 08             	sub    $0x8,%esp
-c01115f4:	8b 45 08             	mov    0x8(%ebp),%eax
-c01115f7:	89 04 24             	mov    %eax,(%esp)
-c01115fa:	e8 6d ff ff ff       	call   c011156c <__ZN7Utility10IsLeapYearEi>
-c01115ff:	84 c0                	test   %al,%al
-c0111601:	74 09                	je     c011160c <__ZN7Utility10DaysInYearEi+0x1e>
-c0111603:	c7 45 fc 6e 01 00 00 	movl   $0x16e,-0x4(%ebp)
-c011160a:	eb 07                	jmp    c0111613 <__ZN7Utility10DaysInYearEi+0x25>
-c011160c:	c7 45 fc 6d 01 00 00 	movl   $0x16d,-0x4(%ebp)
-c0111613:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c0111616:	c9                   	leave  
-c0111617:	c3                   	ret    
+c01115c8 <__ZN7Utility10IsLeapYearEi>:
+c01115c8:	55                   	push   %ebp
+c01115c9:	89 e5                	mov    %esp,%ebp
+c01115cb:	83 ec 04             	sub    $0x4,%esp
+c01115ce:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%ebp)
+c01115d5:	8b 45 08             	mov    0x8(%ebp),%eax
+c01115d8:	83 e0 03             	and    $0x3,%eax
+c01115db:	85 c0                	test   %eax,%eax
+c01115dd:	75 65                	jne    c0111644 <__ZN7Utility10IsLeapYearEi+0x7c>
+c01115df:	8b 4d 08             	mov    0x8(%ebp),%ecx
+c01115e2:	b8 1f 85 eb 51       	mov    $0x51eb851f,%eax
+c01115e7:	f7 e9                	imul   %ecx
+c01115e9:	c1 fa 05             	sar    $0x5,%edx
+c01115ec:	89 c8                	mov    %ecx,%eax
+c01115ee:	c1 f8 1f             	sar    $0x1f,%eax
+c01115f1:	29 c2                	sub    %eax,%edx
+c01115f3:	89 d0                	mov    %edx,%eax
+c01115f5:	c1 e0 02             	shl    $0x2,%eax
+c01115f8:	01 d0                	add    %edx,%eax
+c01115fa:	8d 14 85 00 00 00 00 	lea    0x0(,%eax,4),%edx
+c0111601:	01 d0                	add    %edx,%eax
+c0111603:	c1 e0 02             	shl    $0x2,%eax
+c0111606:	29 c1                	sub    %eax,%ecx
+c0111608:	89 c8                	mov    %ecx,%eax
+c011160a:	85 c0                	test   %eax,%eax
+c011160c:	75 2f                	jne    c011163d <__ZN7Utility10IsLeapYearEi+0x75>
+c011160e:	8b 4d 08             	mov    0x8(%ebp),%ecx
+c0111611:	b8 1f 85 eb 51       	mov    $0x51eb851f,%eax
+c0111616:	f7 e9                	imul   %ecx
+c0111618:	c1 fa 07             	sar    $0x7,%edx
+c011161b:	89 c8                	mov    %ecx,%eax
+c011161d:	c1 f8 1f             	sar    $0x1f,%eax
+c0111620:	29 c2                	sub    %eax,%edx
+c0111622:	89 d0                	mov    %edx,%eax
+c0111624:	c1 e0 02             	shl    $0x2,%eax
+c0111627:	01 d0                	add    %edx,%eax
+c0111629:	8d 14 85 00 00 00 00 	lea    0x0(,%eax,4),%edx
+c0111630:	01 d0                	add    %edx,%eax
+c0111632:	c1 e0 04             	shl    $0x4,%eax
+c0111635:	29 c1                	sub    %eax,%ecx
+c0111637:	89 c8                	mov    %ecx,%eax
+c0111639:	85 c0                	test   %eax,%eax
+c011163b:	75 07                	jne    c0111644 <__ZN7Utility10IsLeapYearEi+0x7c>
+c011163d:	c7 45 fc 01 00 00 00 	movl   $0x1,-0x4(%ebp)
+c0111644:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c0111647:	c9                   	leave  
+c0111648:	c3                   	ret    
+c0111649:	90                   	nop    
 
-c0111618 <__ZN8DiagnoseC2Ev>:
-c0111618:	55                   	push   %ebp
-c0111619:	89 e5                	mov    %esp,%ebp
-c011161b:	5d                   	pop    %ebp
-c011161c:	c3                   	ret    
-c011161d:	90                   	nop    
+c011164a <__ZN7Utility10DaysInYearEi>:
+c011164a:	55                   	push   %ebp
+c011164b:	89 e5                	mov    %esp,%ebp
+c011164d:	83 ec 08             	sub    $0x8,%esp
+c0111650:	8b 45 08             	mov    0x8(%ebp),%eax
+c0111653:	89 04 24             	mov    %eax,(%esp)
+c0111656:	e8 6d ff ff ff       	call   c01115c8 <__ZN7Utility10IsLeapYearEi>
+c011165b:	84 c0                	test   %al,%al
+c011165d:	74 09                	je     c0111668 <__ZN7Utility10DaysInYearEi+0x1e>
+c011165f:	c7 45 fc 6e 01 00 00 	movl   $0x16e,-0x4(%ebp)
+c0111666:	eb 07                	jmp    c011166f <__ZN7Utility10DaysInYearEi+0x25>
+c0111668:	c7 45 fc 6d 01 00 00 	movl   $0x16d,-0x4(%ebp)
+c011166f:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c0111672:	c9                   	leave  
+c0111673:	c3                   	ret    
 
-c011161e <__ZN8DiagnoseC1Ev>:
-c011161e:	55                   	push   %ebp
-c011161f:	89 e5                	mov    %esp,%ebp
-c0111621:	5d                   	pop    %ebp
-c0111622:	c3                   	ret    
-c0111623:	90                   	nop    
+c0111674 <__ZN8DiagnoseC2Ev>:
+c0111674:	55                   	push   %ebp
+c0111675:	89 e5                	mov    %esp,%ebp
+c0111677:	5d                   	pop    %ebp
+c0111678:	c3                   	ret    
+c0111679:	90                   	nop    
 
-c0111624 <__ZN8DiagnoseD2Ev>:
-c0111624:	55                   	push   %ebp
-c0111625:	89 e5                	mov    %esp,%ebp
-c0111627:	5d                   	pop    %ebp
-c0111628:	c3                   	ret    
-c0111629:	90                   	nop    
+c011167a <__ZN8DiagnoseC1Ev>:
+c011167a:	55                   	push   %ebp
+c011167b:	89 e5                	mov    %esp,%ebp
+c011167d:	5d                   	pop    %ebp
+c011167e:	c3                   	ret    
+c011167f:	90                   	nop    
 
-c011162a <__ZN8DiagnoseD1Ev>:
-c011162a:	55                   	push   %ebp
-c011162b:	89 e5                	mov    %esp,%ebp
-c011162d:	5d                   	pop    %ebp
-c011162e:	c3                   	ret    
-c011162f:	90                   	nop    
+c0111680 <__ZN8DiagnoseD2Ev>:
+c0111680:	55                   	push   %ebp
+c0111681:	89 e5                	mov    %esp,%ebp
+c0111683:	5d                   	pop    %ebp
+c0111684:	c3                   	ret    
+c0111685:	90                   	nop    
 
-c0111630 <__ZN8Diagnose7TraceOnEv>:
-c0111630:	55                   	push   %ebp
-c0111631:	89 e5                	mov    %esp,%ebp
-c0111633:	c6 05 cc 45 11 c0 01 	movb   $0x1,0xc01145cc
-c011163a:	5d                   	pop    %ebp
-c011163b:	c3                   	ret    
+c0111686 <__ZN8DiagnoseD1Ev>:
+c0111686:	55                   	push   %ebp
+c0111687:	89 e5                	mov    %esp,%ebp
+c0111689:	5d                   	pop    %ebp
+c011168a:	c3                   	ret    
+c011168b:	90                   	nop    
 
-c011163c <__ZN8Diagnose8TraceOffEv>:
-c011163c:	55                   	push   %ebp
-c011163d:	89 e5                	mov    %esp,%ebp
-c011163f:	c6 05 cc 45 11 c0 00 	movb   $0x0,0xc01145cc
-c0111646:	5d                   	pop    %ebp
-c0111647:	c3                   	ret    
+c011168c <__ZN8Diagnose7TraceOnEv>:
+c011168c:	55                   	push   %ebp
+c011168d:	89 e5                	mov    %esp,%ebp
+c011168f:	c6 05 cc 45 11 c0 01 	movb   $0x1,0xc01145cc
+c0111696:	5d                   	pop    %ebp
+c0111697:	c3                   	ret    
 
-c0111648 <__ZN8Diagnose5WriteEPKcz>:
-c0111648:	55                   	push   %ebp
-c0111649:	89 e5                	mov    %esp,%ebp
-c011164b:	83 ec 28             	sub    $0x28,%esp
-c011164e:	80 3d cc 45 11 c0 00 	cmpb   $0x0,0xc01145cc
-c0111655:	75 05                	jne    c011165c <__ZN8Diagnose5WriteEPKcz+0x14>
-c0111657:	e9 03 01 00 00       	jmp    c011175f <__ZN8Diagnose5WriteEPKcz+0x117>
-c011165c:	8d 45 0c             	lea    0xc(%ebp),%eax
-c011165f:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c0111662:	8b 45 08             	mov    0x8(%ebp),%eax
-c0111665:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c0111668:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c011166b:	80 38 25             	cmpb   $0x25,(%eax)
-c011166e:	74 34                	je     c01116a4 <__ZN8Diagnose5WriteEPKcz+0x5c>
-c0111670:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c0111673:	80 38 0a             	cmpb   $0xa,(%eax)
-c0111676:	74 2c                	je     c01116a4 <__ZN8Diagnose5WriteEPKcz+0x5c>
-c0111678:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c011167b:	80 38 00             	cmpb   $0x0,(%eax)
-c011167e:	75 05                	jne    c0111685 <__ZN8Diagnose5WriteEPKcz+0x3d>
-c0111680:	e9 da 00 00 00       	jmp    c011175f <__ZN8Diagnose5WriteEPKcz+0x117>
-c0111685:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c0111688:	80 38 0a             	cmpb   $0xa,(%eax)
-c011168b:	75 02                	jne    c011168f <__ZN8Diagnose5WriteEPKcz+0x47>
-c011168d:	eb 15                	jmp    c01116a4 <__ZN8Diagnose5WriteEPKcz+0x5c>
-c011168f:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c0111692:	0f be 00             	movsbl (%eax),%eax
-c0111695:	89 04 24             	mov    %eax,(%esp)
-c0111698:	8d 45 f8             	lea    -0x8(%ebp),%eax
-c011169b:	ff 00                	incl   (%eax)
-c011169d:	e8 36 01 00 00       	call   c01117d8 <__ZN8Diagnose9WriteCharEc>
-c01116a2:	eb c4                	jmp    c0111668 <__ZN8Diagnose5WriteEPKcz+0x20>
-c01116a4:	8d 45 f8             	lea    -0x8(%ebp),%eax
-c01116a7:	ff 00                	incl   (%eax)
-c01116a9:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c01116ac:	80 38 64             	cmpb   $0x64,(%eax)
-c01116af:	74 0a                	je     c01116bb <__ZN8Diagnose5WriteEPKcz+0x73>
-c01116b1:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c01116b4:	80 38 78             	cmpb   $0x78,(%eax)
-c01116b7:	74 02                	je     c01116bb <__ZN8Diagnose5WriteEPKcz+0x73>
-c01116b9:	eb 56                	jmp    c0111711 <__ZN8Diagnose5WriteEPKcz+0xc9>
-c01116bb:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c01116be:	8b 00                	mov    (%eax),%eax
-c01116c0:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c01116c3:	8d 45 fc             	lea    -0x4(%ebp),%eax
-c01116c6:	83 00 04             	addl   $0x4,(%eax)
-c01116c9:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c01116cc:	80 38 78             	cmpb   $0x78,(%eax)
-c01116cf:	75 0c                	jne    c01116dd <__ZN8Diagnose5WriteEPKcz+0x95>
-c01116d1:	c7 04 24 00 30 11 c0 	movl   $0xc0113000,(%esp)
-c01116d8:	e8 6b ff ff ff       	call   c0111648 <__ZN8Diagnose5WriteEPKcz>
-c01116dd:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c01116e0:	80 38 64             	cmpb   $0x64,(%eax)
-c01116e3:	75 09                	jne    c01116ee <__ZN8Diagnose5WriteEPKcz+0xa6>
-c01116e5:	c7 45 ec 0a 00 00 00 	movl   $0xa,-0x14(%ebp)
-c01116ec:	eb 07                	jmp    c01116f5 <__ZN8Diagnose5WriteEPKcz+0xad>
-c01116ee:	c7 45 ec 10 00 00 00 	movl   $0x10,-0x14(%ebp)
-c01116f5:	8b 45 ec             	mov    -0x14(%ebp),%eax
-c01116f8:	89 44 24 04          	mov    %eax,0x4(%esp)
-c01116fc:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c01116ff:	89 04 24             	mov    %eax,(%esp)
-c0111702:	e8 5b 00 00 00       	call   c0111762 <__ZN8Diagnose8PrintIntEji>
-c0111707:	8d 45 f8             	lea    -0x8(%ebp),%eax
-c011170a:	ff 00                	incl   (%eax)
-c011170c:	e9 57 ff ff ff       	jmp    c0111668 <__ZN8Diagnose5WriteEPKcz+0x20>
-c0111711:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c0111714:	80 38 73             	cmpb   $0x73,(%eax)
-c0111717:	75 3c                	jne    c0111755 <__ZN8Diagnose5WriteEPKcz+0x10d>
-c0111719:	8d 45 f8             	lea    -0x8(%ebp),%eax
-c011171c:	ff 00                	incl   (%eax)
-c011171e:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c0111721:	8b 00                	mov    (%eax),%eax
-c0111723:	89 45 f4             	mov    %eax,-0xc(%ebp)
-c0111726:	8d 45 fc             	lea    -0x4(%ebp),%eax
-c0111729:	83 00 04             	addl   $0x4,(%eax)
-c011172c:	8b 45 f4             	mov    -0xc(%ebp),%eax
-c011172f:	89 c2                	mov    %eax,%edx
-c0111731:	8d 45 f4             	lea    -0xc(%ebp),%eax
-c0111734:	ff 00                	incl   (%eax)
-c0111736:	0f b6 02             	movzbl (%edx),%eax
-c0111739:	88 45 f3             	mov    %al,-0xd(%ebp)
-c011173c:	80 7d f3 00          	cmpb   $0x0,-0xd(%ebp)
-c0111740:	75 05                	jne    c0111747 <__ZN8Diagnose5WriteEPKcz+0xff>
-c0111742:	e9 21 ff ff ff       	jmp    c0111668 <__ZN8Diagnose5WriteEPKcz+0x20>
-c0111747:	0f be 45 f3          	movsbl -0xd(%ebp),%eax
-c011174b:	89 04 24             	mov    %eax,(%esp)
-c011174e:	e8 85 00 00 00       	call   c01117d8 <__ZN8Diagnose9WriteCharEc>
-c0111753:	eb d7                	jmp    c011172c <__ZN8Diagnose5WriteEPKcz+0xe4>
-c0111755:	e8 68 00 00 00       	call   c01117c2 <__ZN8Diagnose8NextLineEv>
-c011175a:	e9 09 ff ff ff       	jmp    c0111668 <__ZN8Diagnose5WriteEPKcz+0x20>
-c011175f:	c9                   	leave  
-c0111760:	c3                   	ret    
-c0111761:	90                   	nop    
+c0111698 <__ZN8Diagnose8TraceOffEv>:
+c0111698:	55                   	push   %ebp
+c0111699:	89 e5                	mov    %esp,%ebp
+c011169b:	c6 05 cc 45 11 c0 00 	movb   $0x0,0xc01145cc
+c01116a2:	5d                   	pop    %ebp
+c01116a3:	c3                   	ret    
 
-c0111762 <__ZN8Diagnose8PrintIntEji>:
-c0111762:	55                   	push   %ebp
-c0111763:	89 e5                	mov    %esp,%ebp
-c0111765:	83 ec 18             	sub    $0x18,%esp
-c0111768:	8b 55 08             	mov    0x8(%ebp),%edx
-c011176b:	8d 45 0c             	lea    0xc(%ebp),%eax
-c011176e:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c0111771:	89 d0                	mov    %edx,%eax
-c0111773:	8b 4d f8             	mov    -0x8(%ebp),%ecx
-c0111776:	ba 00 00 00 00       	mov    $0x0,%edx
-c011177b:	f7 31                	divl   (%ecx)
-c011177d:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c0111780:	8b 45 f8             	mov    -0x8(%ebp),%eax
-c0111783:	89 45 fc             	mov    %eax,-0x4(%ebp)
-c0111786:	85 c0                	test   %eax,%eax
-c0111788:	74 12                	je     c011179c <__ZN8Diagnose8PrintIntEji+0x3a>
-c011178a:	8b 45 0c             	mov    0xc(%ebp),%eax
-c011178d:	89 44 24 04          	mov    %eax,0x4(%esp)
-c0111791:	8b 45 fc             	mov    -0x4(%ebp),%eax
-c0111794:	89 04 24             	mov    %eax,(%esp)
-c0111797:	e8 c6 ff ff ff       	call   c0111762 <__ZN8Diagnose8PrintIntEji>
-c011179c:	8b 55 08             	mov    0x8(%ebp),%edx
-c011179f:	8d 45 0c             	lea    0xc(%ebp),%eax
-c01117a2:	89 45 f8             	mov    %eax,-0x8(%ebp)
-c01117a5:	89 d0                	mov    %edx,%eax
-c01117a7:	8b 4d f8             	mov    -0x8(%ebp),%ecx
-c01117aa:	ba 00 00 00 00       	mov    $0x0,%edx
-c01117af:	f7 31                	divl   (%ecx)
-c01117b1:	0f be 82 cd 45 11 c0 	movsbl -0x3feeba33(%edx),%eax
-c01117b8:	89 04 24             	mov    %eax,(%esp)
-c01117bb:	e8 18 00 00 00       	call   c01117d8 <__ZN8Diagnose9WriteCharEc>
-c01117c0:	c9                   	leave  
-c01117c1:	c3                   	ret    
+c01116a4 <__ZN8Diagnose5WriteEPKcz>:
+c01116a4:	55                   	push   %ebp
+c01116a5:	89 e5                	mov    %esp,%ebp
+c01116a7:	83 ec 28             	sub    $0x28,%esp
+c01116aa:	80 3d cc 45 11 c0 00 	cmpb   $0x0,0xc01145cc
+c01116b1:	75 05                	jne    c01116b8 <__ZN8Diagnose5WriteEPKcz+0x14>
+c01116b3:	e9 03 01 00 00       	jmp    c01117bb <__ZN8Diagnose5WriteEPKcz+0x117>
+c01116b8:	8d 45 0c             	lea    0xc(%ebp),%eax
+c01116bb:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c01116be:	8b 45 08             	mov    0x8(%ebp),%eax
+c01116c1:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c01116c4:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c01116c7:	80 38 25             	cmpb   $0x25,(%eax)
+c01116ca:	74 34                	je     c0111700 <__ZN8Diagnose5WriteEPKcz+0x5c>
+c01116cc:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c01116cf:	80 38 0a             	cmpb   $0xa,(%eax)
+c01116d2:	74 2c                	je     c0111700 <__ZN8Diagnose5WriteEPKcz+0x5c>
+c01116d4:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c01116d7:	80 38 00             	cmpb   $0x0,(%eax)
+c01116da:	75 05                	jne    c01116e1 <__ZN8Diagnose5WriteEPKcz+0x3d>
+c01116dc:	e9 da 00 00 00       	jmp    c01117bb <__ZN8Diagnose5WriteEPKcz+0x117>
+c01116e1:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c01116e4:	80 38 0a             	cmpb   $0xa,(%eax)
+c01116e7:	75 02                	jne    c01116eb <__ZN8Diagnose5WriteEPKcz+0x47>
+c01116e9:	eb 15                	jmp    c0111700 <__ZN8Diagnose5WriteEPKcz+0x5c>
+c01116eb:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c01116ee:	0f be 00             	movsbl (%eax),%eax
+c01116f1:	89 04 24             	mov    %eax,(%esp)
+c01116f4:	8d 45 f8             	lea    -0x8(%ebp),%eax
+c01116f7:	ff 00                	incl   (%eax)
+c01116f9:	e8 36 01 00 00       	call   c0111834 <__ZN8Diagnose9WriteCharEc>
+c01116fe:	eb c4                	jmp    c01116c4 <__ZN8Diagnose5WriteEPKcz+0x20>
+c0111700:	8d 45 f8             	lea    -0x8(%ebp),%eax
+c0111703:	ff 00                	incl   (%eax)
+c0111705:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c0111708:	80 38 64             	cmpb   $0x64,(%eax)
+c011170b:	74 0a                	je     c0111717 <__ZN8Diagnose5WriteEPKcz+0x73>
+c011170d:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c0111710:	80 38 78             	cmpb   $0x78,(%eax)
+c0111713:	74 02                	je     c0111717 <__ZN8Diagnose5WriteEPKcz+0x73>
+c0111715:	eb 56                	jmp    c011176d <__ZN8Diagnose5WriteEPKcz+0xc9>
+c0111717:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c011171a:	8b 00                	mov    (%eax),%eax
+c011171c:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c011171f:	8d 45 fc             	lea    -0x4(%ebp),%eax
+c0111722:	83 00 04             	addl   $0x4,(%eax)
+c0111725:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c0111728:	80 38 78             	cmpb   $0x78,(%eax)
+c011172b:	75 0c                	jne    c0111739 <__ZN8Diagnose5WriteEPKcz+0x95>
+c011172d:	c7 04 24 00 30 11 c0 	movl   $0xc0113000,(%esp)
+c0111734:	e8 6b ff ff ff       	call   c01116a4 <__ZN8Diagnose5WriteEPKcz>
+c0111739:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c011173c:	80 38 64             	cmpb   $0x64,(%eax)
+c011173f:	75 09                	jne    c011174a <__ZN8Diagnose5WriteEPKcz+0xa6>
+c0111741:	c7 45 ec 0a 00 00 00 	movl   $0xa,-0x14(%ebp)
+c0111748:	eb 07                	jmp    c0111751 <__ZN8Diagnose5WriteEPKcz+0xad>
+c011174a:	c7 45 ec 10 00 00 00 	movl   $0x10,-0x14(%ebp)
+c0111751:	8b 45 ec             	mov    -0x14(%ebp),%eax
+c0111754:	89 44 24 04          	mov    %eax,0x4(%esp)
+c0111758:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c011175b:	89 04 24             	mov    %eax,(%esp)
+c011175e:	e8 5b 00 00 00       	call   c01117be <__ZN8Diagnose8PrintIntEji>
+c0111763:	8d 45 f8             	lea    -0x8(%ebp),%eax
+c0111766:	ff 00                	incl   (%eax)
+c0111768:	e9 57 ff ff ff       	jmp    c01116c4 <__ZN8Diagnose5WriteEPKcz+0x20>
+c011176d:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c0111770:	80 38 73             	cmpb   $0x73,(%eax)
+c0111773:	75 3c                	jne    c01117b1 <__ZN8Diagnose5WriteEPKcz+0x10d>
+c0111775:	8d 45 f8             	lea    -0x8(%ebp),%eax
+c0111778:	ff 00                	incl   (%eax)
+c011177a:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c011177d:	8b 00                	mov    (%eax),%eax
+c011177f:	89 45 f4             	mov    %eax,-0xc(%ebp)
+c0111782:	8d 45 fc             	lea    -0x4(%ebp),%eax
+c0111785:	83 00 04             	addl   $0x4,(%eax)
+c0111788:	8b 45 f4             	mov    -0xc(%ebp),%eax
+c011178b:	89 c2                	mov    %eax,%edx
+c011178d:	8d 45 f4             	lea    -0xc(%ebp),%eax
+c0111790:	ff 00                	incl   (%eax)
+c0111792:	0f b6 02             	movzbl (%edx),%eax
+c0111795:	88 45 f3             	mov    %al,-0xd(%ebp)
+c0111798:	80 7d f3 00          	cmpb   $0x0,-0xd(%ebp)
+c011179c:	75 05                	jne    c01117a3 <__ZN8Diagnose5WriteEPKcz+0xff>
+c011179e:	e9 21 ff ff ff       	jmp    c01116c4 <__ZN8Diagnose5WriteEPKcz+0x20>
+c01117a3:	0f be 45 f3          	movsbl -0xd(%ebp),%eax
+c01117a7:	89 04 24             	mov    %eax,(%esp)
+c01117aa:	e8 85 00 00 00       	call   c0111834 <__ZN8Diagnose9WriteCharEc>
+c01117af:	eb d7                	jmp    c0111788 <__ZN8Diagnose5WriteEPKcz+0xe4>
+c01117b1:	e8 68 00 00 00       	call   c011181e <__ZN8Diagnose8NextLineEv>
+c01117b6:	e9 09 ff ff ff       	jmp    c01116c4 <__ZN8Diagnose5WriteEPKcz+0x20>
+c01117bb:	c9                   	leave  
+c01117bc:	c3                   	ret    
+c01117bd:	90                   	nop    
 
-c01117c2 <__ZN8Diagnose8NextLineEv>:
-c01117c2:	55                   	push   %ebp
-c01117c3:	89 e5                	mov    %esp,%ebp
-c01117c5:	ff 05 c4 45 11 c0    	incl   0xc01145c4
-c01117cb:	c7 05 e0 14 12 c0 00 	movl   $0x0,0xc01214e0
-c01117d2:	00 00 00 
-c01117d5:	5d                   	pop    %ebp
-c01117d6:	c3                   	ret    
-c01117d7:	90                   	nop    
+c01117be <__ZN8Diagnose8PrintIntEji>:
+c01117be:	55                   	push   %ebp
+c01117bf:	89 e5                	mov    %esp,%ebp
+c01117c1:	83 ec 18             	sub    $0x18,%esp
+c01117c4:	8b 55 08             	mov    0x8(%ebp),%edx
+c01117c7:	8d 45 0c             	lea    0xc(%ebp),%eax
+c01117ca:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c01117cd:	89 d0                	mov    %edx,%eax
+c01117cf:	8b 4d f8             	mov    -0x8(%ebp),%ecx
+c01117d2:	ba 00 00 00 00       	mov    $0x0,%edx
+c01117d7:	f7 31                	divl   (%ecx)
+c01117d9:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c01117dc:	8b 45 f8             	mov    -0x8(%ebp),%eax
+c01117df:	89 45 fc             	mov    %eax,-0x4(%ebp)
+c01117e2:	85 c0                	test   %eax,%eax
+c01117e4:	74 12                	je     c01117f8 <__ZN8Diagnose8PrintIntEji+0x3a>
+c01117e6:	8b 45 0c             	mov    0xc(%ebp),%eax
+c01117e9:	89 44 24 04          	mov    %eax,0x4(%esp)
+c01117ed:	8b 45 fc             	mov    -0x4(%ebp),%eax
+c01117f0:	89 04 24             	mov    %eax,(%esp)
+c01117f3:	e8 c6 ff ff ff       	call   c01117be <__ZN8Diagnose8PrintIntEji>
+c01117f8:	8b 55 08             	mov    0x8(%ebp),%edx
+c01117fb:	8d 45 0c             	lea    0xc(%ebp),%eax
+c01117fe:	89 45 f8             	mov    %eax,-0x8(%ebp)
+c0111801:	89 d0                	mov    %edx,%eax
+c0111803:	8b 4d f8             	mov    -0x8(%ebp),%ecx
+c0111806:	ba 00 00 00 00       	mov    $0x0,%edx
+c011180b:	f7 31                	divl   (%ecx)
+c011180d:	0f be 82 cd 45 11 c0 	movsbl -0x3feeba33(%edx),%eax
+c0111814:	89 04 24             	mov    %eax,(%esp)
+c0111817:	e8 18 00 00 00       	call   c0111834 <__ZN8Diagnose9WriteCharEc>
+c011181c:	c9                   	leave  
+c011181d:	c3                   	ret    
 
-c01117d8 <__ZN8Diagnose9WriteCharEc>:
-c01117d8:	55                   	push   %ebp
-c01117d9:	89 e5                	mov    %esp,%ebp
-c01117db:	83 ec 08             	sub    $0x8,%esp
-c01117de:	8b 45 08             	mov    0x8(%ebp),%eax
-c01117e1:	88 45 ff             	mov    %al,-0x1(%ebp)
-c01117e4:	83 3d e0 14 12 c0 4f 	cmpl   $0x4f,0xc01214e0
-c01117eb:	76 05                	jbe    c01117f2 <__ZN8Diagnose9WriteCharEc+0x1a>
-c01117ed:	e8 d0 ff ff ff       	call   c01117c2 <__ZN8Diagnose8NextLineEv>
-c01117f2:	83 3d c4 45 11 c0 18 	cmpl   $0x18,0xc01145c4
-c01117f9:	76 05                	jbe    c0111800 <__ZN8Diagnose9WriteCharEc+0x28>
-c01117fb:	e8 36 00 00 00       	call   c0111836 <__ZN8Diagnose11ClearScreenEv>
-c0111800:	8b 15 c4 45 11 c0    	mov    0xc01145c4,%edx
-c0111806:	89 d0                	mov    %edx,%eax
-c0111808:	c1 e0 02             	shl    $0x2,%eax
-c011180b:	01 d0                	add    %edx,%eax
-c011180d:	c1 e0 04             	shl    $0x4,%eax
-c0111810:	03 05 e0 14 12 c0    	add    0xc01214e0,%eax
-c0111816:	8d 0c 00             	lea    (%eax,%eax,1),%ecx
-c0111819:	8b 15 c0 45 11 c0    	mov    0xc01145c0,%edx
-c011181f:	66 0f b6 45 ff       	movzbw -0x1(%ebp),%ax
-c0111824:	0d 00 0b 00 00       	or     $0xb00,%eax
-c0111829:	66 89 04 11          	mov    %ax,(%ecx,%edx,1)
-c011182d:	ff 05 e0 14 12 c0    	incl   0xc01214e0
-c0111833:	c9                   	leave  
-c0111834:	c3                   	ret    
-c0111835:	90                   	nop    
+c011181e <__ZN8Diagnose8NextLineEv>:
+c011181e:	55                   	push   %ebp
+c011181f:	89 e5                	mov    %esp,%ebp
+c0111821:	ff 05 c4 45 11 c0    	incl   0xc01145c4
+c0111827:	c7 05 e0 14 12 c0 00 	movl   $0x0,0xc01214e0
+c011182e:	00 00 00 
+c0111831:	5d                   	pop    %ebp
+c0111832:	c3                   	ret    
+c0111833:	90                   	nop    
 
-c0111836 <__ZN8Diagnose11ClearScreenEv>:
-c0111836:	55                   	push   %ebp
-c0111837:	89 e5                	mov    %esp,%ebp
-c0111839:	83 ec 04             	sub    $0x4,%esp
-c011183c:	b8 19 00 00 00       	mov    $0x19,%eax
-c0111841:	2b 05 c8 45 11 c0    	sub    0xc01145c8,%eax
-c0111847:	a3 c4 45 11 c0       	mov    %eax,0xc01145c4
-c011184c:	c7 05 e0 14 12 c0 00 	movl   $0x0,0xc01214e0
-c0111853:	00 00 00 
-c0111856:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%ebp)
-c011185d:	a1 c8 45 11 c0       	mov    0xc01145c8,%eax
-c0111862:	89 c2                	mov    %eax,%edx
-c0111864:	c1 e2 02             	shl    $0x2,%edx
-c0111867:	01 c2                	add    %eax,%edx
-c0111869:	89 d0                	mov    %edx,%eax
-c011186b:	c1 e0 04             	shl    $0x4,%eax
-c011186e:	3b 45 fc             	cmp    -0x4(%ebp),%eax
-c0111871:	76 28                	jbe    c011189b <__ZN8Diagnose11ClearScreenEv+0x65>
-c0111873:	8b 15 c4 45 11 c0    	mov    0xc01145c4,%edx
-c0111879:	89 d0                	mov    %edx,%eax
-c011187b:	c1 e0 02             	shl    $0x2,%eax
-c011187e:	01 d0                	add    %edx,%eax
-c0111880:	c1 e0 04             	shl    $0x4,%eax
-c0111883:	03 45 fc             	add    -0x4(%ebp),%eax
-c0111886:	8d 14 00             	lea    (%eax,%eax,1),%edx
-c0111889:	a1 c0 45 11 c0       	mov    0xc01145c0,%eax
-c011188e:	66 c7 04 02 20 0b    	movw   $0xb20,(%edx,%eax,1)
-c0111894:	8d 45 fc             	lea    -0x4(%ebp),%eax
-c0111897:	ff 00                	incl   (%eax)
-c0111899:	eb c2                	jmp    c011185d <__ZN8Diagnose11ClearScreenEv+0x27>
-c011189b:	c9                   	leave  
-c011189c:	c3                   	ret    
-c011189d:	90                   	nop    
-c011189e:	90                   	nop    
-c011189f:	90                   	nop    
+c0111834 <__ZN8Diagnose9WriteCharEc>:
+c0111834:	55                   	push   %ebp
+c0111835:	89 e5                	mov    %esp,%ebp
+c0111837:	83 ec 08             	sub    $0x8,%esp
+c011183a:	8b 45 08             	mov    0x8(%ebp),%eax
+c011183d:	88 45 ff             	mov    %al,-0x1(%ebp)
+c0111840:	83 3d e0 14 12 c0 4f 	cmpl   $0x4f,0xc01214e0
+c0111847:	76 05                	jbe    c011184e <__ZN8Diagnose9WriteCharEc+0x1a>
+c0111849:	e8 d0 ff ff ff       	call   c011181e <__ZN8Diagnose8NextLineEv>
+c011184e:	83 3d c4 45 11 c0 18 	cmpl   $0x18,0xc01145c4
+c0111855:	76 05                	jbe    c011185c <__ZN8Diagnose9WriteCharEc+0x28>
+c0111857:	e8 36 00 00 00       	call   c0111892 <__ZN8Diagnose11ClearScreenEv>
+c011185c:	8b 15 c4 45 11 c0    	mov    0xc01145c4,%edx
+c0111862:	89 d0                	mov    %edx,%eax
+c0111864:	c1 e0 02             	shl    $0x2,%eax
+c0111867:	01 d0                	add    %edx,%eax
+c0111869:	c1 e0 04             	shl    $0x4,%eax
+c011186c:	03 05 e0 14 12 c0    	add    0xc01214e0,%eax
+c0111872:	8d 0c 00             	lea    (%eax,%eax,1),%ecx
+c0111875:	8b 15 c0 45 11 c0    	mov    0xc01145c0,%edx
+c011187b:	66 0f b6 45 ff       	movzbw -0x1(%ebp),%ax
+c0111880:	0d 00 0b 00 00       	or     $0xb00,%eax
+c0111885:	66 89 04 11          	mov    %ax,(%ecx,%edx,1)
+c0111889:	ff 05 e0 14 12 c0    	incl   0xc01214e0
+c011188f:	c9                   	leave  
+c0111890:	c3                   	ret    
+c0111891:	90                   	nop    
+
+c0111892 <__ZN8Diagnose11ClearScreenEv>:
+c0111892:	55                   	push   %ebp
+c0111893:	89 e5                	mov    %esp,%ebp
+c0111895:	83 ec 04             	sub    $0x4,%esp
+c0111898:	b8 19 00 00 00       	mov    $0x19,%eax
+c011189d:	2b 05 c8 45 11 c0    	sub    0xc01145c8,%eax
+c01118a3:	a3 c4 45 11 c0       	mov    %eax,0xc01145c4
+c01118a8:	c7 05 e0 14 12 c0 00 	movl   $0x0,0xc01214e0
+c01118af:	00 00 00 
+c01118b2:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%ebp)
+c01118b9:	a1 c8 45 11 c0       	mov    0xc01145c8,%eax
+c01118be:	89 c2                	mov    %eax,%edx
+c01118c0:	c1 e2 02             	shl    $0x2,%edx
+c01118c3:	01 c2                	add    %eax,%edx
+c01118c5:	89 d0                	mov    %edx,%eax
+c01118c7:	c1 e0 04             	shl    $0x4,%eax
+c01118ca:	3b 45 fc             	cmp    -0x4(%ebp),%eax
+c01118cd:	76 28                	jbe    c01118f7 <__ZN8Diagnose11ClearScreenEv+0x65>
+c01118cf:	8b 15 c4 45 11 c0    	mov    0xc01145c4,%edx
+c01118d5:	89 d0                	mov    %edx,%eax
+c01118d7:	c1 e0 02             	shl    $0x2,%eax
+c01118da:	01 d0                	add    %edx,%eax
+c01118dc:	c1 e0 04             	shl    $0x4,%eax
+c01118df:	03 45 fc             	add    -0x4(%ebp),%eax
+c01118e2:	8d 14 00             	lea    (%eax,%eax,1),%edx
+c01118e5:	a1 c0 45 11 c0       	mov    0xc01145c0,%eax
+c01118ea:	66 c7 04 02 20 0b    	movw   $0xb20,(%edx,%eax,1)
+c01118f0:	8d 45 fc             	lea    -0x4(%ebp),%eax
+c01118f3:	ff 00                	incl   (%eax)
+c01118f5:	eb c2                	jmp    c01118b9 <__ZN8Diagnose11ClearScreenEv+0x27>
+c01118f7:	c9                   	leave  
+c01118f8:	c3                   	ret    
+c01118f9:	90                   	nop    
+c01118fa:	90                   	nop    
+c01118fb:	90                   	nop    
 	...
 
 c0112000 <__ZN11X86Assembly3CLIEv>:

@@ -192,3 +192,21 @@ int sbrk(int increment)
 	fakeedata = newedata + 1;
 	return fakeedata;
 }
+
+int getpid_sysN50()
+{
+	int res;
+	__asm__ volatile ( "int $0x80":"=a"(res):"a"(50) );
+	if ( res >= 0 )
+		return res;
+	return -1;
+}
+
+int GetTable()
+{
+	unsigned int res;
+	__asm__ volatile ( "int $0x80":"=a"(res):"a"(51) );
+	if ( res != (unsigned int)(-1) )
+		return res;
+	return -1;
+}

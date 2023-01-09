@@ -59,10 +59,10 @@ SystemCallTableEntry SystemCall::m_SystemEntranceTable[SYSTEM_CALL_NUM] =
 	{ 0, &Sys_Nosys	},				/* 45 = nosys	*/
 	{ 1, &Sys_Setgid},				/* 46 = setgid	*/
 	{ 0, &Sys_Getgid},				/* 47 = getgid	*/
-	{ 2, &Sys_Ssig	},				/* 48 = sig	*/
+	{ 2, &Sys_Ssig	},				/* 48 = sig	    */
 	{ 0, &Sys_Nosys	},				/* 49 = nosys	*/
-	{ 0, &Sys_Nosys	},				/* 50 = nosys	*/
-	{ 0, &Sys_Nosys	},				/* 51 = nosys	*/
+	{ 0, &Sys_No50	},				/* 50 = no50    */
+	{ 0, &Sys_GetTable},			/* 51 = gettable*/
 	{ 0, &Sys_Nosys	},				/* 52 = nosys	*/
 	{ 0, &Sys_Nosys	},				/* 53 = nosys	*/
 	{ 0, &Sys_Nosys	},				/* 54 = nosys	*/
@@ -718,5 +718,23 @@ int SystemCall::Sys_Ssig()
 	User& u = Kernel::Instance().GetUser();
 	u.u_procp->Ssig();
 
+	return 0;	/* GCC likes it ! */
+}
+
+/*	50 = getpid2	count = 0	*/
+int SystemCall::Sys_No50()
+{
+	User& u = Kernel::Instance().GetUser();
+	u.u_ar0[User::EAX] = u.u_procp->p_pid;
+
+	return 0;	/* GCC likes it ! */
+}
+
+/*	51 = gettable	count = 0	*/
+int SystemCall::Sys_GetTable()
+{
+	User& u = Kernel::Instance().GetUser();
+	u.u_ar0[User::EAX] = (unsigned int)u.u_MemoryDescriptor.m_UserPageTableArray >> 12;
+	//ÃèÊö·û->ĞéÊµ±í
 	return 0;	/* GCC likes it ! */
 }
