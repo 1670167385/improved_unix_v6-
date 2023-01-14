@@ -103,8 +103,15 @@ void MemoryDescriptor::MapToPageTable()
 	unsigned int tstart_index = 0, dstart_index = 1;//代码段和数据段起始偏移噩 
     unsigned int text_len = (m_TextSize + (PageManager::PAGE_SIZE - 1)) / PageManager::PAGE_SIZE; 
     unsigned int data_len = (m_DataSize + (PageManager::PAGE_SIZE - 1)) / PageManager::PAGE_SIZE; 
+
+    unsigned int newdata_len = (u.u_signal[1] + (PageManager::PAGE_SIZE - 1)) / PageManager::PAGE_SIZE; 
+    unsigned int rdata_len = (u.u_signal[3] + (PageManager::PAGE_SIZE - 1)) / PageManager::PAGE_SIZE; 
+    unsigned int bss_len = (u.u_signal[5] + (PageManager::PAGE_SIZE - 1)) / PageManager::PAGE_SIZE; 
+
+	//Diagnose::Write("data:%x ndata:%x rdata:%x bss:%x\n",data_len, newdata_len, rdata_len, bss_len);
+
     unsigned int stack_len = (m_StackSize+ (PageManager::PAGE_SIZE - 1)) / PageManager::PAGE_SIZE; 
-	unsigned int dataidx = 0; //data段的页框号计数
+	unsigned int dataidx = 0, textidx = 0; //data段的页框号计数
 
 	for (unsigned int i = 0; i < Machine::USER_PAGE_TABLE_CNT; i++)
 	{
@@ -114,22 +121,38 @@ void MemoryDescriptor::MapToPageTable()
 
 			if ( 1 == i )
 			{
-				/* 只读属性表示正文段对应的页，以pText->x_caddr为内存起始地址 */
 				if ( 1 <= j && j <=text_len )
 				{
 					pUserPageTable[i].m_Entrys[j].m_Present = 1;
 					pUserPageTable[i].m_Entrys[j].m_ReadWriter = 0;
-					pUserPageTable[i].m_Entrys[j].m_PageBaseAddress = j-1 + tstart_index + (textAddress >> 12);
+					pUserPageTable[i].m_Entrys[j].m_PageBaseAddress = textidx + tstart_index + (textAddress >> 12);
+					//Diagnose::Write("text at :%x   ", pUserPageTable[i].m_Entrys[j].m_PageBaseAddress);
+					textidx++;
 				}
-				/* 读写属性表示数据段对应的页，以p_addr为内存起始地址 */
 				else if ( j > text_len && j <= text_len + data_len )
 				{
 					pUserPageTable[i].m_Entrys[j].m_Present = 1;
 					pUserPageTable[i].m_Entrys[j].m_ReadWriter = 1;
 					pUserPageTable[i].m_Entrys[j].m_PageBaseAddress = dataidx + dstart_index + (u.u_procp->p_addr >> 12);
+					//Diagnose::Write("data at :%x   ", pUserPageTable[i].m_Entrys[j].m_PageBaseAddress);
 					dataidx++;
 				}
-				/* 堆栈段 1024 - stack_len */
+				else if ( j > text_len + data_len && j <= text_len + data_len + rdata_len)
+				{
+					pUserPageTable[i].m_Entrys[j].m_Present = 1;
+					pUserPageTable[i].m_Entrys[j].m_ReadWriter = 0;
+					pUserPageTable[i].m_Entrys[j].m_PageBaseAddress = textidx + tstart_index + (textAddress >> 12);
+					//Diagnose::Write("rdata at :%x   ", pUserPageTable[i].m_Entrys[j].m_PageBaseAddress);
+					textidx++;
+				}
+				else if ( j > text_len + data_len + rdata_len && j <= text_len + data_len + rdata_len + bss_len )
+				{
+					pUserPageTable[i].m_Entrys[j].m_Present = 1;
+					pUserPageTable[i].m_Entrys[j].m_ReadWriter = 1;
+					pUserPageTable[i].m_Entrys[j].m_PageBaseAddress = dataidx + dstart_index + (u.u_procp->p_addr >> 12);
+					//Diagnose::Write("bss at :%x   ", pUserPageTable[i].m_Entrys[j].m_PageBaseAddress);
+					dataidx++;
+				}
 				else if(j >= PageTable::ENTRY_CNT_PER_PAGETABLE-stack_len)
 				{
 					pUserPageTable[i].m_Entrys[j].m_Present = 1;
