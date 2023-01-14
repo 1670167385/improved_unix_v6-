@@ -138,6 +138,12 @@ public:
 	unsigned int Relocate(Inode* p_inode, int sharedText);
 
     bool HeaderLoad(Inode* p_inode);
+    unsigned long get_data_address();
+    unsigned long get_data_size();
+    unsigned long get_rdata_address();
+    unsigned long get_rdata_size();
+    unsigned long get_bss_address();
+    unsigned long get_bss_size();
 
 public:
 	unsigned long EntryPointAddress;

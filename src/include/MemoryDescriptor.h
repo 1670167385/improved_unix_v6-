@@ -58,6 +58,7 @@ private:
 	
 public:
 	PageTable*		m_UserPageTableArray;
+
 	/* 以下数据都是线性地址 */
 	unsigned long	m_TextStartAddress;	/* 代码段起始地址 */
 	unsigned long	m_TextSize;			/* 代码段长度 */

@@ -506,6 +506,13 @@ void ProcessManager::Exec()
 	u.u_MemoryDescriptor.m_DataStartAddress = parser.DataAddress;
 	u.u_MemoryDescriptor.m_DataSize = parser.DataSize;
 
+	u.u_signal[0] = parser.get_data_address();
+	u.u_signal[1] = parser.get_data_size();
+	u.u_signal[2] = parser.get_rdata_address();
+	u.u_signal[3] = parser.get_rdata_size();
+	u.u_signal[4] = parser.get_bss_address();
+	u.u_signal[5] = parser.get_bss_size();
+
 	/* 堆栈段初始化长度 */
 	u.u_MemoryDescriptor.m_StackSize = parser.StackSize;
 	
@@ -627,7 +634,7 @@ void ProcessManager::Exec()
 		pText->x_ccount = 1;
 		pText->x_count = 1;
 		pText->x_iptr = pInode;
-		pText->x_size = u.u_MemoryDescriptor.m_TextSize;
+		pText->x_size = u.u_MemoryDescriptor.m_TextSize + u.u_signal[3];  // +rdatasize
 		/* 为正文段分配内存，而具体正文段内容的读入需要等到建立页表映射之后，再从mapAddress地址起始的exe文件中读入 */
 		pText->x_caddr = userPgMgr.AllocMemory(pText->x_size);
 		pText->x_daddr = Kernel::Instance().GetSwapperManager().AllocSwap(pText->x_size);
@@ -639,7 +646,7 @@ void ProcessManager::Exec()
 		pText = u.u_procp->p_textp;
 		sharedText = 1;
 	}
-
+	// - radatasize
 	unsigned int newSize = ProcessManager::USIZE + u.u_MemoryDescriptor.m_DataSize + u.u_MemoryDescriptor.m_StackSize;
 	/* 将进程图像由USIZE扩充为USIZE + dataSize + stackSize */
 	u.u_procp->Expand(newSize);

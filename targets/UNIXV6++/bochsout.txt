@@ -30,7 +30,7 @@
 00000000000i[     ]   SB16 support: no
 00000000000i[     ]   USB support: yes
 00000000000i[     ]   VGA extension support: vbe cirrus
-00000000000i[MEM0 ] allocated memory at 04916020. after alignment, vector=04917000
+00000000000i[MEM0 ] allocated memory at 0497A020. after alignment, vector=0497B000
 00000000000i[MEM0 ] 32.00MB
 00000000000i[MEM0 ] mem block size = 0x00100000, blocks=32
 00000000000i[MEM0 ] rom at 0xfffe0000/131072 ('F:\unix6\UNIX V6++V1\Bochs-2.6/bios/BIOS-bochs-latest')
@@ -40,7 +40,7 @@
 00000000000i[PCI  ] PIIX3 PCI-to-ISA bridge present at device 1, function 0
 00000000000i[     ] init_dev of 'cmos' plugin device by virtual method
 00000000000i[CMOS ] Using local time for initial clock
-00000000000i[CMOS ] Setting initial clock to: Mon Nov 14 22:35:14 2022 (time0=1668436514)
+00000000000i[CMOS ] Setting initial clock to: Sat Jan 14 21:57:29 2023 (time0=1673704649)
 00000000000i[     ] init_dev of 'dma' plugin device by virtual method
 00000000000i[DMA  ] channel 4 used by cascade
 00000000000i[     ] init_dev of 'pic' plugin device by virtual method
@@ -52,7 +52,7 @@
 00000000000i[VGA  ] interval=200000
 00000000000i[MEM0 ] Register memory access handlers: 0x00000000e0000000 - 0x00000000e0ffffff
 00000000000i[BXVGA] VBE Bochs Display Extension Enabled
-00000000000i[WGUI ] Desktop Window dimensions: 2194 x 1234
+00000000000i[WGUI ] Desktop Window dimensions: 1536 x 864
 00000000000i[WGUI ] Number of Mouse Buttons = 16
 00000000000i[WGUI ] IME disabled
 00000000000i[KMAP ] Loading keymap from 'F:\unix6\UNIX V6++V1\Bochs-2.6/gui/keymaps/x11-pc-us.map'
@@ -184,27 +184,27 @@
 00017825083i[MEM0 ] allocate_block: block=0x1 used 0x3 of 0x20
 00017928183i[MEM0 ] allocate_block: block=0x2 used 0x4 of 0x20
 00018073751i[MEM0 ] allocate_block: block=0x3 used 0x5 of 0x20
-00018203474i[MEM0 ] allocate_block: block=0x4 used 0x6 of 0x20
-00018841264i[MEM0 ] allocate_block: block=0x7 used 0x7 of 0x20
-22816000000p[WGUI ] >>PANIC<< POWER button turned off.
-22816000000i[CPU0 ] CPU is in protected mode (halted)
-22816000000i[CPU0 ] CS.mode = 32 bit
-22816000000i[CPU0 ] SS.mode = 32 bit
-22816000000i[CPU0 ] EFER   = 0x00000000
-22816000000i[CPU0 ] | EAX=c03fff10  EBX=00000002  ECX=00000001  EDX=c0119580
-22816000000i[CPU0 ] | ESP=c03fff0c  EBP=c03fff1c  ESI=000e0000  EDI=0000ffac
-22816000000i[CPU0 ] | IOPL=0 id vip vif ac vm rf nt of df IF tf sf ZF af PF cf
-22816000000i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
-22816000000i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
-22816000000i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
-22816000000i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
-22816000000i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
-22816000000i[CPU0 ] |  FS:0000( 0000| 0|  0) 00000000 00000000 0 0
-22816000000i[CPU0 ] |  GS:0000( 0000| 0|  0) 00000000 00000000 0 0
-22816000000i[CPU0 ] | EIP=c010ce0c (c010ce0c)
-22816000000i[CPU0 ] | CR0=0xe0000011 CR2=0x00000000
-22816000000i[CPU0 ] | CR3=0x00200000 CR4=0x00000000
-22816000000i[CPU0 ] 0xc010ce0c>> jmp .-217 (0xc010cd38) : E927FFFFFF
-22816000000i[CMOS ] Last time is 1668442217 (Tue Nov 15 00:10:17 2022)
-22816000000i[     ] restoring default signal behavior
-22816000000i[CTRL ] quit_sim called with exit code 1
+00018609540i[MEM0 ] allocate_block: block=0x4 used 0x6 of 0x20
+00019263723i[MEM0 ] allocate_block: block=0x7 used 0x7 of 0x20
+02512800000p[WGUI ] >>PANIC<< POWER button turned off.
+02512800000i[CPU0 ] CPU is in protected mode (halted)
+02512800000i[CPU0 ] CS.mode = 32 bit
+02512800000i[CPU0 ] SS.mode = 32 bit
+02512800000i[CPU0 ] EFER   = 0x00000000
+02512800000i[CPU0 ] | EAX=c03fff10  EBX=00000002  ECX=00000001  EDX=c0119580
+02512800000i[CPU0 ] | ESP=c03fff0c  EBP=c03fff1c  ESI=000e0000  EDI=0000ffac
+02512800000i[CPU0 ] | IOPL=0 id vip vif ac vm rf nt of df IF tf sf ZF af PF cf
+02512800000i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+02512800000i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+02512800000i[CPU0 ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+02512800000i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+02512800000i[CPU0 ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+02512800000i[CPU0 ] |  FS:0000( 0000| 0|  0) 00000000 00000000 0 0
+02512800000i[CPU0 ] |  GS:0000( 0000| 0|  0) 00000000 00000000 0 0
+02512800000i[CPU0 ] | EIP=c010cff6 (c010cff6)
+02512800000i[CPU0 ] | CR0=0xe0000011 CR2=0x00000000
+02512800000i[CPU0 ] | CR3=0x00200000 CR4=0x00000000
+02512800000i[CPU0 ] 0xc010cff6>> jmp .-217 (0xc010cf22) : E927FFFFFF
+02512800000i[CMOS ] Last time is 1673705277 (Sat Jan 14 22:07:57 2023)
+02512800000i[     ] restoring default signal behavior
+02512800000i[CTRL ] quit_sim called with exit code 1
