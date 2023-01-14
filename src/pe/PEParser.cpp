@@ -178,3 +178,27 @@ bool PEParser::HeaderLoad(Inode* p_inode)
 
 	return true;
 }
+
+unsigned long PEParser::get_data_address(){
+	return ntHeader.OptionalHeader.BaseOfData + ntHeader.OptionalHeader.ImageBase;
+}
+
+unsigned long PEParser::get_data_size(){
+	return this->sectionHeaders[this->RDATA_SECTION_IDX].VirtualAddress - ntHeader.OptionalHeader.BaseOfData;
+}
+
+unsigned long PEParser::get_rdata_address(){
+	return this->sectionHeaders[this->RDATA_SECTION_IDX].VirtualAddress + ntHeader.OptionalHeader.ImageBase;
+}
+
+unsigned long PEParser::get_rdata_size(){
+	return this->sectionHeaders[this->BSS_SECTION_IDX].VirtualAddress - this->sectionHeaders[this->RDATA_SECTION_IDX].VirtualAddress; 
+}
+
+unsigned long PEParser::get_bss_address(){
+	return this->sectionHeaders[this->BSS_SECTION_IDX].VirtualAddress + ntHeader.OptionalHeader.ImageBase;
+}
+
+unsigned long PEParser::get_bss_size(){
+	return this->sectionHeaders[this->IDATA_SECTION_IDX].VirtualAddress - this->sectionHeaders[this->BSS_SECTION_IDX].VirtualAddress; 
+}

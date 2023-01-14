@@ -506,6 +506,21 @@ void ProcessManager::Exec()
 	u.u_MemoryDescriptor.m_DataStartAddress = parser.DataAddress;
 	u.u_MemoryDescriptor.m_DataSize = parser.DataSize;
 
+	unsigned long usig[6];
+	usig[0] = u.u_signal[0];
+	usig[1] = u.u_signal[1];
+	usig[2] = u.u_signal[2];
+	usig[3] = u.u_signal[3];
+	usig[4] = u.u_signal[4];
+	usig[5] = u.u_signal[5];
+	usig[6] = u.u_signal[6];
+	u.u_signal[0] = parser.get_data_address();
+	u.u_signal[1] = parser.get_data_size();
+	u.u_signal[2] = parser.get_rdata_address();
+	u.u_signal[3] = parser.get_rdata_size();
+	u.u_signal[4] = parser.get_bss_address();
+	u.u_signal[5] = parser.get_bss_size();
+
 	/* 堆栈段初始化长度 */
 	u.u_MemoryDescriptor.m_StackSize = parser.StackSize;
 	
